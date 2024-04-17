@@ -1,0 +1,318 @@
+# Properties of Preferences and Utility Functions
+
+Doing useful analysis entails making assumptions. Try to do this carefully: make clearest, simplest, least restrictive assumptions. Understand what assumptions about utility correspond to in terms of preferences, since utility is just a way of representing preferences. We now cover some of the most important assumptions on preferences (and, implicitly, on choices).
+
+### Setting/Notation {.unnumbered}
+
+For rest of lecture, assume $X \subseteq \mathbb{R}^n$.
+
+::: callout-note
+## Example
+
+Consumer Problem: given fixed budget, choose how much of $n$ goods to consume.
+
+Notation: For vectors $x = (x_1, ..., x_n)$ and $y = (y_1, ..., y_n)$,
+
+-   $x \geq y$ means $x_k \geq y_k$ for all $k = 1 ,..., n$
+
+-   $x > y$ means $x_k \geq y_k$ for all $k$ and $x_k > y_k$ for some $k$
+
+-   $x \gg y$ means $x_k > y_k$ for all $k$
+
+For example, $(2,3,4) > (3,3,4)$ and $(4,4,5) \gg (3,3,4)$
+
+-   For $\alpha \in [0,1]$,
+
+$$
+\alpha x + (1-\alpha) y = (\alpha x_1 + (1-\alpha) y_1, \dots, \alpha x_n + (1-\alpha) y_n)
+$$ This is a convex combination for each coordinate.
+:::
+
+## Monotonicity
+
+::: callout-tip
+## Meaning
+*“All goods are desirable”*
+:::
+
+### Preferences {.unnumbered}
+
+::: {#def-mwg3b2}
+## MWG 3B2
+
+<br>
+
+[$\succcurlyeq$ *is monotone if* $x \geq y$ *implies* $x \succcurlyeq y$]{.center}
+
+[$\succcurlyeq$ *is strictly monotone if* $x > y$ *implies* $x \succ y$]{.center}
+:::
+
+For example, strict monotonicity implies $(2,3,4) \succ (1,3,4)$.
+
+### Utility {.unnumbered}
+
+If preferences are monotone, what does that mean for the utility function?
+
+::: {#thm-mwg3b1}
+## MWG Exercise 3B1
+
+*Suppose utility function* $u$ *represents preferences* $\succcurlyeq$*. Then:*
+
+[$u$ *non-decreasing* $\iff$$\succcurlyeq$ *monotone* \
+$u$ *strictly increasing* $\iff$$\succcurlyeq$ *strictly monotone*]{.center}
+:::
+
+::: callout-important
+## Proof
+
+Let’s prove this.
+
+-   For the [first part]{.underline}:
+
+[$u$ non-decreasing $\iff$\
+$[x \geq y \iff u(x) \geq u(y)] \iff$\
+$[x \geq y \iff x \succcurlyeq y] \iff$\
+$\succcurlyeq$ monotone]{.center}
+
+The third line uses the definition of utility function: $u(x) \geq u(y)$ if and only if $x \succcurlyeq y$.
+
+-   Analogously for the [second part]{.underline}:
+
+[$u$ strictly increasing $\iff$\
+$[x > y \iff u(x) > u(y)] \iff$\
+$[x > y \iff x \succ y] \iff$\
+$\succcurlyeq$ striclty monotone]{.center}
+
+*QED.*
+:::
+
+## Local-Nonsatiation
+
+::: callout-tip
+## Meaning
+
+*“No bliss points”* (not even local ones)
+:::
+
+Let $B_{\varepsilon}(x) = \{{y:|x-y| < \varepsilon}\}$
+
+::: {#def-localnonsatiation}
+$\quad \succcurlyeq$ *is locally non-satiated if for any* $x$ *and* $\varepsilon > 0$ *there exists* $y \in B_{\varepsilon}(x)$ *with* $y \succ x$
+:::
+
+If $u$ represents $\succcurlyeq$, then $t$ is locally non-satiated if and only if $u$ has no local maximum. (Prove this!)
+
+## Convexity
+
+::: callout-tip
+## Meaning
+
+*“Diversity is good”*
+:::
+
+::: {#def-convexity}
+$\quad \succcurlyeq$ *is convex if* $x \succcurlyeq y$*,* $x' \succcurlyeq y$ *and* $\alpha \in [0,1]$ *imply:*
+
+$$\alpha x + (1-\alpha)x' \succcurlyeq y$$$\succcurlyeq$ *is strictly convex if* $x \succcurlyeq y$*,* $x' \succcurlyeq y$*,* $\alpha \in (0,1)$ *and* $x \neq x'$ *imply:*
+
+$$\alpha x + (1-\alpha)x' \succ y$$
+:::
+
+Does this make sense? Is $\left(\frac{1}{2}\right)beer + \left(\frac{1}{2}\right)wine$ a good thing?\
+We now discuss several properties of convex preferences.
+
+### Contour Sets {.unnumbered}
+
+For $x \in X$, the upper contour set of $x$ is
+
+$$
+S(x) = \{y \in X: y \succcurlyeq x\}
+$$
+
+::: {#thm-convexity}
+$\quad \succcurlyeq$ *is convex* $\iff U(s)$ *is a convex set for every* $x \in X$*.*
+:::
+
+::: callout-important
+## Proof
+
+-   [Proof of sufficiency]{.underline} $(\Rightarrow)$:
+
+    Assume $\succcurlyeq$ convex. We have to show that $S(x)$ is convex. To do so, take any two elements $y, y' \in S(x)$.
+
+    By definition of $S(x)$, $y, y' \in S(x)$ means that $y \succcurlyeq x$ and $y' \succcurlyeq x$
+
+    Convexity then implies that for all $\alpha \in [0,1]$, $\alpha y + (1-\alpha)y' \succcurlyeq x$.
+
+    But this implies that $\alpha y + (1-\alpha)y' \in U(x)$.
+
+    In short: we showed that $y, y' \in S(x) \Rightarrow \alpha y + (1-\alpha)y' \in U(x)$ for all $\alpha \in [0,1]$.
+
+    This means that $S(x)$ is convex.
+
+-   [Proof of necessity]{.underline} $(\Leftarrow)$:
+
+    We will prove by contradiction. Assume $S(x)$ is convex, but $\succcurlyeq$ is not convex. We have to find an absurd conclusion.
+
+    Assume $\succcurlyeq$ is not convex. Then there are $\alpha \in (0,1), y, y'$ and $x$ such that $y \succcurlyeq x, y' \succcurlyeq x$ but $x \succ \alpha y + (1-\alpha)y'$. This implies that $S(x)$ is not convex.
+
+    In short: we showed that if $\succcurlyeq$ is not convex, then $S(x)$ is not convex for some $x$. This is equivalent to showing that $S(x) \Rightarrow \succcurlyeq$ convex.
+
+*QED.*
+:::
+
+That’s why convex preferences are called convex: for every $x$, the set of all alternatives preferred to $x$ is convex. When the context is clear, we will write simply $S$ instead of $S(x)$, and interpret it as the set of alternatives preferred to some unspecified $x$.
+
+### Set of Maximizers {.unnumbered}
+
+::: {#thm-maximizers}
+$\quad$ *If* $\succcurlyeq$ *is convex, then for any convex choice set* $B$*, the set* $C^*(B,\succcurlyeq)$ *is convex.* *If* $\succcurlyeq$ *is convex, then for any convex choice set* $B$*, the set* $C^*(B,\succcurlyeq)$ *is single-valued (for empty).*
+:::
+
+::: callout-important
+## Proof
+
+-   [First part]{.underline}:
+
+    Take any $x \in B$
+
+    If $y,y'\in C^*(B,\succcurlyeq)$, then $y \succcurlyeq x$ and $y' \succcurlyeq x$.
+
+    Convexity then implies that for all $\alpha \in [0,1]$, $\alpha y + (1-\alpha)y' \succcurlyeq x$.
+
+    Since this holds for any $x \in B$, it follows that $\alpha \in [0,1]$, $\alpha y + (1-\alpha)y' \in C^*(B,\succcurlyeq)$.
+
+    That is, $C^*(B,\succcurlyeq)$ is convex.
+
+-   [Second part]{.underline}:
+
+    Assume there are $x, x' \in C^*(B,\succcurlyeq)$ with $x \neq x'$.
+
+    Then $x \succcurlyeq x$ and $x' \succcurlyeq x$: definition of optimal choices.
+
+    Strict convexity then implies that for all $\alpha \in [0,1]$, one has $\alpha x +(1-\alpha)x' \succ x$.
+
+    But the first part of the theorem implies $\alpha x +(1-\alpha)x' \in C^*(B,\succcurlyeq)$.
+
+In words: if there are two different optimal choices with strictly convex preferences, then it is possible to find an alternative that is strictly better than at least one of them. This is absurd as the DM should have chosen this alternative.
+
+*QED.*
+:::
+
+### Convexity: Utility Functions {.unnumbered}
+
+The characteristic of utility functions that represent convex preferences is quasi-concavity.
+
+::: {#def-quasiconcave}
+*A function* $u:X \rightarrow \mathbb{R}$ *is quasi-concave if, for every* $x,y$ *with* $u(x) \geq u(y)$ *and every* $\alpha \in (0,1)$*,*
+
+$$
+u(\alpha x + (1-\alpha)y) \geq u(y)
+$$ *A function* $u:X \rightarrow \mathbb{R}$ *is strictly quasi-concave if, for every* $x,y$ *with* $u(x) \geq u(y), x \neq y$ *and every* $\alpha \in (0,1)$*,*
+
+$$
+u(\alpha x + (1-\alpha)y) > u(y)
+$$
+:::
+
+::: {#thm-quasiconcave}
+$\quad u$ *is quasi-concave* $\iff$ *for every* $r \in \mathbb{R}$ *the upper contour set* $S = \{x \in X: u(x) \geq r\}$ *is convex.*
+:::
+
+Notation: this is the same set of ‘preferred alternatives’ we used before. We may write $S(x)$ if we want to highlight that these alternatives are preferred to some specific $x$. Analogously, we may write $S(r)$ to highlight that these alternatives achieve a level of utility no lower than $r$. If the alternative $x$ or the choice $r$ are generic, we may write simply $S$.
+
+::: callout-important
+## Proof
+
+-   [Proof of sufficiency]{.underline} $(\Rightarrow)$:
+
+Take any $r \in \mathbb{R}$.
+
+Take two elements of $S = \{x \in X: u(x) \geq r\}$. That is, take $x,x'$ such that $u(x), u(x') \geq r$.
+
+Assume without loss of generality that $u(x) \geq u(x')$.
+
+Then:
+
+$$
+u(\alpha x + (1-\alpha)x') \underbrace{\geq}_{quasi-concavity} u(x') \geq r
+$$ This implies $\alpha x + (1-\alpha)x' \in \{x \in X: u(x) \geq r\}$
+
+This holds for any two elements in the upper contour set $S = \{x \in X: u(x) \geq r\}$, and any $\alpha \in [0,1]$. It follows that this set is convex.
+
+-   [Proof of necessity]{.underline} $(\Leftarrow)$:
+
+Assume there is some $r \in \mathbb{R}$, some $\alpha \in (0,1)$ and $x,x' \in S = \{x \in X: u(x) \geq r\}$ such that:
+
+$$
+\alpha x + (1-\alpha)x' \notin S = \{x \in X: u(x) \geq r\}
+$$ That is, $S$ is not convex. This meand that $u(x) \geq r, u(x') \geq r$ but $u(\alpha x + (1-\alpha)x') < r$, for some $r \in \mathbb{R}$ and some $\alpha \in (0,1)$.
+
+This means that $u$ is not quasi-concave.
+
+In short, we showed that if $S$ is not convex for all $r \in \mathbb{R}$, then $u$ is not quasi-concave. This is equivalent to showing that if $u$ is quasi-concave, then $S$ is convex for all $u$.
+
+*QED.*
+:::
+
+::: {#thm-quasiconcave2}
+*Suppose utility function* $u$ *represents preferences* $\succcurlyeq$*. Then:*
+
+[$u$ *quasi-concave* $\iff \succcurlyeq$ *convex*]{.center}
+
+[$u$ *strictly quasi-concave* $\iff \succcurlyeq$ *strictly convex*]{.center}
+:::
+
+::: callout-note
+## Exercise
+
+Prove this theorem. Proof follows directly from @thm-quasiconcave.
+:::
+
+*Warning: convex preferences are represented by quasi-concave utility functions.* Convex preferences get that name because they make upper contour sets convex. Quasi-concave utility functions get that name because quasi-concavity is a weaker property than concavity.
+
+## Separability
+
+Often very useful to restrict ways in which a consumer’s preferences over one kind of good can depend on consumption of other goods. If allowed arbitrary interdependencies, would need to observe consumer’s entire consumption bundle to infer anything. Properties of preferences that separation among different kinds of goods are called *separability properties*.
+
+### Weak Separability: Preferences {.unnumbered}
+
+::: {.callout-tip}
+## Meaning
+
+*“Preferences over one kind of goods don’t depend on what other goods are consumed”*
+:::
+
+::: {#def-prefweaksep}
+$\succcurlyeq$ *is weakly separable in* $J_1,J_2$ *if for* $k=1,2$ *and for every* $x_{J_{k}}$ *and* $x'_{J_{k}}$ *and for every* $x_{J^{c}_{k}}$ *and* $x'_{J^{c}_{k}}$ *one has:*
+
+$$
+(x_{J_{k}}, x_{J^{c}_{k}}) \succcurlyeq (x'_{J_{k}}, x_{J^{c}_{k}}) \iff (x_{J_{k}}, x'_{J^{c}_{k}}) \succcurlyeq (x'_{J_{k}}, x'_{J^{c}_{k}}) 
+$$
+
+*May extend for than two subsets of* $X$*.*
+:::
+
+### Weak Separability: Utility {.unnumbered}
+
+::: {#thm-prefweaksep}
+*Preferences are weakly separable in* $J_1,J_2$ *if and only if utility function (if it exists) is:*
+
+$$
+u(x) = v(u_1(x_{J_{1}}), u_2(x_{J_{2}}), u(x_{(J_1 \cup J_2)^C}))
+$$
+:::
+
+### Other Kinds of Separability {.unnumbered}
+
+-   *Strong separability: utility is additively separable*
+
+$$
+u(x) = u_1(x_{J_{1}}) + u_2(x_{J_{2}})
+$$
+
+-   *Quasi-linear utility*
+
+$$
+u(x)= x_1 + v(x_2,\dots,x_n)
+$$

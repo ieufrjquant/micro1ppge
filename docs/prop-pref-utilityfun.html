@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Microeconomics 1 - 2&nbsp; Properties of Preferences and Utility Functions</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./choice-pref-utility.html" rel="prev">
+<link href="./logo_gpeq_html.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec1and2.html">Lectures 1 – 2</a></li><li class="breadcrumb-item"><a href="./prop-pref-utilityfun.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_gpeq_html.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Microeconomics 1</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Microeconomics-1.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus 2024.1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec1and2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 1 – 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choice-pref-utility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop-pref-utilityfun.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#settingnotation" id="toc-settingnotation" class="nav-link active" data-scroll-target="#settingnotation">Setting/Notation</a></li>
+  <li><a href="#monotonicity" id="toc-monotonicity" class="nav-link" data-scroll-target="#monotonicity"><span class="header-section-number">2.1</span> Monotonicity</a>
+  <ul class="collapse">
+  <li><a href="#preferences" id="toc-preferences" class="nav-link" data-scroll-target="#preferences">Preferences</a></li>
+  <li><a href="#utility" id="toc-utility" class="nav-link" data-scroll-target="#utility">Utility</a></li>
+  </ul></li>
+  <li><a href="#local-nonsatiation" id="toc-local-nonsatiation" class="nav-link" data-scroll-target="#local-nonsatiation"><span class="header-section-number">2.2</span> Local-Nonsatiation</a></li>
+  <li><a href="#convexity" id="toc-convexity" class="nav-link" data-scroll-target="#convexity"><span class="header-section-number">2.3</span> Convexity</a>
+  <ul class="collapse">
+  <li><a href="#contour-sets" id="toc-contour-sets" class="nav-link" data-scroll-target="#contour-sets">Contour Sets</a></li>
+  <li><a href="#set-of-maximizers" id="toc-set-of-maximizers" class="nav-link" data-scroll-target="#set-of-maximizers">Set of Maximizers</a></li>
+  <li><a href="#convexity-utility-functions" id="toc-convexity-utility-functions" class="nav-link" data-scroll-target="#convexity-utility-functions">Convexity: Utility Functions</a></li>
+  </ul></li>
+  <li><a href="#separability" id="toc-separability" class="nav-link" data-scroll-target="#separability"><span class="header-section-number">2.4</span> Separability</a>
+  <ul class="collapse">
+  <li><a href="#weak-separability-preferences" id="toc-weak-separability-preferences" class="nav-link" data-scroll-target="#weak-separability-preferences">Weak Separability: Preferences</a></li>
+  <li><a href="#weak-separability-utility" id="toc-weak-separability-utility" class="nav-link" data-scroll-target="#weak-separability-utility">Weak Separability: Utility</a></li>
+  <li><a href="#other-kinds-of-separability" id="toc-other-kinds-of-separability" class="nav-link" data-scroll-target="#other-kinds-of-separability">Other Kinds of Separability</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec1and2.html">Lectures 1 – 2</a></li><li class="breadcrumb-item"><a href="./prop-pref-utilityfun.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Doing useful analysis entails making assumptions. Try to do this carefully: make clearest, simplest, least restrictive assumptions. Understand what assumptions about utility correspond to in terms of preferences, since utility is just a way of representing preferences. We now cover some of the most important assumptions on preferences (and, implicitly, on choices).</p>
+<section id="settingnotation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="settingnotation">Setting/Notation</h3>
+<p>For rest of lecture, assume <span class="math inline">X \subseteq \mathbb{R}^n</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consumer Problem: given fixed budget, choose how much of <span class="math inline">n</span> goods to consume.</p>
+<p>Notation: For vectors <span class="math inline">x = (x_1, ..., x_n)</span> and <span class="math inline">y = (y_1, ..., y_n)</span>,</p>
+<ul>
+<li><p><span class="math inline">x \geq y</span> means <span class="math inline">x_k \geq y_k</span> for all <span class="math inline">k = 1 ,..., n</span></p></li>
+<li><p><span class="math inline">x &gt; y</span> means <span class="math inline">x_k \geq y_k</span> for all <span class="math inline">k</span> and <span class="math inline">x_k &gt; y_k</span> for some <span class="math inline">k</span></p></li>
+<li><p><span class="math inline">x \gg y</span> means <span class="math inline">x_k &gt; y_k</span> for all <span class="math inline">k</span></p></li>
+</ul>
+<p>For example, <span class="math inline">(2,3,4) &gt; (3,3,4)</span> and <span class="math inline">(4,4,5) \gg (3,3,4)</span></p>
+<ul>
+<li>For <span class="math inline">\alpha \in [0,1]</span>,</li>
+</ul>
+<p><span class="math display">
+\alpha x + (1-\alpha) y = (\alpha x_1 + (1-\alpha) y_1, \dots, \alpha x_n + (1-\alpha) y_n)
+</span> This is a convex combination for each coordinate.</p>
+</div>
+</div>
+</section>
+<section id="monotonicity" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="monotonicity"><span class="header-section-number">2.1</span> Monotonicity</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>“All goods are desirable”</em></p>
+</div>
+</div>
+<section id="preferences" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="preferences">Preferences</h3>
+<div id="def-mwg3b2" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.1 (MWG 3B2)</strong></span> <br></p>
+<p><span class="center"><span class="math inline">\succcurlyeq</span> <em>is monotone if</em> <span class="math inline">x \geq y</span> <em>implies</em> <span class="math inline">x \succcurlyeq y</span></span></p>
+<p><span class="center"><span class="math inline">\succcurlyeq</span> <em>is strictly monotone if</em> <span class="math inline">x &gt; y</span> <em>implies</em> <span class="math inline">x \succ y</span></span></p>
+</div>
+<p>For example, strict monotonicity implies <span class="math inline">(2,3,4) \succ (1,3,4)</span>.</p>
+</section>
+<section id="utility" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="utility">Utility</h3>
+<p>If preferences are monotone, what does that mean for the utility function?</p>
+<div id="thm-mwg3b1" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.1 (MWG Exercise 3B1)</strong></span> <em>Suppose utility function</em> <span class="math inline">u</span> <em>represents preferences</em> <span class="math inline">\succcurlyeq</span><em>. Then:</em></p>
+<p><span class="center"><span class="math inline">u</span> <em>non-decreasing</em> <span class="math inline">\iff</span><span class="math inline">\succcurlyeq</span> <em>monotone</em><br>
+<span class="math inline">u</span> <em>strictly increasing</em> <span class="math inline">\iff</span><span class="math inline">\succcurlyeq</span> <em>strictly monotone</em></span></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let’s prove this.</p>
+<ul>
+<li>For the <u>first part</u>:</li>
+</ul>
+<p><span class="center"><span class="math inline">u</span> non-decreasing <span class="math inline">\iff</span><br>
+<span class="math inline">[x \geq y \iff u(x) \geq u(y)] \iff</span><br>
+<span class="math inline">[x \geq y \iff x \succcurlyeq y] \iff</span><br>
+<span class="math inline">\succcurlyeq</span> monotone</span></p>
+<p>The third line uses the definition of utility function: <span class="math inline">u(x) \geq u(y)</span> if and only if <span class="math inline">x \succcurlyeq y</span>.</p>
+<ul>
+<li>Analogously for the <u>second part</u>:</li>
+</ul>
+<p><span class="center"><span class="math inline">u</span> strictly increasing <span class="math inline">\iff</span><br>
+<span class="math inline">[x &gt; y \iff u(x) &gt; u(y)] \iff</span><br>
+<span class="math inline">[x &gt; y \iff x \succ y] \iff</span><br>
+<span class="math inline">\succcurlyeq</span> striclty monotone</span></p>
+<p><em>QED.</em></p>
+</div>
+</div>
+</section>
+</section>
+<section id="local-nonsatiation" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="local-nonsatiation"><span class="header-section-number">2.2</span> Local-Nonsatiation</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>“No bliss points”</em> (not even local ones)</p>
+</div>
+</div>
+<p>Let <span class="math inline">B_{\varepsilon}(x) = \{{y:|x-y| &lt; \varepsilon}\}</span></p>
+<div id="def-localnonsatiation" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.2</strong></span> <span class="math inline">\quad \succcurlyeq</span> <em>is locally non-satiated if for any</em> <span class="math inline">x</span> <em>and</em> <span class="math inline">\varepsilon &gt; 0</span> <em>there exists</em> <span class="math inline">y \in B_{\varepsilon}(x)</span> <em>with</em> <span class="math inline">y \succ x</span></p>
+</div>
+<p>If <span class="math inline">u</span> represents <span class="math inline">\succcurlyeq</span>, then <span class="math inline">t</span> is locally non-satiated if and only if <span class="math inline">u</span> has no local maximum. (Prove this!)</p>
+</section>
+<section id="convexity" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="convexity"><span class="header-section-number">2.3</span> Convexity</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>“Diversity is good”</em></p>
+</div>
+</div>
+<div id="def-convexity" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.3</strong></span> <span class="math inline">\quad \succcurlyeq</span> <em>is convex if</em> <span class="math inline">x \succcurlyeq y</span><em>,</em> <span class="math inline">x' \succcurlyeq y</span> <em>and</em> <span class="math inline">\alpha \in [0,1]</span> <em>imply:</em></p>
+<p><span class="math display">\alpha x + (1-\alpha)x' \succcurlyeq y</span><span class="math inline">\succcurlyeq</span> <em>is strictly convex if</em> <span class="math inline">x \succcurlyeq y</span><em>,</em> <span class="math inline">x' \succcurlyeq y</span><em>,</em> <span class="math inline">\alpha \in (0,1)</span> <em>and</em> <span class="math inline">x \neq x'</span> <em>imply:</em></p>
+<p><span class="math display">\alpha x + (1-\alpha)x' \succ y</span></p>
+</div>
+<p>Does this make sense? Is <span class="math inline">\left(\frac{1}{2}\right)beer + \left(\frac{1}{2}\right)wine</span> a good thing?<br>
+We now discuss several properties of convex preferences.</p>
+<section id="contour-sets" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="contour-sets">Contour Sets</h3>
+<p>For <span class="math inline">x \in X</span>, the upper contour set of <span class="math inline">x</span> is</p>
+<p><span class="math display">
+S(x) = \{y \in X: y \succcurlyeq x\}
+</span></p>
+<div id="thm-convexity" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.2</strong></span> <span class="math inline">\quad \succcurlyeq</span> <em>is convex</em> <span class="math inline">\iff U(s)</span> <em>is a convex set for every</em> <span class="math inline">x \in X</span><em>.</em></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><u>Proof of sufficiency</u> <span class="math inline">(\Rightarrow)</span>:</p>
+<p>Assume <span class="math inline">\succcurlyeq</span> convex. We have to show that <span class="math inline">S(x)</span> is convex. To do so, take any two elements <span class="math inline">y, y' \in S(x)</span>.</p>
+<p>By definition of <span class="math inline">S(x)</span>, <span class="math inline">y, y' \in S(x)</span> means that <span class="math inline">y \succcurlyeq x</span> and <span class="math inline">y' \succcurlyeq x</span></p>
+<p>Convexity then implies that for all <span class="math inline">\alpha \in [0,1]</span>, <span class="math inline">\alpha y + (1-\alpha)y' \succcurlyeq x</span>.</p>
+<p>But this implies that <span class="math inline">\alpha y + (1-\alpha)y' \in U(x)</span>.</p>
+<p>In short: we showed that <span class="math inline">y, y' \in S(x) \Rightarrow \alpha y + (1-\alpha)y' \in U(x)</span> for all <span class="math inline">\alpha \in [0,1]</span>.</p>
+<p>This means that <span class="math inline">S(x)</span> is convex.</p></li>
+<li><p><u>Proof of necessity</u> <span class="math inline">(\Leftarrow)</span>:</p>
+<p>We will prove by contradiction. Assume <span class="math inline">S(x)</span> is convex, but <span class="math inline">\succcurlyeq</span> is not convex. We have to find an absurd conclusion.</p>
+<p>Assume <span class="math inline">\succcurlyeq</span> is not convex. Then there are <span class="math inline">\alpha \in (0,1), y, y'</span> and <span class="math inline">x</span> such that <span class="math inline">y \succcurlyeq x, y' \succcurlyeq x</span> but <span class="math inline">x \succ \alpha y + (1-\alpha)y'</span>. This implies that <span class="math inline">S(x)</span> is not convex.</p>
+<p>In short: we showed that if <span class="math inline">\succcurlyeq</span> is not convex, then <span class="math inline">S(x)</span> is not convex for some <span class="math inline">x</span>. This is equivalent to showing that <span class="math inline">S(x) \Rightarrow \succcurlyeq</span> convex.</p></li>
+</ul>
+<p><em>QED.</em></p>
+</div>
+</div>
+<p>That’s why convex preferences are called convex: for every <span class="math inline">x</span>, the set of all alternatives preferred to <span class="math inline">x</span> is convex. When the context is clear, we will write simply <span class="math inline">S</span> instead of <span class="math inline">S(x)</span>, and interpret it as the set of alternatives preferred to some unspecified <span class="math inline">x</span>.</p>
+</section>
+<section id="set-of-maximizers" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="set-of-maximizers">Set of Maximizers</h3>
+<div id="thm-maximizers" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.3</strong></span> <span class="math inline">\quad</span> <em>If</em> <span class="math inline">\succcurlyeq</span> <em>is convex, then for any convex choice set</em> <span class="math inline">B</span><em>, the set</em> <span class="math inline">C^*(B,\succcurlyeq)</span> <em>is convex.</em> <em>If</em> <span class="math inline">\succcurlyeq</span> <em>is convex, then for any convex choice set</em> <span class="math inline">B</span><em>, the set</em> <span class="math inline">C^*(B,\succcurlyeq)</span> <em>is single-valued (for empty).</em></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><u>First part</u>:</p>
+<p>Take any <span class="math inline">x \in B</span></p>
+<p>If <span class="math inline">y,y'\in C^*(B,\succcurlyeq)</span>, then <span class="math inline">y \succcurlyeq x</span> and <span class="math inline">y' \succcurlyeq x</span>.</p>
+<p>Convexity then implies that for all <span class="math inline">\alpha \in [0,1]</span>, <span class="math inline">\alpha y + (1-\alpha)y' \succcurlyeq x</span>.</p>
+<p>Since this holds for any <span class="math inline">x \in B</span>, it follows that <span class="math inline">\alpha \in [0,1]</span>, <span class="math inline">\alpha y + (1-\alpha)y' \in C^*(B,\succcurlyeq)</span>.</p>
+<p>That is, <span class="math inline">C^*(B,\succcurlyeq)</span> is convex.</p></li>
+<li><p><u>Second part</u>:</p>
+<p>Assume there are <span class="math inline">x, x' \in C^*(B,\succcurlyeq)</span> with <span class="math inline">x \neq x'</span>.</p>
+<p>Then <span class="math inline">x \succcurlyeq x</span> and <span class="math inline">x' \succcurlyeq x</span>: definition of optimal choices.</p>
+<p>Strict convexity then implies that for all <span class="math inline">\alpha \in [0,1]</span>, one has <span class="math inline">\alpha x +(1-\alpha)x' \succ x</span>.</p>
+<p>But the first part of the theorem implies <span class="math inline">\alpha x +(1-\alpha)x' \in C^*(B,\succcurlyeq)</span>.</p></li>
+</ul>
+<p>In words: if there are two different optimal choices with strictly convex preferences, then it is possible to find an alternative that is strictly better than at least one of them. This is absurd as the DM should have chosen this alternative.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+</section>
+<section id="convexity-utility-functions" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="convexity-utility-functions">Convexity: Utility Functions</h3>
+<p>The characteristic of utility functions that represent convex preferences is quasi-concavity.</p>
+<div id="def-quasiconcave" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.4</strong></span> <em>A function</em> <span class="math inline">u:X \rightarrow \mathbb{R}</span> <em>is quasi-concave if, for every</em> <span class="math inline">x,y</span> <em>with</em> <span class="math inline">u(x) \geq u(y)</span> <em>and every</em> <span class="math inline">\alpha \in (0,1)</span><em>,</em></p>
+<p><span class="math display">
+u(\alpha x + (1-\alpha)y) \geq u(y)
+</span> <em>A function</em> <span class="math inline">u:X \rightarrow \mathbb{R}</span> <em>is strictly quasi-concave if, for every</em> <span class="math inline">x,y</span> <em>with</em> <span class="math inline">u(x) \geq u(y), x \neq y</span> <em>and every</em> <span class="math inline">\alpha \in (0,1)</span><em>,</em></p>
+<p><span class="math display">
+u(\alpha x + (1-\alpha)y) &gt; u(y)
+</span></p>
+</div>
+<div id="thm-quasiconcave" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.4</strong></span> <span class="math inline">\quad u</span> <em>is quasi-concave</em> <span class="math inline">\iff</span> <em>for every</em> <span class="math inline">r \in \mathbb{R}</span> <em>the upper contour set</em> <span class="math inline">S = \{x \in X: u(x) \geq r\}</span> <em>is convex.</em></p>
+</div>
+<p>Notation: this is the same set of ‘preferred alternatives’ we used before. We may write <span class="math inline">S(x)</span> if we want to highlight that these alternatives are preferred to some specific <span class="math inline">x</span>. Analogously, we may write <span class="math inline">S(r)</span> to highlight that these alternatives achieve a level of utility no lower than <span class="math inline">r</span>. If the alternative <span class="math inline">x</span> or the choice <span class="math inline">r</span> are generic, we may write simply <span class="math inline">S</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><u>Proof of sufficiency</u> <span class="math inline">(\Rightarrow)</span>:</li>
+</ul>
+<p>Take any <span class="math inline">r \in \mathbb{R}</span>.</p>
+<p>Take two elements of <span class="math inline">S = \{x \in X: u(x) \geq r\}</span>. That is, take <span class="math inline">x,x'</span> such that <span class="math inline">u(x), u(x') \geq r</span>.</p>
+<p>Assume without loss of generality that <span class="math inline">u(x) \geq u(x')</span>.</p>
+<p>Then:</p>
+<p><span class="math display">
+u(\alpha x + (1-\alpha)x') \underbrace{\geq}_{quasi-concavity} u(x') \geq r
+</span> This implies <span class="math inline">\alpha x + (1-\alpha)x' \in \{x \in X: u(x) \geq r\}</span></p>
+<p>This holds for any two elements in the upper contour set <span class="math inline">S = \{x \in X: u(x) \geq r\}</span>, and any <span class="math inline">\alpha \in [0,1]</span>. It follows that this set is convex.</p>
+<ul>
+<li><u>Proof of necessity</u> <span class="math inline">(\Leftarrow)</span>:</li>
+</ul>
+<p>Assume there is some <span class="math inline">r \in \mathbb{R}</span>, some <span class="math inline">\alpha \in (0,1)</span> and <span class="math inline">x,x' \in S = \{x \in X: u(x) \geq r\}</span> such that:</p>
+<p><span class="math display">
+\alpha x + (1-\alpha)x' \notin S = \{x \in X: u(x) \geq r\}
+</span> That is, <span class="math inline">S</span> is not convex. This meand that <span class="math inline">u(x) \geq r, u(x') \geq r</span> but <span class="math inline">u(\alpha x + (1-\alpha)x') &lt; r</span>, for some <span class="math inline">r \in \mathbb{R}</span> and some <span class="math inline">\alpha \in (0,1)</span>.</p>
+<p>This means that <span class="math inline">u</span> is not quasi-concave.</p>
+<p>In short, we showed that if <span class="math inline">S</span> is not convex for all <span class="math inline">r \in \mathbb{R}</span>, then <span class="math inline">u</span> is not quasi-concave. This is equivalent to showing that if <span class="math inline">u</span> is quasi-concave, then <span class="math inline">S</span> is convex for all <span class="math inline">u</span>.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+<div id="thm-quasiconcave2" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.5</strong></span> <em>Suppose utility function</em> <span class="math inline">u</span> <em>represents preferences</em> <span class="math inline">\succcurlyeq</span><em>. Then:</em></p>
+<p><span class="center"><span class="math inline">u</span> <em>quasi-concave</em> <span class="math inline">\iff \succcurlyeq</span> <em>convex</em></span></p>
+<p><span class="center"><span class="math inline">u</span> <em>strictly quasi-concave</em> <span class="math inline">\iff \succcurlyeq</span> <em>strictly convex</em></span></p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prove this theorem. Proof follows directly from <a href="#thm-quasiconcave" class="quarto-xref">Theorem&nbsp;<span>2.4</span></a>.</p>
+</div>
+</div>
+<p><em>Warning: convex preferences are represented by quasi-concave utility functions.</em> Convex preferences get that name because they make upper contour sets convex. Quasi-concave utility functions get that name because quasi-concavity is a weaker property than concavity.</p>
+</section>
+</section>
+<section id="separability" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="separability"><span class="header-section-number">2.4</span> Separability</h2>
+<p>Often very useful to restrict ways in which a consumer’s preferences over one kind of good can depend on consumption of other goods. If allowed arbitrary interdependencies, would need to observe consumer’s entire consumption bundle to infer anything. Properties of preferences that separation among different kinds of goods are called <em>separability properties</em>.</p>
+<section id="weak-separability-preferences" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="weak-separability-preferences">Weak Separability: Preferences</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>“Preferences over one kind of goods don’t depend on what other goods are consumed”</em></p>
+</div>
+</div>
+<div id="def-prefweaksep" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.5</strong></span> <span class="math inline">\succcurlyeq</span> <em>is weakly separable in</em> <span class="math inline">J_1,J_2</span> <em>if for</em> <span class="math inline">k=1,2</span> <em>and for every</em> <span class="math inline">x_{J_{k}}</span> <em>and</em> <span class="math inline">x'_{J_{k}}</span> <em>and for every</em> <span class="math inline">x_{J^{c}_{k}}</span> <em>and</em> <span class="math inline">x'_{J^{c}_{k}}</span> <em>one has:</em></p>
+<p><span class="math display">
+(x_{J_{k}}, x_{J^{c}_{k}}) \succcurlyeq (x'_{J_{k}}, x_{J^{c}_{k}}) \iff (x_{J_{k}}, x'_{J^{c}_{k}}) \succcurlyeq (x'_{J_{k}}, x'_{J^{c}_{k}})
+</span></p>
+<p><em>May extend for than two subsets of</em> <span class="math inline">X</span><em>.</em></p>
+</div>
+</section>
+<section id="weak-separability-utility" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="weak-separability-utility">Weak Separability: Utility</h3>
+<div id="thm-prefweaksep" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 2.6</strong></span> <em>Preferences are weakly separable in</em> <span class="math inline">J_1,J_2</span> <em>if and only if utility function (if it exists) is:</em></p>
+<p><span class="math display">
+u(x) = v(u_1(x_{J_{1}}), u_2(x_{J_{2}}), u(x_{(J_1 \cup J_2)^C}))
+</span></p>
+</div>
+</section>
+<section id="other-kinds-of-separability" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="other-kinds-of-separability">Other Kinds of Separability</h3>
+<ul>
+<li><em>Strong separability: utility is additively separable</em></li>
+</ul>
+<p><span class="math display">
+u(x) = u_1(x_{J_{1}}) + u_2(x_{J_{2}})
+</span></p>
+<ul>
+<li><em>Quasi-linear utility</em></li>
+</ul>
+<p><span class="math display">
+u(x)= x_1 + v(x_2,\dots,x_n)
+</span></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./choice-pref-utility.html" class="pagination-link" aria-label="Choice, Preferences and Utility">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

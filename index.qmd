@@ -1,0 +1,39 @@
+::: callout-note
+Based on Alexander Wolitzky lecture slides, available at [MIT Opencourseware](https://ocw.mit.edu/courses/14-121-microeconomic-theory-i-fall-2015/pages/lecture-slides/).
+
+CC BY-NC-SA 4.0 Legal Code \| Attribution-NonCommercial-ShareAlike 4.0 International \| Creative Commons. See [here](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) for more information.
+:::
+
+# Syllabus 2024.1 {.unnumbered}
+
+::: {.callout-tip appearance="simple"}
+[Join the 2024.1 class WhatsApp group](https://chat.whatsapp.com/LQ08l9SdjdWGunnDSq9lMj) for the first part of the course.
+:::
+
+::: {="html}
++--------------+--------------------------------------+--------------------------------------+
+| LEC \#       | TOPICS                               | READINGS                             |
++==============+======================================+======================================+
+| 1, 2         | Choice, Preference, and Utility      | \[MWG\] Chapter 1.                   |
+|              |                                      |                                      |
+|              |                                      | \[Kreps\] Chapters 1 and 2.          |
++--------------+--------------------------------------+--------------------------------------+
+| 3–5          | Consumer Theory and its Applications | #### Consumer Theory                 |
+|              |                                      |                                      |
+|              |                                      | \[MWG\] Chapters 2 and 3.            |
+|              |                                      |                                      |
+|              |                                      | \[Kreps\] Chapters 3, 10, and 11.    |
+|              |                                      |                                      |
+|              |                                      | #### Applications of Consumer Theory |
+|              |                                      |                                      |
+|              |                                      | \[MWG\] Chapter 4.                   |
++--------------+--------------------------------------+--------------------------------------+
+| 6, 7         | Producer Theory and Monotone Methods | \[MWG\] Chapter 5.                   |
++--------------+--------------------------------------+--------------------------------------+
+| 8–11         | Choice Under Uncertainty             | \[MWG\] Chapter 6.                   |
+|              |                                      |                                      |
+|              |                                      | \[Kreps\] Chapters 5 and 6.          |
++--------------+--------------------------------------+--------------------------------------+
+| 12           | Dynamic Choice                       | \[Kreps\] Chapter 7.                 |
++--------------+--------------------------------------+--------------------------------------+
+:::

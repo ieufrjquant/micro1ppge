@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Microeconomics 1 - 1&nbsp; Choice, Preferences and Utility</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./prop-pref-utilityfun.html" rel="next">
+<link href="./lec1and2.html" rel="prev">
+<link href="./logo_gpeq_html.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec1and2.html">Lectures 1 – 2</a></li><li class="breadcrumb-item"><a href="./choice-pref-utility.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_gpeq_html.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Microeconomics 1</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Microeconomics-1.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus 2024.1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec1and2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 1 – 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choice-pref-utility.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop-pref-utilityfun.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#decision-theory" id="toc-decision-theory" class="nav-link active" data-scroll-target="#decision-theory"><span class="header-section-number">1.1</span> Decision Theory</a></li>
+  <li><a href="#about-assumptions" id="toc-about-assumptions" class="nav-link" data-scroll-target="#about-assumptions"><span class="header-section-number">1.2</span> About assumptions</a>
+  <ul class="collapse">
+  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics">Mathematics</a></li>
+  <li><a href="#an-additional-point" id="toc-an-additional-point" class="nav-link" data-scroll-target="#an-additional-point">An additional point</a></li>
+  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example">An example</a></li>
+  <li><a href="#some-difficult-words" id="toc-some-difficult-words" class="nav-link" data-scroll-target="#some-difficult-words">Some difficult words</a></li>
+  </ul></li>
+  <li><a href="#utility-maximization" id="toc-utility-maximization" class="nav-link" data-scroll-target="#utility-maximization"><span class="header-section-number">1.3</span> Utility Maximization</a>
+  <ul class="collapse">
+  <li><a href="#what-do-utility-levels-mean-hedonic-interpretation" id="toc-what-do-utility-levels-mean-hedonic-interpretation" class="nav-link" data-scroll-target="#what-do-utility-levels-mean-hedonic-interpretation">What do Utility Levels Mean? Hedonic Interpretation</a></li>
+  <li><a href="#what-do-utility-levels-mean-revealed-preference-interpretation" id="toc-what-do-utility-levels-mean-revealed-preference-interpretation" class="nav-link" data-scroll-target="#what-do-utility-levels-mean-revealed-preference-interpretation">What do Utility Levels Mean? Revealed-Preference Interpretation</a></li>
+  </ul></li>
+  <li><a href="#choice" id="toc-choice" class="nav-link" data-scroll-target="#choice"><span class="header-section-number">1.4</span> Choice</a></li>
+  <li><a href="#preference" id="toc-preference" class="nav-link" data-scroll-target="#preference"><span class="header-section-number">1.5</span> Preference</a>
+  <ul class="collapse">
+  <li><a href="#rational-preferences" id="toc-rational-preferences" class="nav-link" data-scroll-target="#rational-preferences">Rational Preferences</a></li>
+  <li><a href="#maximizing-a-preference-relation" id="toc-maximizing-a-preference-relation" class="nav-link" data-scroll-target="#maximizing-a-preference-relation">Maximizing a Preference Relation</a></li>
+  <li><a href="#fundamental-question-of-revealed-preference-theory" id="toc-fundamental-question-of-revealed-preference-theory" class="nav-link" data-scroll-target="#fundamental-question-of-revealed-preference-theory">Fundamental <strong>Question</strong> of Revealed Preference Theory</a></li>
+  <li><a href="#warp" id="toc-warp" class="nav-link" data-scroll-target="#warp">WARP</a></li>
+  <li><a href="#fundamental-theorem-of-revealed-preference-theory" id="toc-fundamental-theorem-of-revealed-preference-theory" class="nav-link" data-scroll-target="#fundamental-theorem-of-revealed-preference-theory">Fundamental <strong>Theorem</strong> of Revealed Preference Theory</a></li>
+  <li><a href="#preference-and-utility" id="toc-preference-and-utility" class="nav-link" data-scroll-target="#preference-and-utility">Preference and Utility</a></li>
+  <li><a href="#continuous-preferences" id="toc-continuous-preferences" class="nav-link" data-scroll-target="#continuous-preferences">Continuous Preferences</a></li>
+  <li><a href="#review-of-revealed-preference-theory" id="toc-review-of-revealed-preference-theory" class="nav-link" data-scroll-target="#review-of-revealed-preference-theory">Review of Revealed Preference Theory</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec1and2.html">Lectures 1 – 2</a></li><li class="breadcrumb-item"><a href="./choice-pref-utility.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preferences and Utility</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Microeconomics is decision theory plus a theory of interaction among decision-makers, in different environments</strong></p>
+</div>
+</div>
+</div>
+<p>This is our working definition, and is not restricted to any specific field of science. This setup is very general and is used in other fields: political science, sociology, psychology, biology…</p>
+<p>We will see specific models of decision theory, and specific models of social interaction, that are often used in economics. But it’s important to notice the difference between general theory and particular models.</p>
+<section id="decision-theory" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="decision-theory"><span class="header-section-number">1.1</span> Decision Theory</h2>
+<p>We begin with decision theory. To build a theory of individual choice, we need some assumptions:</p>
+<section id="choices-are-possible" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="choices-are-possible">1. Choices are possible</h4>
+<ul>
+<li>Seems obvious, but sets us apart from many models from 19th century sociology</li>
+<li>Big discussions here. See <em>Determined: a science of life without free will</em> (<a href="https://www.amazon.com.br/Determined-Science-Life-without-English-ebook/dp/B0BSKQ5ZDM">Sapolsky, 2023</a>)</li>
+<li>Important link to theory of agency in biology</li>
+<li>We usually model this through restrictions (see point 4 below)</li>
+</ul>
+</section>
+<section id="there-is-a-defined-subject-that-makes-decisions-in-some-circumstance" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="there-is-a-defined-subject-that-makes-decisions-in-some-circumstance">2. There is a defined subject that makes decisions, in some circumstance</h4>
+<ul>
+<li>(Usually) It’s and individual, not a set of individuals such as family nor parts of an individual such as Id and Ego – but there has been much development in this direction.</li>
+<li>We just need to separate individual from the whole society (or there would be no need to study interactions)</li>
+<li>This is not the selfish agent assumption, which we can also make in particular settings</li>
+</ul>
+</section>
+<section id="choices-are-made-according-to-some-criteria" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="choices-are-made-according-to-some-criteria">3. Choices are made according to some criteria</h4>
+<ul>
+<li>They are not purely random (at least not necessarily)</li>
+<li>This is the same as saying as there is some objective. Could be anything: profit, utility, leisure, stability, time with loved ones, watching as many world cup matches as possible…</li>
+</ul>
+</section>
+<section id="choices-are-subject-to-constraints" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="choices-are-subject-to-constraints">4. Choices are subject to constraints</h4>
+<ul>
+<li>One cannot simply choose ‘everything’. At the very least there is the opportunity cost of time.</li>
+<li>This is not necessarily a budget restriction: could be time, attention, memory, information, ability to process information, or external factors such as physical environment or laws, or simply other agents.</li>
+<li>In this course, we will consider a budget constraint, but this is just a particular case, and the absent restrictions are as important as the one(s) we will consider!</li>
+</ul>
+</section>
+<section id="consistency-requirement-equilibrium" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="consistency-requirement-equilibrium">5. Consistency requirement: equilibrium</h4>
+<ul>
+<li>Everyone is choosing according to the four previous assumptions at any point in time.</li>
+<li>In other words: given the criteria and the restrictions at some point in time, no one would like to change their decision at that moment.</li>
+<li>For a given individual, part of the environment is ‘other individuals making choices, and maybe they’re even taking my actions into account’</li>
+<li>This is <strong>NOT</strong> about absence of movement or change. There could be mistakes and regrets.</li>
+</ul>
+<p>We typically write the first four points as</p>
+<blockquote class="blockquote">
+<p><em>“Choose</em> <span class="math inline">x</span> <em>to solve</em> <span class="math inline">\max u(x)</span> <em>subject to restrictions on</em> <span class="math inline">x</span><em>”</em></p>
+</blockquote>
+<p>Then we move on to interaction: no individual incentive to deviate, given what others are doing. In short, our structure is optimization + equilibrium. This is very general. Hard to work without it.</p>
+</section>
+</section>
+<section id="about-assumptions" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="about-assumptions"><span class="header-section-number">1.2</span> About assumptions</h2>
+<p>We’ve barely begun and already have some big assumptions.</p>
+<p><strong>We’ll make many other assumptions along the way.</strong> Pay attention to them: assumptions must be clearly understood. We usually write <span class="math inline">A \Rightarrow B</span>: we must be able to understand what happens <span class="math inline">(B)</span> under some circunstances <span class="math inline">(A)</span>. This is <strong>NOT</strong> them same as stating <span class="math inline">B</span> (think of the first welfare theorem).</p>
+<p><strong>Assumptions have a tradeoff.</strong> On one hand, they take away generality: if we assume economic agents have perfect memory, we must be cautious when applying our model to agents without perfect memory. On the other hand, they allow us to better understand a (more restricted) setting.</p>
+<p><strong>This is the tradeoff of the lab rat.</strong> It’s easier to study, and we learn a lot from it, but must be aware of its limits. In our case, ‘homo economicus’, for example:</p>
+<ul>
+<li>Simplest economic model: maximize utility subject only to a budget constraint.</li>
+</ul>
+<p>We study the homo economicus hoping to learn something about its distant cousin: homo sapiens. The more realist economic agent from behavioral economics is our ‘lab monkey’: the same tradeoff applies.</p>
+<p><strong>Is there a way around this tradeoff?</strong> No: it comes from our own limitations, as we cannot pay attention and process all available information. Think for a moment far from economics: zebras and lions. Where are their eyes placed? They “choose” to focus on some specific type of information, and give up on many things. It works according to some specific criterion: <strong>survival</strong>.</p>
+<p><strong>In economics (and any other field of science), we will make assumptions, whether it’s clear or not.</strong> The problem is the criterion we use to evaluate them. No “given” criterion such as survival. Major discussion about criteria, for every research question.</p>
+<p><strong>We may put it another way: there is a tradeoff to realism.</strong> If it’s too much: can’t really understand what’s going on, can’t make predictions. Borges’ map. If it’s too little: you’ll understand clearly something not relevant to your research question. Drunkard looking for his keys under the lamp post, not where he lost them.</p>
+<p>In the end of the day, we use approximations, and we want predictions that can be tested to see whether these approximations are good enough. Keep in mind that external validity is always an issue, even when we have good empirical results, and this depends on how restrictive our assumptions are (must be extra careful with observational data!).</p>
+<p><strong>Lastly, a point about representation: a model of reality is different from reality.</strong> Implication: solving a model in decision theory is different from actually making that decision (same reasoning holds for anything else in science). Think of catching an object thrown to you (no actual functional analysis problem) or buying stuff at the grocery store (no actual lagrangian).</p>
+<p>This goes back to theory of agency in biology: consciousness, representation and abstraction. Important: if the modeler knows more than the agents in the model, this must be modeled too! It’s some form of restriction.</p>
+<p><strong>As for criticism:</strong> when we criticize a model, we either say “<span class="math inline">A</span> is not the relevant setup to consider” or “<span class="math inline">A</span> does not really imply <span class="math inline">B</span>”. Considering a different setup (<span class="math inline">A'</span> instead of <span class="math inline">A</span>) is not really a criticism – it’s just ‘doing something else’. Think of political and relief maps, or flat maps and globes.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>We always have to ask: <em>What are we building our models and theories for? What do we want to understand?</em></p>
+<p><strong>Models are made to be used, not to be believed</strong></p>
+<p>If they help us with something relevant, they’re doing their job: increase food production, cure a disease, decrease unemployment, etc.</p>
+</div>
+</div>
+</div>
+<section id="mathematics" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="mathematics">Mathematics</h3>
+<p>Our assumptions often generate a setup that may be analyzed mathematically. Our optimization problem will be written as something similar to:</p>
+<p><span class="math display">\max_{\{x\}} {f(x)}</span> <span class="center">subject to some restriction</span></p>
+<p><span class="math display">g(x) &lt; 0</span></p>
+<p>Yet, it is important to notice the difference between <u>language</u> and <u>tools</u>. We use mathematical language as in the example above. This does not mean we’re using any mathematical tools yet: this could be written in plain English. Often we will use actual mathematical tools: if <span class="math inline">f</span> and <span class="math inline">g</span> are differentiable functions, then we may use first-order conditions.</p>
+</section>
+<section id="an-additional-point" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="an-additional-point">An additional point</h3>
+<ul>
+<li>As science advances, it becomes more continuous, and less discrete.</li>
+<li>In economics, we fight too often over petty details (Freud: narcissism of small differences.)</li>
+</ul>
+<p>We will start with the most basic model: the traditional <em>homo economicus</em>, our lab rat, whose only restriction is budgetary.</p>
+</section>
+<section id="an-example" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="an-example">An example</h3>
+<p>Lionel Page fascinating explanation of Prospect Theory:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1846377485.png" class="img-fluid figure-img"></p>
+<figcaption>Prospect Theory</figcaption>
+</figure>
+</div>
+<p>This is the most cited paper in economics: people value what they have by considering it as a gain or a loss relative to a subjective “reference point”. This point may be status quo, expectations, aspirations: not defined / agreed upon.</p>
+<p>Reference dependent preferences are a cognitive flaw? The biological basis of economic behavior (<a href="https://www.aeaweb.org/articles?id=10.1257/jel.39.1.11">Robson, 2001</a>): <em>subjective satisfaction can be seen as an informative signal that helps us identify the best option</em>. Eating, sleeping and having sex ‘feel good’ because they help us survive: subjective satisfaction is informative signal.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-100189892.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>But brain (neurological processes, more generally) have constraints when generating signals of satisfaction:</p>
+<ul>
+<li>Signals must be bounded because there is a limited number of neurons to process them</li>
+<li>Signals are not perfectly precise (drugs as hijacking)</li>
+</ul>
+<p>Hence: we are more likely to make mistakes when options are close.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1951310693.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p><strong>Can your system of perception be improved to reduce mistakes?</strong><br>
+<strong>Yes. When the slope of subjective satisfaction increases, it reduces mistakes between options that are close.</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2669497404.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>But satisfaction is bounded: physical limit to pleasure (that is, to informativeness of signals). Then satisfaction cannot have a super high slope everywhere.</p>
+<p>The question becomes: Where should the slope of subjective satisfaction be steeper to limit mistakes? The optimal solution is that it should be steeper where you are more likely to face options to choose from!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3972152101.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<p>See also <a href="https://www.jstor.org/stable/10.1086/516737">Rayo and Becker (2007)</a> and <a href="https://www.aeaweb.org/articles?id=10.1257/aer.99.3.937">Netzer (2009)</a>.</p>
+<ul>
+<li>Support from neuroscience: sensory systems respond to stimuli by following their distribution.</li>
+<li>Reference-dependent preferences are not a cognitive flaw. “They are an <span style="color: red;">optimal</span> solution, under irreducible biological <span style="color: red;">constraints</span> faced by our perceptual systems.” <span class="math inline">\rightarrow</span> Efficient coding.</li>
+<li>Reference point is an expectation.</li>
+<li>Recent literature in economics and neuroscience.</li>
+</ul>
+<p>In short: again, we have the problem <em>“Choose</em> <span class="math inline">x</span> <em>to solve</em> <span class="math inline">\max u(x)</span> <em>subject to restrictions on</em> <span class="math inline">x</span><em>”</em>. Restrictions that don’t show up are as relevant as those that show up.</p>
+<p>Far from the only example… in fact, hard to think of economics without this structure (and hard in social sciences in general). What decisions are automatic, and what are well-thought? (Do you think about where to brush your teeth every day?)</p>
+</section>
+<section id="some-difficult-words" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="some-difficult-words">Some difficult words</h3>
+<p>This setup is an approach based on <strong>optimization</strong> and <strong>equilibrium</strong>. Sometimes we talk about <strong>rational</strong> agents. All these words have multiple meanings and lead to confusion.</p>
+<ul>
+<li><p>Optimization simply means that individuals make choices according to some criteria, given the relevant restrictions. But sometimes used as ‘perfect optimization’ or ‘hyper rationality’, which needs not be the case.</p></li>
+<li><p>Rationality has different uses within microeconomics. First: similar to optimization under restrictions. Second: a particular set of basic assumptions on the decision-maker. We will use the latter. Sometimes (very often!) used in the sense of ‘super computational power’. This is usually the case in basic microeconomics: we only have a budget constraint, meaning there are no cognitive constraints. This is often referred to as ‘homo economicus’ of ‘homo rationalis’ and is simply our lab rat: we study it not because it’s realistic, but because it’s much easier to study, and many things we learn carry over to ‘actual’ humans.</p></li>
+<li><p>Equilibrium means there is no unilateral incentive to change in a given context. Sometimes used, even within economics, in the sense of physics: lack of movement, or some very stable movement. This is NOT the meaning of the word in microeconomics.</p></li>
+</ul>
+</section>
+</section>
+<section id="utility-maximization" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="utility-maximization"><span class="header-section-number">1.3</span> Utility Maximization</h2>
+<p>Basic model of individual choice:</p>
+<ul>
+<li>A decision-maker (DM) must choose one alternative <span class="math inline">x</span> from a set <span class="math inline">X</span>.</li>
+<li>Chooses to maximize a utility function <span class="math inline">u</span>.</li>
+<li><span class="math inline">u</span> specifies how much utility DM gets from each alternative: <span class="math inline">u: X \rightarrow \mathbb{R}</span></li>
+</ul>
+<p>Example: DM chooses whether to eat an apple or a banana.</p>
+<p><span class="math display">X =\{apple, banana\}</span></p>
+<p>Utility function might say <span class="math inline">u(apple) = 7, u(banana) = 12</span>. Observe that we already started to use mathematics – but only as language.</p>
+<section id="what-do-utility-levels-mean-hedonic-interpretation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="what-do-utility-levels-mean-hedonic-interpretation">What do Utility Levels Mean? Hedonic Interpretation</h3>
+<p>Utility is an objective measure of individual’s well-being.</p>
+<blockquote class="blockquote">
+<p><em>Nature has placed mankind under the governance of two sovereign masters, pain and pleasure. It is for them alone to point out what we ought to do… By the principle of utility is meant that principle which approves or disapproves of every action whatsoever according to the tendency it appears to have to augment or diminish the happiness of the party whose interest is in question: or, what is the same thing in other words to promote or to oppose that happiness. I say of every action whatsoever, and therefore not only of every action of a private individual, but of every measure of government.</em></p>
+<p>Jeremy Bentham</p>
+</blockquote>
+<p>“<span class="math inline">u (apple) = 7, u (banana) = 12</span>” <span class="math inline">\rightarrow</span> apple gives <span class="math inline">7</span> units of pleasure, banana gives <span class="math inline">12</span> units of pleasure. <strong>This is not the standard way economists think about utility.</strong></p>
+</section>
+<section id="what-do-utility-levels-mean-revealed-preference-interpretation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="what-do-utility-levels-mean-revealed-preference-interpretation">What do Utility Levels Mean? Revealed-Preference Interpretation</h3>
+<p><strong>Utility represents an individual’s choices.</strong></p>
+<ul>
+<li>Individual choices are primitive data that economists can observe.</li>
+<li>Choices are taken to reveal individual’s preferences.</li>
+<li>Utility is a convenient mathematical construction for modeling choices and preferences.</li>
+</ul>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>“<span class="math inline">u (apple) = 7, u (banana) = 12</span>” <span class="math inline">\rightarrow</span> individual prefers bananas to apples.</p>
+<p>“<span class="math inline">u (apple) = 2, u (banana) = 15</span>” <span class="math inline">\rightarrow</span> individual prefers bananas to apples.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="choice" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="choice"><span class="header-section-number">1.4</span> Choice</h2>
+<p>How can an individual’s choices reveal her preferences? A choice structure (or choice dataset) <span class="math inline">(\mathscr{B}, C)</span> consists of:</p>
+<ol type="1">
+<li>A set <span class="math inline">\mathscr{B}</span> of choice sets <span class="math inline">B \subseteq X</span>.</li>
+<li>A choice rule <span class="math inline">C</span> that maps each <span class="math inline">B \in \mathscr{B}</span> to non-empty set of chosen alternatives <span class="math inline">C(B) \subseteq B</span>. <span class="math inline">C</span> is a correspondence.</li>
+</ol>
+<p>Interpretation: <span class="math inline">C(B)</span> is the set of alternatives the DM might choose from <span class="math inline">B</span>.</p>
+</section>
+<section id="preference" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="preference"><span class="header-section-number">1.5</span> Preference</h2>
+<p>Goal: relate observable choice data to preferences over <span class="math inline">X</span>.</p>
+<p>A preference relation <span class="math inline">\succcurlyeq</span> is a binary relation on <span class="math inline">X</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“<span class="math inline">x \succcurlyeq y</span>” means “<span class="math inline">x</span> <em>is weakly preferred to</em> <span class="math inline">y</span>”</p>
+</div>
+</div>
+<p>Given preference relation <span class="math inline">\succcurlyeq</span>, define:</p>
+<ul>
+<li>Strict preference <span class="math inline">(\succ): x \succ y \iff x \succcurlyeq y</span> but not <span class="math inline">y \succcurlyeq x</span>.</li>
+<li>Indifference <span class="math inline">(∼): x ∼ y \iff x \succcurlyeq y</span> and <span class="math inline">y \succcurlyeq x</span>.</li>
+</ul>
+<p>Think a little bit about logic and set theory here.</p>
+<section id="rational-preferences" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="rational-preferences">Rational Preferences</h3>
+<p>To make any progress, need to impose some restrictions on preferences.<br>
+Most important: rationality.</p>
+<div id="def-MWG1B1" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1.1</strong></span> A preference relation <span class="math inline">\succcurlyeq</span> is rational if it satisfies:</p>
+<ol type="1">
+<li><p>Completeness: for all <span class="math inline">x, y, x \succcurlyeq y</span> or <span class="math inline">y \succcurlyeq x</span>.</p></li>
+<li><p>Transitivity: for all <span class="math inline">x, y, z</span>, if <span class="math inline">x \succcurlyeq y</span> and <span class="math inline">y \succcurlyeq z</span>, then <span class="math inline">x \succcurlyeq z</span>.</p></li>
+</ol>
+</div>
+<p>If <span class="math inline">\succcurlyeq</span> is rational, then <span class="math inline">\succ</span> and <span class="math inline">\sim</span> are also transitive. (Prove this!)</p>
+<p>Hard to say much about behavior of irrational DM.</p>
+</section>
+<section id="maximizing-a-preference-relation" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="maximizing-a-preference-relation">Maximizing a Preference Relation</h3>
+<p>Optimal choices according to <span class="math inline">\succcurlyeq</span>:</p>
+<p><span class="math display">
+C^*(B,\succcurlyeq) = \{x \in B: x \succcurlyeq \in y, \forall y \in B\}
+</span></p>
+<p><span class="math inline">\succcurlyeq</span> rationalizes choice data <span class="math inline">(\mathscr{B}, C)</span> if <span class="math inline">C(B) = C^*(\mathscr{B}, \succcurlyeq)</span> for all <span class="math inline">B \in \mathscr{B}</span>.</p>
+</section>
+<section id="fundamental-question-of-revealed-preference-theory" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="fundamental-question-of-revealed-preference-theory">Fundamental <strong>Question</strong> of Revealed Preference Theory</h3>
+<p><strong>When does choice data reveal that individual is choosing according to rational preferences?</strong></p>
+<div id="def-rp" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1.2</strong></span> <em>Given choice data</em> <span class="math inline">(\mathscr{B}, C)</span><em>, the revealed preference relation</em> <span class="math inline">\succcurlyeq^*</span> <em>is defined by</em> <span class="math inline">x \succcurlyeq^* y \iff</span> <em>there is some</em> <span class="math inline">B \in \mathscr{B}</span> <em>with</em> <span class="math inline">x,y \in B</span> <em>and</em> <span class="math inline">x \in C(B)</span><em>.</em></p>
+<ul>
+<li><p><span class="math inline">x</span> <em>is weakly revealed preferred to</em> <span class="math inline">y</span> <em>if</em> <span class="math inline">x</span> <em>is ever chosen when</em> <span class="math inline">y</span> <em>is available. Notice that this allows for</em> <span class="math inline">y \in C(B)</span> <em>as one may have</em> <span class="math inline">x ∼ y</span><em>.</em></p></li>
+<li><p><span class="math inline">x</span> <em>is strictly revealed preferred to</em> <span class="math inline">y</span> <em>if there is some</em> <span class="math inline">B \in \mathscr{B}</span> <em>with</em> <span class="math inline">x, y \in B, x \in C(B)</span> <em>and</em> <span class="math inline">y \notin C(B)</span><em>.</em></p></li>
+</ul>
+</div>
+</section>
+<section id="warp" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="warp">WARP</h3>
+<p>Key condition on choice data for <span class="math inline">\succcurlyeq^*</span> to be rational and generate observed data: <strong>weak axiom of revealed preference (WARP)</strong>.</p>
+<div id="def-warp" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1.3</strong></span> <em>Choice data</em> <span class="math inline">(B,C)</span> <em>satisfies WARP if whenever there exists</em> <span class="math inline">B \in \mathscr{B}</span> <em>with</em> <span class="math inline">x, y \in B</span> <em>and</em> <span class="math inline">x \in C(B)</span><em>, then for all</em> <span class="math inline">B' \in \mathscr{B}</span> <em>with</em> <span class="math inline">x,y \in B'</span><em>, it is not the case that both</em> <span class="math inline">y \in C(B')</span> <em>and</em> <span class="math inline">x \notin C(B')</span><em>.</em></p>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Meaning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>“If</em> <span class="math inline">x</span> <em>is weakly revealed preferred to</em> <span class="math inline">y</span><em>, then</em> <span class="math inline">y</span> <em>cannot be strictly revealed preferred to</em> <span class="math inline">x</span><em>”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">
+X = \{x,y,z\}
+</span></p>
+<p><span class="math display">
+\mathscr{B} = \{\{x,y\}, \{x,y,z\}\}
+</span></p>
+<ul>
+<li><p>Choice rule <span class="math inline">C_1: C_1(\{x,y\}) = \{x\}, C_1 (\{x,y,z\}) = \{x\}</span><br>
+Satisfies WARP: <span class="math inline">x</span> is weakly revealed preferred to <span class="math inline">y</span> and <span class="math inline">z</span>, nothing is strictly revealed preferred to <span class="math inline">x</span></p></li>
+<li><p>Choice rule <span class="math inline">C_2: C_2(\{x,y\}) = \{x\}, C_2(\{x,y,z\}) = \{x,y\}</span>.<br>
+Violates WARP: <span class="math inline">y</span> is weakly revealed preferred to <span class="math inline">x</span>, <span class="math inline">x</span> is strictly revealed preferred to <span class="math inline">y</span>. This is Exercise 1C1 (MWG).</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="fundamental-theorem-of-revealed-preference-theory" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="fundamental-theorem-of-revealed-preference-theory">Fundamental <strong>Theorem</strong> of Revealed Preference Theory</h3>
+<div id="thm-ftrp" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1.1</strong></span> <em>If choice data</em> <span class="math inline">(\mathscr{B}, C)</span> <em>satisfies WARP and includes all subsets of</em> <span class="math inline">X</span> <em>of up to 3 elements, then</em> <span class="math inline">\succcurlyeq^*</span> <em>is rational and rationalizes the data: that is,</em> <span class="math inline">C^* (B, \succcurlyeq^*) = C(B)</span><em>. Furthermore, this is the only preference relation that rationalizes the data (MWG Proposition 1.D.2). Conversely, if the choice data violates WARP, then it cannot be rationalized by any rational preference relation. (MWG Proposition 1D1).</em></p>
+</div>
+<p>For the first part: Remember <span class="math inline">\mathscr{B}</span> is a set of sets: this condition states that it must include all sets of up to three elements. Check MWG example 1D1 to see that we cannot drop this assumption.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Let’s prove the <u>first part.</u></li>
+</ul>
+<p>We need to show that:</p>
+<ol type="i">
+<li><span class="math inline">\succcurlyeq^*</span> is rational;</li>
+<li><span class="math inline">C^* (B, \succcurlyeq^*) = C(B)</span>;</li>
+<li><span class="math inline">\succcurlyeq^*</span> is the only preference relation that satisfies ii.</li>
+</ol>
+<p><strong>For item (i), we must show that</strong> <span class="math inline">\succcurlyeq*</span> <strong>is complete and transitive.</strong></p>
+<p><em>Complete</em>. Take some <span class="math inline">\{x,y\} \in \mathscr{B}</span>. This holds because <span class="math inline">\{x,y\}</span> has only two elements. Then either <span class="math inline">x \in C({x,y})</span> or <span class="math inline">y \in C(\{x,y\})</span> (or both). In the first case, <span class="math inline">x \succcurlyeq^* y</span>. In the second case, <span class="math inline">y \succcurlyeq^* x</span>. Hence <span class="math inline">\succcurlyeq^*</span> is complete.</p>
+<p><em>Transitive</em>. Take <span class="math inline">x \succcurlyeq^* y</span> and <span class="math inline">y \succcurlyeq^* z</span>. Consider <span class="math inline">\{x,y,z\ \in \mathscr{B}\}</span> (again, it has no more than three elements, so it belongs to <span class="math inline">\mathscr{B}</span>). We have to show that <span class="math inline">x \in C(\{x,y,z\})</span> because this implies <span class="math inline">x \succcurlyeq^* y</span>: transitivity.</p>
+<p>We know that <span class="math inline">C(\{x,y,z\}) \neq \varnothing</span>.</p>
+<ol type="1">
+<li>If <span class="math inline">y \in C(\{x,y,z\})</span>: since <span class="math inline">x \succcurlyeq^* y</span>, the weak axiom yields <span class="math inline">x \in C(\{x,y,z\})</span>.</li>
+<li>If <span class="math inline">z \in C(\{x,y,z\})</span>: since <span class="math inline">y \succcurlyeq^* z</span>, the weak axiom yields <span class="math inline">y \in C(\{x,y,z\})</span>, and from the previous line we have <span class="math inline">x \in C(\{x,y,z\})</span>. In any case, <span class="math inline">x \in C(\{x,y,z\})</span>, as we wanted to show.</li>
+</ol>
+<p>This concludes the proof of item (i).</p>
+<p><strong>For item (ii), we proceed in two steps.</strong></p>
+<p>First: suppose <span class="math inline">x \in C(B)</span>. Then <span class="math inline">x \succcurlyeq^* y</span> for all <span class="math inline">y \in B</span>. Hence <span class="math inline">x \in C^*(B,\succcurlyeq^*)</span>. In short: every element <span class="math inline">x</span> that belongs to <span class="math inline">C(B)</span> also belongs to <span class="math inline">C^*(B,\succcurlyeq^*)</span>. In other words, <span class="math inline">C(B) \subset C^*(B,\succcurlyeq^*)</span>.</p>
+<p>Second: suppose now <span class="math inline">x \in C^*(B,\succcurlyeq^*)</span>.</p>
+<p>Then <span class="math inline">x \succcurlyeq^* y</span> for all <span class="math inline">y \in B</span>, as above.</p>
+<p>Hence for each <span class="math inline">y \in B</span>, there exists some <span class="math inline">B_y \in \mathscr{B}</span> such that <span class="math inline">x,y \in B_y</span> and <span class="math inline">x \in C(B_y)</span>: at the very least, one may choose <span class="math inline">B_y = \{x,y\}</span>, which has only two elements and therefore belongs to <span class="math inline">\mathscr{B}</span>.</p>
+<p>Since <span class="math inline">C(B) \neq \varnothing</span>, the weak axiom implies <span class="math inline">x \in C(B)</span>, by the same reasoning as in part i: whatever <span class="math inline">y</span> may belong to <span class="math inline">C(B)</span>, it cannot be revealed as preferred to <span class="math inline">x</span> because <span class="math inline">x \in C(B_y)</span> and hence <span class="math inline">x \in C(B)</span>.</p>
+<p>In short: <span class="math inline">x \in C^*(B,\succcurlyeq^*) \implies x \in C(B)</span>, or <span class="math inline">C^*(B,\succcurlyeq^*) \subset C(B)</span>.</p>
+<p>Taking these two steps together, we conclude that <span class="math inline">C(B) = C^*(B,\succcurlyeq^*)</span>, finishing the proof of item ii.</p>
+<p><strong>For item (iii), remember that</strong> <span class="math inline">\mathscr{B}</span> <strong>includes all two-element subsets of</strong> <span class="math inline">X</span>. Hence the choice structure <span class="math inline">C(\quad)</span> determines the pairwise preference over <span class="math inline">X</span> of any rationalizing preference.</p>
+<p><em>QED.</em></p>
+<ul>
+<li>The <u>second part</u> may be written as: if preferences are rational, then choice data <span class="math inline">(\mathscr{B},C)</span> satisfies WARP. Let’s prove this.</li>
+</ul>
+<p>Consider <span class="math inline">B \in \mathscr{B}</span> such that <span class="math inline">x, y \in B</span>, and <span class="math inline">x \in C^*(B,\succcurlyeq)</span>. Then <span class="math inline">x \succcurlyeq y</span>. (“<span class="math inline">x</span> is weakly revealed preferred to <span class="math inline">y</span>”)</p>
+<p>Consider <span class="math inline">B' \in \mathscr{B}</span> such that <span class="math inline">x, y \in B'</span>, and <span class="math inline">y \in C^*(B',\succcurlyeq)</span>. Then <span class="math inline">y \succcurlyeq z</span> for all <span class="math inline">z \in B'</span>.</p>
+<p>Transitivity then implies <span class="math inline">x \succcurlyeq z</span> for all <span class="math inline">z \in B'</span>.</p>
+<p>But this is the same as saying <span class="math inline">x \in C^*(B',\succcurlyeq)</span>.</p>
+<p>That is, we cannot find any <span class="math inline">B'</span> such that <span class="math inline">y \succ x</span>. (“<span class="math inline">y</span>) cannot be strictly revealed preferred to <span class="math inline">x</span>”). Hence, WARP is satisfied.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+<p><strong>Theorem tells us how individual’s choices reveal her preferences: as long as choices satisfy WARP, can interpret choices as resulting from maximizing a rational preference relation.</strong></p>
+<p>We may conclude that if <span class="math inline">\mathscr{B}</span> includes all subsets of <span class="math inline">X</span>, then choice and preferences work together just fine. But this is too restrictive: think of budget sets.</p>
+<p>We use then the Strong Axiom of Revealed Preference, a “recursive closure” of the weak axiom. If <span class="math inline">x</span> is <span style="color: red;">directly or indirectly</span> revealed preferred to <span class="math inline">y</span>, then <span class="math inline">y</span> cannot be directly revealed preferred to <span class="math inline">x</span>. The Strong Axiom is more restrictive in general than the Weak Axiom (but they are equivalent for two goods). The Strong Axiom is a necessary and sufficient condition for choices to be generated by rational preferences.</p>
+<section id="question-choices-usually-follow-warp" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="question-choices-usually-follow-warp">Question: choices usually follow WARP?</h4>
+<p>Yes – even more than that. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165176518302441">Bedi and Burghart (2018)</a>:</p>
+<blockquote class="blockquote">
+<p><em>“Choices made under the influence of THC, MDMA, and placebo were all GARP compliant. Thus, even when participants were acutely intoxicated with THC or MDMA, their choices remained consistent with the tenets of neoclassical choice theory.”</em></p>
+</blockquote>
+<p>GARP is the Strong Axiom that allows for non-unique optimal choices.</p>
+</section>
+</section>
+<section id="preference-and-utility" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="preference-and-utility">Preference and Utility</h3>
+<p>Now that know how to infer preferences from choice, next step is representing preferences with a utility function.</p>
+<div id="def-uf" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1.4</strong></span> <em>A utility function</em> <span class="math inline">u : X \rightarrow \mathbb{R}</span> <em>represents preference relation</em> <span class="math inline">\succcurlyeq</span> <em>if, for all</em> <span class="math inline">x,y</span><em>,</em> <span class="math inline">x \succcurlyeq y \iff u(x) \geq u(y)</span></p>
+</div>
+<p><span class="math inline">banana \succcurlyeq apple</span> is represented by both:</p>
+<p><span class="math display">u(apple) = 7, \quad u(banana) = 12</span> <span class="math display">u(apple) = 2, \quad u(banana) = 15</span></p>
+<p>If <span class="math inline">u</span> represents <span class="math inline">\succcurlyeq</span>, so does any strictly increasing transformation of <span class="math inline">u</span>.</p>
+<p>Representing a given preference relation is an ordinal property. The numerical values of utility are cardinal properties.</p>
+<section id="what-preferences-have-a-utility-representation" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="what-preferences-have-a-utility-representation">What Preferences have a Utility Representation?</h4>
+<div id="thm-rpf" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1.2</strong></span> <em>Only rational preferences relations can be represented by a utility function (MWG Proposition 1B2). Conversely, if</em> <span class="math inline">X</span> <em>is finite, any rational preference relation can be represented by a utility function (MWG exercise 1B5 - ‘<em><span class="math inline">X</span> </em>finite’ is only one possibility).</em></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Let’s prove the <u>first part</u>.</li>
+</ul>
+<p>We may write it as: <span class="math inline">\succcurlyeq</span> is represented by utility function implies <span class="math inline">\succcurlyeq</span> is rational.</p>
+<p>To show it’s rational, we have to show <span class="math inline">\succcurlyeq</span> are complete and transitive.</p>
+<p>Let’s show first <span class="math inline">\succcurlyeq</span> are complete. Consider <span class="math inline">x,y \in X</span>.</p>
+<p><span class="math inline">u(.) \in \mathbb{R}</span> implies that necessarily either <span class="math inline">u(x) \geq u(y)</span> or <span class="math inline">u(y) \geq u(x)</span>. In the first case, by definition of <span class="math inline">u</span>, we have <span class="math inline">x \succcurlyeq y</span>. Analogously, in the second case we have <span class="math inline">y \succcurlyeq x</span>. Hence <span class="math inline">\succcurlyeq</span> is complete.</p>
+<p>Let’s show now <span class="math inline">\succcurlyeq</span> are transitive. Take <span class="math inline">x,y,z \in X</span> such that <span class="math inline">x \succcurlyeq y</span> and <span class="math inline">y \succcurlyeq z</span>. We have to show that <span class="math inline">x \succcurlyeq z</span>.</p>
+<p>By definition of <span class="math inline">u(.)</span>, it follows that <span class="math inline">u(x) \geq u(y)</span> and <span class="math inline">u(y) \geq u(z)</span>. It then follows from the structure of the real numbers that <span class="math inline">u(x) \geq u(z)</span>. Again, use the definition of <span class="math inline">u(.)</span> to conclude that <span class="math inline">x \succcurlyeq z</span>. This is what we wanted to show, concluding the proof.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+</section>
+<section id="what-goes-wrong-with-infinitely-many-alternatives" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="what-goes-wrong-with-infinitely-many-alternatives">What Goes Wrong with Infinitely Many Alternatives?</h4>
+<p>Lexicographic preferences: dictionary system – e.g., “I’m not going by plane”.</p>
+<p><span class="math display">
+X = [0,1] \times [0,1]
+</span></p>
+<p><span class="math inline">(x_1, x_2) \succcurlyeq (y_1, y_2)</span> if either</p>
+<ul>
+<li><span class="math inline">x_1 &gt; y_1</span> or</li>
+<li><span class="math inline">x_1 = y_1</span> and <span class="math inline">x_1 \geq y_2</span></li>
+</ul>
+<p>Maximize first component. In case of tie, maximize second component.</p>
+<div id="thm-lexi" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1.3</strong></span> <em>Lexicographic preferences cannot be represented by a utility function.</em></p>
+</div>
+<p>This is on MWG page 46.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let’s prove this by contradiction. Assume there is a utility function representing the lexicographic preferences <span class="math inline">\succcurlyeq</span>.</p>
+<p>Fix some <span class="math inline">x_1 \in \mathbb{R}</span>. Then:</p>
+<p><span class="math display">
+u(x_1, 2) &gt; u(x_1, 1)
+</span></p>
+<p>Both <span class="math inline">u(x_1, 2)</span> and <span class="math inline">u(x_1, 1)</span> are real number. We will use the following mathematical result: we can find a rational number between any two real numbers.</p>
+<p>Let’s call this rational number <span class="math inline">r(x_1)</span>:</p>
+<p><span class="math display">
+u(x_1, 2) &gt; r(x_1) &gt; u(x_1, 1)
+</span></p>
+<p>Notice now that if <span class="math inline">x_1 &gt; x^{'}_{1}</span>, then <span class="math inline">r(x_1) &gt; u(x_1, 1) &gt; u(x^{'}_{1},2) &gt; r(x^{'}_{1})</span>.</p>
+<p>In short, <span class="math inline">x_1 &gt; x^{'}_{1} \implies r(x_1) &gt; r(x^{'}_{1})</span>.</p>
+<p>This means that <span class="math inline">r(.)</span> is a strictly increasing function, and hence it is a bijection from <span class="math inline">\mathbb{R}</span> to <span class="math inline">\mathbb{Q}</span>.</p>
+<p>But this is not possible.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+</section>
+</section>
+<section id="continuous-preferences" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="continuous-preferences">Continuous Preferences</h3>
+<p>What if rule out discontinuous preferences?</p>
+<div id="def-conpref" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1.5</strong></span> <em>For</em> <span class="math inline">X \subseteq \mathbb{R}^n</span><em>, preference relation</em> <span class="math inline">\succcurlyeq</span> <em>is continuous if whenever</em> <span class="math inline">x^m \rightarrow x, y^m \rightarrow y</span><em>, and</em> <span class="math inline">x^m \succcurlyeq y^m</span> <em>for all</em> <span class="math inline">m</span><em>, we have</em> <span class="math inline">x \succcurlyeq y</span><em>.</em></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Lexicographic preferences are not continuous: see example 3C1 cont.</p>
+<p>Let’s show this. Consider two sequences of bundles:</p>
+<p><span class="math display">
+x_n = \left(\frac{1}{n},0\right)
+</span> <span class="math display">
+y_n = (0,1)
+</span></p>
+<p>For any <span class="math inline">n</span> we choose, we have <span class="math inline">1/n &gt; 0</span>, and hence <span class="math inline">x_n \succ y_n</span>. But <span class="math inline">lim_{n \rightarrow \infty}{x_n} = (0,0) \prec (0,1) = lim_{n \rightarrow \infty}{y_n}</span></p>
+<p>That is, preference reverts in the limit: continuity does not hold, and hence <span class="math inline">\succcurlyeq</span> are not continuous.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+<div id="thm-prefcon" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1.4</strong></span> <em>For</em> <span class="math inline">X \subseteq \mathbb{R}^n</span><em>, any continuous, rational preference relation can be represented by a (continuous) utility function.</em></p>
+</div>
+<p>This is MWG Proposition 3.C.1 – a bit advanced.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The general proof is difficult. Let’s show a sketch, assuming additionally that preferences are monotone.</p>
+<p>Consider only two goods (this is without loss of generality). For any <span class="math inline">\alpha \geq 0</span>, define the bundle <span class="math inline">(\alpha, \alpha)</span>.</p>
+<p>Pick some <span class="math inline">x = (x_1,x_2) \in \mathbb{R}^2_+</span>. Notice that monotonicity implies <span class="math inline">x \succcurlyeq (0,0)</span>.</p>
+<p>Notice also that if <span class="math inline">\left(\overline{\alpha}, \overline{\alpha}\right) \gg (x_1, x_2)</span>, then monotonicity implies <span class="math inline">\left(\overline{\alpha}, \overline{\alpha}\right) &gt; (x_1, x_2)</span>.</p>
+<p>One may show that there is only one value of <span class="math inline">\alpha \in [0,\overline{\alpha}]</span> such that indifference holds.</p>
+<p>We will call it <span class="math inline">\alpha(x)</span>:</p>
+<p><span class="math display">
+\left(\alpha(x),\alpha(x)\right) \sim (x_1,x_2)
+</span> Take <span class="math inline">u(x) = \alpha(x)</span>. This is our utility function.</p>
+<p><em>QED.</em></p>
+</div>
+</div>
+<p>Notice that this is very general. Assumptions are not very restrictive (not even <span class="math inline">X \subseteq \mathbb{R}^n</span>).</p>
+</section>
+<section id="review-of-revealed-preference-theory" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="review-of-revealed-preference-theory">Review of Revealed Preference Theory</h3>
+<ul>
+<li>If choice data satisfies WARP, can interpret as resulting from maximizing a rational preference relation.</li>
+<li>If set of alternatives is finite or preferences are continuous, can represent these preferences with a utility function.</li>
+<li>Utility function is just a convenient mathematical representation of individual’s ordinal preferences.</li>
+<li>Utility may or may not be correlated with pleasure/avoidance of pain.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./lec1and2.html" class="pagination-link" aria-label="Lectures 1 – 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lectures 1 – 2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./prop-pref-utilityfun.html" class="pagination-link" aria-label="Properties of Preferences and Utility Functions">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

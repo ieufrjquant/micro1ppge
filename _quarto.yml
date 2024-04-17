@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Microeconomics 1"
+  subtitle: "Lecture Notes from Microeconomics 1 Course <br> Institute of Economics, Federal University of Rio de Janeiro (IE/UFRJ)"
+  
+  sidebar: 
+    logo: logo_gpeq_html.png
+  
+  favicon: logo_gpeq_html.png
+  author: "Pedro Hemsley <br> PPGE IE/UFRJ"
+  date: last-modified
+  
+  chapters:
+    - index.qmd
+    
+    - part: lec1and2.qmd
+      chapters:
+        - choice-pref-utility.qmd
+        - prop-pref-utilityfun.qmd
+    
+  downloads: [pdf]
+  sharing: [twitter, facebook]
+
+format:
+  html:
+    theme: cosmo
+    fontcolor: black
+    html-math-method: katex
+  
+    css: styles.css
+    
+  pdf: default
+
+monofont: Lato
+
+editor: visual
+
