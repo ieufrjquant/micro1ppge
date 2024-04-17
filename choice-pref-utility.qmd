@@ -1,4 +1,4 @@
-# Choice, Preferences and Utility
+# Choice, Preference and Utility
 
 ::: {.callout-tip appearance="simple"}
 **Microeconomics is decision theory plus a theory of interaction among decision-makers, in different environments**
