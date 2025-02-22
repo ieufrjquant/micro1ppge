@@ -1,0 +1,656 @@
+# Comparing Risky Prospects
+
+## Risky Prospects
+
+We've studied decision-maker's subjective attitude toward risk.
+
+Now: study objective properties of risky prospects (lotteries, gambles) themselves, relate to individual decision-making.
+
+Topics:
+
+-   First-Order Stochastic Dominance
+-   Second-Order Stochastic Dominance
+-   (Optional) Some recent research extending these concepts
+
+## First-Order Stochastic Dominance
+
+When is one lottery unambiguously better than another?
+
+Natural definition: $F$ dominates $G$ if, for every amount of money $x, F$ is more likely to yield at least $x$ dollars than $G$ is.
+
+::: {#def}
+For any lotteries $F$ and $G$ over $\mathbb{R}, F$ first-order stochastically dominates (FOSD) $G$ if
+
+$$
+F(x) \leq G(x) \text { for all } x
+$$
+:::
+
+## FOSD and Choice
+
+Main theorem relating FOSD to decision-making:
+
+::: {#thm-FOSDC}
+$F$ FOSD $G$ $\iff$ every decision-maker with a non-decreasing utility function prefers $F$ to $G$.
+:::
+
+That is, the following are equivalent:
+
+-   $F(x) \leq G(x)$ for all $x$.
+-   $\int u(x) d F \geq \int u(x) d G$ for every non-decreasing function $u: \mathbb{R} \rightarrow \mathbb{R}$.
+
+::: callout-important
+## Proof
+
+Preferred by Everyone $\Longrightarrow$ FOSD
+
+If $F$ does not FOSD $G$, then there's some amount of money $x^{*}$ such that $G$ is more likely to give at least $x^{*}$ than $F$ is.
+
+Consider a DM who only cares about getting at least $x^{*}$ dollars.
+
+She will prefer $G$.
+
+$$
+\text{FOSD} \Rightarrow \text {Preferred by Everyone}
+$$
+
+Main idea: $F$ FOSD $G \Rightarrow F$ gives more money "realization-by-realization."
+
+Suppose draw $x$ according to $G$, but then instead give decision-maker
+
+$$
+y(x)=F^{-1}(G(x))
+$$
+
+Then:
+
+-   $y(x) \geq x$ for all $x$, and
+-   $y$ is distributed according to $F$.
+
+$\Rightarrow$ paying decision-maker according to $F$ just like first paying according to $G$, then sometimes giving more money.
+
+Any decision-maker who likes money likes this.
+
+QED.
+:::
+
+Second-Order Stochastic Dominance
+
+Q: When is one lottery better than another for any decision-maker?\
+A: First-Order Stochastic Dominance.
+
+Q: When is one lottery better than another for any risk-averse decision-maker?\
+A: Second-Order Stochastic Dominance.
+
+::: {#thm-SOSD}
+$F$ second-order stochastically dominates (SOSD) $G$ iff every decision-maker with a non-decreasing and concave utility function prefers $F$ to $G$: that is,
+
+$$
+\int u(x) d F \geq \int u(x) d G
+$$
+
+for every non-decreasing and concave function $u: \mathbb{R} \rightarrow \mathbb{R}$.
+:::
+
+SOSD is a weaker property than FOSD.
+
+## SOSD for Distributions with Same Mean
+
+If $F$ and $G$ have same mean, when will any risk-averse decision-maker prefer $F$ ?
+
+When is $F$ "unambiguously less risky" than $G$ ?
+
+## Mean-Preserving Spreads
+
+::: {#def-MPS}
+$G$ is a mean-preserving spread of $F$ if $G$ can be obtained by first drawing a realization from $F$ and then adding noise.
+:::
+
+$G$ is a mean-preserving spread of $F$ iff there exist random variables $x, y$, and $\varepsilon$ such that
+
+$$
+y=x+\varepsilon
+$$
+
+$x$ is distributed according to $F, y$ is distributed according to $G$, and $E[\varepsilon \mid x]=0$ for all $x$.
+
+Formulation in terms of cdfs:
+
+$$
+\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y \text { for all } x
+$$
+
+## Characterization of SOSD for CDFs with Same Mean
+
+::: {#thm}
+Assume that $\int x d F=\int x d G$. Then the following are equivalent:
+
+-   F SOSD $G$.
+-   $G$ is a mean-preserving spread of $F$.
+-   $\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y$ for all $x$.
+:::
+
+## General Characterization of SOSD
+
+::: {#thm-GCSOSD}
+The following are equivalent:
+
+-   F SOSD G.
+-   $\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y$ for all $x$.
+-   There exist random variables $x, y, z$, and $\varepsilon$ such that
+
+$$
+y=x+z+\varepsilon
+$$
+:::
+
+$x$ is distributed according to $F, y$ is distributed according to $G, z$ is always nonpositive, and $E[\varepsilon \mid x]=0$ for all $x$.
+
+- There exists a cdf $H$ such that $F$ FOSD $H$ and $G$ is a mean-preserving spread of $H$.
+
+::: {.callout-note}
+## Complete Dominance Orderings [Optional]
+
+FOSD and SOSD are partial orders on lotteries:
+
+"most distributions" are not ranked by FOSD or SOSD.
+
+To some extent, nothing to be done:
+
+If $F$ doesn't FOSD $G$, some decision-maker prefers $G$.
+
+If $F$ doesn't SOSD $G$, some risk-averse decision-maker prefers $G$.
+
+However, recent series of papers points out that if view $F$ and $G$ as lotteries over monetary gains and losses rather than final wealth levels, and only require that no decision-maker prefers $G$ to $F$ for all wealth levels, do get a complete order on lotteries (and index of lottery's "riskiness").
+
+## Acceptance Dominance
+
+Consider decision-maker with wealth $w$, has to accept or reject a gamble $F$ over gains $/ \operatorname{losses} x$.
+
+Accept iff
+
+$$
+E_{F}[u(w+x)] \geq u(w)
+$$
+
+<div>
+
+$F$ acceptance dominates $G$ if, whenever $F$ is rejected by decision-maker with concave utility function $u$ and wealth $w$, so is G.
+
+</div>
+
+That is, for all $u$ concave and $w>0$,
+
+$$
+\begin{aligned}
+& E_{F}[u(w+x)] \leq u(w) \\
+& E_{G}[u(w+x)] \leq u(w)
+\end{aligned}
+$$
+:::
+
+## Acceptance Dominance and FOSD/SOSD
+
+$F \operatorname{SOSD} G$
+
+$\Rightarrow E_{F}[u(w+x)] \geq E_{G}[u(w+x)]$ for all concave $u$ and wealth $w$
+
+$\Rightarrow F$ acceptance dominates $G$.
+
+If $E_{F}[x]>0$ but $x$ can take on both positive and negative values, can show that $F$ acceptance dominates lottery that doubles all gains and losses.
+
+Acceptance dominance refines SOSD.
+
+But still very incomplete.
+
+Turns out can get complete order from something like: acceptance dominance at all wealth levels, or for all concave utility functions.
+
+## Wealth Uniform Dominance
+
+<div>
+
+$F$ wealth-uniformly dominates $G$ if, whenever $F$ is rejected by decision-maker with concave utility function $u$ at every wealth level $w$, so is $G$.
+
+</div>
+
+That is, for all $u \in U^{*}$,
+
+$$
+\begin{aligned}
+& E_{F}[u(w+x)] \leq u(w) \text { for all } w>0 \\
+& E_{G}[u(w+x)] \leq u(w) \text { for all } w>0
+\end{aligned}
+$$
+
+## Utility Uniform Dominance
+
+<div>
+
+$F$ utility-uniformly dominates $G$ if, whenever $F$ is rejected at wealth level $w$ by a decision-maker with any utility function $u \in U^{*}$, so is $G$.
+
+</div>
+
+That is, for all $w>0$,
+
+$$
+\begin{aligned}
+& E_{F}[u(w+x)] \leq u(w) \text { for all } u \in U^{*} \\
+& E_{G}[u(w+x)] \leq u(w) \text { for all } u \in U^{*}
+\end{aligned}
+$$
+
+## Uniform Dominance: Results
+
+Hart (2011):
+
+-   Wealth-uniform dominance and utility-uniform dominance are complete orders.
+-   Comparison of two lotteries in these orders boils down to comparison of simple measures of the "riskiness" of the lotteries.
+-   Measure for wealth-uniform dominance: critical level of risk-aversion above which decision maker with constant absolute risk-aversion rejects the lottery.
+-   Measure for utility-uniform dominance: critical level of wealth below which decision-maker with log utility rejects the lottery.
+
+## Appendix: some proofs
+
+###  $U$  has expected utility form $\Leftrightarrow U$ linear in probabilities
+
+::: {#thm-EULP}
+$U: P \rightarrow \mathbb{R}$ has an expected utility form if and only if
+
+$$
+U\left(\alpha p+(1-\alpha) p^{\prime}\right)=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+$$
+
+holds for all $p, p^{\prime}$, and $\alpha \in[0,1]$.
+:::
+
+Notice: this is MWG proposition 6B1. It uses the following notation: $U\left(\sum \alpha_{k} p_{k}\right)=$ $\sum \alpha_{k} U\left(p_{k}\right)$, just substituting $p$ for $L$ (which stands for 'lottery').
+
+::: callout-important
+## Proof
+
+Without loss of generality, we will assume only two consequences, $c^{1}$ and $c^{2}$.
+
+Hence any lottery $p$ may be written as $p=\left(p^{1}, p^{2}\right)$, in which $p^{1}=\operatorname{Prob}\left(c^{1}\right)$ and $p^{2}=\operatorname{Prob}\left(c^{2}\right)$.
+
+All arguments below hold unchanged for $p=\left(p^{1}, \ldots, p^{n}\right)$, that is, for $n$ consequences $c^{1}, \ldots, c^{n}$. This extension is shown in red below; you may simply ignore it in your first reading.
+
+The arguments below also hold for $c \in\left[c^{1}, c^{n}\right] \in \mathbb{R}$, but the math is not exactly the same.
+
+-   Necessity: $U$ linear in probabilities $\Rightarrow U$ has expected utility form
+
+Write lottery $p=\left(p^{1}, p^{2}\right)$ as a convex combination of degenerate lotteries $\left(C^{1}, C^{2}\right)$ :
+
+$$
+p=p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}
+$$
+
+That is, $C^{1}=(1,0)$, meaning that consequence $1\left(c^{1}\right)$ happens with probability 1 , and $C^{2}=(0,1)$, meaning that consequence $2\left(c^{2}\right)$ happens with probability 1 . The\\ equation above is simply $p=\left(p^{1}, p^{2}\right)=\left(p^{1}, 0\right)+\left(0, p^{2}\right)=p^{1} \cdot(1,0)+p^{2} \cdot(0,1)=$ $p^{1} C^{1}+p^{2} C^{2}$.
+
+Then:
+
+$$
+U(p)=U\left(p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}\right)=p^{1} U\left(C^{1}\right)+p^{2} U\left(C^{2}\right)+\cdots+p^{n} U\left(C^{n}\right)
+$$
+
+The second equality follows from our assumption: $U$ is linear in probabilities.
+
+But $U\left(C^{1}\right)$ is the utility from a degenerate lottery, that is, it's simply the vNM utility of consequence $c_{1}: U\left(C^{1}\right)=u\left(c^{1}\right)$.
+
+Remember our notation: big U is for DM's actual utility; small u is form DM's vNM utility. Big C denotes a lottery; small c denotes a consequence.
+
+The last equation may be rewritten as:
+
+$$
+\begin{gathered}
+U(p)=U\left(p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}\right)=p^{1} U\left(C^{1}\right)+p^{2} U\left(C^{2}\right)+\cdots+p^{n} U\left(C^{n}\right) \\
+=p^{1} u\left(c^{1}\right)+p^{2} u\left(c^{2}\right)+\cdots+p^{n} u\left(c^{n}\right)
+\end{gathered}
+$$
+
+In short:
+
+$$
+U(p)=p^{1} u\left(c^{1}\right)+p^{2} u\left(c^{2}\right)+\cdots+p^{n} u\left(c^{n}\right)
+$$
+
+This is exactly the expected utility property, concluding the proof.
+
+-   Sufficiency: $U$ has expected utility form $\Rightarrow U$ linear in probabilities
+
+Consider a compound lottery:
+
+$$
+\left(p_{1}, p_{2}, \ldots, p_{k} ; \alpha_{1}, \alpha_{2}, \ldots, \alpha_{k}\right)
+$$
+
+Notice that now we have $p_{1}$ instead of $p^{1}$; and $p_{2}$ instead of $p^{2}$. Superscripts refer to consequences; subscripts refer to specific lotteries.
+
+That is, $p_{1}$ and $p_{2}$ are different lotteries, and each one is a vector assigning probabilities for each of the two possible consequences $c^{1}$ and $c^{2}$ :
+
+$$
+p_{i}=\left(p_{i}^{1}, p_{i}^{2}, \ldots, p_{i}^{n}\right)
+$$
+
+For $i=1, \ldots, k$. That is, we have $k$ lotteries, and each one is chosen with probability $\alpha_{i}$ in our compound lottery.
+
+We will allow $k$ to be generic. If you want, just take $k=2$ in the following computations - again, it's without loss of generality, but be careful not to confuse the number of consequences with the number of lotteries.
+
+Consider now the following (reduced) lottery:
+
+$$
+\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}
+$$
+
+Consider the utility of this lottery:
+
+$$
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)
+$$
+
+We may now use our assumption: $U$ has the expected utility form. That is, one may rewrite this utility as:
+
+$$
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)=u^{1} \cdot \operatorname{Prob}\left(u^{1}\right)+u^{2} \cdot \operatorname{Prob}\left(u^{2}\right)+\cdots+u^{n} \cdot \operatorname{Prob}\left(u^{n}\right)
+$$
+
+What are these $u^{i}$ s? We just need to know that there are some $u^{i}$ s that make this equation hold - our assumption guarantees this is the case. But we do have an interpretation for them: $u^{i}$ is just the vNM utility of consequence $c^{i}$. Analogously, $\operatorname{Prob}\left(u^{i}\right)$ is simply the probability of this consequence, computed from the compound lottery $\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}$.
+
+This explains why we have subscripts on the LHS, but superscripts on the RHS. In the LHS, we have lotteries (that generate a compound lottery). On the RHS, we have consequences with vNM utilities $u^{1}, u^{2}, \ldots, u^{n}$. If you want, you may think of the lottery on the LHS as any given lottery $p$.
+
+Let's develop this equation:
+
+$$
+\begin{aligned}
+& U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)= \\
+& u^{1} \cdot \operatorname{Prob}\left(u^{1}\right)+u^{2} \cdot \operatorname{Prob}\left(u^{2}\right)= \\
+& u^{1} \cdot \underbrace{\left(\alpha_{1} p_{1}^{1}+\alpha_{2} p_{2}^{1}+\cdots+\alpha_{k} p_{k}^{1}\right)}_{\operatorname{Prob}\left(u^{1}\right)}+u^{2} \cdot \underbrace{\left(\alpha_{1} p_{1}^{2}+\alpha_{2} p_{2}^{2}+\cdots+\alpha_{k} p_{k}^{2}\right)}_{\operatorname{Prob}\left(u^{2}\right)}+\cdots+u^{n} \\
+& \underbrace{\left(\alpha_{1} p_{1}^{n}+\alpha_{2} p_{2}^{n}+\cdots+\alpha_{k} p_{k}^{n}\right)}_{\operatorname{Prob}\left(u^{2}\right)}= \\
+& \alpha_{1} \cdot \underbrace{\left(u^{1} \cdot p_{1}^{1}+u^{2} \cdot p_{1}^{2}+\cdots+u^{n} \cdot p_{1}^{n}\right)}_{U\left(p_{1}\right)}+\alpha_{2} \cdot \underbrace{\left(u^{1} \cdot p_{2}^{1}+u^{2} \cdot p_{2}^{2}+\cdots+u^{n} \cdot p_{2}^{n}\right)}_{U\left(p_{2}\right)}+\cdots \\
+& +\alpha_{k} \cdot \underbrace{\left(u^{1} \cdot p_{k}^{1}+u^{2} \cdot p_{k}^{2}+\cdots+u^{n} \cdot p_{k}^{n}\right)}_{U\left(p_{k}\right)}= \\
+& \alpha_{1} \cdot U\left(p_{1}\right)+\alpha_{2} \cdot U\left(p_{2}\right)+\cdots+\alpha_{k} \cdot U\left(p_{k}\right)
+\end{aligned}
+$$
+
+From the second to the third line, we use the definition of $\operatorname{Prob}\left(u^{1}\right)$ : it is simply the first coordinate of the vector $\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}$, ie, the compound lottery. It is analogous for $\operatorname{Prob}\left(u^{2}\right)$ to $\operatorname{Prob}\left(u^{n}\right)$.
+
+From the third to the fourth line: we use again our assumption: $U$ has the expected utility form. Hence we may write $U\left(p_{1}\right)=u^{1} \cdot p_{1}^{1}+u^{2} \cdot p_{1}^{2}+\cdots+u^{n} \cdot p_{1}^{n}$. It is analogous for $U\left(p_{2}\right)$ to $U\left(p_{k}\right)$.
+
+In short:
+
+$$
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)=\alpha_{1} \cdot U\left(p_{1}\right)+\alpha_{2} \cdot U\left(p_{2}\right)+\cdots+\alpha_{k} \cdot U\left(p_{k}\right)
+$$
+
+That is, $U$ is linear in probabilities, concluding the proof.
+
+QED.
+:::
+
+### Expected utility form is preserved under positive affine transformations
+
+::: {#thm-EUPAT}
+$U, \widetilde{U}$ have expected utility form (and represent the same preferences) $\Leftrightarrow$ there are $\beta>0, \gamma$ such that for all $p, \widetilde{U}(p)=\beta U(p)+\gamma$.
+:::
+
+This is MWG proposition 6B2.
+
+::: callout-important
+## Proof
+
+Choose $\bar{p}, \underline{p}$ such that for all lottery $p, \bar{p} \succcurlyeq p \succcurlyeq \underline{p}$.
+
+If $\bar{p} \sim \underline{p}$, then all utility functions are constant, and the result follows immediately. Assume now $\bar{p}>\underline{p}$.
+
+-   Sufficiency: If $U$ has expected utility form, then $\widetilde{U}(p)=\beta U(p)+\gamma$ also has expected utility form.
+
+Consider a compound lottery $\alpha_{1} p_{1}+\alpha_{2} p_{2}$. That is, we have two lotteries ( $p_{1}$ and $p_{2}$ ), and each is chosen with probability $\alpha_{1}$ and $\alpha_{2}$, respectively.
+
+Without loss of generality, we consider only two lotteries, but the argument is unchanged for $k$ lotteries.
+
+Compute the utility of this compound lottery under $\widetilde{U}$ :
+
+$$
+\begin{gathered}
+\widetilde{U}\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)= \\
+\beta \cdot U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)+\gamma= \\
+\beta \cdot\left[\alpha_{1} U\left(p_{1}\right)+\alpha_{2} U\left(p_{2}\right)\right]+\gamma= \\
+\alpha_{1} \beta \cdot U\left(p_{1}\right)+\alpha_{2} \beta \cdot U\left(p_{2}\right)+\underbrace{\left[\alpha_{1} \gamma+\alpha_{2} \gamma\right]}_{=\gamma}= \\
+\alpha_{1} \cdot \underbrace{\left[\beta \cdot U\left(p_{1}\right)+\gamma\right]}_{\widetilde{U}\left(p_{1}\right)}+\alpha_{2} \cdot \underbrace{\left[\beta \cdot U\left(p_{2}\right)+\gamma\right]}_{\widetilde{U}\left(p_{2}\right)}= \\
+\alpha_{1} \cdot \widetilde{U}\left(p_{1}\right)+\alpha_{2} \cdot \widetilde{U}\left(p_{2}\right)
+\end{gathered}
+$$
+
+From the first to the second line: we use the definition $\widetilde{U}(p)=\beta U(p)+\gamma$.
+
+From the second to the third line: we use the assumption that $U$ has the expected utility form: hence, $U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)=\alpha_{1} U\left(p_{1}\right)+\alpha_{2} U\left(p_{2}\right)$.
+
+From the third to the fourth line: we simply write $\gamma=\alpha_{1} \gamma+\alpha_{2} \gamma$, which is true because $\alpha_{1}+\alpha_{2}=1$ (it's a probability distribution, so it must sum up to one).
+
+From the fourth to the fifth line: we factor out $\alpha_{1}$ and $\alpha_{2}$.
+
+In short:
+
+$$
+\widetilde{U}\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)=\alpha_{1} \cdot \widetilde{U}\left(p_{1}\right)+\alpha_{2} \cdot \widetilde{U}\left(p_{2}\right)
+$$
+
+That is, $\widetilde{U}$ has the expected utility form, as we wanted to show.
+
+-   Necessity: $U$ and $\widetilde{U}$ have the expected utility form (and represent the same preferences) implies that for some $\beta>0, \gamma$, one has $\widetilde{U}(p)=\beta U(p)+\gamma$
+
+Fix a lottery $p$.
+
+Choose $\lambda_{p} \in[0,1]$ such that:
+
+$$
+U(p)=\lambda_{p} \cdot U(\bar{p})+\left(1-\lambda_{p}\right) \cdot U(\underline{p})
+$$
+
+This equation has two implications.
+
+First implication: $p \sim \lambda_{p} \bar{p}+\left(1-\lambda_{p}\right) \underline{p}$
+
+This holds because we're assuming $U$ has the expected utility form. The previous theorem states that if this is the case, then $U$ is linear in probabilities. Hence the RHS of this last equation may be rewritten as:
+
+$$
+\lambda_{p} \cdot U(\bar{p})+\left(1-\lambda_{p}\right) \cdot U(\underline{p})=U\left(\lambda_{p} \cdot \bar{p}+\left(1-\lambda_{p}\right) \cdot \underline{p}\right)
+$$
+
+Hence $U(p)=U\left(\lambda_{p} \cdot \bar{p}+\left(1-\lambda_{p}\right) \cdot \underline{p}\right)$. By definition of a utility function, the arguments on each side must be indifferent for the DM.
+
+Second implication:
+
+$$
+\lambda_{p}=\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}
+$$
+
+This is just a rearrangement of the equation above.
+
+We know that $\widetilde{U}$ is linear in probabilities (previous theorems) and represents the same preferences. Hence:
+
+$$
+\begin{gathered}
+\widetilde{U}(p)=\lambda_{p} \cdot \widetilde{U}(\bar{p})+\left(1-\lambda_{p}\right) \cdot \widetilde{U}(\underline{p})= \\
+\lambda_{p} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})= \\
+\underbrace{\left.\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}\right)}_{\lambda_{p}} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})
+\end{gathered}
+$$
+
+In short:
+
+$$
+\widetilde{U}(p)=\underbrace{\left(\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}\right)}_{\lambda_{p}} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})
+$$
+
+In this last expression, only $U(p)$ depends on $p$. All other terms are parameters. Rearrange this expression to get the following:
+
+$$
+\widetilde{U}(p)=\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right] \cdot U(p)+\widetilde{U}(\underline{p})-U(\underline{p}) \cdot\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right]
+$$
+
+Again: except $U(p)$, everything in this expression is a parameter, built from functions ( $U$ or $\widetilde{U}$ ) evaluated at specific arguments ( $\bar{p}$ or $\underline{p}$ ). We can label them as we want. Let's choose:
+
+$$
+\begin{array}{r}
+\beta=\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right] \\
+\gamma=\widetilde{U}(\underline{p})-U(\underline{p}) \cdot \underbrace{\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right]}_{\beta}
+\end{array}
+$$
+
+Then one has:
+
+$$
+\widetilde{U}(p)=\beta U(p)+\gamma
+$$
+
+This is what we wanted to show, concluding the proof.
+
+QED.
+:::
+
+### Expected utility theorem
+
+::: {#thm-EUT}
+(Rational and continuous) Preferences may be represented by an utility function with the expected utility form if and only if it respects the axiom of independence.
+:::
+
+::: callout-important
+## Proof
+
+-   Proof of Necessity: if $\succcurlyeq$ respect the axiom of independence, then it may be represented by a utility function with the expected utility form.
+
+Assume there are lotteries $\bar{p}$ and $\underline{p}$ such that for all $p$, one has $\bar{p} \succcurlyeq p \succcurlyeq \underline{p}$.
+
+If $\bar{p} \sim \underline{p}$, the result follows immediately: use a constant utility function.
+
+Assume from now on $\bar{p}>\underline{p}$.
+
+Step 1
+
+Take $\alpha$ and $\beta$ such that $1>\beta>\alpha>0$.
+
+Write:
+
+$$
+\begin{gathered}
+\bar{p}= \\
+\beta \bar{p}+(1-\beta) \bar{p}> \\
+\beta \bar{p}+(1-\beta) \underline{p}= \\
+(\beta-\alpha) \bar{p}+\alpha \bar{p}+(1-\beta) \underline{p}> \\
+(\beta-\alpha) \underline{p}+\alpha \bar{p}+(1-\beta) \underline{p}= \\
+\alpha \bar{p}+(1-\alpha) \underline{p}> \\
+\alpha \underline{p}+(1-\alpha) \underline{p}= \\
+\underline{p}
+\end{gathered}
+$$
+
+From the first to the second line: $\bar{p}$ is the average of $\bar{p}$ and $\bar{p}$ !
+
+From the second to the third line: we apply the axiom of independence. Observe that we keep $\bar{p}$ in the first term of the sum, but substitute $\bar{p}$ for $\underline{p}$ in the second term. Since $\bar{p}>\underline{p}$, the axiom of independence implies the strict preference.
+
+From the third to the fourth line: add and subtract $\alpha \bar{p}$.
+
+From the fourth to the fifth line: again, we just substitute $\bar{p}$ for $\underline{p}$ in one term of the sum, and leave the rest unchanged. The axiom of independence applies again.
+
+From the fifth to the sixth line: we cancel out $\beta \underline{p}$.
+
+From the sixth to the seventh line: we repeat the argument of the $2^{\text {nd }}$ to $3^{\text {rd }}$ line, in reverse order.
+
+From the seventh to the eighth line: we repeat the argument of the $1^{\text {st }}$ to $2^{\text {nd }}$ line, in reverse order.
+
+Step 2: for all $p$, there is only one $\lambda_{p}$ such that $\lambda_{p} \bar{p}+\left(1-\lambda_{p}\right) \underline{p} \sim p$
+
+Existence follows from continuity. For any lottery $p$, define the sets:
+
+$$
+\begin{aligned}
+& \{\lambda \in[0,1]: \lambda \bar{p}+(1-\lambda) \underline{p} \succcurlyeq p\} \\
+& \{\lambda \in[0,1]: \lambda \bar{p}+(1-\lambda) \underline{p} \preccurlyeq p\}
+\end{aligned}
+$$
+
+Continuity and completeness of $\succcurlyeq$ imply that both sets are closed (why?). Moreover, any $\lambda$ belongs to at least one of these sets. Since both sets are non-empty and $[0,1]$ is connected, there must by some $\lambda$ belonging to both (again: why?). Define it as $\lambda_{p}$.
+
+Uniqueness follows from the previous step. If we were to slightly increase the value of $\lambda_{p}$ (from $\alpha$ to $\beta$ in the notation of the previous step), we would get a new lottery strictly preferred to the DM, breaking indifference.
+
+Step 3: $U(p)=\lambda_{p}$ is a utility function that represents $\succcurlyeq$
+
+Consider two lotteries $p$ and $q$.
+
+From steps 1 and 2, we may write:
+
+$$
+p \succcurlyeq q \Leftrightarrow \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p} \succcurlyeq \lambda_{\mathrm{q}} \bar{p}+\left(1-\lambda_{\mathrm{q}}\right) \underline{p} \Leftrightarrow \lambda_{\mathrm{p}} \succcurlyeq \lambda_{\mathrm{q}}
+$$
+
+The first $\Leftrightarrow$ comes from step 2: use $p \sim \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p}$, and analogously $q \sim \lambda_{\mathrm{q}} \bar{p}+$ $\left(1-\lambda_{\mathrm{q}}\right) \underline{p}$.
+
+The second $\Leftrightarrow$ comes from step 1 , taking $\lambda_{\mathrm{p}}=\beta$ and $\lambda_{\mathrm{q}}=\alpha$.
+
+In short, $p \succcurlyeq q \Leftrightarrow \lambda_{\mathrm{p}} \succcurlyeq \lambda_{\mathrm{q}}$. This is the definition of an utility function representing $\succcurlyeq$.
+
+Step 4: $U(p)=\lambda_{p}$ has the expected utility form.
+
+We have to show that for all $\alpha \in[0,1]$, and for any lotteries $p, p^{\prime}$, one has:
+
+$$
+U\left[\alpha p+(1-\alpha) p^{\prime}\right]=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+$$
+
+From step 2, we have:
+
+$$
+\begin{gathered}
+p \sim \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p} \\
+p^{\prime} \sim \lambda_{\mathrm{p}^{\prime}} \bar{p}+\left(1-\lambda_{\mathrm{p}^{\prime}}\right) \underline{p}
+\end{gathered}
+$$
+
+From step 3, we have : $U(p)=\lambda_{p}$. These two relations become:
+
+$$
+\begin{gathered}
+p \sim U(p) \bar{p}+(1-U(p)) \underline{p} \\
+p^{\prime} \sim U\left(p^{\prime}\right) \bar{p}+\left(1-U\left(p^{\prime}\right)\right) \underline{p}
+\end{gathered}
+$$
+
+Take a convex combination $\alpha p+(1-\alpha) p^{\prime}$. Given the two relations above, we have:
+
+$$
+\begin{aligned}
+& \left.\alpha p+(1-\alpha) p^{\prime} \sim \alpha[U(p) \bar{p}+(1-U(p)) \underline{p}]+(1-\alpha)\left[U\left(p^{\prime}\right) \bar{p}+\left(1-U\left(p^{\prime}\right)\right) \underline{p}\right]\right] \text { Factor out } \bar{p} \text { and } \underline{p} \\
+& \sim\left[\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right] \cdot \bar{p}+\left[\alpha(1-U(p))+(1-\alpha)\left(1-U\left(p^{\prime}\right)\right)\right] \cdot \underline{p} \\
+& \quad \sim\left[\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right] \cdot \bar{p}+\left[1-\left(\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right)\right] \cdot \underline{p}
+\end{aligned}
+$$
+
+Notice now that the terms in red are the same. We may denote it by any letter - for example, $\lambda$ (without the subscript to distinguish it from both $\lambda_{p}$ and $\lambda_{p^{\prime}}$ ): $\lambda=$ $\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)$.
+
+The last line becomes:
+
+$$
+\lambda \cdot \bar{p}+[1-\lambda] \cdot \underline{p}
+$$
+
+In short, and without all the colors:
+
+$$
+\alpha p+(1-\alpha) p^{\prime} \sim \lambda \cdot \bar{p}+[1-\lambda] \cdot \underline{p}
+$$
+
+But this is the very definition of $\lambda_{p}$ as defined in step 2 , only applied to $\alpha p+$ $(1-\alpha) p^{\prime}$. (If you want, you may write $\lambda_{\alpha p+(1-\alpha) p^{\prime}}$ instead of $\lambda$.)
+
+Or, using step 4, we have the more intuitive notation $\lambda=U\left[\alpha p+(1-\alpha) p^{\prime}\right]$.
+
+But we just defined $\lambda=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)$.
+
+Since these are the same $\lambda$, one has:
+
+$$
+U\left[\alpha p+(1-\alpha) p^{\prime}\right]=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+$$
+
+That is, $U$ has the expected utility property, concluding the proof.
+
+QED.
+:::

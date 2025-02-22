@@ -1,0 +1,638 @@
+# Expected Utility Theory
+
+Course so far introduced basic theory of choice and utility, extended to DM and producer theory.
+
+Last topic extends in another direction: choice under uncertainty.
+
+## Choice under Uncertainty
+
+All choices made under some kind of uncertainty.
+
+Sometimes useful to ignore uncertainty, focus on ultimate choices.
+
+Other times, must model uncertainty explicitly.
+
+Examples:
+
+-   Insurance markets.
+-   Financial markets.
+-   Game theory.
+
+### Overview
+
+Impose extra assumptions on basic choice model of Lectures 1-2.
+
+::: callout-note
+## Lottery
+
+Rather than choosing outcome directly, decision-maker chooses uncertain prospect (or lottery).
+
+A lottery is a probability distribution over outcomes.
+:::
+
+Leads to von Neumann-Morgenstern expected utility model.
+
+## Consequences and Lotteries
+
+Two basic elements of expected utility theory: consequences (or outcomes) and lotteries.
+
+### Consequences
+
+Finite set $C$ of consequences.
+
+Consequences are what the decision-maker ultimately cares about.
+
+Example: "I have a car accident, my insurance company covers most of the costs, but I have to pay a $\$ 500$ deductible."
+
+### Decision-maker (DM) does not choose consequences directly.
+
+DM chooses a lottery, $p$.
+
+Lotteries are probability distributions over consequences:
+
+$p: C \rightarrow[0,1]$ with $\sum_{c \in C} p(c)=1$.
+
+Set of all lotteries is denoted by $P$.
+
+Example: "A gold-level health insurance plan, which covers all kinds of diseases, but has a $\$ 500$ deductible."
+
+Makes sense because DM assumed to rank health insurance plans only insofar as lead to different probability distributions over consequences.
+
+## Choice
+
+Decision-maker makes choices from set of alternatives $X$.
+
+What's set of alternatives here, $C$ or $P$ ?
+
+Answer: $P$
+
+### DM does not choose consequences directly, but instead chooses lotteries
+
+Assume decision-maker has a rational preference relation $\gtrsim$ on $P$.
+
+Natural to assume this?
+
+### Convex Combinations of Lotteries
+
+Given two lotteries $p$ and $p^{\prime}$, the convex combination $\alpha p+(1-\alpha) p^{\prime}$ is the lottery defined by
+
+$$
+\left(\alpha p+(1-\alpha) p^{\prime}\right)(c)=\alpha p(c)+(1-\alpha) p^{\prime}(c) \text { for all } c \in C
+$$
+
+One way to generate it:
+
+-   First, randomize between $p$ and $p^{\prime}$ with weights $\alpha$ and $1-\alpha$.
+-   Second, choose a consequence according to whichever lottery came up.
+
+Such a probability distribution over lotteries is called a compound lottery.
+
+In expected utility theory, no distinction between simple and compound lotteries: simple lottery $\alpha p+(1-\alpha) p^{\prime}$ and above compound lottery give same distribution over consequences, so identified with same element of $\boldsymbol{P}$.
+
+So, no problem if DM doesn't know exactly the distribution for something. We'll come back to this.
+
+### The Set  $P$
+
+As $\alpha p+(1-\alpha) p^{\prime}$ is also a lottery, $P$ is convex.
+
+$P$ is also closed and bounded (why?).
+
+$\Rightarrow P$ is a compact subset of $\mathbb{R}^{n}$, where $n=|C|$.
+
+Whenever $\succsim$ is rational and continuous, can be represented by continuous utility function $U: P \rightarrow \mathbb{R}$ :
+
+$$
+p \gtrsim q \Leftrightarrow U(p) \geq U(q)
+$$
+
+We're just applying it to lotteries because that's what the DM chooses now.
+
+Intuitively, want more than this.
+
+Want not only that DM has utility function over lotteries, but also that somehow related to "utility" over consequences.
+
+Only care about lotteries insofar as affect distribution over consequences, so preferences over lotteries should have something to do with "preferences" over consequences.
+
+## Expected Utility
+
+Best we could hope for is representation by utility function of following form:
+
+Definition: a utility function $U: P \rightarrow \mathbb{R}$ has an expected utility form if there exists a function $u: C \rightarrow \mathbb{R}$ such that
+
+$$
+U(p)=\sum_{c \in C} p(c) u(c) \text { for all } p \in P
+$$
+
+In this case, the function $U$ is called an expected utility function, and the function $u$ is call a von Neumann-Morgenstern utility function.
+
+If preferences over lotteries happen to have an expected utility representation, it's as if DM has a "utility function" over consequences (and chooses among lotteries so as to maximize expected "utility over consequences").
+
+Remarks
+
+$$
+U(p)=\sum_{c \in C} p(c) u(c)
+$$
+
+Expected utility function $U: P \rightarrow \mathbb{R}$ represents preferences $\gtrsim$ on $P$ just as we had before
+
+$U: P \rightarrow \mathbb{R}$ is an example of a standard utility function.
+
+von Neumann-Morgenstern utility function $u: C \rightarrow \mathbb{R}$ is not a standard utility function.
+
+### Can't have a "real" utility function on consequences, as DM never chooses among consequences.
+
+If preferences over lotteries happen to have an expected utility representation, it's as if DM has a "utility function" over consequences.
+
+This "utility function" over consequences is the von Neumann-Morgenstern utility function.
+
+## Example
+
+Suppose hipster restaurant doesn't let you order steak or chicken, but only probability distributions over steak and chicken.
+
+How should you assess menu item ($p(steak)$, $p(chicken)$)?
+
+One way: ask yourself how much you'd like to eat steak, $u(steak)$, and chicken, $u(chicken)$, and evaluate according to
+
+$$
+p(\text { steak }) \cdot u(\text { steak })+p(\text { chicken }) \cdot u(\text { chicken })
+$$
+
+If this is what you'd do, then your preferences have an expected utility representation.
+
+Suppose instead you choose whichever menu item has $p$ (steak) closest to $\frac{1}{2}$.
+
+Your preferences are rational, so they have a utility representation.
+
+But they do not have an expected utility representation - we'll see this.
+
+## Property of EU: Linearity in Probabilities
+
+::: {#thm-LP}
+If $U: P \rightarrow \mathbb{R}$ is an expected utility function, then
+
+$$
+U\left(\alpha p+(1-\alpha) p^{\prime}\right)=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+$$
+:::
+
+In fact, a utility function $U: P \rightarrow \mathbb{R}$ has an expected utility form iff this equation holds for all $p, p^{\prime}$, and $\alpha \in[0,1]$.
+
+::: callout-important
+## Proof
+
+Appendix.
+:::
+
+## Property of EU: Invariant to Affine Transformations
+
+Suppose $U: P \rightarrow \mathbb{R}$ is an expected utility function representing preferences $\succsim$.
+
+Any increasing transformation of $U$ also represents $\succsim$.
+
+Not all increasing transformations of $U$ have expected utility form.
+
+::: {#thm-IAT}
+Suppose $U: P \rightarrow \mathbb{R}$ is an expected utility function representing preferences $\succsim$. Then $V: P \rightarrow \mathbb{R}$ is also an expected utility function representing $\gtrsim$ iff there exist $a, b>0$ such that
+
+$$
+V(p)=a+b U(p) \text { for all } p \in P
+$$
+
+If this is so, we also have $V(p)=\sum_{c \in C} p(c) v(c)$ for all $p \in P$, where
+
+$$
+v(c)=a+b u(c) \text { for all } c \in C
+$$
+:::
+
+::: callout-important
+## Proof
+
+Appendix.
+:::
+
+## What Preferences have an Expected Utility Representation?
+
+Preferences must be rational to have any kind of utility representation.
+
+Preferences on a compact and convex set must be continuous to have a continuous utility representation.
+
+Besides rationality and continuity, what's needed to ensure that preferences have an expected utility representation?
+
+## The Independence Axiom
+
+::: {#def-IA}
+A preference relation $\gtrsim$ satisfies independence if, for every $p, q, r \in P$ and $\alpha \in(0,1)$,
+
+$$
+p \succsim q \Leftrightarrow \alpha p+(1-\alpha) r \succsim \alpha q+(1-\alpha) r
+$$
+:::
+
+Can interpret as form of "dynamic consistency."
+
+Doesn't need to hold for consequences.
+
+## Back to Example
+
+Suppose choose lottery with $p$ (steak) closest to $\frac{1}{2}$.
+
+Let $p=\left(\frac{1}{2}, \frac{1}{2}\right), q=(0,1), r=(1,0)$, and $\alpha=\frac{1}{2}$.
+
+Then
+
+$$
+p=\left(\frac{1}{2}, \frac{1}{2}\right)>(0,1)=q
+$$
+
+but
+
+$$
+\alpha q+(1-\alpha) r=\left(\frac{1}{2}, \frac{1}{2}\right)>\left(\frac{3}{4}, \frac{1}{4}\right)=\alpha p+(1-\alpha) r
+$$
+
+Does not satisfy independence.
+
+## Expected Utility: Characterization
+
+A preference relation $\gtrsim$ has an expected utility representation iff it satisfies rationality, continuity, and independence.
+
+Intuition: both having expected utility form and satisfying independence boil down to having straight, parallel indifference curves.
+
+## Subjective Expected Utility Theory
+
+So far, probabilities are objective.
+
+In reality, uncertainty is usually subjective.
+
+Subjective expected utility theory (Savage, 1954): under assumptions roughly similar to ones form this lecture, preferences have an expected utility representation where both the utilities over consequences and the subjective probabilities themselves are revealed by decision-maker's choices.
+
+Thus, expected utility theory applies even when the probabilities are not objectively given.
+
+(To learn more, a good starting point is Kreps (1988), "Notes on the Theory of Choice.")
+
+Again, no problem if DM doesn't know the exact distribution.
+
+The same holds in general equilibrium: allows for different individual priors.
+
+One may go beyond and assume DM has some rule to deal with set of priors - e.g., DM may assume that nature will choose the worst possible prior, conditional on his optimal choice, leading to a mini-max structure that deals with fear of misspecification and relates to sub-rational behavior.
+
+See nice discussion in Hansen and Sargent (2000) and a critique by Sims (AER 2001).
+
+## Attitudes toward Risk
+
+### Money Lotteries
+
+Turn now to special case of choice under uncertainty where outcomes are measured in dollars.
+
+Set of consequences $C$ is subset of $\mathbb{R}$.
+
+A lottery is a cumulative distribution function $F$ on $\mathbb{R}$.
+
+(Now we use $F$ instead of $p$)
+
+Assume preferences have expected utility representation:
+
+$$
+U(F) = E_{F}[u(x)] = \int u(x) f(x) d x
+$$
+
+More generally, we could write $\int u(x) d F(x)$.
+
+This is useful if we do not know whether a density $f$ exists.
+
+We'll assume it does and make $d F(x) / d x=f(x)$, so that $d F(x)=f(x) d x$, leading to our representation above.
+
+(But everything holds for a general $F(x)$.)
+
+Assume $u$ increasing, differentiable.
+
+Question: how do properties of von Neumann-Morgenstern utility function $u$ relate to decision-maker's attitude toward risk?
+
+## Expected Value vs. Expected Utility
+
+Expected value of lottery $F$ is
+
+$$
+E_{F}[x]=\int x f(x) d x
+$$
+
+Expected utility of lottery $F$ is
+
+$$
+E_{F}[u(x)]=\int u(x) f(x) d x
+$$
+
+Can learn about DM's risk attitude by comparing $E_{F}[u(x)]$ and $u\left(E_{F}[x]\right)$.
+
+## Risk Attitude: Definitions
+
+::: {#def-RA}
+A decision-maker is risk-averse if she always prefers the sure wealth level $E_{F}[x]$ to the lottery $F$ : that is,
+
+$$
+\int u(x) f(x) d x \leq u\left(\int x f(x) d x\right) \text { for all } F
+$$
+
+A decision-maker is strictly risk-averse if the inequality is strict for all nondegenerate lotteries $F$.
+
+A decision-maker is risk-neutral if she is always indifferent:
+
+$$
+\int u(x) f(x) d x=u\left(\int x f(x) d x\right) \text { for all } F
+$$
+
+A decision-maker is risk-loving if she always prefers the lottery:
+
+$$
+\int u(x) f(x) d x \geq u\left(\int x f(x) d x\right) \text { for all } F
+$$
+:::
+
+## Risk Aversion and Concavity
+
+Statement that $\int u(x) d F(x) \leq u\left(\int x d F(x)\right)$ for all $F$ is called Jensen's inequality.
+
+Fact: Jensen's inequality holds iff $u$ is concave.
+
+This implies:
+
+::: {#thm-RA}
+A decision-maker is (strictly) risk-averse if and only if $u$ is (strictly) concave.
+
+A decision-maker is risk-neutral if and only if $u$ is linear.
+
+A decision-maker is (strictly) risk-loving if and only if $u$ is (strictly) convex.
+:::
+
+## Certainty Equivalents
+
+Can also define risk-aversion using certainty equivalents.
+
+::: {#def-CE}
+The certainty equivalent of a lottery $F$ is the sure wealth level that yields the same expected utility as $F$: that is,
+
+$$
+u[C E(F, u)] = \int u(x) f(x) d x
+$$
+:::
+
+That is,
+
+$$
+CE(F, u)=u^{-1}\left(\int u(x) d F(x)\right)
+$$
+
+::: {#thm-RACE}
+A decision-maker is risk-averse iff $C E(F, u) \leq E_{F}(x)$ for all $F$.
+
+A decision-maker is risk-neutral iff $C E(F, u)=E_{F}(x)$ for all $F$.
+
+A decision-maker is risk-loving iff $C E(F, u) \geq E_{F}(x)$ for all $F$.
+:::
+
+## Quantifying Risk Attitude
+
+We know what it means for a DM to be risk-averse.
+
+What does it mean for one DM to be more risk-averse than another?
+
+Two possibilities:
+
+-   $u$ is more risk-averse than $v$ if, for every $F, C E(F, u) \leq C E(F, v)$.
+-   $u$ is more risk-averse than $v$ if $u$ is "more concave" than $v$, in that $u=g \circ v$ for some increasing, concave $g$.
+
+One more, based on local curvature of utility function: $u$ is more-risk averse than $v$ if, for every $x$,
+
+$$
+-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)} \geq-\frac{v^{\prime \prime}(x)}{v^{\prime}(x)}
+$$
+
+$A(x, u)=-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)}$ is called the Arrow-Pratt coefficient of absolute risk-aversion.
+
+## An Equivalence
+
+::: {#thm}
+The following are equivalent:
+
+-   For every $F$, $CE(F, u) \leq CE(F, v)$.
+-   There exists an increasing, concave function $g$ such that $u=g \circ v$.
+-   For every $x, A(x, u) \geq A(x, v)$.
+:::
+
+## Risk Attitude and Wealth Levels
+
+How does risk attitude vary with wealth?
+
+Natural to assume that a richer individual is more willing to bear risk: whenever a poorer individual is willing to accept a risky gamble, so is a richer individual.
+
+Captured by decreasing absolute risk-aversion:
+
+::: {#def}
+A von Neumann-Morenstern utility function $u$ exhibits decreasing (constant, increasing) absolute risk-aversion if $A(x, u)$ is decreasing (constant, increasing) in $x$.
+:::
+
+## Risk Attitude and Wealth Levels
+
+::: {#thm-RAWL}
+Suppose $u$ exhibits decreasing absolute risk-aversion.
+
+If the decision-maker accepts some gamble at a lower wealth level, she also accepts it at any higher wealth level:
+
+that is, for any lottery $F(x)$, if
+
+$$
+E_{F}[u(w+x)] \geq u(w)
+$$
+
+then, for any $w^{\prime}>w$,
+
+$$
+E_{F}\left[u\left(w^{\prime}+x\right)\right] \geq u\left(w^{\prime}\right)
+$$
+:::
+
+## Multiplicative Gambles
+
+What about gambles that multiply wealth, like choosing how risky a stock portfolio to hold? Are richer individuals also more willing to bear multiplicative risk? Depends on increasing/decreasing relative risk-aversion:
+
+$$
+R(x, u)=-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)} x
+$$
+
+::: {#thm}
+Suppose u exhibits decreasing relative risk-aversion.
+
+If the decision-maker accepts some multiplicative gamble at a lower wealth level, she also accepts it at any higher wealth level: that is, for any lottery $F(t)$, if
+
+$$
+E_{F}[u(t w)] \geq u(w)
+$$
+
+then, for any $w^{\prime}>w$,
+
+Relative Risk-Aversion vs. Absolute Risk-Aversion
+
+$$
+R(x)=x A(x)
+$$
+
+decreasing relative risk-aversion $\Rightarrow$ decreasing absolute risk-aversion
+
+increasing absolute risk-aversion $\Rightarrow$ increasing relative risk-aversion
+:::
+
+Ex. decreasing relative risk-aversion $\Rightarrow$ more willing to gamble $1 \%$ of wealth as get richer.
+
+So certainly more willing to gamble a fixed amount of money.
+
+## Application: Insurance
+
+Risk-averse agent with wealth $w$, faces probability $p$ of incurring monetary $loss L$.
+
+Can insure against the loss by buying a policy that pays out $a$ if the loss occurs.
+
+Policy that pays out a costs qa.
+
+How much insurance should she buy?
+
+## Agent's Problem
+
+$$
+\max_{a} p u(w-q a-L+a)+(1-p) u(w-q a)
+$$
+
+$u$ concave $\Rightarrow$ concave problem, so FOC is necessary and sufficient.
+
+FOC:
+
+$$
+p(1-q) u^{\prime}(w-q a-L+a)=(1-p) q u^{\prime}(w-q a)
+$$
+
+Equate marginal benefit of extra dollar in each state.
+
+## Actuarily Fair Prices
+
+Insurance is actuarily fair if expected payout qa equals cost of insurance $p a$ : that is, $p=q$.
+
+With acturarily fair insurance, FOC becomes
+
+$$
+u^{\prime}(w-q a-L+a)=u^{\prime}(w-q a)
+$$
+
+Solution: $a=L$
+
+A risk-averse DM facing actuarily fair prices will always fully insure.
+
+## Actuarily Unfair Prices
+
+What if insurance company makes a profit, so $q>p$ ?
+
+Rearrange FOC as
+
+$$
+\frac{u^{\prime}(w-q a-L+a)}{u^{\prime}(w-q a)}=\frac{(1-p) q}{p(1-q)}>1
+$$
+
+Solution: $a<L$
+
+A risk-averse DM facing actuarily unfair prices will never fully insure.
+
+Intuition: $u$ approximately linear for small risks, so not worth giving up expected value to insure away last little bit of variance.
+
+## Comparative Statics
+
+$$
+\max _{a} p u(w-q a-L+a)+(1-p) u(w-q a)
+$$
+
+Bigger loss $\Rightarrow$ buy more insurance ( $a^{*}$ increasing in $L$ ) Follows from Topkis' theorem.
+
+If agent has decreasing absolute risk-aversion, then she buys less insurance as she gets richer.
+
+Prove it as an exercise!
+
+## Application: Portfolio Choice
+
+Risk-averse agent with wealth $w$ has to invest in a safe asset and a risky asset.
+
+Safe asset pays certain return $r$.
+
+Risky asset pays random return $z$, with $\operatorname{cdf} F$.
+
+Agent's problem
+
+$$
+\max _{a \in[0, w]} \int u(a z+(w-a) r) d F(z)
+$$
+
+First-order condition
+
+$$
+\int(z-r) u^{\prime}(a z+(w-a) r) d F(z)=0
+$$
+
+## Risk-Neutral Benchmark
+
+Suppose $u^{\prime}(x)=\alpha x$ for some $\alpha>0$.
+
+Then
+
+$$
+U(a)=\int \alpha(a z+(w-a) r) d F(z)
+$$
+
+so
+
+$$
+U^{\prime}(a)=\alpha(E[z]-r)
+$$
+
+Solution: set $a=w$ if $E[z]>r$, set $a=0$ if $E[z]<r$.
+
+Risk-neutral investor puts all wealth in the asset with the highest rate of return.
+
+$r>E[z]$ Benchmark
+
+$$
+U^{\prime}(0)=\int(z-r) u^{\prime}(w) d F=(E[z]-r) u^{\prime}(w)
+$$
+
+If safe asset has higher rate of return, then even risk-averse investor puts all wealth in the safe asset.
+
+## More Interesting Case
+
+What if agent is risk-averse, but risky asset has higher expected return?
+
+$$
+U^{\prime}(0)=(E[z]-r) u^{\prime}(w)>0
+$$
+
+If risky asset has higher rate of return, then risk-averse investor always puts some wealth in the risky asset.
+
+## Comparative Statics
+
+Does a less risk-averse agent always invest more in the risky asset?
+
+Sufficient condition for agent $v$ to invest more than agent $u$ :
+
+$$
+\begin{gathered}
+\int(z-r) u^{\prime}(a z+(w-a) r) d F=0 \\
+\Rightarrow \int(z-r) v^{\prime}(a z+(w-a) r) d F \geq 0
+\end{gathered}
+$$
+
+$u$ more risk-averse $\Rightarrow v=h \circ u$ for some increasing, convex $h$. Inequality equals
+
+$$
+\int(z-r) h^{\prime}(u(a z+(w-a) r)) u^{\prime}(a z+(w-a) r) d F \geq 0
+$$
+
+$h^{\prime}(\cdot)$ positive and increasing in $z$
+
+$\Rightarrow$ multiplying by $h^{\prime}(\cdot)$ puts more weight on positive $(z>r)$ terms, less weight on negative terms.
+
+A less risk-averse agent always invests more in the risky-asset.

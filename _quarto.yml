@@ -11,7 +11,7 @@ book:
   
   favicon: logo_gpeq_html.png
   author: "Pedro Hemsley <br> PPGE IE/UFRJ"
-  date: last-modified
+  date: last-modified  
   
   chapters:
     - index.qmd
@@ -21,6 +21,15 @@ book:
         - choice-pref-utility.qmd
         - prop-pref-utilityfun.qmd
     
+    - part: lec3and4.qmd
+      chapters:
+        - consumer-theory.qmd
+        
+    - part: lec5and6.qmd
+      chapters:
+        - uncertainty.qmd
+        - risky-prospects.qmd
+    
   downloads: [pdf]
   sharing: [twitter, facebook]
 
@@ -29,12 +38,13 @@ format:
     theme: cosmo
     fontcolor: black
     html-math-method: katex
+    
+    number-sections: true
+    number-depth: 2
   
     css: styles.css
     
   pdf: default
-
-monofont: Lato
 
 editor: visual
 

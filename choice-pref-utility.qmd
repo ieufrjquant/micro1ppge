@@ -47,33 +47,66 @@ We typically write the first four points as
 
 > *"Choose* $x$ *to solve* $\max u(x)$ *subject to restrictions on* $x$*”*
 
-Then we move on to interaction: no individual incentive to deviate, given what others are doing. In short, our structure is optimization + equilibrium. This is very general. Hard to work without it.
+Then we move on to interaction: no individual incentive to deviate, given what others are doing.
+
+In short, our structure is optimization + equilibrium.\
+
+This is very general. Hard to work without it.
+
 
 ## About assumptions
 
 We’ve barely begun and already have some big assumptions.
 
-**We’ll make many other assumptions along the way.** Pay attention to them: assumptions must be clearly understood. We usually write $A \Rightarrow B$: we must be able to understand what happens $(B)$ under some circunstances $(A)$. This is **NOT** them same as stating $B$ (think of the first welfare theorem).
+**We’ll make many other assumptions along the way.** 
 
-**Assumptions have a tradeoff.** On one hand, they take away generality: if we assume economic agents have perfect memory, we must be cautious when applying our model to agents without perfect memory. On the other hand, they allow us to better understand a (more restricted) setting.
+- Pay attention to them: assumptions must be clearly understood. 
+- We usually write $A \Rightarrow B$: we must be able to understand what happens $(B)$ under some circunstances $(A)$.
+- This is **NOT** them same as stating $B$ (think of the first welfare theorem).
 
-**This is the tradeoff of the lab rat.** It’s easier to study, and we learn a lot from it, but must be aware of its limits. In our case, ‘homo economicus’, for example:
+**Assumptions have a tradeoff.** 
 
--   Simplest economic model: maximize utility subject only to a budget constraint.
+- On one hand, they take away generality: if we assume economic agents have perfect memory, we must be cautious when applying our model to agents without perfect memory. 
+- On the other hand, they allow us to better understand a (more restricted) setting.
 
-We study the homo economicus hoping to learn something about its distant cousin: homo sapiens. The more realist economic agent from behavioral economics is our ‘lab monkey’: the same tradeoff applies.
+**This is the tradeoff of the lab rat.** 
 
-**Is there a way around this tradeoff?** No: it comes from our own limitations, as we cannot pay attention and process all available information. Think for a moment far from economics: zebras and lions. Where are their eyes placed? They “choose” to focus on some specific type of information, and give up on many things. It works according to some specific criterion: **survival**.
+- It’s easier to study, and we learn a lot from it, but must be aware of its limits. 
+- In our case, ‘homo economicus’, for example: Simplest economic model: maximize utility subject only to a budget constraint.
+- We study the homo economicus hoping to learn something about its distant cousin: homo sapiens. 
+- The more realist economic agent from behavioral economics is our ‘lab monkey’: the same tradeoff applies.
 
-**In economics (and any other field of science), we will make assumptions, whether it’s clear or not.** The problem is the criterion we use to evaluate them. No “given” criterion such as survival. Major discussion about criteria, for every research question.
+**Is there a way around this tradeoff?**
 
-**We may put it another way: there is a tradeoff to realism.** If it’s too much: can’t really understand what’s going on, can’t make predictions. Borges’ map. If it’s too little: you’ll understand clearly something not relevant to your research question. Drunkard looking for his keys under the lamp post, not where he lost them.
+- No: it comes from our own limitations, as we cannot pay attention and process all available information. 
+- Think for a moment far from economics: zebras and lions. Where are their eyes placed? 
+- They “choose” to focus on some specific type of information, and give up on many things. 
+- It works according to some specific criterion: **survival**.
 
-In the end of the day, we use approximations, and we want predictions that can be tested to see whether these approximations are good enough. Keep in mind that external validity is always an issue, even when we have good empirical results, and this depends on how restrictive our assumptions are (must be extra careful with observational data!).
+**In economics (and any other field of science), we will make assumptions, whether it’s clear or not.** 
 
-**Lastly, a point about representation: a model of reality is different from reality.** Implication: solving a model in decision theory is different from actually making that decision (same reasoning holds for anything else in science). Think of catching an object thrown to you (no actual functional analysis problem) or buying stuff at the grocery store (no actual lagrangian).
+- The problem is the criterion we use to evaluate them. 
+- No “given” criterion such as survival. Major discussion about criteria, for every research question.
 
-This goes back to theory of agency in biology: consciousness, representation and abstraction. Important: if the modeler knows more than the agents in the model, this must be modeled too! It’s some form of restriction.
+**We may put it another way: there is a tradeoff to realism.** 
+
+- If it’s too much: can’t really understand what’s going on, can’t make predictions. Borges’ map. 
+- If it’s too little: you’ll understand clearly something not relevant to your research question. Drunkard looking for his keys under the lamp post, not where he lost them.
+
+In the end of the day, we use approximations, and we want predictions that can be tested to see whether these approximations are good enough. 
+
+Keep in mind that external validity is always an issue, even when we have good empirical results, and this depends on how restrictive our assumptions are. 
+
+(must be extra careful with observational data!)
+
+**Lastly, a point about representation: a model of reality is different from reality.** 
+
+- Implication: solving a model in decision theory is different from actually making that decision (same reasoning holds for anything else in science). 
+- Think of catching an object thrown to you (no actual functional analysis problem) or buying stuff at the grocery store (no actual lagrangian).
+
+This goes back to theory of agency in biology: consciousness, representation and abstraction. 
+
+Important: if the modeler knows more than the agents in the model, this must be modeled too! It’s some form of restriction.
 
 **As for criticism:** when we criticize a model, we either say “$A$ is not the relevant setup to consider” or “$A$ does not really imply $B$”. Considering a different setup ($A'$ instead of $A$) is not really a criticism – it’s just ‘doing something else’. Think of political and relief maps, or flat maps and globes.
 
@@ -398,7 +431,7 @@ Representing a given preference relation is an ordinal property. The numerical v
 ::: callout-important
 ## Proof
 
-- Let’s prove the [first part]{.underline}.
+-   Let’s prove the [first part]{.underline}.
 
 We may write it as: $\succcurlyeq$ is represented by utility function implies $\succcurlyeq$ is rational.
 

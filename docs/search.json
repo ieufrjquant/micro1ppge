@@ -25,7 +25,7 @@
     "href": "choice-pref-utility.html#decision-theory",
     "title": "1  Choice, Preference and Utility",
     "section": "",
-    "text": "1. Choices are possible\n\nSeems obvious, but sets us apart from many models from 19th century sociology\nBig discussions here. See Determined: a science of life without free will (Sapolsky, 2023)\nImportant link to theory of agency in biology\nWe usually model this through restrictions (see point 4 below)\n\n\n\n2. There is a defined subject that makes decisions, in some circumstance\n\n(Usually) It’s and individual, not a set of individuals such as family nor parts of an individual such as Id and Ego – but there has been much development in this direction.\nWe just need to separate individual from the whole society (or there would be no need to study interactions)\nThis is not the selfish agent assumption, which we can also make in particular settings\n\n\n\n3. Choices are made according to some criteria\n\nThey are not purely random (at least not necessarily)\nThis is the same as saying as there is some objective. Could be anything: profit, utility, leisure, stability, time with loved ones, watching as many world cup matches as possible…\n\n\n\n4. Choices are subject to constraints\n\nOne cannot simply choose ‘everything’. At the very least there is the opportunity cost of time.\nThis is not necessarily a budget restriction: could be time, attention, memory, information, ability to process information, or external factors such as physical environment or laws, or simply other agents.\nIn this course, we will consider a budget constraint, but this is just a particular case, and the absent restrictions are as important as the one(s) we will consider!\n\n\n\n5. Consistency requirement: equilibrium\n\nEveryone is choosing according to the four previous assumptions at any point in time.\nIn other words: given the criteria and the restrictions at some point in time, no one would like to change their decision at that moment.\nFor a given individual, part of the environment is ‘other individuals making choices, and maybe they’re even taking my actions into account’\nThis is NOT about absence of movement or change. There could be mistakes and regrets.\n\nWe typically write the first four points as\n\n“Choose x to solve \\max u(x) subject to restrictions on x”\n\nThen we move on to interaction: no individual incentive to deviate, given what others are doing. In short, our structure is optimization + equilibrium. This is very general. Hard to work without it.",
+    "text": "1. Choices are possible\n\nSeems obvious, but sets us apart from many models from 19th century sociology\nBig discussions here. See Determined: a science of life without free will (Sapolsky, 2023)\nImportant link to theory of agency in biology\nWe usually model this through restrictions (see point 4 below)\n\n\n\n2. There is a defined subject that makes decisions, in some circumstance\n\n(Usually) It’s and individual, not a set of individuals such as family nor parts of an individual such as Id and Ego – but there has been much development in this direction.\nWe just need to separate individual from the whole society (or there would be no need to study interactions)\nThis is not the selfish agent assumption, which we can also make in particular settings\n\n\n\n3. Choices are made according to some criteria\n\nThey are not purely random (at least not necessarily)\nThis is the same as saying as there is some objective. Could be anything: profit, utility, leisure, stability, time with loved ones, watching as many world cup matches as possible…\n\n\n\n4. Choices are subject to constraints\n\nOne cannot simply choose ‘everything’. At the very least there is the opportunity cost of time.\nThis is not necessarily a budget restriction: could be time, attention, memory, information, ability to process information, or external factors such as physical environment or laws, or simply other agents.\nIn this course, we will consider a budget constraint, but this is just a particular case, and the absent restrictions are as important as the one(s) we will consider!\n\n\n\n5. Consistency requirement: equilibrium\n\nEveryone is choosing according to the four previous assumptions at any point in time.\nIn other words: given the criteria and the restrictions at some point in time, no one would like to change their decision at that moment.\nFor a given individual, part of the environment is ‘other individuals making choices, and maybe they’re even taking my actions into account’\nThis is NOT about absence of movement or change. There could be mistakes and regrets.\n\nWe typically write the first four points as\n\n“Choose x to solve \\max u(x) subject to restrictions on x”\n\nThen we move on to interaction: no individual incentive to deviate, given what others are doing.\nIn short, our structure is optimization + equilibrium.\n\nThis is very general. Hard to work without it.",
     "crumbs": [
       "Lectures 1 – 2",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Choice, Preference and Utility</span>"
@@ -36,7 +36,7 @@
     "href": "choice-pref-utility.html#about-assumptions",
     "title": "1  Choice, Preference and Utility",
     "section": "1.2 About assumptions",
-    "text": "1.2 About assumptions\nWe’ve barely begun and already have some big assumptions.\nWe’ll make many other assumptions along the way. Pay attention to them: assumptions must be clearly understood. We usually write A \\Rightarrow B: we must be able to understand what happens (B) under some circunstances (A). This is NOT them same as stating B (think of the first welfare theorem).\nAssumptions have a tradeoff. On one hand, they take away generality: if we assume economic agents have perfect memory, we must be cautious when applying our model to agents without perfect memory. On the other hand, they allow us to better understand a (more restricted) setting.\nThis is the tradeoff of the lab rat. It’s easier to study, and we learn a lot from it, but must be aware of its limits. In our case, ‘homo economicus’, for example:\n\nSimplest economic model: maximize utility subject only to a budget constraint.\n\nWe study the homo economicus hoping to learn something about its distant cousin: homo sapiens. The more realist economic agent from behavioral economics is our ‘lab monkey’: the same tradeoff applies.\nIs there a way around this tradeoff? No: it comes from our own limitations, as we cannot pay attention and process all available information. Think for a moment far from economics: zebras and lions. Where are their eyes placed? They “choose” to focus on some specific type of information, and give up on many things. It works according to some specific criterion: survival.\nIn economics (and any other field of science), we will make assumptions, whether it’s clear or not. The problem is the criterion we use to evaluate them. No “given” criterion such as survival. Major discussion about criteria, for every research question.\nWe may put it another way: there is a tradeoff to realism. If it’s too much: can’t really understand what’s going on, can’t make predictions. Borges’ map. If it’s too little: you’ll understand clearly something not relevant to your research question. Drunkard looking for his keys under the lamp post, not where he lost them.\nIn the end of the day, we use approximations, and we want predictions that can be tested to see whether these approximations are good enough. Keep in mind that external validity is always an issue, even when we have good empirical results, and this depends on how restrictive our assumptions are (must be extra careful with observational data!).\nLastly, a point about representation: a model of reality is different from reality. Implication: solving a model in decision theory is different from actually making that decision (same reasoning holds for anything else in science). Think of catching an object thrown to you (no actual functional analysis problem) or buying stuff at the grocery store (no actual lagrangian).\nThis goes back to theory of agency in biology: consciousness, representation and abstraction. Important: if the modeler knows more than the agents in the model, this must be modeled too! It’s some form of restriction.\nAs for criticism: when we criticize a model, we either say “A is not the relevant setup to consider” or “A does not really imply B”. Considering a different setup (A' instead of A) is not really a criticism – it’s just ‘doing something else’. Think of political and relief maps, or flat maps and globes.\n\n\n\n\n\n\nWe always have to ask: What are we building our models and theories for? What do we want to understand?\nModels are made to be used, not to be believed\nIf they help us with something relevant, they’re doing their job: increase food production, cure a disease, decrease unemployment, etc.\n\n\n\n\nMathematics\nOur assumptions often generate a setup that may be analyzed mathematically. Our optimization problem will be written as something similar to:\n\\max_{\\{x\\}} {f(x)} subject to some restriction\ng(x) &lt; 0\nYet, it is important to notice the difference between language and tools. We use mathematical language as in the example above. This does not mean we’re using any mathematical tools yet: this could be written in plain English. Often we will use actual mathematical tools: if f and g are differentiable functions, then we may use first-order conditions.\n\n\nAn additional point\n\nAs science advances, it becomes more continuous, and less discrete.\nIn economics, we fight too often over petty details (Freud: narcissism of small differences.)\n\nWe will start with the most basic model: the traditional homo economicus, our lab rat, whose only restriction is budgetary.\n\n\nAn example\nLionel Page fascinating explanation of Prospect Theory:\n\n\n\nProspect Theory\n\n\nThis is the most cited paper in economics: people value what they have by considering it as a gain or a loss relative to a subjective “reference point”. This point may be status quo, expectations, aspirations: not defined / agreed upon.\nReference dependent preferences are a cognitive flaw? The biological basis of economic behavior (Robson, 2001): subjective satisfaction can be seen as an informative signal that helps us identify the best option. Eating, sleeping and having sex ‘feel good’ because they help us survive: subjective satisfaction is informative signal.\n\n\n\n\n\nBut brain (neurological processes, more generally) have constraints when generating signals of satisfaction:\n\nSignals must be bounded because there is a limited number of neurons to process them\nSignals are not perfectly precise (drugs as hijacking)\n\nHence: we are more likely to make mistakes when options are close.\n\n\n\n\n\nCan your system of perception be improved to reduce mistakes?\nYes. When the slope of subjective satisfaction increases, it reduces mistakes between options that are close.\n\n\n\n\n\nBut satisfaction is bounded: physical limit to pleasure (that is, to informativeness of signals). Then satisfaction cannot have a super high slope everywhere.\nThe question becomes: Where should the slope of subjective satisfaction be steeper to limit mistakes? The optimal solution is that it should be steeper where you are more likely to face options to choose from!\n\n\n\n\n\nSee also Rayo and Becker (2007) and Netzer (2009).\n\nSupport from neuroscience: sensory systems respond to stimuli by following their distribution.\nReference-dependent preferences are not a cognitive flaw. “They are an optimal solution, under irreducible biological constraints faced by our perceptual systems.” \\rightarrow Efficient coding.\nReference point is an expectation.\nRecent literature in economics and neuroscience.\n\nIn short: again, we have the problem “Choose x to solve \\max u(x) subject to restrictions on x”. Restrictions that don’t show up are as relevant as those that show up.\nFar from the only example… in fact, hard to think of economics without this structure (and hard in social sciences in general). What decisions are automatic, and what are well-thought? (Do you think about where to brush your teeth every day?)\n\n\nSome difficult words\nThis setup is an approach based on optimization and equilibrium. Sometimes we talk about rational agents. All these words have multiple meanings and lead to confusion.\n\nOptimization simply means that individuals make choices according to some criteria, given the relevant restrictions. But sometimes used as ‘perfect optimization’ or ‘hyper rationality’, which needs not be the case.\nRationality has different uses within microeconomics. First: similar to optimization under restrictions. Second: a particular set of basic assumptions on the decision-maker. We will use the latter. Sometimes (very often!) used in the sense of ‘super computational power’. This is usually the case in basic microeconomics: we only have a budget constraint, meaning there are no cognitive constraints. This is often referred to as ‘homo economicus’ of ‘homo rationalis’ and is simply our lab rat: we study it not because it’s realistic, but because it’s much easier to study, and many things we learn carry over to ‘actual’ humans.\nEquilibrium means there is no unilateral incentive to change in a given context. Sometimes used, even within economics, in the sense of physics: lack of movement, or some very stable movement. This is NOT the meaning of the word in microeconomics.",
+    "text": "1.2 About assumptions\nWe’ve barely begun and already have some big assumptions.\nWe’ll make many other assumptions along the way.\n\nPay attention to them: assumptions must be clearly understood.\nWe usually write A \\Rightarrow B: we must be able to understand what happens (B) under some circunstances (A).\nThis is NOT them same as stating B (think of the first welfare theorem).\n\nAssumptions have a tradeoff.\n\nOn one hand, they take away generality: if we assume economic agents have perfect memory, we must be cautious when applying our model to agents without perfect memory.\nOn the other hand, they allow us to better understand a (more restricted) setting.\n\nThis is the tradeoff of the lab rat.\n\nIt’s easier to study, and we learn a lot from it, but must be aware of its limits.\nIn our case, ‘homo economicus’, for example: Simplest economic model: maximize utility subject only to a budget constraint.\nWe study the homo economicus hoping to learn something about its distant cousin: homo sapiens.\nThe more realist economic agent from behavioral economics is our ‘lab monkey’: the same tradeoff applies.\n\nIs there a way around this tradeoff?\n\nNo: it comes from our own limitations, as we cannot pay attention and process all available information.\nThink for a moment far from economics: zebras and lions. Where are their eyes placed?\nThey “choose” to focus on some specific type of information, and give up on many things.\nIt works according to some specific criterion: survival.\n\nIn economics (and any other field of science), we will make assumptions, whether it’s clear or not. The problem is the criterion we use to evaluate them. No “given” criterion such as survival. Major discussion about criteria, for every research question.\nWe may put it another way: there is a tradeoff to realism. If it’s too much: can’t really understand what’s going on, can’t make predictions. Borges’ map. If it’s too little: you’ll understand clearly something not relevant to your research question. Drunkard looking for his keys under the lamp post, not where he lost them.\nIn the end of the day, we use approximations, and we want predictions that can be tested to see whether these approximations are good enough. Keep in mind that external validity is always an issue, even when we have good empirical results, and this depends on how restrictive our assumptions are (must be extra careful with observational data!).\nLastly, a point about representation: a model of reality is different from reality. Implication: solving a model in decision theory is different from actually making that decision (same reasoning holds for anything else in science). Think of catching an object thrown to you (no actual functional analysis problem) or buying stuff at the grocery store (no actual lagrangian).\nThis goes back to theory of agency in biology: consciousness, representation and abstraction. Important: if the modeler knows more than the agents in the model, this must be modeled too! It’s some form of restriction.\nAs for criticism: when we criticize a model, we either say “A is not the relevant setup to consider” or “A does not really imply B”. Considering a different setup (A' instead of A) is not really a criticism – it’s just ‘doing something else’. Think of political and relief maps, or flat maps and globes.\n\n\n\n\n\n\nWe always have to ask: What are we building our models and theories for? What do we want to understand?\nModels are made to be used, not to be believed\nIf they help us with something relevant, they’re doing their job: increase food production, cure a disease, decrease unemployment, etc.\n\n\n\n\nMathematics\nOur assumptions often generate a setup that may be analyzed mathematically. Our optimization problem will be written as something similar to:\n\\max_{\\{x\\}} {f(x)} subject to some restriction\ng(x) &lt; 0\nYet, it is important to notice the difference between language and tools. We use mathematical language as in the example above. This does not mean we’re using any mathematical tools yet: this could be written in plain English. Often we will use actual mathematical tools: if f and g are differentiable functions, then we may use first-order conditions.\n\n\nAn additional point\n\nAs science advances, it becomes more continuous, and less discrete.\nIn economics, we fight too often over petty details (Freud: narcissism of small differences.)\n\nWe will start with the most basic model: the traditional homo economicus, our lab rat, whose only restriction is budgetary.\n\n\nAn example\nLionel Page fascinating explanation of Prospect Theory:\n\n\n\nProspect Theory\n\n\nThis is the most cited paper in economics: people value what they have by considering it as a gain or a loss relative to a subjective “reference point”. This point may be status quo, expectations, aspirations: not defined / agreed upon.\nReference dependent preferences are a cognitive flaw? The biological basis of economic behavior (Robson, 2001): subjective satisfaction can be seen as an informative signal that helps us identify the best option. Eating, sleeping and having sex ‘feel good’ because they help us survive: subjective satisfaction is informative signal.\n\n\n\n\n\nBut brain (neurological processes, more generally) have constraints when generating signals of satisfaction:\n\nSignals must be bounded because there is a limited number of neurons to process them\nSignals are not perfectly precise (drugs as hijacking)\n\nHence: we are more likely to make mistakes when options are close.\n\n\n\n\n\nCan your system of perception be improved to reduce mistakes?\nYes. When the slope of subjective satisfaction increases, it reduces mistakes between options that are close.\n\n\n\n\n\nBut satisfaction is bounded: physical limit to pleasure (that is, to informativeness of signals). Then satisfaction cannot have a super high slope everywhere.\nThe question becomes: Where should the slope of subjective satisfaction be steeper to limit mistakes? The optimal solution is that it should be steeper where you are more likely to face options to choose from!\n\n\n\n\n\nSee also Rayo and Becker (2007) and Netzer (2009).\n\nSupport from neuroscience: sensory systems respond to stimuli by following their distribution.\nReference-dependent preferences are not a cognitive flaw. “They are an optimal solution, under irreducible biological constraints faced by our perceptual systems.” \\rightarrow Efficient coding.\nReference point is an expectation.\nRecent literature in economics and neuroscience.\n\nIn short: again, we have the problem “Choose x to solve \\max u(x) subject to restrictions on x”. Restrictions that don’t show up are as relevant as those that show up.\nFar from the only example… in fact, hard to think of economics without this structure (and hard in social sciences in general). What decisions are automatic, and what are well-thought? (Do you think about where to brush your teeth every day?)\n\n\nSome difficult words\nThis setup is an approach based on optimization and equilibrium. Sometimes we talk about rational agents. All these words have multiple meanings and lead to confusion.\n\nOptimization simply means that individuals make choices according to some criteria, given the relevant restrictions. But sometimes used as ‘perfect optimization’ or ‘hyper rationality’, which needs not be the case.\nRationality has different uses within microeconomics. First: similar to optimization under restrictions. Second: a particular set of basic assumptions on the decision-maker. We will use the latter. Sometimes (very often!) used in the sense of ‘super computational power’. This is usually the case in basic microeconomics: we only have a budget constraint, meaning there are no cognitive constraints. This is often referred to as ‘homo economicus’ of ‘homo rationalis’ and is simply our lab rat: we study it not because it’s realistic, but because it’s much easier to study, and many things we learn carry over to ‘actual’ humans.\nEquilibrium means there is no unilateral incentive to change in a given context. Sometimes used, even within economics, in the sense of physics: lack of movement, or some very stable movement. This is NOT the meaning of the word in microeconomics.",
     "crumbs": [
       "Lectures 1 – 2",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Choice, Preference and Utility</span>"
@@ -128,6 +128,919 @@
     "crumbs": [
       "Lectures 1 – 2",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Properties of Preferences and Utility Functions</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html",
+    "href": "consumer-theory.html",
+    "title": "3  Consumer Theory",
+    "section": "",
+    "text": "3.1 Consumer Problem (CP)\n\\max_{x \\in \\mathbb{R}_+^n} \\ \\ \\ u\\left(x\\right)\\ \\\\\ns.t.\\ \\ \\ p \\cdot x \\le w\nRestrictions that don’t show up are the most important ones!\nNotation: p\\in\\mathbb{R}^n, x\\in\\mathbb{R}^n, p \\cdot x=p_1x_1+\\ldots+p_nx_n (inner product)\nNow discuss some implicit assumptions underlying (CP).",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#consumer-problem-cp",
+    "href": "consumer-theory.html#consumer-problem-cp",
+    "title": "3  Consumer Theory",
+    "section": "",
+    "text": "Consumer chooses consumption vector x=\\left(x_1,\\ldots,x_n\\right)\nx_k is consumption of good k\nEach unit of good k costs p_k\np \\cdot x is total expenditure\nTotal available income is w\n\n\n\nFirst: prices are Linear\nEach unit of good k costs the same.\nNo quantity discounts or supply constraints.\nConsumer’s choice set (or budget set) is:\n\n\nB(p,w)=\\left\\{x\\in\\mathbb{R}_+^n:p\\cdot x\\le w\\right\\}\n\nSet is defined by single line (or hyperplane): the budget line \np\\cdot x=w\n Assume p\\geq0.\n(If we’re talking about bad things, so that price cannot be positive, think of garbage collection with positive price)\n\n\nSecond: Goods are Divisible\nx\\in\\mathbb{R}_+^n and consumer can consume any bundle in budget set\nCan model indivisibilities by assuming utility only depends on integer part of x.\n\n\nThird: Set of Goods is Finite ({n}&lt;\\infty)\nThis is not obvious: think of a dynamic economy with no known final date.\nDebreu (1959): A commodity is characterized by its physical properties, the date at which it will be available, and the location at which it will be available.\nIn practice, set of goods suggests itself naturally based on context.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand",
+    "href": "consumer-theory.html#marshallian-demand",
+    "title": "3  Consumer Theory",
+    "section": "3.2 Marshallian Demand",
+    "text": "3.2 Marshallian Demand\nThe solution to the (CP) is called the Marshallian demand (or Walrasian demand).\nMay be multiple solutions, so formal definition is:\n\nDefinition 3.1 The Marshallian demand correspondence x: \\mathbb{R}_+^n\\times\\mathbb{R}\\rightrightarrows\\mathbb{R}_+^n is defined by\n\n\\begin{aligned}\nx(p,w) &= argmax_{x \\in B(p,w)} \\ u(x) \\\\ &= \\left\\{z\\in B(p,w):u(z)=\\max_{x\\in B(p,w)} \\ u(x)\\right\\}  \n\\end{aligned}\n\nHeavy notation for simple idea!\nDomain is \\mathbb{R}_+^n\\times\\mathbb{R}: n prices, one level of income.\nStart by deriving basic properties of budget sets and Marshallian demand.\nExample: Cobb-Douglas Marshallian demand: u\\left(x_1,x_2\\right)=x_1^\\alpha x_2^{1-\\alpha}\n\nx_1\\left(p_1,p_2,w\\right)=\\alpha\\frac{w}{p_1} \\\\\nx_2\\left(p_1,p_2,w\\right)=\\left(1-\\alpha\\right)\\frac{w}{p_2}",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#budget-sets",
+    "href": "consumer-theory.html#budget-sets",
+    "title": "3  Consumer Theory",
+    "section": "3.3 Budget Sets",
+    "text": "3.3 Budget Sets\n\nTheorem 3.1 Budget sets are homogeneous of degree 0 : that is, for all \\lambda&gt;0, B(\\lambda\\ p,\\lambda\\ w)=B(p,w).\n\n\n\n\n\n\n\nProof\n\n\n\n\n\\begin{matrix}B(\\lambda p,\\lambda w)&\\ =\\left\\{x\\in\\mathbb{R}_+^n\\mid\\lambda p\\cdot x\\le\\lambda w\\right\\}\\\\&\\ =\\left\\{x\\in\\mathbb{R}_+^n\\mid p\\cdot x\\le w\\right\\}=B(p,w).\\\\\\end{matrix}\n Nothing changes if scale prices and income by same factor.\nQED.\n\n\n\nTheorem 3.2 If p\\gg0, then B(p,w) is compact.\n\n\n\n\n\n\n\n“Proof” (Write it formally as an exercise)\n\n\n\nA subset of \\mathbb{R}^n is compact if and only if it is closed and limited.\nFor any p,B(p,w) is closed. (Notice the weak inequality in the definition of B.)\nIf p\\gg0, then B(p,w) is also bounded.\nQED.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-existence",
+    "href": "consumer-theory.html#marshallian-demand-existence",
+    "title": "3  Consumer Theory",
+    "section": "3.4 Marshallian Demand: Existence",
+    "text": "3.4 Marshallian Demand: Existence\n\nTheorem 3.3 If u is continuous and p\\gg0, then (CP) has a solution.\n\n(That is, x(p,w) is non-empty.)\n\n\n\n\n\n\nProof\n\n\n\nA continuous function on a compact set attains its maximum (Weirstrass theorem).\nQED.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-uniqueness",
+    "href": "consumer-theory.html#marshallian-demand-uniqueness",
+    "title": "3  Consumer Theory",
+    "section": "3.5 Marshallian Demand: Uniqueness?",
+    "text": "3.5 Marshallian Demand: Uniqueness?\nThe Marshallian Demand needs not be unique\nExample: perfect substitutes – write it out as an exercise.\nGenerally, the Marshallian demand is a correspondence, or a set-valued function: for each \\left(p,w\\right), it associates a set of optimal choices x\\left(p,w\\right).\nWe’ve seen before the following results (we’ll just rewrite them in our context):\nSince the budget set is convex, the Marshallian demand is a convex correspondence if preferences are convex.\nThe Marshallian demand is unique (that is, a function) if preferences are strictly convex.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-homogeneity-of-degree-0",
+    "href": "consumer-theory.html#marshallian-demand-homogeneity-of-degree-0",
+    "title": "3  Consumer Theory",
+    "section": "3.6 Marshallian Demand: Homogeneity of Degree 0",
+    "text": "3.6 Marshallian Demand: Homogeneity of Degree 0\n\nTheorem 3.4 For all \\lambda&gt;0 , x(\\lambda\\ p,\\lambda\\ w) = x(p,w).\n\n\n\n\n\n\n\nImportant\n\n\n\nB(\\lambda\\ p,\\lambda\\ w)=B(p,w), so (CP) with prices \\lambda\\ p and income \\lambda\\ w is same problem as (CP) with prices p and income w, since utility function is not affected by \\lambda.\nQED.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-continuity",
+    "href": "consumer-theory.html#marshallian-demand-continuity",
+    "title": "3  Consumer Theory",
+    "section": "3.7 Marshallian Demand: “Continuity”",
+    "text": "3.7 Marshallian Demand: “Continuity”\n\nTheorem 3.5 Assume u is continuous and strictly quasi-concave (that is, preferences are strictly convex). Then the Marshallian demand x(p,w) is a continuous function.\n\nMore generally: if u is continuous (but not necessarily quasi-concave), then the Marshallian demand is upper hemicontinuous.\n\n\n\n\n\n\nProof\n\n\n\nFollows directly from the theorem of the maximum.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-walras-law",
+    "href": "consumer-theory.html#marshallian-demand-walras-law",
+    "title": "3  Consumer Theory",
+    "section": "3.8 Marshallian Demand: Walras’ Law",
+    "text": "3.8 Marshallian Demand: Walras’ Law\nReminder: Preferences are locally non-satiated if for all x\\in X and all \\varepsilon &gt; 0, there exists y \\succ x such that y\\in B_\\varepsilon\\left(x\\right)=\\left\\{y\\in X:d\\left(x,y\\right)&lt;\\varepsilon\\right\\}.\n\nTheorem 3.6 If preferences are locally non-satiated, then for every (p,w) and every x \\in x(p,w), we have p \\cdot x = w.\n\n\n\n\n\n\n\nProof\n\n\n\nIf p \\cdot x &lt; w, then there exists \\varepsilon &gt; 0 such that B_\\varepsilon(x)\\subseteq B(p,w). By local non-satiation, for every \\varepsilon&gt;0 there exists y\\in B_\\varepsilon(x) such that y \\succ x.\nHence, there exists y \\in B(p,w) such that y \\succ x.\nBut then x \\notin x(p,w), that is, x is not an optimal choice: contradiction.\nQED.\n\n\nWalras’ Law lets us rewrite (CP) as\n\n\\max_{x \\in \\mathbb{R}_+^n} \\ \\ u(x) \\\\ \\mathrm{\\ s.t.\\ }p\\cdot x=w\\\\",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#marshallian-demand-differentiable-demand",
+    "href": "consumer-theory.html#marshallian-demand-differentiable-demand",
+    "title": "3  Consumer Theory",
+    "section": "3.9 Marshallian Demand: Differentiable Demand",
+    "text": "3.9 Marshallian Demand: Differentiable Demand\nImplications if demand is single-valued and differentiable:\n\nA proportional change in all prices and income does not affect demand: \n\\sum_{j=1}^{n}p_j\\frac{\\partial}{\\partial p_j}x_i(p,w)+w\\frac{\\partial}{\\partial w}x_i(p,w)=0\n\nA change in the price of one good does not affect total expenditure: \n\\sum_{j=1}^{n} p_j\\frac{\\partial}{\\partial p_i}x_j(p,w)+x_i(p,w)=0.\n\nA change in income leads to an identical change in total expenditure: \n\\sum_{i=1}^{n} p_i\\frac{\\partial}{\\partial w}x_i(p,w)=1",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-indirect-utility-function",
+    "href": "consumer-theory.html#the-indirect-utility-function",
+    "title": "3  Consumer Theory",
+    "section": "3.10 The Indirect Utility Function",
+    "text": "3.10 The Indirect Utility Function\nCan learn more about set of solutions to (CP) (Marshallian demand) by relating to the value of (CP).\nValue of (CP) = welfare of consumer facing prices p with income w.\nThe value function of (CP) is called the indirect utility function.\n\nDefinition 3.2 (The Indirect Utility Function) v:\\mathbb{R}_+^n\\times\\mathbb{R}\\rightarrow\\mathbb{R} is defined by v(p,w) = \\max_{x \\in B(p,w)} u(x).\nSo we have \\left(p,w\\right)\\longrightarrow\\ x\\left(p,w\\right)\\longrightarrow\\ u\\left(x\\left(p,w\\right)\\right)=\\ v(p,w).\n\nNotice that demand x is the image of \\left(p,w\\right) and also the argument of u.\nExample: Cobb-Douglas indirect utility function:\n\nu\\left(x_1,x_2\\right)=x_1^\\alpha x_2^{1-\\alpha}\n\n\nx_1\\left(p_1,p_2,w\\right)=\\alpha\\frac{w}{p_1} \\\\\n\n\nx_2\\left(p_1,p_2,w\\right)=\\left(1-\\alpha\\right)\\frac{w}{p_2} \\\\\n\n\nv\\left(p_1,p_2,w\\right)=\\left(\\alpha\\frac{w}{p_1}\\right)^\\alpha\\cdot\\left(\\left(1-\\alpha\\right)\\frac{w}{p_2}\\right)^{1-\\alpha}=w\\left(\\frac{\\alpha}{p_1}\\right)^\\alpha\\cdot\\left(\\frac{\\left(1-\\alpha\\right)}{p_2}\\right)^{1-\\alpha}\n\nIn our context, the Theorem of the Maximum implies:\nMarshallian demand is upper hemicontinuous (if it’s a function, it’s continuous)\nIndirect utility is continuous",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#indirect-utility-function-properties",
+    "href": "consumer-theory.html#indirect-utility-function-properties",
+    "title": "3  Consumer Theory",
+    "section": "3.11 Indirect Utility Function: Properties",
+    "text": "3.11 Indirect Utility Function: Properties\n\nTheorem 3.7 The indirect utility function has the following properties:\n\nHomogeneity of degree 0: for all \\lambda&gt;0, v(\\lambda\\ p,\\lambda\\ w)=v(p,w).\nContinuity: if u is continuous, then v is continuous on \\{(p,w):p\\gg0,w\\geq0\\}.\nMonotonicty: v(p,w) is non-increasing in p and non-decreasing in w. If p\\gg0 and preferences are locally non-satiated, then v(p,w) is strictly increasing in w.\nQuasi-convexity: for all \\bar{v} \\in R, the set \\{(p,w):v(p,w)\\} \\leq \\bar{v} \\} is convex. (Consumer is worse off at average prices/income.)\n\n\n\n\n\n\n\n\nProof\n\n\n\n\nFollows from homogeneity of degree zero of Marshallian demand.\nFollows directly from the Theorem of the Maximum.\nLeft as an exercise.\nPick two elements in the domain of v: \\left(p,w\\right) and \\left(p^\\prime,w^\\prime\\right)\nAssume:\nv\\left(p,w\\right)\\le\\bar{v}\nv\\left(p^\\prime,w^\\prime\\right)\\le\\bar{v}\nDefine \\left(p^{\\prime\\prime},w^{\\prime\\prime}\\right)=\\alpha\\cdot\\left(p,w\\right)+\\left(1-\\alpha\\right)\\cdot\\left(p^\\prime,w^\\prime\\right)\nWe need to show that v\\left(p^{\\prime\\prime},w^{\\prime\\prime}\\right)\\le\\bar{v}\nWe will show something stronger: for all x such that p^{\\prime\\prime}\\cdot\\ x^{\\prime\\prime}\\le\\ w^{\\prime\\prime}, one has u\\left(x\\right)\\le\\bar{v}.\nUse the definition of \\left(p^{\\prime\\prime},w^{\\prime\\prime}\\right):\n\np^{\\prime\\prime}\\cdot\\ x^{\\prime\\prime}\\le\\ w^{\\prime\\prime}\\Leftrightarrow\\left(\\alpha p+\\left(1-\\alpha\\right)p^\\prime\\right)\\cdot\\ x\\le\\alpha\\ w+\\left(1-\\alpha\\right)w^\\prime\nThis holds if and only either p\\cdot\\ x\\le\\ w of p^\\prime\\cdot\\ x\\le\\ w^\\prime.\nThen we have: \np\\cdot\\ x\\le\\ w\\Rightarrow\\ u\\left(x\\right)\\le\\ v\\left(p,w\\right)\\le\\bar{v}\np^\\prime\\cdot\\ x\\le\\ w^\\prime\\Rightarrow\\ u\\left(x\\right)\\le\\ v\\left(p^\\prime,w^\\prime\\right)\\le\\bar{v}\n\nIn any case, u\\left(x\\right)\\le\\bar{v}, as we wanted to show.\n\nQED.\n\n\nInterpretation of quasi-convexity: consumer prefers extreme prices/income than average ones.\nExtreme prices allow consumers to explore substitution: something desirable must be cheap enough.\n(Income is one dimensional and hence it follows immediately that the average of two income levels is lower than the highest of them.)\nGRAPHIC",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#indirect-utility-function-derivatives",
+    "href": "consumer-theory.html#indirect-utility-function-derivatives",
+    "title": "3  Consumer Theory",
+    "section": "3.12 Indirect Utility Function: Derivatives",
+    "text": "3.12 Indirect Utility Function: Derivatives\nWhen indirect utility function is differentiable, its derivatives are very interesting.\nQ: When is indirect utility function differentiable? A: When u is (continuously) differentiable and Marshallian demand is unique.\n\nTheorem 3.8 Suppose (1) u is locally non-satiated and continuously differentiable, and (2) Marshallian demand is unique in an open neighborhood of (p,w) with p\\gg0 and w\\&gt;0. Then v is differentiable at (p,w).\n\nWe’ll skip the proof. For details if curious, see Milgrom and Segal (2002), “Envelope Theorems for Arbitrary Choice Sets.”\nOr check chapters 3 and 4 in Stokey and Lucas (1989).\nFurthermore, letting x=x(p,w), the derivatives of v are given by:\n\n\\frac{\\partial}{\\partial w} v(p,w) = \\frac{1}{p_j}\\frac{\\partial}{\\partial x_j}u(x)\n\nand\n\n\\frac{\\partial}{\\partial p_i}v(p,w)=-\\frac{x_i}{p_j}\\frac{\\partial}{\\partial x_j}u(x),\n\nwhere j is any index such that x_j&gt;0.\n\nSuppose consumer’s income increases by $1.\nShould spend this dollar on any good that gives biggest “bang for the buck.”\nBang for spending on good j equals \\frac{1}{p_j}\\frac{\\partial u}{\\partial x_j}: can buy \\frac{1}{p_j} units, each gives utility \\frac{\\partial u}{\\partial x_j}.\nFinally, x_j&gt;0 for precisely those goods that maximize bang for buck. \\Longrightarrow marginal utility of income equals \\frac{1}{p_j}\\frac{\\partial u}{\\partial x_j}, for any j with x_j&gt;0.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#indirect-utility-function-derivatives-1",
+    "href": "consumer-theory.html#indirect-utility-function-derivatives-1",
+    "title": "3  Consumer Theory",
+    "section": "3.13 Indirect Utility Function: Derivatives",
+    "text": "3.13 Indirect Utility Function: Derivatives\n\n\\frac{\\partial}{\\partial w}v(p,w) =\\frac{1}{p_j}\\frac{\\partial}{\\partial x_j}u(x) \\\\\n\\frac{\\partial}{\\partial p_i}v(p,w) =-\\frac{x_i}{p_j}\\frac{\\partial}{\\partial x_j}u(x)\n\nSuppose price of good i increases by $1.\nThis effectively makes consumer x_i poorer.\nJust saw that marginal effect of making \\$1 poorer is -\\frac{1}{p_j}\\frac{\\partial u}{\\partial x_j}, for any j with x_j&gt;0.\n\\Longrightarrow marginal disutility of increase in p_i equals -\\frac{x_i}{p_j}\\frac{\\partial u}{\\partial x_j}, for any j with x_j&gt;0.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#kuhn-tucker-theorem",
+    "href": "consumer-theory.html#kuhn-tucker-theorem",
+    "title": "3  Consumer Theory",
+    "section": "3.14 Kuhn-Tucker Theorem",
+    "text": "3.14 Kuhn-Tucker Theorem\n\nTheorem 3.9 (Kuhn-Tucker) Let f: \\mathbb{R}^n \\rightarrow \\mathbb{R} and g_i : \\mathbb{R}^n \\rightarrow \\mathbb{R} be continuously differentiable functions (for some i \\in {1, \\ldots, I}), and consider the constrained optimization problem\n\n\\max_{x\\in\\mathbb{R}^n} \\ \\ \\ f(x) \\\\\ns.t.\\ \\ \\ g_i(x)\\geq0 \\mathrm{\\ for\\ all\\ } i\n\nIf x ^ \\ast is a solution to this problem (even a local solution) and a condition called constraint qualification is satisfied at x ^ \\ast, then there exists a vector of Lagrange multipliers \\lambda= \\left(\\lambda_1,\\ldots,\\lambda_l\\right) such that\n\n\\nabla f(x^\\ast) + \\sum_{i=1}^{l} \\lambda_i \\nabla g_i (x^\\ast) = 0\n and\n\n\\lambda_i\\geq0 \\ \\ \\mathrm{and} \\ \\ \\lambda_i g_i(x^\\ast)=0\\mathrm{\\ for\\ all\\ }i",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#kuhn-tucker-theorem-comments",
+    "href": "consumer-theory.html#kuhn-tucker-theorem-comments",
+    "title": "3  Consumer Theory",
+    "section": "3.15 Kuhn-Tucker Theorem: Comments",
+    "text": "3.15 Kuhn-Tucker Theorem: Comments\n\nAny local solution to constrained optimization problem must satisfy first-order conditions of the Lagrangian\n\n\n\\mathcal{L}(x)=f(x)+\\sum_{i=1}^{l}\\lambda_i g_i(x)\n\n\nCondition that \\lambda_i g_i(x^\\ast) = 0 for all i is called complementary slackness.\n\n\nSays that multipliers on slack constraints must equal 0.\nConsistent with interpreting \\lambda_i as marginal value of relaxing constraint i.\n\n\nThere are different versions of constraint qualification. Simplest version: vectors \\nabla g_i\\left(x^\\ast\\right) are linearly independent for binding constraints.\n\nExercise: check that constraint qualification is always satisfied in the (CP) when p \\gg 0, w &gt; 0, and preferences are locally non-satiated.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#lagrangian-for-cp",
+    "href": "consumer-theory.html#lagrangian-for-cp",
+    "title": "3  Consumer Theory",
+    "section": "3.16 Lagrangian for (CP)",
+    "text": "3.16 Lagrangian for (CP)\nFor two goods:\n\n\\mathcal{L}\\left(x_1,x_2\\right)=u\\left(x_1,x_2\\right)+\\lambda\\left[w-p_1\\cdot x_1-p_2\\cdot x_2\\right]+\\mu_1x_1++\\mu_2x_2\n\nGenerally:\n\n\\mathcal{L}(x)=u(x)+\\lambda[w-p\\cdot x]+\\sum_{k=1}^{n}\\mu_k x_k\n\n\\lambda \\geq 0 is multiplier on budget constraint. \\mu_k \\geq 0 is multiplier on the constraint x_k \\geq 0.\nFOC with respect to x_i:\n\n\\frac{\\partial u}{\\partial x_i}+\\mu_i=\\lambda p_i\n\nComplementary slackness: \\mu_i=0 if x_i\\&gt;0. So:\n\n\\frac{\\partial u}{\\partial x_i} = \\lambda p_i \\mathrm{\\ if\\ } x_i&gt;0 \\\\ \\frac{\\partial u}{\\partial x_i} \\le \\lambda p_i \\mathrm{\\ if\\ }\\ x_i=0\n\nWhat’s the intuition of \\frac{\\partial u}{\\partial x_i}&lt;\\lambda p_i?\nImplication: marginal rate of substitution \\frac{\\partial u}{\\partial x_i}/ \\frac{\\partial u}{\\partial x_j} between any two goods consumed in positive quantity must equal the ratio of their prices p_i/p_j.\nIn other words: slope of indifference curve between goods i and j must equal slope of budget line.\nIntuition: equal “bang for the buck” \\frac{1}{p_i}\\frac{\\partial u}{\\partial x_i} among goods consumed in positive quantity.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#back-to-derivatives-of-v",
+    "href": "consumer-theory.html#back-to-derivatives-of-v",
+    "title": "3  Consumer Theory",
+    "section": "3.17 Back to Derivatives of  v",
+    "text": "3.17 Back to Derivatives of  v\nWhen v is differentiable, we have the following result:\n\nTheorem 3.10 \n\\frac{\\partial v}{\\partial w}=\\lambda \\ \\ \\ (\\mathrm{marginal\\ utility\\ of\\ income})\n\n\n\\frac{\\partial v}{\\partial p_i}=-\\lambda x_i \\ \\ \\ (\\mathrm{marginal\\ disutility\\ of\\ price})\n\n\n\n\n\n\n\n\nProof\n\n\n\n\nFor the first part:\n\nWithout loss of generality, take only two goods: x=\\left(x_1,x_2\\right), p=\\left(p_1,p_2\\right).\nThen: \nv\\left(p_1,p_2,w\\right)=u\\left(x_1\\left(p_1,p_2,w\\right),x_2\\left(p_1,p_2,w\\right)\\right)\n\nTake the derivative with respect to income w:\n\n\\frac{\\partial v}{\\partial w}=\\frac{\\partial u}{\\partial x_1}\\cdot\\frac{\\partial x_1}{\\partial w}+\\frac{\\partial u}{\\partial x_2}\\cdot\\frac{\\partial x_2}{\\partial w}\n\nBut \\frac{\\partial u}{\\partial x_i}=\\lambda p_i.\nRewrite the previous equation:\n\n\\frac{\\partial v}{\\partial w}=\\lambda p_1\\cdot\\frac{\\partial x_1}{\\partial w}+\\lambda p_2\\cdot\\frac{\\partial x_2}{\\partial w}=\\lambda\\cdot\\left[p_1\\cdot\\frac{\\partial x_1}{\\partial w}+p_1\\cdot\\frac{\\partial x_1}{\\partial w}\\right]\n\nWe also know that p_1x_1+p_2x_2=w for all w.\nThis allows us to differentiate both sides with respect to w, and get:\n\np_1\\cdot\\frac{\\partial x_1}{\\partial w}+p_2\\cdot\\frac{\\partial x_2}{\\partial w}=1\n\nThis is exactly the term in square brackets in the previous equation, which becomes:\n\n\\frac{\\partial v}{\\partial w}=\\lambda p_1\\cdot\\frac{\\partial x_1}{\\partial w}+\\lambda p_1\\cdot\\frac{\\partial x_1}{\\partial w}=\\lambda\\cdot{\\underbrace{\\left[p_1\\cdot\\frac{\\partial x_1}{\\partial w}+p_1\\cdot\\frac{\\partial x_1}{\\partial w}\\right]}}_1=\\lambda\n\nIn short: \\frac{\\partial v}{\\partial w}=\\lambda\n\nFor the second part:\n\n\nv\\left(p_1,p_2,w\\right)=u\\left(x_1\\left(p_1,p_2,w\\right),x_2\\left(p_1,p_2,w\\right)\\right)+\\lambda^\\ast\\cdot\\left[w-p_1x_1-p_2x_2\\right]\n This holds because we always have \\lambda^\\ast\\cdot\\left[w-p_1x_1-p_2x_2\\right]=0 (Kuhn-Tucker).\nDifferentiate with respect to p_1:\n\n\\frac{\\partial v}{\\partial p_1}=\\frac{\\partial u}{\\partial x_1}\\cdot\\frac{\\partial x_1}{\\partial p_1}+\\frac{\\partial u}{\\partial x_2}\\cdot\\frac{\\partial x_2}{\\partial p_1}+\\frac{\\partial\\lambda}{\\partial p_1}\\cdot \\underbrace{\\left[w-p_1x_1-p_2x_2\\right]}_{0}-\\lambda\\cdot\\left[x_1+p_1\\cdot\\frac{\\partial x_1}{\\partial p_1}+p_2\\cdot\\frac{\\partial x_2}{\\partial p_1}\\right]\n\nCollect terms to get:\n\n\\frac{\\partial v}{\\partial p_1}=\\frac{\\partial x_1}{\\partial p_1}\\cdot \\underbrace{\\left[\\frac{\\partial u}{\\partial x_1}-\\lambda p_1\\right]}_{0}+\\frac{\\partial x_1}{\\partial p_1}\\cdot \\underbrace{\\left[\\frac{\\partial u}{\\partial x_1}-\\lambda p_1\\right]}_{0}-\\lambda x_1=-\\lambda x_1\n QED.\n\n\nThese are applications of the envelope theorem: ignore indirect effect of changes in parameters (that is, impact through changes in optimal decisions).",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#envelope-theorem",
+    "href": "consumer-theory.html#envelope-theorem",
+    "title": "3  Consumer Theory",
+    "section": "3.18 Envelope Theorem",
+    "text": "3.18 Envelope Theorem\n\nTheorem 3.11 (Envelope Theorem) For \\Theta\\subseteq\\mathbb{R}, let f:X\\times\\Theta\\rightarrow\\mathbb{R} be a differentiable function, let V(\\theta)=\\max\\_{x\\in X} f(x,\\theta), and let X^\\ast(\\theta)={x\\in X:f(x,\\theta)=V(\\theta)}. If V is differentiable at \\theta then, for any x^\\ast\\in X^\\ast(\\theta), V\\prime(\\theta)=\\frac{\\partial}{\\partial\\theta}f\\left(x^\\ast,\\theta\\right).",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#back-again-to-derivatives-of-v",
+    "href": "consumer-theory.html#back-again-to-derivatives-of-v",
+    "title": "3  Consumer Theory",
+    "section": "3.19 Back again to Derivatives of v",
+    "text": "3.19 Back again to Derivatives of v\n\n\\begin{matrix}&\\frac{\\partial v}{\\partial w}=\\lambda\\\\&\\frac{\\partial v}{\\partial p_i}=-\\lambda x_i\\\\\\end{matrix}\n\nCombining with \\frac{\\partial u}{\\partial x_j} = \\lambda p_j if x_j &gt; 0, obtain\n\n\\begin{matrix}\\frac{\\partial v}{\\partial w}&\\ =\\frac{1}{p_j}\\frac{\\partial u}{\\partial x_j}\\\\\\frac{\\partial v}{\\partial p_i}&\\ =-\\frac{x_i}{p_j}\\frac{\\partial u}{\\partial x_j}\\\\\\end{matrix}\n\nfor any j with x_j &gt; 0.\nThis proves above theorem on derivatives of v.\nWe’ve already seen the intuition.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#roys-identity",
+    "href": "consumer-theory.html#roys-identity",
+    "title": "3  Consumer Theory",
+    "section": "3.20 Roy’s Identity",
+    "text": "3.20 Roy’s Identity\nUnder conditions of last theorem, if x_i(p,w) &gt; 0 then\n\nx_i(p,w)=-\\frac{\\frac{\\partial}{\\partial p_i}v(p,w)}{\\frac{\\partial}{\\partial w}v(p,w)}",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#key-facts-about-cp-assuming-differentiability",
+    "href": "consumer-theory.html#key-facts-about-cp-assuming-differentiability",
+    "title": "3  Consumer Theory",
+    "section": "3.21 Key Facts about (CP), Assuming Differentiability",
+    "text": "3.21 Key Facts about (CP), Assuming Differentiability\n\nConsumer’s marginal utility of income equals multiplier on budget constraint: \\frac{\\partial v}{\\partial w}=\\lambda.\nMarginal disutility of increase in price of good i equals -\\lambda x_i.\nMarginal utility of consumption of any good consumed in positive quantity equals \\lambda p_i.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-expenditure-minimization-problem",
+    "href": "consumer-theory.html#the-expenditure-minimization-problem",
+    "title": "3  Consumer Theory",
+    "section": "3.22 The Expenditure Minimization Problem",
+    "text": "3.22 The Expenditure Minimization Problem\nIn (CP), consumer chooses consumption vector to maximize utility subject to maximum budget constraint.\nAlso useful to study “dual” problem of choosing consumption vector to minimize expenditure subject to minimum utility constraint.\nThis expenditure minimization problem (EMP) is formally defined as:\n\n\\min_{x \\in \\mathbb{R}_+^n} \\ \\ \\ p \\cdot x \\\\\n\\mathrm{\\ s.t.\\ } \\ \\ \\ u(x)\\geq u\\\\",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#hicksian-demand",
+    "href": "consumer-theory.html#hicksian-demand",
+    "title": "3  Consumer Theory",
+    "section": "3.23 Hicksian Demand",
+    "text": "3.23 Hicksian Demand\nHicksian demand is the set of solutions x = h(p,u) to the EMP.\nThe expenditure function is the value function for the EMP:\n\ne(p,u)=\\min_{x\\in\\mathbb{R}+^n\n(x)\\geq u} p\\cdot x\n\ne(p,u) is income required to attain utility u when facing prices p. Each element of h(p,u) is a consumption vector that attains utility u while minimizing expenditure given prices p.\nHicksian demand and expenditure function relate to EMP just as Marshallian demand and indirect utility function relate to CP.\nExercise: find the Hicksian demand and the expenditure function for the Cobb-Douglas utility function.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#why-should-we-care-about-the-emp",
+    "href": "consumer-theory.html#why-should-we-care-about-the-emp",
+    "title": "3  Consumer Theory",
+    "section": "3.24 Why Should we Care about the EMP?",
+    "text": "3.24 Why Should we Care about the EMP?\nFor this course, 2 reasons:\n\nHicksian demand useful for studying effects of price changes on “real” (Marshallian) demand.\n\nIn particular, Hicksian demand is key concept needed to decompose effect of a price change into income and substitution effects.\n\nExpenditure function important for welfare economics.\n\nIn particular, use expenditure function to analyze effects of price changes on consumer welfare.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#hicksian-demand-properties",
+    "href": "consumer-theory.html#hicksian-demand-properties",
+    "title": "3  Consumer Theory",
+    "section": "3.25 Hicksian Demand: Properties",
+    "text": "3.25 Hicksian Demand: Properties\n\nTheorem 3.12 (MWG 3E3) Assume X=\\mathbb{R}+^n, preferences are locally non-satiated, and p\\gg0. Then the Hicksian demand satisfies:\n\nHomogeneity of degree 0 in \\mathbf{p}: for all \\lambda&gt;0, h(\\lambda p,u)=h(p,u).\nNo excess utility: if u(\\cdot) is continuous and p\\gg0, then u(x)=u for all x\\in h(p,u).\nConvexity/uniqueness: if preferences are convex, then h(p,u) is a convex set. If preferences are strictly convex and “no excess utility” holds, then h(p,u) contains at most one element.\n\n\n\n\n\n\n\n\nProof\n\n\n\n\nMinimizing p\\cdot x or \\alpha p\\cdot x yields the same result for any \\alpha&gt;0. QED.\nThe proof is by contradiction.\n\nAssume by contradiction that at the solution, u(x) &gt; u. Take x^\\prime = \\alpha x, for \\alpha \\in (0,1). The continuity of u implies that for \\alpha close enough to one, u(x^\\prime) &gt; u, and px^\\prime &lt; px = w. That is, it is possible to find some x that respects the constraint and decreases expenditure. Contradiction. Hence one cannot have u(x) &gt; u at the solution. QED.\n\nLeft as an exercise.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#expenditure-function-properties",
+    "href": "consumer-theory.html#expenditure-function-properties",
+    "title": "3  Consumer Theory",
+    "section": "3.26 Expenditure Function: Properties",
+    "text": "3.26 Expenditure Function: Properties\n\nTheorem 3.13 (MWG 3E2) The expenditure function satisfies:\n\nHomogeneity of degree 1 in \\mathbf{p}: for all \\lambda&gt;0, e(\\lambda p,u)=\\lambda e(p,u).\nContinuity: if u(\\cdot) is continuous, then e is continuous in p and u.\nMonotonicity: e(p,u) is non-decreasing in p and non-decreasing in u. If “no excess utility” holds, then e(p,u) is strictly increasing in u.\nConcavity in p: e is concave in p.\n\n\n\n\n\n\n\n\nProof\n\n\n\n\nFor all \\alpha&gt;0, we know from the previous proposition that h(\\lambda p,u)=h(p,u).\n\nThen one may write:\n\ne\\left(\\alpha p,u\\right)=\\left(\\alpha p\\right)h=\\alpha \\underbrace{\\left(p\\cdot h\\right)}_{e\\left(p,u\\right)}=\\alpha\\cdot e\\left(p,u\\right)\n\n\nFollows from the Maximum Theorem.\nShow first that e\\left(p,u\\right) is strictly increasing in u\n\nThe proof is by contradiction. Assume by contradiction that e\\left(p,u\\right) is not strictly increasing in u. That is:\nLet x^\\prime and x^{\\prime\\prime} be optimal to achieve utility levels u^\\prime and u^{\\prime\\prime}, respectively.\nAssume u^{\\prime\\prime}&gt;u^\\prime and px^\\prime\\geq px^{\\prime\\prime}&gt;0. This is the contradiction.\nBuild a new bundle: \\widetilde{x}=\\alpha x^{\\prime\\prime} for \\alpha\\in\\left(0,1\\right).\nu\\left(\\right) is continuous implies that there is some \\alpha close enough to one such that:\nu\\left(\\widetilde{x}\\right)&gt;u^\\prime px^\\prime&gt;p\\widetilde{x}\nThen x^\\prime is not optimal to achieve u^\\prime.\nLet’s show now that e\\left(p,u\\right) is non-decreasing in p_l.\nTake two price vectors p^{\\prime\\prime}, p^\\prime such that p_l^{\\prime\\prime}\\geq p_l^\\prime, and, for all k\\neq l, p_k^{\\prime\\prime}\\geq p_k^\\prime.\nLet x^{\\prime\\prime} be optimal for prices p^{\\prime\\prime}. Then:\ne\\left(p^{\\prime\\prime},u\\right)=p^{\\prime\\prime}x^{\\prime\\prime}\\geq p^\\prime x^{\\prime\\prime}\\geq e\\left(p^\\prime,u\\right)\nThe first inequality follows from the previous line: p_l^{\\prime\\prime}\\geq p_l^\\prime.\nThe second inequality follows from the definition of e\\left(p,u\\right).\nIt follows that e\\left(.,.\\right) is non-decreasing in p_l. QED.\n\nTo show concavity, fix some level \\bar{u}.\n\nDefine p^{\\prime\\prime}=\\alpha p+\\left(1-\\alpha\\right)p^\\prime for some \\alpha\\in\\left[0,1\\right).\nLet x^{\\prime\\prime} be optimal for p^{\\prime\\prime}. Then:\ne\\left(p^{\\prime\\prime},\\bar{u}\\right)=p^{\\prime\\prime}x^{\\prime\\prime}=\\alpha px^{\\prime\\prime}+\\left(1-\\alpha\\right)p^\\prime x^{\\prime\\prime}\\geq\\alpha e\\left(p,\\bar{u}\\right)+\\left(1-\\alpha\\right)e\\left(p^\\prime,\\bar{u}\\right)\nThe inequality comes from the definition of e\\left(p,u\\right) and from the fact that u\\left(x^{\\prime\\prime}\\right)\\geq\\bar{u}.\nQED.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#intuition-for-concavity",
+    "href": "consumer-theory.html#intuition-for-concavity",
+    "title": "3  Consumer Theory",
+    "section": "3.27 Intuition for concavity",
+    "text": "3.27 Intuition for concavity\nStart with \\bar{p} and an optimal bundle \\bar{x}.\nIf prices change to p but \\bar{x} is fixed, new expenditure is p\\bar{x}: linear in \\bar{x}.\nIf consumer may adjust \\bar{x} to minimize px, new expenditure cannot be larger.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#expenditure-function-derivatives",
+    "href": "consumer-theory.html#expenditure-function-derivatives",
+    "title": "3  Consumer Theory",
+    "section": "3.28 Expenditure Function: Derivatives",
+    "text": "3.28 Expenditure Function: Derivatives\nShephard’s Lemma: if Hicksian demand is single-valued, it coincides with the derivative of the expenditure function.\n\nTheorem 3.14 If u(\\cdot) is continuous and h(p,u) is single-valued, then the expenditure function is differentiable in p at (p,u), with derivatives given by\n\n\\frac{\\partial}{\\partial p_i}e(p,u)=h_i(p,u).\n\n\nIntuition: If price of good i increases by $1, unique optimal consumption bundle now costs h_i(p,u) more.\n\n\n\n\n\n\nImportant\n\n\n\nRecall that\n\ne(p,u)=\\min\\limits_{x(x)\\geq u}; p \\cdot x\n\nGiven that e is differentiable in p, envelope theorem implies that\n\n\\frac{\\partial}{\\partial p_i}e(p,u)=\\frac{\\partial}{\\partial p_i}p \\cdot h_i(p,u)=h_i(p,u) \\text{ for any } x^\\ast \\in h(p,u).",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#comparative-statics",
+    "href": "consumer-theory.html#comparative-statics",
+    "title": "3  Consumer Theory",
+    "section": "3.29 Comparative Statics",
+    "text": "3.29 Comparative Statics\nComparative statics are statements about how the solution to a problem change with the parameters.\n(CP): parameters are (p,w), want to know how x(p,w) and v(p,w) vary with p and w.\n(EMP): parameters are (p,u), want to know how h(p,u) and e(p,u) vary with p and u.\nTurns out that comparative statics of (EMP) are very simple, and help us understand comparative statics of (CP).",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-law-of-demand",
+    "href": "consumer-theory.html#the-law-of-demand",
+    "title": "3  Consumer Theory",
+    "section": "3.30 The Law of Demand",
+    "text": "3.30 The Law of Demand\n“Hicksian demand is always decreasing in prices.”\n\nTheorem 3.15 (Law of Demand) For every p,p^\\prime \\geq 0,x \\in h(p,u), and x^\\prime \\in h(p^\\prime,u), we have\n(p^\\prime - p)(x^\\prime - x) \\le 0\n\nExample: if p^\\prime and p only differ in price of good i, then\n\n(p_i^\\prime - p_i)(h_i(p^\\prime,u) - h_i(p,u)) \\le 0\n\nHicksian demand for a good is always decreasing in its own price.\nGraphically, budget line gets steeper \\Longrightarrow shift along indifference curve to consume less of good 1.\n\n\n\n\n\n\nProof\n\n\n\nBy definition:\n\np^{\\prime\\prime}h(p^{\\prime\\prime},u) \\le p^{\\prime\\prime}h(p^\\prime,u) \\\\\np^\\prime h(p^\\prime,u) \\le p^\\prime h(p^{\\prime\\prime},u)\n\nAdd these inequations:\n\np^{\\prime\\prime}h(p^{\\prime\\prime},u) + p^\\prime h(p^\\prime,u) \\le p^{\\prime\\prime}h(p^\\prime,u) + p^\\prime h(p^{\\prime\\prime},u)\n\nFactor out h(p^{\\prime\\prime},u) + p^\\prime and h(p^\\prime,u) \\le p^{\\prime\\prime}:\n\n(p^{\\prime\\prime} - p^\\prime) \\cdot h(p^{\\prime\\prime},u) + (p^\\prime - p^{\\prime\\prime}) \\cdot h(p^\\prime,u) \\le 0\n\nChange (p^\\prime - p^{\\prime\\prime}) for -(p^{\\prime\\prime} - p^\\prime):\n\n(p^{\\prime\\prime} - p^\\prime) \\cdot h(p^{\\prime\\prime},u) - (p^{\\prime\\prime} - p^\\prime) \\cdot h(p^\\prime,u) \\le 0\n\nNow factor out (p^{\\prime\\prime} - p^\\prime):\n\n(p^{\\prime\\prime} - p^\\prime) \\cdot (h(p^{\\prime\\prime},u) - h(p^\\prime,u)) \\le 0\n\nThis is the law of demand.\nQED",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-slutsky-matrix",
+    "href": "consumer-theory.html#the-slutsky-matrix",
+    "title": "3  Consumer Theory",
+    "section": "3.31 The Slutsky Matrix",
+    "text": "3.31 The Slutsky Matrix\nIf Hicksian demand is differentiable, can derive an interesting result about the matrix of price-derivatives\n\nD_p h(p,u)=\\begin{pmatrix} \\frac{\\partial h_1(p,u)}{\\partial p_1}&\\cdots&\\frac{\\partial h_n(p,u)}{\\partial p_1}\\ \\\\ \\vdots&&\\vdots\\ \\\\ \\frac{\\partial h_1(p,u)}{\\partial p_n}&\\cdots&\\frac{\\partial h_n(p,u)}{\\partial p_n}\\ \\end{pmatrix}\n\nThis is the Slutsky matrix.\nA n \\times n symmetric matrix M is negative semi-definite if, for all z \\in \\mathbb{R}^n, z \\cdot M z \\le 0.\n\nTheorem 3.16 If h(p,u) is single-valued and continuously differentiable in p at (p,u), with p \\gg 0, then the matrix D_p h(p,u) is symmetric and negative semi-definite.\n\n\n\n\n\n\n\nProof\n\n\n\nFollows from Shephard’s Lemma \\left(\\frac{\\partial}{\\partial p_i}e(p,u)=h_i(p,u)\\right) and Young’s Theorem.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-slutsky-matrix-1",
+    "href": "consumer-theory.html#the-slutsky-matrix-1",
+    "title": "3  Consumer Theory",
+    "section": "3.32 The Slutsky Matrix",
+    "text": "3.32 The Slutsky Matrix\nWhat’s economic content of symmetry and negative semi-definiteness of Slutsky matrix?\nNegative semi-definiteness: differential version of law of demand.\nEx. if z=(0,\\ldots,0,1,0,\\ldots,0) with 1 in the j^{\\text{th}} component, then z \\cdot D_p h(p,u) z = \\frac{\\partial h_i(p,u)}{\\partial p_i}, so negative semi-definiteness implies that \\frac{\\partial h_i(p,u)}{\\partial p_i} \\le 0.\nSymmetry: derivative of Hicksian demand for good i with respect to price of good j equals derivative of Hicksian demand for good j with respect to price of good i.\nNot true for Marshallian demand, due to income effects.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#relation-between-hicksian-and-marshallian-demand",
+    "href": "consumer-theory.html#relation-between-hicksian-and-marshallian-demand",
+    "title": "3  Consumer Theory",
+    "section": "3.33 Relation between Hicksian and Marshallian Demand",
+    "text": "3.33 Relation between Hicksian and Marshallian Demand\nApproach to comparative statics of Marshallian demand is to relate to Hicksian demand, decompose into income and substitution effects via Slutsky equation.\nFirst, relate Hicksian and Marshallian demand.\nLet’s ask a simple question: what’s the Marshallian demand x(p,w) evaluated at some exogenous utility level u?\nAt first, this seems nonsense: Marshallian demand is a function of prices p and income w, not of utility u.\nIn fact, utility is not even exogenous: it is endogenous when one solves for the Marshallian demand, which is computed exactly maximizing utility.\nYet, we can evaluate x(p,w) at any level of income w… that is, at any monetary value w.\nSo we can choose in particular w=e(p,u), since e(p,u) is a monetary value: it is the minimum expenditure to reach the exogenous utility level u.\nHence x(p,w) and w=e(p,u), so we can write x(p,e(p,u)): Marshallian demand as a function of some exogenous utility level u.\nNext question: what’s the Marshallian demand evaluated at u?\nIntuition is simple: it is simply the Hicksian demand: x(p,e(p,u))=h(p,u).\nAnalogously, we may write h(p,u)=h(p,v(p,w)): Hicksian demand as a function of income.\nThen h(p,v(p,w))=x(p,w).\nSo these equalities hold for the solutions to UMP e EMP.\nA similar reasoning applies to the value functions of these problems:\n\ne(p,v(p,w)) = w \\\\\nv(p,e(p,u)) = u\n If v(p,w) is the most utility consumer can attain with income w, then consumer needs income w to attain utility v(p,w).\nIf need income e(p,u) to attain utility u, then u is most utility consumer can attain with income e(p,u).\nThe next result formalizes these relationships.\n\nTheorem 3.17 Suppose u(\\cdot) is continuous and locally non-satiated. Then:\nFor all p \\gg 0 and w \\geq 0, x(p,w)=h(p,v(p,w)) and e(p,v(p,w))=w.\nFor all p \\gg 0 and u \\geq u(0), h(p,u)=x(p,e(p,u)) and v(p,e(p,u))=u.\n\n\n\n\n\n\n\nProof\n\n\n\nLeft as an exercise.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#the-slutsky-equation",
+    "href": "consumer-theory.html#the-slutsky-equation",
+    "title": "3  Consumer Theory",
+    "section": "3.34 The Slutsky Equation",
+    "text": "3.34 The Slutsky Equation\n\nTheorem 3.18 Suppose u(\\cdot) is continuous and locally non-satiated. Let p \\gg 0 and w = e(p,u). If x(p,w) and h(p,u) are single-valued and differentiable, then, for all i,j,\n\n\\underbrace{\\frac{\\partial x_i(p,w)}{\\partial p_j}}_{\\text{total effect}} = \\underbrace{\\frac{\\partial h_i(p,u)}{\\partial p_j}}_{\\text{substitution effect}} - \\underbrace{\\frac{\\partial x_i(p,w)}{\\partial w} x_j(p,w)}_{\\text{income effect}}\n\n\n\n\n\n\n\n\nProof\n\n\n\nFor all i, h_i(p,u) = x_i(p, \\underbrace{e(p,u)}_{w})\nSince this holds for all goods i and for all prices, one may differentiate both sides with respect to some price p_j:\n\n\\frac{\\partial h_i}{\\partial p_j} = \\frac{\\partial x_i}{\\partial p_j} + \\frac{\\partial x_i}{\\partial w} \\frac{\\partial e}{\\partial p_j}\n\nBut we know that \\frac{\\partial e}{\\partial p_j} = h_j(p, v(p,w)) = x_j(p,w). Substitute into the previous equation to get:\n\n\\frac{\\partial h_i}{\\partial p_j} = \\frac{\\partial x_i}{\\partial p_j} + \\frac{\\partial x_i}{\\partial w} x_j(p,w)\n\nQED\n\n\nIntuition: If p_j increases, two effects on demand for good i:\n\nSubstitution effect: \\frac{\\partial h_i(p,u)}{\\partial p_j}\nMovement along original indifference curve.\nResponse to change in prices, holding utility fixed.\nIncome effect: - \\frac{\\partial x_i(p,w)}{\\partial w} x_j(p,w)\nMovement from one indifference curve to another.\nResponse to change in income, holding prices fixed.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#terminology-for-consumer-theory-comparative-statics",
+    "href": "consumer-theory.html#terminology-for-consumer-theory-comparative-statics",
+    "title": "3  Consumer Theory",
+    "section": "3.35 Terminology for Consumer Theory Comparative Statics",
+    "text": "3.35 Terminology for Consumer Theory Comparative Statics\n\nDefinition 3.3 Good i is a normal good if x_i(p,w) is increasing in w. It is an inferior good if x_i(p,w) is decreasing in w.\n\n\nDefinition 3.4 Good i is a regular good if x_i(p,w) is decreasing in p_i. It is a Giffen good if x_i(p,w) is increasing in p_i.\n\n\nDefinition 3.5 Good i is a substitute for good j if h_i(p,u) is increasing in p_j. It is a complement if h_i(p,u) is decreasing in p_j.\n\n\nDefinition 3.6 Good i is a gross substitute for good j if x_i(p,u) is increasing in p_j.\nIt is a gross complement if x_i(p,u) is decreasing in p_j.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "consumer-theory.html#comparative-statics-remarks",
+    "href": "consumer-theory.html#comparative-statics-remarks",
+    "title": "3  Consumer Theory",
+    "section": "3.36 Comparative Statics: Remarks",
+    "text": "3.36 Comparative Statics: Remarks\n\nBoth the substitution effect and the income effect can have either sign.\nSubstitution effect is positive for substitutes and negative for complements.\nIncome effect is negative for normal goods and positive for inferior goods.\nBy symmetry of Slutsky matrix, i is a substitute for j \\Leftrightarrow j is a substitute for i.\nNot true that i is a gross substitute for j \\Leftrightarrow j is a gross substitute for i.\nIncome effects are not symmetric.",
+    "crumbs": [
+      "Lectures 3 – 4",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Consumer Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html",
+    "href": "uncertainty.html",
+    "title": "4  Expected Utility Theory",
+    "section": "",
+    "text": "4.1 Choice under Uncertainty\nAll choices made under some kind of uncertainty.\nSometimes useful to ignore uncertainty, focus on ultimate choices.\nOther times, must model uncertainty explicitly.\nExamples:",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#choice-under-uncertainty",
+    "href": "uncertainty.html#choice-under-uncertainty",
+    "title": "4  Expected Utility Theory",
+    "section": "",
+    "text": "Insurance markets.\nFinancial markets.\nGame theory.\n\n\nOverview\nImpose extra assumptions on basic choice model of Lectures 1-2.\n\n\n\n\n\n\nLottery\n\n\n\nRather than choosing outcome directly, decision-maker chooses uncertain prospect (or lottery).\nA lottery is a probability distribution over outcomes.\n\n\nLeads to von Neumann-Morgenstern expected utility model.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#consequences-and-lotteries",
+    "href": "uncertainty.html#consequences-and-lotteries",
+    "title": "4  Expected Utility Theory",
+    "section": "4.2 Consequences and Lotteries",
+    "text": "4.2 Consequences and Lotteries\nTwo basic elements of expected utility theory: consequences (or outcomes) and lotteries.\n\nConsequences\nFinite set C of consequences.\nConsequences are what the decision-maker ultimately cares about.\nExample: “I have a car accident, my insurance company covers most of the costs, but I have to pay a \\$ 500 deductible.”\n\n\nDecision-maker (DM) does not choose consequences directly.\nDM chooses a lottery, p.\nLotteries are probability distributions over consequences:\np: C \\rightarrow[0,1] with \\sum_{c \\in C} p(c)=1.\nSet of all lotteries is denoted by P.\nExample: “A gold-level health insurance plan, which covers all kinds of diseases, but has a \\$ 500 deductible.”\nMakes sense because DM assumed to rank health insurance plans only insofar as lead to different probability distributions over consequences.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#choice",
+    "href": "uncertainty.html#choice",
+    "title": "4  Expected Utility Theory",
+    "section": "4.3 Choice",
+    "text": "4.3 Choice\nDecision-maker makes choices from set of alternatives X.\nWhat’s set of alternatives here, C or P ?\nAnswer: P\n\nDM does not choose consequences directly, but instead chooses lotteries\nAssume decision-maker has a rational preference relation \\gtrsim on P.\nNatural to assume this?\n\n\nConvex Combinations of Lotteries\nGiven two lotteries p and p^{\\prime}, the convex combination \\alpha p+(1-\\alpha) p^{\\prime} is the lottery defined by\n\n\\left(\\alpha p+(1-\\alpha) p^{\\prime}\\right)(c)=\\alpha p(c)+(1-\\alpha) p^{\\prime}(c) \\text { for all } c \\in C\n\nOne way to generate it:\n\nFirst, randomize between p and p^{\\prime} with weights \\alpha and 1-\\alpha.\nSecond, choose a consequence according to whichever lottery came up.\n\nSuch a probability distribution over lotteries is called a compound lottery.\nIn expected utility theory, no distinction between simple and compound lotteries: simple lottery \\alpha p+(1-\\alpha) p^{\\prime} and above compound lottery give same distribution over consequences, so identified with same element of \\boldsymbol{P}.\nSo, no problem if DM doesn’t know exactly the distribution for something. We’ll come back to this.\n\n\nThe Set  P\nAs \\alpha p+(1-\\alpha) p^{\\prime} is also a lottery, P is convex.\nP is also closed and bounded (why?).\n\\Rightarrow P is a compact subset of \\mathbb{R}^{n}, where n=|C|.\nWhenever \\succsim is rational and continuous, can be represented by continuous utility function U: P \\rightarrow \\mathbb{R} :\n\np \\gtrsim q \\Leftrightarrow U(p) \\geq U(q)\n\nWe’re just applying it to lotteries because that’s what the DM chooses now.\nIntuitively, want more than this.\nWant not only that DM has utility function over lotteries, but also that somehow related to “utility” over consequences.\nOnly care about lotteries insofar as affect distribution over consequences, so preferences over lotteries should have something to do with “preferences” over consequences.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#expected-utility",
+    "href": "uncertainty.html#expected-utility",
+    "title": "4  Expected Utility Theory",
+    "section": "4.4 Expected Utility",
+    "text": "4.4 Expected Utility\nBest we could hope for is representation by utility function of following form:\nDefinition: a utility function U: P \\rightarrow \\mathbb{R} has an expected utility form if there exists a function u: C \\rightarrow \\mathbb{R} such that\n\nU(p)=\\sum_{c \\in C} p(c) u(c) \\text { for all } p \\in P\n\nIn this case, the function U is called an expected utility function, and the function u is call a von Neumann-Morgenstern utility function.\nIf preferences over lotteries happen to have an expected utility representation, it’s as if DM has a “utility function” over consequences (and chooses among lotteries so as to maximize expected “utility over consequences”).\nRemarks\n\nU(p)=\\sum_{c \\in C} p(c) u(c)\n\nExpected utility function U: P \\rightarrow \\mathbb{R} represents preferences \\gtrsim on P just as we had before\nU: P \\rightarrow \\mathbb{R} is an example of a standard utility function.\nvon Neumann-Morgenstern utility function u: C \\rightarrow \\mathbb{R} is not a standard utility function.\n\nCan’t have a “real” utility function on consequences, as DM never chooses among consequences.\nIf preferences over lotteries happen to have an expected utility representation, it’s as if DM has a “utility function” over consequences.\nThis “utility function” over consequences is the von Neumann-Morgenstern utility function.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#example",
+    "href": "uncertainty.html#example",
+    "title": "4  Expected Utility Theory",
+    "section": "4.5 Example",
+    "text": "4.5 Example\nSuppose hipster restaurant doesn’t let you order steak or chicken, but only probability distributions over steak and chicken.\nHow should you assess menu item (p(steak), p(chicken))?\nOne way: ask yourself how much you’d like to eat steak, u(steak), and chicken, u(chicken), and evaluate according to\n\np(\\text { steak }) \\cdot u(\\text { steak })+p(\\text { chicken }) \\cdot u(\\text { chicken })\n\nIf this is what you’d do, then your preferences have an expected utility representation.\nSuppose instead you choose whichever menu item has p (steak) closest to \\frac{1}{2}.\nYour preferences are rational, so they have a utility representation.\nBut they do not have an expected utility representation - we’ll see this.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#property-of-eu-linearity-in-probabilities",
+    "href": "uncertainty.html#property-of-eu-linearity-in-probabilities",
+    "title": "4  Expected Utility Theory",
+    "section": "4.6 Property of EU: Linearity in Probabilities",
+    "text": "4.6 Property of EU: Linearity in Probabilities\n\nTheorem 4.1 If U: P \\rightarrow \\mathbb{R} is an expected utility function, then\n\nU\\left(\\alpha p+(1-\\alpha) p^{\\prime}\\right)=\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\n\n\nIn fact, a utility function U: P \\rightarrow \\mathbb{R} has an expected utility form iff this equation holds for all p, p^{\\prime}, and \\alpha \\in[0,1].\n\n\n\n\n\n\nProof\n\n\n\nAppendix.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#property-of-eu-invariant-to-affine-transformations",
+    "href": "uncertainty.html#property-of-eu-invariant-to-affine-transformations",
+    "title": "4  Expected Utility Theory",
+    "section": "4.7 Property of EU: Invariant to Affine Transformations",
+    "text": "4.7 Property of EU: Invariant to Affine Transformations\nSuppose U: P \\rightarrow \\mathbb{R} is an expected utility function representing preferences \\succsim.\nAny increasing transformation of U also represents \\succsim.\nNot all increasing transformations of U have expected utility form.\n\nTheorem 4.2 Suppose U: P \\rightarrow \\mathbb{R} is an expected utility function representing preferences \\succsim. Then V: P \\rightarrow \\mathbb{R} is also an expected utility function representing \\gtrsim iff there exist a, b&gt;0 such that\n\nV(p)=a+b U(p) \\text { for all } p \\in P\n\nIf this is so, we also have V(p)=\\sum_{c \\in C} p(c) v(c) for all p \\in P, where\n\nv(c)=a+b u(c) \\text { for all } c \\in C\n\n\n\n\n\n\n\n\nProof\n\n\n\nAppendix.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#what-preferences-have-an-expected-utility-representation",
+    "href": "uncertainty.html#what-preferences-have-an-expected-utility-representation",
+    "title": "4  Expected Utility Theory",
+    "section": "4.8 What Preferences have an Expected Utility Representation?",
+    "text": "4.8 What Preferences have an Expected Utility Representation?\nPreferences must be rational to have any kind of utility representation.\nPreferences on a compact and convex set must be continuous to have a continuous utility representation.\nBesides rationality and continuity, what’s needed to ensure that preferences have an expected utility representation?",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#the-independence-axiom",
+    "href": "uncertainty.html#the-independence-axiom",
+    "title": "4  Expected Utility Theory",
+    "section": "4.9 The Independence Axiom",
+    "text": "4.9 The Independence Axiom\n\nDefinition 4.1 A preference relation \\gtrsim satisfies independence if, for every p, q, r \\in P and \\alpha \\in(0,1),\n\np \\succsim q \\Leftrightarrow \\alpha p+(1-\\alpha) r \\succsim \\alpha q+(1-\\alpha) r\n\n\nCan interpret as form of “dynamic consistency.”\nDoesn’t need to hold for consequences.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#back-to-example",
+    "href": "uncertainty.html#back-to-example",
+    "title": "4  Expected Utility Theory",
+    "section": "4.10 Back to Example",
+    "text": "4.10 Back to Example\nSuppose choose lottery with p (steak) closest to \\frac{1}{2}.\nLet p=\\left(\\frac{1}{2}, \\frac{1}{2}\\right), q=(0,1), r=(1,0), and \\alpha=\\frac{1}{2}.\nThen\n\np=\\left(\\frac{1}{2}, \\frac{1}{2}\\right)&gt;(0,1)=q\n\nbut\n\n\\alpha q+(1-\\alpha) r=\\left(\\frac{1}{2}, \\frac{1}{2}\\right)&gt;\\left(\\frac{3}{4}, \\frac{1}{4}\\right)=\\alpha p+(1-\\alpha) r\n\nDoes not satisfy independence.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#expected-utility-characterization",
+    "href": "uncertainty.html#expected-utility-characterization",
+    "title": "4  Expected Utility Theory",
+    "section": "4.11 Expected Utility: Characterization",
+    "text": "4.11 Expected Utility: Characterization\nA preference relation \\gtrsim has an expected utility representation iff it satisfies rationality, continuity, and independence.\nIntuition: both having expected utility form and satisfying independence boil down to having straight, parallel indifference curves.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#subjective-expected-utility-theory",
+    "href": "uncertainty.html#subjective-expected-utility-theory",
+    "title": "4  Expected Utility Theory",
+    "section": "4.12 Subjective Expected Utility Theory",
+    "text": "4.12 Subjective Expected Utility Theory\nSo far, probabilities are objective.\nIn reality, uncertainty is usually subjective.\nSubjective expected utility theory (Savage, 1954): under assumptions roughly similar to ones form this lecture, preferences have an expected utility representation where both the utilities over consequences and the subjective probabilities themselves are revealed by decision-maker’s choices.\nThus, expected utility theory applies even when the probabilities are not objectively given.\n(To learn more, a good starting point is Kreps (1988), “Notes on the Theory of Choice.”)\nAgain, no problem if DM doesn’t know the exact distribution.\nThe same holds in general equilibrium: allows for different individual priors.\nOne may go beyond and assume DM has some rule to deal with set of priors - e.g., DM may assume that nature will choose the worst possible prior, conditional on his optimal choice, leading to a mini-max structure that deals with fear of misspecification and relates to sub-rational behavior.\nSee nice discussion in Hansen and Sargent (2000) and a critique by Sims (AER 2001).",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#attitudes-toward-risk",
+    "href": "uncertainty.html#attitudes-toward-risk",
+    "title": "4  Expected Utility Theory",
+    "section": "4.13 Attitudes toward Risk",
+    "text": "4.13 Attitudes toward Risk\n\nMoney Lotteries\nTurn now to special case of choice under uncertainty where outcomes are measured in dollars.\nSet of consequences C is subset of \\mathbb{R}.\nA lottery is a cumulative distribution function F on \\mathbb{R}.\n(Now we use F instead of p)\nAssume preferences have expected utility representation:\n\nU(F) = E_{F}[u(x)] = \\int u(x) f(x) d x\n\nMore generally, we could write \\int u(x) d F(x).\nThis is useful if we do not know whether a density f exists.\nWe’ll assume it does and make d F(x) / d x=f(x), so that d F(x)=f(x) d x, leading to our representation above.\n(But everything holds for a general F(x).)\nAssume u increasing, differentiable.\nQuestion: how do properties of von Neumann-Morgenstern utility function u relate to decision-maker’s attitude toward risk?",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#expected-value-vs.-expected-utility",
+    "href": "uncertainty.html#expected-value-vs.-expected-utility",
+    "title": "4  Expected Utility Theory",
+    "section": "4.14 Expected Value vs. Expected Utility",
+    "text": "4.14 Expected Value vs. Expected Utility\nExpected value of lottery F is\n\nE_{F}[x]=\\int x f(x) d x\n\nExpected utility of lottery F is\n\nE_{F}[u(x)]=\\int u(x) f(x) d x\n\nCan learn about DM’s risk attitude by comparing E_{F}[u(x)] and u\\left(E_{F}[x]\\right).",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#risk-attitude-definitions",
+    "href": "uncertainty.html#risk-attitude-definitions",
+    "title": "4  Expected Utility Theory",
+    "section": "4.15 Risk Attitude: Definitions",
+    "text": "4.15 Risk Attitude: Definitions\n\nDefinition 4.2 A decision-maker is risk-averse if she always prefers the sure wealth level E_{F}[x] to the lottery F : that is,\n\n\\int u(x) f(x) d x \\leq u\\left(\\int x f(x) d x\\right) \\text { for all } F\n\nA decision-maker is strictly risk-averse if the inequality is strict for all nondegenerate lotteries F.\nA decision-maker is risk-neutral if she is always indifferent:\n\n\\int u(x) f(x) d x=u\\left(\\int x f(x) d x\\right) \\text { for all } F\n\nA decision-maker is risk-loving if she always prefers the lottery:\n\n\\int u(x) f(x) d x \\geq u\\left(\\int x f(x) d x\\right) \\text { for all } F",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#risk-aversion-and-concavity",
+    "href": "uncertainty.html#risk-aversion-and-concavity",
+    "title": "4  Expected Utility Theory",
+    "section": "4.16 Risk Aversion and Concavity",
+    "text": "4.16 Risk Aversion and Concavity\nStatement that \\int u(x) d F(x) \\leq u\\left(\\int x d F(x)\\right) for all F is called Jensen’s inequality.\nFact: Jensen’s inequality holds iff u is concave.\nThis implies:\n\nTheorem 4.3 A decision-maker is (strictly) risk-averse if and only if u is (strictly) concave.\nA decision-maker is risk-neutral if and only if u is linear.\nA decision-maker is (strictly) risk-loving if and only if u is (strictly) convex.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#certainty-equivalents",
+    "href": "uncertainty.html#certainty-equivalents",
+    "title": "4  Expected Utility Theory",
+    "section": "4.17 Certainty Equivalents",
+    "text": "4.17 Certainty Equivalents\nCan also define risk-aversion using certainty equivalents.\n\nDefinition 4.3 The certainty equivalent of a lottery F is the sure wealth level that yields the same expected utility as F: that is,\n\nu[C E(F, u)] = \\int u(x) f(x) d x\n\n\nThat is,\n\nCE(F, u)=u^{-1}\\left(\\int u(x) d F(x)\\right)\n\n\nTheorem 4.4 A decision-maker is risk-averse iff C E(F, u) \\leq E_{F}(x) for all F.\nA decision-maker is risk-neutral iff C E(F, u)=E_{F}(x) for all F.\nA decision-maker is risk-loving iff C E(F, u) \\geq E_{F}(x) for all F.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#quantifying-risk-attitude",
+    "href": "uncertainty.html#quantifying-risk-attitude",
+    "title": "4  Expected Utility Theory",
+    "section": "4.18 Quantifying Risk Attitude",
+    "text": "4.18 Quantifying Risk Attitude\nWe know what it means for a DM to be risk-averse.\nWhat does it mean for one DM to be more risk-averse than another?\nTwo possibilities:\n\nu is more risk-averse than v if, for every F, C E(F, u) \\leq C E(F, v).\nu is more risk-averse than v if u is “more concave” than v, in that u=g \\circ v for some increasing, concave g.\n\nOne more, based on local curvature of utility function: u is more-risk averse than v if, for every x,\n\n-\\frac{u^{\\prime \\prime}(x)}{u^{\\prime}(x)} \\geq-\\frac{v^{\\prime \\prime}(x)}{v^{\\prime}(x)}\n\nA(x, u)=-\\frac{u^{\\prime \\prime}(x)}{u^{\\prime}(x)} is called the Arrow-Pratt coefficient of absolute risk-aversion.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#an-equivalence",
+    "href": "uncertainty.html#an-equivalence",
+    "title": "4  Expected Utility Theory",
+    "section": "4.19 An Equivalence",
+    "text": "4.19 An Equivalence\n\nThe following are equivalent:\n\nFor every F, CE(F, u) \\leq CE(F, v).\nThere exists an increasing, concave function g such that u=g \\circ v.\nFor every x, A(x, u) \\geq A(x, v).",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#risk-attitude-and-wealth-levels",
+    "href": "uncertainty.html#risk-attitude-and-wealth-levels",
+    "title": "4  Expected Utility Theory",
+    "section": "4.20 Risk Attitude and Wealth Levels",
+    "text": "4.20 Risk Attitude and Wealth Levels\nHow does risk attitude vary with wealth?\nNatural to assume that a richer individual is more willing to bear risk: whenever a poorer individual is willing to accept a risky gamble, so is a richer individual.\nCaptured by decreasing absolute risk-aversion:\n\nA von Neumann-Morenstern utility function u exhibits decreasing (constant, increasing) absolute risk-aversion if A(x, u) is decreasing (constant, increasing) in x.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#risk-attitude-and-wealth-levels-1",
+    "href": "uncertainty.html#risk-attitude-and-wealth-levels-1",
+    "title": "4  Expected Utility Theory",
+    "section": "4.21 Risk Attitude and Wealth Levels",
+    "text": "4.21 Risk Attitude and Wealth Levels\n\nTheorem 4.5 Suppose u exhibits decreasing absolute risk-aversion.\nIf the decision-maker accepts some gamble at a lower wealth level, she also accepts it at any higher wealth level:\nthat is, for any lottery F(x), if\n\nE_{F}[u(w+x)] \\geq u(w)\n\nthen, for any w^{\\prime}&gt;w,\n\nE_{F}\\left[u\\left(w^{\\prime}+x\\right)\\right] \\geq u\\left(w^{\\prime}\\right)",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#multiplicative-gambles",
+    "href": "uncertainty.html#multiplicative-gambles",
+    "title": "4  Expected Utility Theory",
+    "section": "4.22 Multiplicative Gambles",
+    "text": "4.22 Multiplicative Gambles\nWhat about gambles that multiply wealth, like choosing how risky a stock portfolio to hold? Are richer individuals also more willing to bear multiplicative risk? Depends on increasing/decreasing relative risk-aversion:\n\nR(x, u)=-\\frac{u^{\\prime \\prime}(x)}{u^{\\prime}(x)} x\n\n\nSuppose u exhibits decreasing relative risk-aversion.\nIf the decision-maker accepts some multiplicative gamble at a lower wealth level, she also accepts it at any higher wealth level: that is, for any lottery F(t), if\n\nE_{F}[u(t w)] \\geq u(w)\n\nthen, for any w^{\\prime}&gt;w,\nRelative Risk-Aversion vs. Absolute Risk-Aversion\n\nR(x)=x A(x)\n\ndecreasing relative risk-aversion \\Rightarrow decreasing absolute risk-aversion\nincreasing absolute risk-aversion \\Rightarrow increasing relative risk-aversion\n\nEx. decreasing relative risk-aversion \\Rightarrow more willing to gamble 1 \\% of wealth as get richer.\nSo certainly more willing to gamble a fixed amount of money.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#application-insurance",
+    "href": "uncertainty.html#application-insurance",
+    "title": "4  Expected Utility Theory",
+    "section": "4.23 Application: Insurance",
+    "text": "4.23 Application: Insurance\nRisk-averse agent with wealth w, faces probability p of incurring monetary loss L.\nCan insure against the loss by buying a policy that pays out a if the loss occurs.\nPolicy that pays out a costs qa.\nHow much insurance should she buy?",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#agents-problem",
+    "href": "uncertainty.html#agents-problem",
+    "title": "4  Expected Utility Theory",
+    "section": "4.24 Agent’s Problem",
+    "text": "4.24 Agent’s Problem\n\n\\max_{a} p u(w-q a-L+a)+(1-p) u(w-q a)\n\nu concave \\Rightarrow concave problem, so FOC is necessary and sufficient.\nFOC:\n\np(1-q) u^{\\prime}(w-q a-L+a)=(1-p) q u^{\\prime}(w-q a)\n\nEquate marginal benefit of extra dollar in each state.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#actuarily-fair-prices",
+    "href": "uncertainty.html#actuarily-fair-prices",
+    "title": "4  Expected Utility Theory",
+    "section": "4.25 Actuarily Fair Prices",
+    "text": "4.25 Actuarily Fair Prices\nInsurance is actuarily fair if expected payout qa equals cost of insurance p a : that is, p=q.\nWith acturarily fair insurance, FOC becomes\n\nu^{\\prime}(w-q a-L+a)=u^{\\prime}(w-q a)\n\nSolution: a=L\nA risk-averse DM facing actuarily fair prices will always fully insure.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#actuarily-unfair-prices",
+    "href": "uncertainty.html#actuarily-unfair-prices",
+    "title": "4  Expected Utility Theory",
+    "section": "4.26 Actuarily Unfair Prices",
+    "text": "4.26 Actuarily Unfair Prices\nWhat if insurance company makes a profit, so q&gt;p ?\nRearrange FOC as\n\n\\frac{u^{\\prime}(w-q a-L+a)}{u^{\\prime}(w-q a)}=\\frac{(1-p) q}{p(1-q)}&gt;1\n\nSolution: a&lt;L\nA risk-averse DM facing actuarily unfair prices will never fully insure.\nIntuition: u approximately linear for small risks, so not worth giving up expected value to insure away last little bit of variance.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#comparative-statics",
+    "href": "uncertainty.html#comparative-statics",
+    "title": "4  Expected Utility Theory",
+    "section": "4.27 Comparative Statics",
+    "text": "4.27 Comparative Statics\n\n\\max _{a} p u(w-q a-L+a)+(1-p) u(w-q a)\n\nBigger loss \\Rightarrow buy more insurance ( a^{*} increasing in L ) Follows from Topkis’ theorem.\nIf agent has decreasing absolute risk-aversion, then she buys less insurance as she gets richer.\nProve it as an exercise!",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#application-portfolio-choice",
+    "href": "uncertainty.html#application-portfolio-choice",
+    "title": "4  Expected Utility Theory",
+    "section": "4.28 Application: Portfolio Choice",
+    "text": "4.28 Application: Portfolio Choice\nRisk-averse agent with wealth w has to invest in a safe asset and a risky asset.\nSafe asset pays certain return r.\nRisky asset pays random return z, with \\operatorname{cdf} F.\nAgent’s problem\n\n\\max _{a \\in[0, w]} \\int u(a z+(w-a) r) d F(z)\n\nFirst-order condition\n\n\\int(z-r) u^{\\prime}(a z+(w-a) r) d F(z)=0",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#risk-neutral-benchmark",
+    "href": "uncertainty.html#risk-neutral-benchmark",
+    "title": "4  Expected Utility Theory",
+    "section": "4.29 Risk-Neutral Benchmark",
+    "text": "4.29 Risk-Neutral Benchmark\nSuppose u^{\\prime}(x)=\\alpha x for some \\alpha&gt;0.\nThen\n\nU(a)=\\int \\alpha(a z+(w-a) r) d F(z)\n\nso\n\nU^{\\prime}(a)=\\alpha(E[z]-r)\n\nSolution: set a=w if E[z]&gt;r, set a=0 if E[z]&lt;r.\nRisk-neutral investor puts all wealth in the asset with the highest rate of return.\nr&gt;E[z] Benchmark\n\nU^{\\prime}(0)=\\int(z-r) u^{\\prime}(w) d F=(E[z]-r) u^{\\prime}(w)\n\nIf safe asset has higher rate of return, then even risk-averse investor puts all wealth in the safe asset.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#more-interesting-case",
+    "href": "uncertainty.html#more-interesting-case",
+    "title": "4  Expected Utility Theory",
+    "section": "4.30 More Interesting Case",
+    "text": "4.30 More Interesting Case\nWhat if agent is risk-averse, but risky asset has higher expected return?\n\nU^{\\prime}(0)=(E[z]-r) u^{\\prime}(w)&gt;0\n\nIf risky asset has higher rate of return, then risk-averse investor always puts some wealth in the risky asset.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "uncertainty.html#comparative-statics-1",
+    "href": "uncertainty.html#comparative-statics-1",
+    "title": "4  Expected Utility Theory",
+    "section": "4.31 Comparative Statics",
+    "text": "4.31 Comparative Statics\nDoes a less risk-averse agent always invest more in the risky asset?\nSufficient condition for agent v to invest more than agent u :\n\n\\begin{gathered}\n\\int(z-r) u^{\\prime}(a z+(w-a) r) d F=0 \\\\\n\\Rightarrow \\int(z-r) v^{\\prime}(a z+(w-a) r) d F \\geq 0\n\\end{gathered}\n\nu more risk-averse \\Rightarrow v=h \\circ u for some increasing, convex h. Inequality equals\n\n\\int(z-r) h^{\\prime}(u(a z+(w-a) r)) u^{\\prime}(a z+(w-a) r) d F \\geq 0\n\nh^{\\prime}(\\cdot) positive and increasing in z\n\\Rightarrow multiplying by h^{\\prime}(\\cdot) puts more weight on positive (z&gt;r) terms, less weight on negative terms.\nA less risk-averse agent always invests more in the risky-asset.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Expected Utility Theory</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html",
+    "href": "risky-prospects.html",
+    "title": "5  Comparing Risky Prospects",
+    "section": "",
+    "text": "5.1 Risky Prospects\nWe’ve studied decision-maker’s subjective attitude toward risk.\nNow: study objective properties of risky prospects (lotteries, gambles) themselves, relate to individual decision-making.\nTopics:",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#risky-prospects",
+    "href": "risky-prospects.html#risky-prospects",
+    "title": "5  Comparing Risky Prospects",
+    "section": "",
+    "text": "First-Order Stochastic Dominance\nSecond-Order Stochastic Dominance\n(Optional) Some recent research extending these concepts",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#first-order-stochastic-dominance",
+    "href": "risky-prospects.html#first-order-stochastic-dominance",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.2 First-Order Stochastic Dominance",
+    "text": "5.2 First-Order Stochastic Dominance\nWhen is one lottery unambiguously better than another?\nNatural definition: F dominates G if, for every amount of money x, F is more likely to yield at least x dollars than G is.\n\nFor any lotteries F and G over \\mathbb{R}, F first-order stochastically dominates (FOSD) G if\n\nF(x) \\leq G(x) \\text { for all } x",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#fosd-and-choice",
+    "href": "risky-prospects.html#fosd-and-choice",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.3 FOSD and Choice",
+    "text": "5.3 FOSD and Choice\nMain theorem relating FOSD to decision-making:\n\nTheorem 5.1 F FOSD G \\iff every decision-maker with a non-decreasing utility function prefers F to G.\n\nThat is, the following are equivalent:\n\nF(x) \\leq G(x) for all x.\n\\int u(x) d F \\geq \\int u(x) d G for every non-decreasing function u: \\mathbb{R} \\rightarrow \\mathbb{R}.\n\n\n\n\n\n\n\nProof\n\n\n\nPreferred by Everyone \\Longrightarrow FOSD\nIf F does not FOSD G, then there’s some amount of money x^{*} such that G is more likely to give at least x^{*} than F is.\nConsider a DM who only cares about getting at least x^{*} dollars.\nShe will prefer G.\n\n\\text{FOSD} \\Rightarrow \\text {Preferred by Everyone}\n\nMain idea: F FOSD G \\Rightarrow F gives more money “realization-by-realization.”\nSuppose draw x according to G, but then instead give decision-maker\n\ny(x)=F^{-1}(G(x))\n\nThen:\n\ny(x) \\geq x for all x, and\ny is distributed according to F.\n\n\\Rightarrow paying decision-maker according to F just like first paying according to G, then sometimes giving more money.\nAny decision-maker who likes money likes this.\nQED.\n\n\nSecond-Order Stochastic Dominance\nQ: When is one lottery better than another for any decision-maker?\nA: First-Order Stochastic Dominance.\nQ: When is one lottery better than another for any risk-averse decision-maker?\nA: Second-Order Stochastic Dominance.\n\nTheorem 5.2 F second-order stochastically dominates (SOSD) G iff every decision-maker with a non-decreasing and concave utility function prefers F to G: that is,\n\n\\int u(x) d F \\geq \\int u(x) d G\n\nfor every non-decreasing and concave function u: \\mathbb{R} \\rightarrow \\mathbb{R}.\n\nSOSD is a weaker property than FOSD.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#sosd-for-distributions-with-same-mean",
+    "href": "risky-prospects.html#sosd-for-distributions-with-same-mean",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.4 SOSD for Distributions with Same Mean",
+    "text": "5.4 SOSD for Distributions with Same Mean\nIf F and G have same mean, when will any risk-averse decision-maker prefer F ?\nWhen is F “unambiguously less risky” than G ?",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#mean-preserving-spreads",
+    "href": "risky-prospects.html#mean-preserving-spreads",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.5 Mean-Preserving Spreads",
+    "text": "5.5 Mean-Preserving Spreads\n\nDefinition 5.1 G is a mean-preserving spread of F if G can be obtained by first drawing a realization from F and then adding noise.\n\nG is a mean-preserving spread of F iff there exist random variables x, y, and \\varepsilon such that\n\ny=x+\\varepsilon\n\nx is distributed according to F, y is distributed according to G, and E[\\varepsilon \\mid x]=0 for all x.\nFormulation in terms of cdfs:\n\n\\int_{-\\infty}^{x} G(y) d y \\geq \\int_{-\\infty}^{x} F(y) d y \\text { for all } x",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#characterization-of-sosd-for-cdfs-with-same-mean",
+    "href": "risky-prospects.html#characterization-of-sosd-for-cdfs-with-same-mean",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.6 Characterization of SOSD for CDFs with Same Mean",
+    "text": "5.6 Characterization of SOSD for CDFs with Same Mean\n\nAssume that \\int x d F=\\int x d G. Then the following are equivalent:\n\nF SOSD G.\nG is a mean-preserving spread of F.\n\\int_{-\\infty}^{x} G(y) d y \\geq \\int_{-\\infty}^{x} F(y) d y for all x.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#general-characterization-of-sosd",
+    "href": "risky-prospects.html#general-characterization-of-sosd",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.7 General Characterization of SOSD",
+    "text": "5.7 General Characterization of SOSD\n\nTheorem 5.3 The following are equivalent:\n\nF SOSD G.\n\\int_{-\\infty}^{x} G(y) d y \\geq \\int_{-\\infty}^{x} F(y) d y for all x.\nThere exist random variables x, y, z, and \\varepsilon such that\n\n\ny=x+z+\\varepsilon\n\n\nx is distributed according to F, y is distributed according to G, z is always nonpositive, and E[\\varepsilon \\mid x]=0 for all x.\n\nThere exists a cdf H such that F FOSD H and G is a mean-preserving spread of H.\n\n\n\n\n\n\n\nComplete Dominance Orderings [Optional]\n\n\n\nFOSD and SOSD are partial orders on lotteries:\n“most distributions” are not ranked by FOSD or SOSD.\nTo some extent, nothing to be done:\nIf F doesn’t FOSD G, some decision-maker prefers G.\nIf F doesn’t SOSD G, some risk-averse decision-maker prefers G.\nHowever, recent series of papers points out that if view F and G as lotteries over monetary gains and losses rather than final wealth levels, and only require that no decision-maker prefers G to F for all wealth levels, do get a complete order on lotteries (and index of lottery’s “riskiness”).\n\n5.8 Acceptance Dominance\nConsider decision-maker with wealth w, has to accept or reject a gamble F over gains / \\operatorname{losses} x.\nAccept iff\n\nE_{F}[u(w+x)] \\geq u(w)\n\n\nF acceptance dominates G if, whenever F is rejected by decision-maker with concave utility function u and wealth w, so is G.\n\nThat is, for all u concave and w&gt;0,\n\n\\begin{aligned}\n& E_{F}[u(w+x)] \\leq u(w) \\\\\n& E_{G}[u(w+x)] \\leq u(w)\n\\end{aligned}",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#acceptance-dominance",
+    "href": "risky-prospects.html#acceptance-dominance",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.8 Acceptance Dominance",
+    "text": "5.8 Acceptance Dominance\nConsider decision-maker with wealth w, has to accept or reject a gamble F over gains / \\operatorname{losses} x.\nAccept iff\n\nE_{F}[u(w+x)] \\geq u(w)\n\n\nF acceptance dominates G if, whenever F is rejected by decision-maker with concave utility function u and wealth w, so is G.\n\nThat is, for all u concave and w&gt;0,\n\n\\begin{aligned}\n& E_{F}[u(w+x)] \\leq u(w) \\\\\n& E_{G}[u(w+x)] \\leq u(w)\n\\end{aligned}",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#acceptance-dominance-and-fosdsosd",
+    "href": "risky-prospects.html#acceptance-dominance-and-fosdsosd",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.9 Acceptance Dominance and FOSD/SOSD",
+    "text": "5.9 Acceptance Dominance and FOSD/SOSD\nF \\operatorname{SOSD} G\n\\Rightarrow E_{F}[u(w+x)] \\geq E_{G}[u(w+x)] for all concave u and wealth w\n\\Rightarrow F acceptance dominates G.\nIf E_{F}[x]&gt;0 but x can take on both positive and negative values, can show that F acceptance dominates lottery that doubles all gains and losses.\nAcceptance dominance refines SOSD.\nBut still very incomplete.\nTurns out can get complete order from something like: acceptance dominance at all wealth levels, or for all concave utility functions.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#wealth-uniform-dominance",
+    "href": "risky-prospects.html#wealth-uniform-dominance",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.10 Wealth Uniform Dominance",
+    "text": "5.10 Wealth Uniform Dominance\n\nF wealth-uniformly dominates G if, whenever F is rejected by decision-maker with concave utility function u at every wealth level w, so is G.\n\nThat is, for all u \\in U^{*},\n\n\\begin{aligned}\n& E_{F}[u(w+x)] \\leq u(w) \\text { for all } w&gt;0 \\\\\n& E_{G}[u(w+x)] \\leq u(w) \\text { for all } w&gt;0\n\\end{aligned}",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#utility-uniform-dominance",
+    "href": "risky-prospects.html#utility-uniform-dominance",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.11 Utility Uniform Dominance",
+    "text": "5.11 Utility Uniform Dominance\n\nF utility-uniformly dominates G if, whenever F is rejected at wealth level w by a decision-maker with any utility function u \\in U^{*}, so is G.\n\nThat is, for all w&gt;0,\n\n\\begin{aligned}\n& E_{F}[u(w+x)] \\leq u(w) \\text { for all } u \\in U^{*} \\\\\n& E_{G}[u(w+x)] \\leq u(w) \\text { for all } u \\in U^{*}\n\\end{aligned}",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#uniform-dominance-results",
+    "href": "risky-prospects.html#uniform-dominance-results",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.12 Uniform Dominance: Results",
+    "text": "5.12 Uniform Dominance: Results\nHart (2011):\n\nWealth-uniform dominance and utility-uniform dominance are complete orders.\nComparison of two lotteries in these orders boils down to comparison of simple measures of the “riskiness” of the lotteries.\nMeasure for wealth-uniform dominance: critical level of risk-aversion above which decision maker with constant absolute risk-aversion rejects the lottery.\nMeasure for utility-uniform dominance: critical level of wealth below which decision-maker with log utility rejects the lottery.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
+    ]
+  },
+  {
+    "objectID": "risky-prospects.html#appendix-some-proofs",
+    "href": "risky-prospects.html#appendix-some-proofs",
+    "title": "5  Comparing Risky Prospects",
+    "section": "5.13 Appendix: some proofs",
+    "text": "5.13 Appendix: some proofs\n\n U  has expected utility form \\Leftrightarrow U linear in probabilities\n\nTheorem 5.4 U: P \\rightarrow \\mathbb{R} has an expected utility form if and only if\n\nU\\left(\\alpha p+(1-\\alpha) p^{\\prime}\\right)=\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\n\nholds for all p, p^{\\prime}, and \\alpha \\in[0,1].\n\nNotice: this is MWG proposition 6B1. It uses the following notation: U\\left(\\sum \\alpha_{k} p_{k}\\right)= \\sum \\alpha_{k} U\\left(p_{k}\\right), just substituting p for L (which stands for ‘lottery’).\n\n\n\n\n\n\nProof\n\n\n\nWithout loss of generality, we will assume only two consequences, c^{1} and c^{2}.\nHence any lottery p may be written as p=\\left(p^{1}, p^{2}\\right), in which p^{1}=\\operatorname{Prob}\\left(c^{1}\\right) and p^{2}=\\operatorname{Prob}\\left(c^{2}\\right).\nAll arguments below hold unchanged for p=\\left(p^{1}, \\ldots, p^{n}\\right), that is, for n consequences c^{1}, \\ldots, c^{n}. This extension is shown in red below; you may simply ignore it in your first reading.\nThe arguments below also hold for c \\in\\left[c^{1}, c^{n}\\right] \\in \\mathbb{R}, but the math is not exactly the same.\n\nNecessity: U linear in probabilities \\Rightarrow U has expected utility form\n\nWrite lottery p=\\left(p^{1}, p^{2}\\right) as a convex combination of degenerate lotteries \\left(C^{1}, C^{2}\\right) :\n\np=p^{1} C^{1}+p^{2} C^{2}+\\cdots+p^{n} C^{n}\n\nThat is, C^{1}=(1,0), meaning that consequence 1\\left(c^{1}\\right) happens with probability 1 , and C^{2}=(0,1), meaning that consequence 2\\left(c^{2}\\right) happens with probability 1 . The\\ equation above is simply p=\\left(p^{1}, p^{2}\\right)=\\left(p^{1}, 0\\right)+\\left(0, p^{2}\\right)=p^{1} \\cdot(1,0)+p^{2} \\cdot(0,1)= p^{1} C^{1}+p^{2} C^{2}.\nThen:\n\nU(p)=U\\left(p^{1} C^{1}+p^{2} C^{2}+\\cdots+p^{n} C^{n}\\right)=p^{1} U\\left(C^{1}\\right)+p^{2} U\\left(C^{2}\\right)+\\cdots+p^{n} U\\left(C^{n}\\right)\n\nThe second equality follows from our assumption: U is linear in probabilities.\nBut U\\left(C^{1}\\right) is the utility from a degenerate lottery, that is, it’s simply the vNM utility of consequence c_{1}: U\\left(C^{1}\\right)=u\\left(c^{1}\\right).\nRemember our notation: big U is for DM’s actual utility; small u is form DM’s vNM utility. Big C denotes a lottery; small c denotes a consequence.\nThe last equation may be rewritten as:\n\n\\begin{gathered}\nU(p)=U\\left(p^{1} C^{1}+p^{2} C^{2}+\\cdots+p^{n} C^{n}\\right)=p^{1} U\\left(C^{1}\\right)+p^{2} U\\left(C^{2}\\right)+\\cdots+p^{n} U\\left(C^{n}\\right) \\\\\n=p^{1} u\\left(c^{1}\\right)+p^{2} u\\left(c^{2}\\right)+\\cdots+p^{n} u\\left(c^{n}\\right)\n\\end{gathered}\n\nIn short:\n\nU(p)=p^{1} u\\left(c^{1}\\right)+p^{2} u\\left(c^{2}\\right)+\\cdots+p^{n} u\\left(c^{n}\\right)\n\nThis is exactly the expected utility property, concluding the proof.\n\nSufficiency: U has expected utility form \\Rightarrow U linear in probabilities\n\nConsider a compound lottery:\n\n\\left(p_{1}, p_{2}, \\ldots, p_{k} ; \\alpha_{1}, \\alpha_{2}, \\ldots, \\alpha_{k}\\right)\n\nNotice that now we have p_{1} instead of p^{1}; and p_{2} instead of p^{2}. Superscripts refer to consequences; subscripts refer to specific lotteries.\nThat is, p_{1} and p_{2} are different lotteries, and each one is a vector assigning probabilities for each of the two possible consequences c^{1} and c^{2} :\n\np_{i}=\\left(p_{i}^{1}, p_{i}^{2}, \\ldots, p_{i}^{n}\\right)\n\nFor i=1, \\ldots, k. That is, we have k lotteries, and each one is chosen with probability \\alpha_{i} in our compound lottery.\nWe will allow k to be generic. If you want, just take k=2 in the following computations - again, it’s without loss of generality, but be careful not to confuse the number of consequences with the number of lotteries.\nConsider now the following (reduced) lottery:\n\n\\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}\n\nConsider the utility of this lottery:\n\nU\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}\\right)\n\nWe may now use our assumption: U has the expected utility form. That is, one may rewrite this utility as:\n\nU\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}\\right)=u^{1} \\cdot \\operatorname{Prob}\\left(u^{1}\\right)+u^{2} \\cdot \\operatorname{Prob}\\left(u^{2}\\right)+\\cdots+u^{n} \\cdot \\operatorname{Prob}\\left(u^{n}\\right)\n\nWhat are these u^{i} s? We just need to know that there are some u^{i} s that make this equation hold - our assumption guarantees this is the case. But we do have an interpretation for them: u^{i} is just the vNM utility of consequence c^{i}. Analogously, \\operatorname{Prob}\\left(u^{i}\\right) is simply the probability of this consequence, computed from the compound lottery \\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}.\nThis explains why we have subscripts on the LHS, but superscripts on the RHS. In the LHS, we have lotteries (that generate a compound lottery). On the RHS, we have consequences with vNM utilities u^{1}, u^{2}, \\ldots, u^{n}. If you want, you may think of the lottery on the LHS as any given lottery p.\nLet’s develop this equation:\n\n\\begin{aligned}\n& U\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}\\right)= \\\\\n& u^{1} \\cdot \\operatorname{Prob}\\left(u^{1}\\right)+u^{2} \\cdot \\operatorname{Prob}\\left(u^{2}\\right)= \\\\\n& u^{1} \\cdot \\underbrace{\\left(\\alpha_{1} p_{1}^{1}+\\alpha_{2} p_{2}^{1}+\\cdots+\\alpha_{k} p_{k}^{1}\\right)}_{\\operatorname{Prob}\\left(u^{1}\\right)}+u^{2} \\cdot \\underbrace{\\left(\\alpha_{1} p_{1}^{2}+\\alpha_{2} p_{2}^{2}+\\cdots+\\alpha_{k} p_{k}^{2}\\right)}_{\\operatorname{Prob}\\left(u^{2}\\right)}+\\cdots+u^{n} \\\\\n& \\underbrace{\\left(\\alpha_{1} p_{1}^{n}+\\alpha_{2} p_{2}^{n}+\\cdots+\\alpha_{k} p_{k}^{n}\\right)}_{\\operatorname{Prob}\\left(u^{2}\\right)}= \\\\\n& \\alpha_{1} \\cdot \\underbrace{\\left(u^{1} \\cdot p_{1}^{1}+u^{2} \\cdot p_{1}^{2}+\\cdots+u^{n} \\cdot p_{1}^{n}\\right)}_{U\\left(p_{1}\\right)}+\\alpha_{2} \\cdot \\underbrace{\\left(u^{1} \\cdot p_{2}^{1}+u^{2} \\cdot p_{2}^{2}+\\cdots+u^{n} \\cdot p_{2}^{n}\\right)}_{U\\left(p_{2}\\right)}+\\cdots \\\\\n& +\\alpha_{k} \\cdot \\underbrace{\\left(u^{1} \\cdot p_{k}^{1}+u^{2} \\cdot p_{k}^{2}+\\cdots+u^{n} \\cdot p_{k}^{n}\\right)}_{U\\left(p_{k}\\right)}= \\\\\n& \\alpha_{1} \\cdot U\\left(p_{1}\\right)+\\alpha_{2} \\cdot U\\left(p_{2}\\right)+\\cdots+\\alpha_{k} \\cdot U\\left(p_{k}\\right)\n\\end{aligned}\n\nFrom the second to the third line, we use the definition of \\operatorname{Prob}\\left(u^{1}\\right) : it is simply the first coordinate of the vector \\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}, ie, the compound lottery. It is analogous for \\operatorname{Prob}\\left(u^{2}\\right) to \\operatorname{Prob}\\left(u^{n}\\right).\nFrom the third to the fourth line: we use again our assumption: U has the expected utility form. Hence we may write U\\left(p_{1}\\right)=u^{1} \\cdot p_{1}^{1}+u^{2} \\cdot p_{1}^{2}+\\cdots+u^{n} \\cdot p_{1}^{n}. It is analogous for U\\left(p_{2}\\right) to U\\left(p_{k}\\right).\nIn short:\n\nU\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}+\\cdots+\\alpha_{k} p_{k}\\right)=\\alpha_{1} \\cdot U\\left(p_{1}\\right)+\\alpha_{2} \\cdot U\\left(p_{2}\\right)+\\cdots+\\alpha_{k} \\cdot U\\left(p_{k}\\right)\n\nThat is, U is linear in probabilities, concluding the proof.\nQED.\n\n\n\n\nExpected utility form is preserved under positive affine transformations\n\nTheorem 5.5 U, \\widetilde{U} have expected utility form (and represent the same preferences) \\Leftrightarrow there are \\beta&gt;0, \\gamma such that for all p, \\widetilde{U}(p)=\\beta U(p)+\\gamma.\n\nThis is MWG proposition 6B2.\n\n\n\n\n\n\nProof\n\n\n\nChoose \\bar{p}, \\underline{p} such that for all lottery p, \\bar{p} \\succcurlyeq p \\succcurlyeq \\underline{p}.\nIf \\bar{p} \\sim \\underline{p}, then all utility functions are constant, and the result follows immediately. Assume now \\bar{p}&gt;\\underline{p}.\n\nSufficiency: If U has expected utility form, then \\widetilde{U}(p)=\\beta U(p)+\\gamma also has expected utility form.\n\nConsider a compound lottery \\alpha_{1} p_{1}+\\alpha_{2} p_{2}. That is, we have two lotteries ( p_{1} and p_{2} ), and each is chosen with probability \\alpha_{1} and \\alpha_{2}, respectively.\nWithout loss of generality, we consider only two lotteries, but the argument is unchanged for k lotteries.\nCompute the utility of this compound lottery under \\widetilde{U} :\n\n\\begin{gathered}\n\\widetilde{U}\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}\\right)= \\\\\n\\beta \\cdot U\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}\\right)+\\gamma= \\\\\n\\beta \\cdot\\left[\\alpha_{1} U\\left(p_{1}\\right)+\\alpha_{2} U\\left(p_{2}\\right)\\right]+\\gamma= \\\\\n\\alpha_{1} \\beta \\cdot U\\left(p_{1}\\right)+\\alpha_{2} \\beta \\cdot U\\left(p_{2}\\right)+\\underbrace{\\left[\\alpha_{1} \\gamma+\\alpha_{2} \\gamma\\right]}_{=\\gamma}= \\\\\n\\alpha_{1} \\cdot \\underbrace{\\left[\\beta \\cdot U\\left(p_{1}\\right)+\\gamma\\right]}_{\\widetilde{U}\\left(p_{1}\\right)}+\\alpha_{2} \\cdot \\underbrace{\\left[\\beta \\cdot U\\left(p_{2}\\right)+\\gamma\\right]}_{\\widetilde{U}\\left(p_{2}\\right)}= \\\\\n\\alpha_{1} \\cdot \\widetilde{U}\\left(p_{1}\\right)+\\alpha_{2} \\cdot \\widetilde{U}\\left(p_{2}\\right)\n\\end{gathered}\n\nFrom the first to the second line: we use the definition \\widetilde{U}(p)=\\beta U(p)+\\gamma.\nFrom the second to the third line: we use the assumption that U has the expected utility form: hence, U\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}\\right)=\\alpha_{1} U\\left(p_{1}\\right)+\\alpha_{2} U\\left(p_{2}\\right).\nFrom the third to the fourth line: we simply write \\gamma=\\alpha_{1} \\gamma+\\alpha_{2} \\gamma, which is true because \\alpha_{1}+\\alpha_{2}=1 (it’s a probability distribution, so it must sum up to one).\nFrom the fourth to the fifth line: we factor out \\alpha_{1} and \\alpha_{2}.\nIn short:\n\n\\widetilde{U}\\left(\\alpha_{1} p_{1}+\\alpha_{2} p_{2}\\right)=\\alpha_{1} \\cdot \\widetilde{U}\\left(p_{1}\\right)+\\alpha_{2} \\cdot \\widetilde{U}\\left(p_{2}\\right)\n\nThat is, \\widetilde{U} has the expected utility form, as we wanted to show.\n\nNecessity: U and \\widetilde{U} have the expected utility form (and represent the same preferences) implies that for some \\beta&gt;0, \\gamma, one has \\widetilde{U}(p)=\\beta U(p)+\\gamma\n\nFix a lottery p.\nChoose \\lambda_{p} \\in[0,1] such that:\n\nU(p)=\\lambda_{p} \\cdot U(\\bar{p})+\\left(1-\\lambda_{p}\\right) \\cdot U(\\underline{p})\n\nThis equation has two implications.\nFirst implication: p \\sim \\lambda_{p} \\bar{p}+\\left(1-\\lambda_{p}\\right) \\underline{p}\nThis holds because we’re assuming U has the expected utility form. The previous theorem states that if this is the case, then U is linear in probabilities. Hence the RHS of this last equation may be rewritten as:\n\n\\lambda_{p} \\cdot U(\\bar{p})+\\left(1-\\lambda_{p}\\right) \\cdot U(\\underline{p})=U\\left(\\lambda_{p} \\cdot \\bar{p}+\\left(1-\\lambda_{p}\\right) \\cdot \\underline{p}\\right)\n\nHence U(p)=U\\left(\\lambda_{p} \\cdot \\bar{p}+\\left(1-\\lambda_{p}\\right) \\cdot \\underline{p}\\right). By definition of a utility function, the arguments on each side must be indifferent for the DM.\nSecond implication:\n\n\\lambda_{p}=\\frac{U(p)-U(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\n\nThis is just a rearrangement of the equation above.\nWe know that \\widetilde{U} is linear in probabilities (previous theorems) and represents the same preferences. Hence:\n\n\\begin{gathered}\n\\widetilde{U}(p)=\\lambda_{p} \\cdot \\widetilde{U}(\\bar{p})+\\left(1-\\lambda_{p}\\right) \\cdot \\widetilde{U}(\\underline{p})= \\\\\n\\lambda_{p} \\cdot[\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})]+\\widetilde{U}(\\underline{p})= \\\\\n\\underbrace{\\left.\\frac{U(p)-U(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right)}_{\\lambda_{p}} \\cdot[\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})]+\\widetilde{U}(\\underline{p})\n\\end{gathered}\n\nIn short:\n\n\\widetilde{U}(p)=\\underbrace{\\left(\\frac{U(p)-U(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right)}_{\\lambda_{p}} \\cdot[\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})]+\\widetilde{U}(\\underline{p})\n\nIn this last expression, only U(p) depends on p. All other terms are parameters. Rearrange this expression to get the following:\n\n\\widetilde{U}(p)=\\left[\\frac{\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right] \\cdot U(p)+\\widetilde{U}(\\underline{p})-U(\\underline{p}) \\cdot\\left[\\frac{\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right]\n\nAgain: except U(p), everything in this expression is a parameter, built from functions ( U or \\widetilde{U} ) evaluated at specific arguments ( \\bar{p} or \\underline{p} ). We can label them as we want. Let’s choose:\n\n\\begin{array}{r}\n\\beta=\\left[\\frac{\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right] \\\\\n\\gamma=\\widetilde{U}(\\underline{p})-U(\\underline{p}) \\cdot \\underbrace{\\left[\\frac{\\widetilde{U}(\\bar{p})-\\widetilde{U}(\\underline{p})}{U(\\bar{p})-U(\\underline{p})}\\right]}_{\\beta}\n\\end{array}\n\nThen one has:\n\n\\widetilde{U}(p)=\\beta U(p)+\\gamma\n\nThis is what we wanted to show, concluding the proof.\nQED.\n\n\n\n\nExpected utility theorem\n\nTheorem 5.6 (Rational and continuous) Preferences may be represented by an utility function with the expected utility form if and only if it respects the axiom of independence.\n\n\n\n\n\n\n\nProof\n\n\n\n\nProof of Necessity: if \\succcurlyeq respect the axiom of independence, then it may be represented by a utility function with the expected utility form.\n\nAssume there are lotteries \\bar{p} and \\underline{p} such that for all p, one has \\bar{p} \\succcurlyeq p \\succcurlyeq \\underline{p}.\nIf \\bar{p} \\sim \\underline{p}, the result follows immediately: use a constant utility function.\nAssume from now on \\bar{p}&gt;\\underline{p}.\nStep 1\nTake \\alpha and \\beta such that 1&gt;\\beta&gt;\\alpha&gt;0.\nWrite:\n\n\\begin{gathered}\n\\bar{p}= \\\\\n\\beta \\bar{p}+(1-\\beta) \\bar{p}&gt; \\\\\n\\beta \\bar{p}+(1-\\beta) \\underline{p}= \\\\\n(\\beta-\\alpha) \\bar{p}+\\alpha \\bar{p}+(1-\\beta) \\underline{p}&gt; \\\\\n(\\beta-\\alpha) \\underline{p}+\\alpha \\bar{p}+(1-\\beta) \\underline{p}= \\\\\n\\alpha \\bar{p}+(1-\\alpha) \\underline{p}&gt; \\\\\n\\alpha \\underline{p}+(1-\\alpha) \\underline{p}= \\\\\n\\underline{p}\n\\end{gathered}\n\nFrom the first to the second line: \\bar{p} is the average of \\bar{p} and \\bar{p} !\nFrom the second to the third line: we apply the axiom of independence. Observe that we keep \\bar{p} in the first term of the sum, but substitute \\bar{p} for \\underline{p} in the second term. Since \\bar{p}&gt;\\underline{p}, the axiom of independence implies the strict preference.\nFrom the third to the fourth line: add and subtract \\alpha \\bar{p}.\nFrom the fourth to the fifth line: again, we just substitute \\bar{p} for \\underline{p} in one term of the sum, and leave the rest unchanged. The axiom of independence applies again.\nFrom the fifth to the sixth line: we cancel out \\beta \\underline{p}.\nFrom the sixth to the seventh line: we repeat the argument of the 2^{\\text {nd }} to 3^{\\text {rd }} line, in reverse order.\nFrom the seventh to the eighth line: we repeat the argument of the 1^{\\text {st }} to 2^{\\text {nd }} line, in reverse order.\nStep 2: for all p, there is only one \\lambda_{p} such that \\lambda_{p} \\bar{p}+\\left(1-\\lambda_{p}\\right) \\underline{p} \\sim p\nExistence follows from continuity. For any lottery p, define the sets:\n\n\\begin{aligned}\n& \\{\\lambda \\in[0,1]: \\lambda \\bar{p}+(1-\\lambda) \\underline{p} \\succcurlyeq p\\} \\\\\n& \\{\\lambda \\in[0,1]: \\lambda \\bar{p}+(1-\\lambda) \\underline{p} \\preccurlyeq p\\}\n\\end{aligned}\n\nContinuity and completeness of \\succcurlyeq imply that both sets are closed (why?). Moreover, any \\lambda belongs to at least one of these sets. Since both sets are non-empty and [0,1] is connected, there must by some \\lambda belonging to both (again: why?). Define it as \\lambda_{p}.\nUniqueness follows from the previous step. If we were to slightly increase the value of \\lambda_{p} (from \\alpha to \\beta in the notation of the previous step), we would get a new lottery strictly preferred to the DM, breaking indifference.\nStep 3: U(p)=\\lambda_{p} is a utility function that represents \\succcurlyeq\nConsider two lotteries p and q.\nFrom steps 1 and 2, we may write:\n\np \\succcurlyeq q \\Leftrightarrow \\lambda_{\\mathrm{p}} \\bar{p}+\\left(1-\\lambda_{\\mathrm{p}}\\right) \\underline{p} \\succcurlyeq \\lambda_{\\mathrm{q}} \\bar{p}+\\left(1-\\lambda_{\\mathrm{q}}\\right) \\underline{p} \\Leftrightarrow \\lambda_{\\mathrm{p}} \\succcurlyeq \\lambda_{\\mathrm{q}}\n\nThe first \\Leftrightarrow comes from step 2: use p \\sim \\lambda_{\\mathrm{p}} \\bar{p}+\\left(1-\\lambda_{\\mathrm{p}}\\right) \\underline{p}, and analogously q \\sim \\lambda_{\\mathrm{q}} \\bar{p}+ \\left(1-\\lambda_{\\mathrm{q}}\\right) \\underline{p}.\nThe second \\Leftrightarrow comes from step 1 , taking \\lambda_{\\mathrm{p}}=\\beta and \\lambda_{\\mathrm{q}}=\\alpha.\nIn short, p \\succcurlyeq q \\Leftrightarrow \\lambda_{\\mathrm{p}} \\succcurlyeq \\lambda_{\\mathrm{q}}. This is the definition of an utility function representing \\succcurlyeq.\nStep 4: U(p)=\\lambda_{p} has the expected utility form.\nWe have to show that for all \\alpha \\in[0,1], and for any lotteries p, p^{\\prime}, one has:\n\nU\\left[\\alpha p+(1-\\alpha) p^{\\prime}\\right]=\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\n\nFrom step 2, we have:\n\n\\begin{gathered}\np \\sim \\lambda_{\\mathrm{p}} \\bar{p}+\\left(1-\\lambda_{\\mathrm{p}}\\right) \\underline{p} \\\\\np^{\\prime} \\sim \\lambda_{\\mathrm{p}^{\\prime}} \\bar{p}+\\left(1-\\lambda_{\\mathrm{p}^{\\prime}}\\right) \\underline{p}\n\\end{gathered}\n\nFrom step 3, we have : U(p)=\\lambda_{p}. These two relations become:\n\n\\begin{gathered}\np \\sim U(p) \\bar{p}+(1-U(p)) \\underline{p} \\\\\np^{\\prime} \\sim U\\left(p^{\\prime}\\right) \\bar{p}+\\left(1-U\\left(p^{\\prime}\\right)\\right) \\underline{p}\n\\end{gathered}\n\nTake a convex combination \\alpha p+(1-\\alpha) p^{\\prime}. Given the two relations above, we have:\n\n\\begin{aligned}\n& \\left.\\alpha p+(1-\\alpha) p^{\\prime} \\sim \\alpha[U(p) \\bar{p}+(1-U(p)) \\underline{p}]+(1-\\alpha)\\left[U\\left(p^{\\prime}\\right) \\bar{p}+\\left(1-U\\left(p^{\\prime}\\right)\\right) \\underline{p}\\right]\\right] \\text { Factor out } \\bar{p} \\text { and } \\underline{p} \\\\\n& \\sim\\left[\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\\right] \\cdot \\bar{p}+\\left[\\alpha(1-U(p))+(1-\\alpha)\\left(1-U\\left(p^{\\prime}\\right)\\right)\\right] \\cdot \\underline{p} \\\\\n& \\quad \\sim\\left[\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\\right] \\cdot \\bar{p}+\\left[1-\\left(\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\\right)\\right] \\cdot \\underline{p}\n\\end{aligned}\n\nNotice now that the terms in red are the same. We may denote it by any letter - for example, \\lambda (without the subscript to distinguish it from both \\lambda_{p} and \\lambda_{p^{\\prime}} ): \\lambda= \\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right).\nThe last line becomes:\n\n\\lambda \\cdot \\bar{p}+[1-\\lambda] \\cdot \\underline{p}\n\nIn short, and without all the colors:\n\n\\alpha p+(1-\\alpha) p^{\\prime} \\sim \\lambda \\cdot \\bar{p}+[1-\\lambda] \\cdot \\underline{p}\n\nBut this is the very definition of \\lambda_{p} as defined in step 2 , only applied to \\alpha p+ (1-\\alpha) p^{\\prime}. (If you want, you may write \\lambda_{\\alpha p+(1-\\alpha) p^{\\prime}} instead of \\lambda.)\nOr, using step 4, we have the more intuitive notation \\lambda=U\\left[\\alpha p+(1-\\alpha) p^{\\prime}\\right].\nBut we just defined \\lambda=\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right).\nSince these are the same \\lambda, one has:\n\nU\\left[\\alpha p+(1-\\alpha) p^{\\prime}\\right]=\\alpha U(p)+(1-\\alpha) U\\left(p^{\\prime}\\right)\n\nThat is, U has the expected utility property, concluding the proof.\nQED.",
+    "crumbs": [
+      "Lectures 5 – 6",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Comparing Risky Prospects</span>"
     ]
   }
 ]

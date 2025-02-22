@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Expected Utility Theory – Microeconomics 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./risky-prospects.html" rel="next">
+<link href="./lec5and6.html" rel="prev">
+<link href="./logo_gpeq_html.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec5and6.html">Lectures 5 – 6</a></li><li class="breadcrumb-item"><a href="./uncertainty.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_gpeq_html.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Microeconomics 1</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Microeconomics-1.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus 2024.1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec1and2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 1 – 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choice-pref-utility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preference and Utility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop-pref-utilityfun.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec3and4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 3 – 4</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./consumer-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec5and6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 5 – 6</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./uncertainty.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./risky-prospects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#choice-under-uncertainty" id="toc-choice-under-uncertainty" class="nav-link active" data-scroll-target="#choice-under-uncertainty"><span class="header-section-number">4.1</span> Choice under Uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  </ul></li>
+  <li><a href="#consequences-and-lotteries" id="toc-consequences-and-lotteries" class="nav-link" data-scroll-target="#consequences-and-lotteries"><span class="header-section-number">4.2</span> Consequences and Lotteries</a>
+  <ul class="collapse">
+  <li><a href="#consequences" id="toc-consequences" class="nav-link" data-scroll-target="#consequences">Consequences</a></li>
+  <li><a href="#decision-maker-dm-does-not-choose-consequences-directly." id="toc-decision-maker-dm-does-not-choose-consequences-directly." class="nav-link" data-scroll-target="#decision-maker-dm-does-not-choose-consequences-directly.">Decision-maker (DM) does not choose consequences directly.</a></li>
+  </ul></li>
+  <li><a href="#choice" id="toc-choice" class="nav-link" data-scroll-target="#choice"><span class="header-section-number">4.3</span> Choice</a>
+  <ul class="collapse">
+  <li><a href="#dm-does-not-choose-consequences-directly-but-instead-chooses-lotteries" id="toc-dm-does-not-choose-consequences-directly-but-instead-chooses-lotteries" class="nav-link" data-scroll-target="#dm-does-not-choose-consequences-directly-but-instead-chooses-lotteries">DM does not choose consequences directly, but instead chooses lotteries</a></li>
+  <li><a href="#convex-combinations-of-lotteries" id="toc-convex-combinations-of-lotteries" class="nav-link" data-scroll-target="#convex-combinations-of-lotteries">Convex Combinations of Lotteries</a></li>
+  <li><a href="#the-set-p" id="toc-the-set-p" class="nav-link" data-scroll-target="#the-set-p">The Set &nbsp;<span class="math inline">P</span></a></li>
+  </ul></li>
+  <li><a href="#expected-utility" id="toc-expected-utility" class="nav-link" data-scroll-target="#expected-utility"><span class="header-section-number">4.4</span> Expected Utility</a>
+  <ul class="collapse">
+  <li><a href="#cant-have-a-real-utility-function-on-consequences-as-dm-never-chooses-among-consequences." id="toc-cant-have-a-real-utility-function-on-consequences-as-dm-never-chooses-among-consequences." class="nav-link" data-scroll-target="#cant-have-a-real-utility-function-on-consequences-as-dm-never-chooses-among-consequences.">Can’t have a “real” utility function on consequences, as DM never chooses among consequences.</a></li>
+  </ul></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><span class="header-section-number">4.5</span> Example</a></li>
+  <li><a href="#property-of-eu-linearity-in-probabilities" id="toc-property-of-eu-linearity-in-probabilities" class="nav-link" data-scroll-target="#property-of-eu-linearity-in-probabilities"><span class="header-section-number">4.6</span> Property of EU: Linearity in Probabilities</a></li>
+  <li><a href="#property-of-eu-invariant-to-affine-transformations" id="toc-property-of-eu-invariant-to-affine-transformations" class="nav-link" data-scroll-target="#property-of-eu-invariant-to-affine-transformations"><span class="header-section-number">4.7</span> Property of EU: Invariant to Affine Transformations</a></li>
+  <li><a href="#what-preferences-have-an-expected-utility-representation" id="toc-what-preferences-have-an-expected-utility-representation" class="nav-link" data-scroll-target="#what-preferences-have-an-expected-utility-representation"><span class="header-section-number">4.8</span> What Preferences have an Expected Utility Representation?</a></li>
+  <li><a href="#the-independence-axiom" id="toc-the-independence-axiom" class="nav-link" data-scroll-target="#the-independence-axiom"><span class="header-section-number">4.9</span> The Independence Axiom</a></li>
+  <li><a href="#back-to-example" id="toc-back-to-example" class="nav-link" data-scroll-target="#back-to-example"><span class="header-section-number">4.10</span> Back to Example</a></li>
+  <li><a href="#expected-utility-characterization" id="toc-expected-utility-characterization" class="nav-link" data-scroll-target="#expected-utility-characterization"><span class="header-section-number">4.11</span> Expected Utility: Characterization</a></li>
+  <li><a href="#subjective-expected-utility-theory" id="toc-subjective-expected-utility-theory" class="nav-link" data-scroll-target="#subjective-expected-utility-theory"><span class="header-section-number">4.12</span> Subjective Expected Utility Theory</a></li>
+  <li><a href="#attitudes-toward-risk" id="toc-attitudes-toward-risk" class="nav-link" data-scroll-target="#attitudes-toward-risk"><span class="header-section-number">4.13</span> Attitudes toward Risk</a>
+  <ul class="collapse">
+  <li><a href="#money-lotteries" id="toc-money-lotteries" class="nav-link" data-scroll-target="#money-lotteries">Money Lotteries</a></li>
+  </ul></li>
+  <li><a href="#expected-value-vs.-expected-utility" id="toc-expected-value-vs.-expected-utility" class="nav-link" data-scroll-target="#expected-value-vs.-expected-utility"><span class="header-section-number">4.14</span> Expected Value vs.&nbsp;Expected Utility</a></li>
+  <li><a href="#risk-attitude-definitions" id="toc-risk-attitude-definitions" class="nav-link" data-scroll-target="#risk-attitude-definitions"><span class="header-section-number">4.15</span> Risk Attitude: Definitions</a></li>
+  <li><a href="#risk-aversion-and-concavity" id="toc-risk-aversion-and-concavity" class="nav-link" data-scroll-target="#risk-aversion-and-concavity"><span class="header-section-number">4.16</span> Risk Aversion and Concavity</a></li>
+  <li><a href="#certainty-equivalents" id="toc-certainty-equivalents" class="nav-link" data-scroll-target="#certainty-equivalents"><span class="header-section-number">4.17</span> Certainty Equivalents</a></li>
+  <li><a href="#quantifying-risk-attitude" id="toc-quantifying-risk-attitude" class="nav-link" data-scroll-target="#quantifying-risk-attitude"><span class="header-section-number">4.18</span> Quantifying Risk Attitude</a></li>
+  <li><a href="#an-equivalence" id="toc-an-equivalence" class="nav-link" data-scroll-target="#an-equivalence"><span class="header-section-number">4.19</span> An Equivalence</a></li>
+  <li><a href="#risk-attitude-and-wealth-levels" id="toc-risk-attitude-and-wealth-levels" class="nav-link" data-scroll-target="#risk-attitude-and-wealth-levels"><span class="header-section-number">4.20</span> Risk Attitude and Wealth Levels</a></li>
+  <li><a href="#risk-attitude-and-wealth-levels-1" id="toc-risk-attitude-and-wealth-levels-1" class="nav-link" data-scroll-target="#risk-attitude-and-wealth-levels-1"><span class="header-section-number">4.21</span> Risk Attitude and Wealth Levels</a></li>
+  <li><a href="#multiplicative-gambles" id="toc-multiplicative-gambles" class="nav-link" data-scroll-target="#multiplicative-gambles"><span class="header-section-number">4.22</span> Multiplicative Gambles</a></li>
+  <li><a href="#application-insurance" id="toc-application-insurance" class="nav-link" data-scroll-target="#application-insurance"><span class="header-section-number">4.23</span> Application: Insurance</a></li>
+  <li><a href="#agents-problem" id="toc-agents-problem" class="nav-link" data-scroll-target="#agents-problem"><span class="header-section-number">4.24</span> Agent’s Problem</a></li>
+  <li><a href="#actuarily-fair-prices" id="toc-actuarily-fair-prices" class="nav-link" data-scroll-target="#actuarily-fair-prices"><span class="header-section-number">4.25</span> Actuarily Fair Prices</a></li>
+  <li><a href="#actuarily-unfair-prices" id="toc-actuarily-unfair-prices" class="nav-link" data-scroll-target="#actuarily-unfair-prices"><span class="header-section-number">4.26</span> Actuarily Unfair Prices</a></li>
+  <li><a href="#comparative-statics" id="toc-comparative-statics" class="nav-link" data-scroll-target="#comparative-statics"><span class="header-section-number">4.27</span> Comparative Statics</a></li>
+  <li><a href="#application-portfolio-choice" id="toc-application-portfolio-choice" class="nav-link" data-scroll-target="#application-portfolio-choice"><span class="header-section-number">4.28</span> Application: Portfolio Choice</a></li>
+  <li><a href="#risk-neutral-benchmark" id="toc-risk-neutral-benchmark" class="nav-link" data-scroll-target="#risk-neutral-benchmark"><span class="header-section-number">4.29</span> Risk-Neutral Benchmark</a></li>
+  <li><a href="#more-interesting-case" id="toc-more-interesting-case" class="nav-link" data-scroll-target="#more-interesting-case"><span class="header-section-number">4.30</span> More Interesting Case</a></li>
+  <li><a href="#comparative-statics-1" id="toc-comparative-statics-1" class="nav-link" data-scroll-target="#comparative-statics-1"><span class="header-section-number">4.31</span> Comparative Statics</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec5and6.html">Lectures 5 – 6</a></li><li class="breadcrumb-item"><a href="./uncertainty.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Course so far introduced basic theory of choice and utility, extended to DM and producer theory.</p>
+<p>Last topic extends in another direction: choice under uncertainty.</p>
+<section id="choice-under-uncertainty" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="choice-under-uncertainty"><span class="header-section-number">4.1</span> Choice under Uncertainty</h2>
+<p>All choices made under some kind of uncertainty.</p>
+<p>Sometimes useful to ignore uncertainty, focus on ultimate choices.</p>
+<p>Other times, must model uncertainty explicitly.</p>
+<p>Examples:</p>
+<ul>
+<li>Insurance markets.</li>
+<li>Financial markets.</li>
+<li>Game theory.</li>
+</ul>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Impose extra assumptions on basic choice model of Lectures 1-2.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lottery
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Rather than choosing outcome directly, decision-maker chooses uncertain prospect (or lottery).</p>
+<p>A lottery is a probability distribution over outcomes.</p>
+</div>
+</div>
+<p>Leads to von Neumann-Morgenstern expected utility model.</p>
+</section>
+</section>
+<section id="consequences-and-lotteries" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="consequences-and-lotteries"><span class="header-section-number">4.2</span> Consequences and Lotteries</h2>
+<p>Two basic elements of expected utility theory: consequences (or outcomes) and lotteries.</p>
+<section id="consequences" class="level3">
+<h3 class="anchored" data-anchor-id="consequences">Consequences</h3>
+<p>Finite set <span class="math inline">C</span> of consequences.</p>
+<p>Consequences are what the decision-maker ultimately cares about.</p>
+<p>Example: “I have a car accident, my insurance company covers most of the costs, but I have to pay a <span class="math inline">\$ 500</span> deductible.”</p>
+</section>
+<section id="decision-maker-dm-does-not-choose-consequences-directly." class="level3">
+<h3 class="anchored" data-anchor-id="decision-maker-dm-does-not-choose-consequences-directly.">Decision-maker (DM) does not choose consequences directly.</h3>
+<p>DM chooses a lottery, <span class="math inline">p</span>.</p>
+<p>Lotteries are probability distributions over consequences:</p>
+<p><span class="math inline">p: C \rightarrow[0,1]</span> with <span class="math inline">\sum_{c \in C} p(c)=1</span>.</p>
+<p>Set of all lotteries is denoted by <span class="math inline">P</span>.</p>
+<p>Example: “A gold-level health insurance plan, which covers all kinds of diseases, but has a <span class="math inline">\$ 500</span> deductible.”</p>
+<p>Makes sense because DM assumed to rank health insurance plans only insofar as lead to different probability distributions over consequences.</p>
+</section>
+</section>
+<section id="choice" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="choice"><span class="header-section-number">4.3</span> Choice</h2>
+<p>Decision-maker makes choices from set of alternatives <span class="math inline">X</span>.</p>
+<p>What’s set of alternatives here, <span class="math inline">C</span> or <span class="math inline">P</span> ?</p>
+<p>Answer: <span class="math inline">P</span></p>
+<section id="dm-does-not-choose-consequences-directly-but-instead-chooses-lotteries" class="level3">
+<h3 class="anchored" data-anchor-id="dm-does-not-choose-consequences-directly-but-instead-chooses-lotteries">DM does not choose consequences directly, but instead chooses lotteries</h3>
+<p>Assume decision-maker has a rational preference relation <span class="math inline">\gtrsim</span> on <span class="math inline">P</span>.</p>
+<p>Natural to assume this?</p>
+</section>
+<section id="convex-combinations-of-lotteries" class="level3">
+<h3 class="anchored" data-anchor-id="convex-combinations-of-lotteries">Convex Combinations of Lotteries</h3>
+<p>Given two lotteries <span class="math inline">p</span> and <span class="math inline">p^{\prime}</span>, the convex combination <span class="math inline">\alpha p+(1-\alpha) p^{\prime}</span> is the lottery defined by</p>
+<p><span class="math display">
+\left(\alpha p+(1-\alpha) p^{\prime}\right)(c)=\alpha p(c)+(1-\alpha) p^{\prime}(c) \text { for all } c \in C
+</span></p>
+<p>One way to generate it:</p>
+<ul>
+<li>First, randomize between <span class="math inline">p</span> and <span class="math inline">p^{\prime}</span> with weights <span class="math inline">\alpha</span> and <span class="math inline">1-\alpha</span>.</li>
+<li>Second, choose a consequence according to whichever lottery came up.</li>
+</ul>
+<p>Such a probability distribution over lotteries is called a compound lottery.</p>
+<p>In expected utility theory, no distinction between simple and compound lotteries: simple lottery <span class="math inline">\alpha p+(1-\alpha) p^{\prime}</span> and above compound lottery give same distribution over consequences, so identified with same element of <span class="math inline">\boldsymbol{P}</span>.</p>
+<p>So, no problem if DM doesn’t know exactly the distribution for something. We’ll come back to this.</p>
+</section>
+<section id="the-set-p" class="level3">
+<h3 class="anchored" data-anchor-id="the-set-p">The Set &nbsp;<span class="math inline">P</span></h3>
+<p>As <span class="math inline">\alpha p+(1-\alpha) p^{\prime}</span> is also a lottery, <span class="math inline">P</span> is convex.</p>
+<p><span class="math inline">P</span> is also closed and bounded (why?).</p>
+<p><span class="math inline">\Rightarrow P</span> is a compact subset of <span class="math inline">\mathbb{R}^{n}</span>, where <span class="math inline">n=|C|</span>.</p>
+<p>Whenever <span class="math inline">\succsim</span> is rational and continuous, can be represented by continuous utility function <span class="math inline">U: P \rightarrow \mathbb{R}</span> :</p>
+<p><span class="math display">
+p \gtrsim q \Leftrightarrow U(p) \geq U(q)
+</span></p>
+<p>We’re just applying it to lotteries because that’s what the DM chooses now.</p>
+<p>Intuitively, want more than this.</p>
+<p>Want not only that DM has utility function over lotteries, but also that somehow related to “utility” over consequences.</p>
+<p>Only care about lotteries insofar as affect distribution over consequences, so preferences over lotteries should have something to do with “preferences” over consequences.</p>
+</section>
+</section>
+<section id="expected-utility" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="expected-utility"><span class="header-section-number">4.4</span> Expected Utility</h2>
+<p>Best we could hope for is representation by utility function of following form:</p>
+<p>Definition: a utility function <span class="math inline">U: P \rightarrow \mathbb{R}</span> has an expected utility form if there exists a function <span class="math inline">u: C \rightarrow \mathbb{R}</span> such that</p>
+<p><span class="math display">
+U(p)=\sum_{c \in C} p(c) u(c) \text { for all } p \in P
+</span></p>
+<p>In this case, the function <span class="math inline">U</span> is called an expected utility function, and the function <span class="math inline">u</span> is call a von Neumann-Morgenstern utility function.</p>
+<p>If preferences over lotteries happen to have an expected utility representation, it’s as if DM has a “utility function” over consequences (and chooses among lotteries so as to maximize expected “utility over consequences”).</p>
+<p>Remarks</p>
+<p><span class="math display">
+U(p)=\sum_{c \in C} p(c) u(c)
+</span></p>
+<p>Expected utility function <span class="math inline">U: P \rightarrow \mathbb{R}</span> represents preferences <span class="math inline">\gtrsim</span> on <span class="math inline">P</span> just as we had before</p>
+<p><span class="math inline">U: P \rightarrow \mathbb{R}</span> is an example of a standard utility function.</p>
+<p>von Neumann-Morgenstern utility function <span class="math inline">u: C \rightarrow \mathbb{R}</span> is not a standard utility function.</p>
+<section id="cant-have-a-real-utility-function-on-consequences-as-dm-never-chooses-among-consequences." class="level3">
+<h3 class="anchored" data-anchor-id="cant-have-a-real-utility-function-on-consequences-as-dm-never-chooses-among-consequences.">Can’t have a “real” utility function on consequences, as DM never chooses among consequences.</h3>
+<p>If preferences over lotteries happen to have an expected utility representation, it’s as if DM has a “utility function” over consequences.</p>
+<p>This “utility function” over consequences is the von Neumann-Morgenstern utility function.</p>
+</section>
+</section>
+<section id="example" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="example"><span class="header-section-number">4.5</span> Example</h2>
+<p>Suppose hipster restaurant doesn’t let you order steak or chicken, but only probability distributions over steak and chicken.</p>
+<p>How should you assess menu item (<span class="math inline">p(steak)</span>, <span class="math inline">p(chicken)</span>)?</p>
+<p>One way: ask yourself how much you’d like to eat steak, <span class="math inline">u(steak)</span>, and chicken, <span class="math inline">u(chicken)</span>, and evaluate according to</p>
+<p><span class="math display">
+p(\text { steak }) \cdot u(\text { steak })+p(\text { chicken }) \cdot u(\text { chicken })
+</span></p>
+<p>If this is what you’d do, then your preferences have an expected utility representation.</p>
+<p>Suppose instead you choose whichever menu item has <span class="math inline">p</span> (steak) closest to <span class="math inline">\frac{1}{2}</span>.</p>
+<p>Your preferences are rational, so they have a utility representation.</p>
+<p>But they do not have an expected utility representation - we’ll see this.</p>
+</section>
+<section id="property-of-eu-linearity-in-probabilities" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="property-of-eu-linearity-in-probabilities"><span class="header-section-number">4.6</span> Property of EU: Linearity in Probabilities</h2>
+<div id="thm-LP" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4.1</strong></span> If <span class="math inline">U: P \rightarrow \mathbb{R}</span> is an expected utility function, then</p>
+<p><span class="math display">
+U\left(\alpha p+(1-\alpha) p^{\prime}\right)=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+</span></p>
+</div>
+<p>In fact, a utility function <span class="math inline">U: P \rightarrow \mathbb{R}</span> has an expected utility form iff this equation holds for all <span class="math inline">p, p^{\prime}</span>, and <span class="math inline">\alpha \in[0,1]</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Appendix.</p>
+</div>
+</div>
+</section>
+<section id="property-of-eu-invariant-to-affine-transformations" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="property-of-eu-invariant-to-affine-transformations"><span class="header-section-number">4.7</span> Property of EU: Invariant to Affine Transformations</h2>
+<p>Suppose <span class="math inline">U: P \rightarrow \mathbb{R}</span> is an expected utility function representing preferences <span class="math inline">\succsim</span>.</p>
+<p>Any increasing transformation of <span class="math inline">U</span> also represents <span class="math inline">\succsim</span>.</p>
+<p>Not all increasing transformations of <span class="math inline">U</span> have expected utility form.</p>
+<div id="thm-IAT" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4.2</strong></span> Suppose <span class="math inline">U: P \rightarrow \mathbb{R}</span> is an expected utility function representing preferences <span class="math inline">\succsim</span>. Then <span class="math inline">V: P \rightarrow \mathbb{R}</span> is also an expected utility function representing <span class="math inline">\gtrsim</span> iff there exist <span class="math inline">a, b&gt;0</span> such that</p>
+<p><span class="math display">
+V(p)=a+b U(p) \text { for all } p \in P
+</span></p>
+<p>If this is so, we also have <span class="math inline">V(p)=\sum_{c \in C} p(c) v(c)</span> for all <span class="math inline">p \in P</span>, where</p>
+<p><span class="math display">
+v(c)=a+b u(c) \text { for all } c \in C
+</span></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Appendix.</p>
+</div>
+</div>
+</section>
+<section id="what-preferences-have-an-expected-utility-representation" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="what-preferences-have-an-expected-utility-representation"><span class="header-section-number">4.8</span> What Preferences have an Expected Utility Representation?</h2>
+<p>Preferences must be rational to have any kind of utility representation.</p>
+<p>Preferences on a compact and convex set must be continuous to have a continuous utility representation.</p>
+<p>Besides rationality and continuity, what’s needed to ensure that preferences have an expected utility representation?</p>
+</section>
+<section id="the-independence-axiom" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="the-independence-axiom"><span class="header-section-number">4.9</span> The Independence Axiom</h2>
+<div id="def-IA" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 4.1</strong></span> A preference relation <span class="math inline">\gtrsim</span> satisfies independence if, for every <span class="math inline">p, q, r \in P</span> and <span class="math inline">\alpha \in(0,1)</span>,</p>
+<p><span class="math display">
+p \succsim q \Leftrightarrow \alpha p+(1-\alpha) r \succsim \alpha q+(1-\alpha) r
+</span></p>
+</div>
+<p>Can interpret as form of “dynamic consistency.”</p>
+<p>Doesn’t need to hold for consequences.</p>
+</section>
+<section id="back-to-example" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="back-to-example"><span class="header-section-number">4.10</span> Back to Example</h2>
+<p>Suppose choose lottery with <span class="math inline">p</span> (steak) closest to <span class="math inline">\frac{1}{2}</span>.</p>
+<p>Let <span class="math inline">p=\left(\frac{1}{2}, \frac{1}{2}\right), q=(0,1), r=(1,0)</span>, and <span class="math inline">\alpha=\frac{1}{2}</span>.</p>
+<p>Then</p>
+<p><span class="math display">
+p=\left(\frac{1}{2}, \frac{1}{2}\right)&gt;(0,1)=q
+</span></p>
+<p>but</p>
+<p><span class="math display">
+\alpha q+(1-\alpha) r=\left(\frac{1}{2}, \frac{1}{2}\right)&gt;\left(\frac{3}{4}, \frac{1}{4}\right)=\alpha p+(1-\alpha) r
+</span></p>
+<p>Does not satisfy independence.</p>
+</section>
+<section id="expected-utility-characterization" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="expected-utility-characterization"><span class="header-section-number">4.11</span> Expected Utility: Characterization</h2>
+<p>A preference relation <span class="math inline">\gtrsim</span> has an expected utility representation iff it satisfies rationality, continuity, and independence.</p>
+<p>Intuition: both having expected utility form and satisfying independence boil down to having straight, parallel indifference curves.</p>
+</section>
+<section id="subjective-expected-utility-theory" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="subjective-expected-utility-theory"><span class="header-section-number">4.12</span> Subjective Expected Utility Theory</h2>
+<p>So far, probabilities are objective.</p>
+<p>In reality, uncertainty is usually subjective.</p>
+<p>Subjective expected utility theory (Savage, 1954): under assumptions roughly similar to ones form this lecture, preferences have an expected utility representation where both the utilities over consequences and the subjective probabilities themselves are revealed by decision-maker’s choices.</p>
+<p>Thus, expected utility theory applies even when the probabilities are not objectively given.</p>
+<p>(To learn more, a good starting point is Kreps (1988), “Notes on the Theory of Choice.”)</p>
+<p>Again, no problem if DM doesn’t know the exact distribution.</p>
+<p>The same holds in general equilibrium: allows for different individual priors.</p>
+<p>One may go beyond and assume DM has some rule to deal with set of priors - e.g., DM may assume that nature will choose the worst possible prior, conditional on his optimal choice, leading to a mini-max structure that deals with fear of misspecification and relates to sub-rational behavior.</p>
+<p>See nice discussion in Hansen and Sargent (2000) and a critique by Sims (AER 2001).</p>
+</section>
+<section id="attitudes-toward-risk" class="level2" data-number="4.13">
+<h2 data-number="4.13" class="anchored" data-anchor-id="attitudes-toward-risk"><span class="header-section-number">4.13</span> Attitudes toward Risk</h2>
+<section id="money-lotteries" class="level3">
+<h3 class="anchored" data-anchor-id="money-lotteries">Money Lotteries</h3>
+<p>Turn now to special case of choice under uncertainty where outcomes are measured in dollars.</p>
+<p>Set of consequences <span class="math inline">C</span> is subset of <span class="math inline">\mathbb{R}</span>.</p>
+<p>A lottery is a cumulative distribution function <span class="math inline">F</span> on <span class="math inline">\mathbb{R}</span>.</p>
+<p>(Now we use <span class="math inline">F</span> instead of <span class="math inline">p</span>)</p>
+<p>Assume preferences have expected utility representation:</p>
+<p><span class="math display">
+U(F) = E_{F}[u(x)] = \int u(x) f(x) d x
+</span></p>
+<p>More generally, we could write <span class="math inline">\int u(x) d F(x)</span>.</p>
+<p>This is useful if we do not know whether a density <span class="math inline">f</span> exists.</p>
+<p>We’ll assume it does and make <span class="math inline">d F(x) / d x=f(x)</span>, so that <span class="math inline">d F(x)=f(x) d x</span>, leading to our representation above.</p>
+<p>(But everything holds for a general <span class="math inline">F(x)</span>.)</p>
+<p>Assume <span class="math inline">u</span> increasing, differentiable.</p>
+<p>Question: how do properties of von Neumann-Morgenstern utility function <span class="math inline">u</span> relate to decision-maker’s attitude toward risk?</p>
+</section>
+</section>
+<section id="expected-value-vs.-expected-utility" class="level2" data-number="4.14">
+<h2 data-number="4.14" class="anchored" data-anchor-id="expected-value-vs.-expected-utility"><span class="header-section-number">4.14</span> Expected Value vs.&nbsp;Expected Utility</h2>
+<p>Expected value of lottery <span class="math inline">F</span> is</p>
+<p><span class="math display">
+E_{F}[x]=\int x f(x) d x
+</span></p>
+<p>Expected utility of lottery <span class="math inline">F</span> is</p>
+<p><span class="math display">
+E_{F}[u(x)]=\int u(x) f(x) d x
+</span></p>
+<p>Can learn about DM’s risk attitude by comparing <span class="math inline">E_{F}[u(x)]</span> and <span class="math inline">u\left(E_{F}[x]\right)</span>.</p>
+</section>
+<section id="risk-attitude-definitions" class="level2" data-number="4.15">
+<h2 data-number="4.15" class="anchored" data-anchor-id="risk-attitude-definitions"><span class="header-section-number">4.15</span> Risk Attitude: Definitions</h2>
+<div id="def-RA" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 4.2</strong></span> A decision-maker is risk-averse if she always prefers the sure wealth level <span class="math inline">E_{F}[x]</span> to the lottery <span class="math inline">F</span> : that is,</p>
+<p><span class="math display">
+\int u(x) f(x) d x \leq u\left(\int x f(x) d x\right) \text { for all } F
+</span></p>
+<p>A decision-maker is strictly risk-averse if the inequality is strict for all nondegenerate lotteries <span class="math inline">F</span>.</p>
+<p>A decision-maker is risk-neutral if she is always indifferent:</p>
+<p><span class="math display">
+\int u(x) f(x) d x=u\left(\int x f(x) d x\right) \text { for all } F
+</span></p>
+<p>A decision-maker is risk-loving if she always prefers the lottery:</p>
+<p><span class="math display">
+\int u(x) f(x) d x \geq u\left(\int x f(x) d x\right) \text { for all } F
+</span></p>
+</div>
+</section>
+<section id="risk-aversion-and-concavity" class="level2" data-number="4.16">
+<h2 data-number="4.16" class="anchored" data-anchor-id="risk-aversion-and-concavity"><span class="header-section-number">4.16</span> Risk Aversion and Concavity</h2>
+<p>Statement that <span class="math inline">\int u(x) d F(x) \leq u\left(\int x d F(x)\right)</span> for all <span class="math inline">F</span> is called Jensen’s inequality.</p>
+<p>Fact: Jensen’s inequality holds iff <span class="math inline">u</span> is concave.</p>
+<p>This implies:</p>
+<div id="thm-RA" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4.3</strong></span> A decision-maker is (strictly) risk-averse if and only if <span class="math inline">u</span> is (strictly) concave.</p>
+<p>A decision-maker is risk-neutral if and only if <span class="math inline">u</span> is linear.</p>
+<p>A decision-maker is (strictly) risk-loving if and only if <span class="math inline">u</span> is (strictly) convex.</p>
+</div>
+</section>
+<section id="certainty-equivalents" class="level2" data-number="4.17">
+<h2 data-number="4.17" class="anchored" data-anchor-id="certainty-equivalents"><span class="header-section-number">4.17</span> Certainty Equivalents</h2>
+<p>Can also define risk-aversion using certainty equivalents.</p>
+<div id="def-CE" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 4.3</strong></span> The certainty equivalent of a lottery <span class="math inline">F</span> is the sure wealth level that yields the same expected utility as <span class="math inline">F</span>: that is,</p>
+<p><span class="math display">
+u[C E(F, u)] = \int u(x) f(x) d x
+</span></p>
+</div>
+<p>That is,</p>
+<p><span class="math display">
+CE(F, u)=u^{-1}\left(\int u(x) d F(x)\right)
+</span></p>
+<div id="thm-RACE" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4.4</strong></span> A decision-maker is risk-averse iff <span class="math inline">C E(F, u) \leq E_{F}(x)</span> for all <span class="math inline">F</span>.</p>
+<p>A decision-maker is risk-neutral iff <span class="math inline">C E(F, u)=E_{F}(x)</span> for all <span class="math inline">F</span>.</p>
+<p>A decision-maker is risk-loving iff <span class="math inline">C E(F, u) \geq E_{F}(x)</span> for all <span class="math inline">F</span>.</p>
+</div>
+</section>
+<section id="quantifying-risk-attitude" class="level2" data-number="4.18">
+<h2 data-number="4.18" class="anchored" data-anchor-id="quantifying-risk-attitude"><span class="header-section-number">4.18</span> Quantifying Risk Attitude</h2>
+<p>We know what it means for a DM to be risk-averse.</p>
+<p>What does it mean for one DM to be more risk-averse than another?</p>
+<p>Two possibilities:</p>
+<ul>
+<li><span class="math inline">u</span> is more risk-averse than <span class="math inline">v</span> if, for every <span class="math inline">F, C E(F, u) \leq C E(F, v)</span>.</li>
+<li><span class="math inline">u</span> is more risk-averse than <span class="math inline">v</span> if <span class="math inline">u</span> is “more concave” than <span class="math inline">v</span>, in that <span class="math inline">u=g \circ v</span> for some increasing, concave <span class="math inline">g</span>.</li>
+</ul>
+<p>One more, based on local curvature of utility function: <span class="math inline">u</span> is more-risk averse than <span class="math inline">v</span> if, for every <span class="math inline">x</span>,</p>
+<p><span class="math display">
+-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)} \geq-\frac{v^{\prime \prime}(x)}{v^{\prime}(x)}
+</span></p>
+<p><span class="math inline">A(x, u)=-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)}</span> is called the Arrow-Pratt coefficient of absolute risk-aversion.</p>
+</section>
+<section id="an-equivalence" class="level2" data-number="4.19">
+<h2 data-number="4.19" class="anchored" data-anchor-id="an-equivalence"><span class="header-section-number">4.19</span> An Equivalence</h2>
+<div id="thm">
+<p>The following are equivalent:</p>
+<ul>
+<li>For every <span class="math inline">F</span>, <span class="math inline">CE(F, u) \leq CE(F, v)</span>.</li>
+<li>There exists an increasing, concave function <span class="math inline">g</span> such that <span class="math inline">u=g \circ v</span>.</li>
+<li>For every <span class="math inline">x, A(x, u) \geq A(x, v)</span>.</li>
+</ul>
+</div>
+</section>
+<section id="risk-attitude-and-wealth-levels" class="level2" data-number="4.20">
+<h2 data-number="4.20" class="anchored" data-anchor-id="risk-attitude-and-wealth-levels"><span class="header-section-number">4.20</span> Risk Attitude and Wealth Levels</h2>
+<p>How does risk attitude vary with wealth?</p>
+<p>Natural to assume that a richer individual is more willing to bear risk: whenever a poorer individual is willing to accept a risky gamble, so is a richer individual.</p>
+<p>Captured by decreasing absolute risk-aversion:</p>
+<div id="def">
+<p>A von Neumann-Morenstern utility function <span class="math inline">u</span> exhibits decreasing (constant, increasing) absolute risk-aversion if <span class="math inline">A(x, u)</span> is decreasing (constant, increasing) in <span class="math inline">x</span>.</p>
+</div>
+</section>
+<section id="risk-attitude-and-wealth-levels-1" class="level2" data-number="4.21">
+<h2 data-number="4.21" class="anchored" data-anchor-id="risk-attitude-and-wealth-levels-1"><span class="header-section-number">4.21</span> Risk Attitude and Wealth Levels</h2>
+<div id="thm-RAWL" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 4.5</strong></span> Suppose <span class="math inline">u</span> exhibits decreasing absolute risk-aversion.</p>
+<p>If the decision-maker accepts some gamble at a lower wealth level, she also accepts it at any higher wealth level:</p>
+<p>that is, for any lottery <span class="math inline">F(x)</span>, if</p>
+<p><span class="math display">
+E_{F}[u(w+x)] \geq u(w)
+</span></p>
+<p>then, for any <span class="math inline">w^{\prime}&gt;w</span>,</p>
+<p><span class="math display">
+E_{F}\left[u\left(w^{\prime}+x\right)\right] \geq u\left(w^{\prime}\right)
+</span></p>
+</div>
+</section>
+<section id="multiplicative-gambles" class="level2" data-number="4.22">
+<h2 data-number="4.22" class="anchored" data-anchor-id="multiplicative-gambles"><span class="header-section-number">4.22</span> Multiplicative Gambles</h2>
+<p>What about gambles that multiply wealth, like choosing how risky a stock portfolio to hold? Are richer individuals also more willing to bear multiplicative risk? Depends on increasing/decreasing relative risk-aversion:</p>
+<p><span class="math display">
+R(x, u)=-\frac{u^{\prime \prime}(x)}{u^{\prime}(x)} x
+</span></p>
+<div id="thm">
+<p>Suppose u exhibits decreasing relative risk-aversion.</p>
+<p>If the decision-maker accepts some multiplicative gamble at a lower wealth level, she also accepts it at any higher wealth level: that is, for any lottery <span class="math inline">F(t)</span>, if</p>
+<p><span class="math display">
+E_{F}[u(t w)] \geq u(w)
+</span></p>
+<p>then, for any <span class="math inline">w^{\prime}&gt;w</span>,</p>
+<p>Relative Risk-Aversion vs.&nbsp;Absolute Risk-Aversion</p>
+<p><span class="math display">
+R(x)=x A(x)
+</span></p>
+<p>decreasing relative risk-aversion <span class="math inline">\Rightarrow</span> decreasing absolute risk-aversion</p>
+<p>increasing absolute risk-aversion <span class="math inline">\Rightarrow</span> increasing relative risk-aversion</p>
+</div>
+<p>Ex. decreasing relative risk-aversion <span class="math inline">\Rightarrow</span> more willing to gamble <span class="math inline">1 \%</span> of wealth as get richer.</p>
+<p>So certainly more willing to gamble a fixed amount of money.</p>
+</section>
+<section id="application-insurance" class="level2" data-number="4.23">
+<h2 data-number="4.23" class="anchored" data-anchor-id="application-insurance"><span class="header-section-number">4.23</span> Application: Insurance</h2>
+<p>Risk-averse agent with wealth <span class="math inline">w</span>, faces probability <span class="math inline">p</span> of incurring monetary <span class="math inline">loss L</span>.</p>
+<p>Can insure against the loss by buying a policy that pays out <span class="math inline">a</span> if the loss occurs.</p>
+<p>Policy that pays out a costs qa.</p>
+<p>How much insurance should she buy?</p>
+</section>
+<section id="agents-problem" class="level2" data-number="4.24">
+<h2 data-number="4.24" class="anchored" data-anchor-id="agents-problem"><span class="header-section-number">4.24</span> Agent’s Problem</h2>
+<p><span class="math display">
+\max_{a} p u(w-q a-L+a)+(1-p) u(w-q a)
+</span></p>
+<p><span class="math inline">u</span> concave <span class="math inline">\Rightarrow</span> concave problem, so FOC is necessary and sufficient.</p>
+<p>FOC:</p>
+<p><span class="math display">
+p(1-q) u^{\prime}(w-q a-L+a)=(1-p) q u^{\prime}(w-q a)
+</span></p>
+<p>Equate marginal benefit of extra dollar in each state.</p>
+</section>
+<section id="actuarily-fair-prices" class="level2" data-number="4.25">
+<h2 data-number="4.25" class="anchored" data-anchor-id="actuarily-fair-prices"><span class="header-section-number">4.25</span> Actuarily Fair Prices</h2>
+<p>Insurance is actuarily fair if expected payout qa equals cost of insurance <span class="math inline">p a</span> : that is, <span class="math inline">p=q</span>.</p>
+<p>With acturarily fair insurance, FOC becomes</p>
+<p><span class="math display">
+u^{\prime}(w-q a-L+a)=u^{\prime}(w-q a)
+</span></p>
+<p>Solution: <span class="math inline">a=L</span></p>
+<p>A risk-averse DM facing actuarily fair prices will always fully insure.</p>
+</section>
+<section id="actuarily-unfair-prices" class="level2" data-number="4.26">
+<h2 data-number="4.26" class="anchored" data-anchor-id="actuarily-unfair-prices"><span class="header-section-number">4.26</span> Actuarily Unfair Prices</h2>
+<p>What if insurance company makes a profit, so <span class="math inline">q&gt;p</span> ?</p>
+<p>Rearrange FOC as</p>
+<p><span class="math display">
+\frac{u^{\prime}(w-q a-L+a)}{u^{\prime}(w-q a)}=\frac{(1-p) q}{p(1-q)}&gt;1
+</span></p>
+<p>Solution: <span class="math inline">a&lt;L</span></p>
+<p>A risk-averse DM facing actuarily unfair prices will never fully insure.</p>
+<p>Intuition: <span class="math inline">u</span> approximately linear for small risks, so not worth giving up expected value to insure away last little bit of variance.</p>
+</section>
+<section id="comparative-statics" class="level2" data-number="4.27">
+<h2 data-number="4.27" class="anchored" data-anchor-id="comparative-statics"><span class="header-section-number">4.27</span> Comparative Statics</h2>
+<p><span class="math display">
+\max _{a} p u(w-q a-L+a)+(1-p) u(w-q a)
+</span></p>
+<p>Bigger loss <span class="math inline">\Rightarrow</span> buy more insurance ( <span class="math inline">a^{*}</span> increasing in <span class="math inline">L</span> ) Follows from Topkis’ theorem.</p>
+<p>If agent has decreasing absolute risk-aversion, then she buys less insurance as she gets richer.</p>
+<p>Prove it as an exercise!</p>
+</section>
+<section id="application-portfolio-choice" class="level2" data-number="4.28">
+<h2 data-number="4.28" class="anchored" data-anchor-id="application-portfolio-choice"><span class="header-section-number">4.28</span> Application: Portfolio Choice</h2>
+<p>Risk-averse agent with wealth <span class="math inline">w</span> has to invest in a safe asset and a risky asset.</p>
+<p>Safe asset pays certain return <span class="math inline">r</span>.</p>
+<p>Risky asset pays random return <span class="math inline">z</span>, with <span class="math inline">\operatorname{cdf} F</span>.</p>
+<p>Agent’s problem</p>
+<p><span class="math display">
+\max _{a \in[0, w]} \int u(a z+(w-a) r) d F(z)
+</span></p>
+<p>First-order condition</p>
+<p><span class="math display">
+\int(z-r) u^{\prime}(a z+(w-a) r) d F(z)=0
+</span></p>
+</section>
+<section id="risk-neutral-benchmark" class="level2" data-number="4.29">
+<h2 data-number="4.29" class="anchored" data-anchor-id="risk-neutral-benchmark"><span class="header-section-number">4.29</span> Risk-Neutral Benchmark</h2>
+<p>Suppose <span class="math inline">u^{\prime}(x)=\alpha x</span> for some <span class="math inline">\alpha&gt;0</span>.</p>
+<p>Then</p>
+<p><span class="math display">
+U(a)=\int \alpha(a z+(w-a) r) d F(z)
+</span></p>
+<p>so</p>
+<p><span class="math display">
+U^{\prime}(a)=\alpha(E[z]-r)
+</span></p>
+<p>Solution: set <span class="math inline">a=w</span> if <span class="math inline">E[z]&gt;r</span>, set <span class="math inline">a=0</span> if <span class="math inline">E[z]&lt;r</span>.</p>
+<p>Risk-neutral investor puts all wealth in the asset with the highest rate of return.</p>
+<p><span class="math inline">r&gt;E[z]</span> Benchmark</p>
+<p><span class="math display">
+U^{\prime}(0)=\int(z-r) u^{\prime}(w) d F=(E[z]-r) u^{\prime}(w)
+</span></p>
+<p>If safe asset has higher rate of return, then even risk-averse investor puts all wealth in the safe asset.</p>
+</section>
+<section id="more-interesting-case" class="level2" data-number="4.30">
+<h2 data-number="4.30" class="anchored" data-anchor-id="more-interesting-case"><span class="header-section-number">4.30</span> More Interesting Case</h2>
+<p>What if agent is risk-averse, but risky asset has higher expected return?</p>
+<p><span class="math display">
+U^{\prime}(0)=(E[z]-r) u^{\prime}(w)&gt;0
+</span></p>
+<p>If risky asset has higher rate of return, then risk-averse investor always puts some wealth in the risky asset.</p>
+</section>
+<section id="comparative-statics-1" class="level2" data-number="4.31">
+<h2 data-number="4.31" class="anchored" data-anchor-id="comparative-statics-1"><span class="header-section-number">4.31</span> Comparative Statics</h2>
+<p>Does a less risk-averse agent always invest more in the risky asset?</p>
+<p>Sufficient condition for agent <span class="math inline">v</span> to invest more than agent <span class="math inline">u</span> :</p>
+<p><span class="math display">
+\begin{gathered}
+\int(z-r) u^{\prime}(a z+(w-a) r) d F=0 \\
+\Rightarrow \int(z-r) v^{\prime}(a z+(w-a) r) d F \geq 0
+\end{gathered}
+</span></p>
+<p><span class="math inline">u</span> more risk-averse <span class="math inline">\Rightarrow v=h \circ u</span> for some increasing, convex <span class="math inline">h</span>. Inequality equals</p>
+<p><span class="math display">
+\int(z-r) h^{\prime}(u(a z+(w-a) r)) u^{\prime}(a z+(w-a) r) d F \geq 0
+</span></p>
+<p><span class="math inline">h^{\prime}(\cdot)</span> positive and increasing in <span class="math inline">z</span></p>
+<p><span class="math inline">\Rightarrow</span> multiplying by <span class="math inline">h^{\prime}(\cdot)</span> puts more weight on positive <span class="math inline">(z&gt;r)</span> terms, less weight on negative terms.</p>
+<p>A less risk-averse agent always invests more in the risky-asset.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./lec5and6.html" class="pagination-link" aria-label="Lectures 5 – 6">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lectures 5 – 6</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./risky-prospects.html" class="pagination-link" aria-label="Comparing Risky Prospects">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

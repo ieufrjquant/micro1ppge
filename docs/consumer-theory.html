@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Consumer Theory – Microeconomics 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./lec5and6.html" rel="next">
+<link href="./lec3and4.html" rel="prev">
+<link href="./logo_gpeq_html.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec3and4.html">Lectures 3 – 4</a></li><li class="breadcrumb-item"><a href="./consumer-theory.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_gpeq_html.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Microeconomics 1</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Microeconomics-1.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus 2024.1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec1and2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 1 – 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choice-pref-utility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preference and Utility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop-pref-utilityfun.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec3and4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 3 – 4</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./consumer-theory.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec5and6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 5 – 6</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./risky-prospects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#consumer-problem-cp" id="toc-consumer-problem-cp" class="nav-link active" data-scroll-target="#consumer-problem-cp"><span class="header-section-number">3.1</span> Consumer Problem (CP)</a>
+  <ul class="collapse">
+  <li><a href="#first-prices-are-linear" id="toc-first-prices-are-linear" class="nav-link" data-scroll-target="#first-prices-are-linear">First: prices are Linear</a></li>
+  <li><a href="#second-goods-are-divisible" id="toc-second-goods-are-divisible" class="nav-link" data-scroll-target="#second-goods-are-divisible">Second: Goods are Divisible</a></li>
+  <li><a href="#third-set-of-goods-is-finite-ninfty" id="toc-third-set-of-goods-is-finite-ninfty" class="nav-link" data-scroll-target="#third-set-of-goods-is-finite-ninfty">Third: Set of Goods is Finite (<span class="math inline">{n}&lt;\infty</span>)</a></li>
+  </ul></li>
+  <li><a href="#marshallian-demand" id="toc-marshallian-demand" class="nav-link" data-scroll-target="#marshallian-demand"><span class="header-section-number">3.2</span> Marshallian Demand</a></li>
+  <li><a href="#budget-sets" id="toc-budget-sets" class="nav-link" data-scroll-target="#budget-sets"><span class="header-section-number">3.3</span> Budget Sets</a></li>
+  <li><a href="#marshallian-demand-existence" id="toc-marshallian-demand-existence" class="nav-link" data-scroll-target="#marshallian-demand-existence"><span class="header-section-number">3.4</span> Marshallian Demand: Existence</a></li>
+  <li><a href="#marshallian-demand-uniqueness" id="toc-marshallian-demand-uniqueness" class="nav-link" data-scroll-target="#marshallian-demand-uniqueness"><span class="header-section-number">3.5</span> Marshallian Demand: Uniqueness?</a></li>
+  <li><a href="#marshallian-demand-homogeneity-of-degree-0" id="toc-marshallian-demand-homogeneity-of-degree-0" class="nav-link" data-scroll-target="#marshallian-demand-homogeneity-of-degree-0"><span class="header-section-number">3.6</span> Marshallian Demand: Homogeneity of Degree 0</a></li>
+  <li><a href="#marshallian-demand-continuity" id="toc-marshallian-demand-continuity" class="nav-link" data-scroll-target="#marshallian-demand-continuity"><span class="header-section-number">3.7</span> Marshallian Demand: “Continuity”</a></li>
+  <li><a href="#marshallian-demand-walras-law" id="toc-marshallian-demand-walras-law" class="nav-link" data-scroll-target="#marshallian-demand-walras-law"><span class="header-section-number">3.8</span> Marshallian Demand: Walras’ Law</a></li>
+  <li><a href="#marshallian-demand-differentiable-demand" id="toc-marshallian-demand-differentiable-demand" class="nav-link" data-scroll-target="#marshallian-demand-differentiable-demand"><span class="header-section-number">3.9</span> Marshallian Demand: Differentiable Demand</a></li>
+  <li><a href="#the-indirect-utility-function" id="toc-the-indirect-utility-function" class="nav-link" data-scroll-target="#the-indirect-utility-function"><span class="header-section-number">3.10</span> The Indirect Utility Function</a></li>
+  <li><a href="#indirect-utility-function-properties" id="toc-indirect-utility-function-properties" class="nav-link" data-scroll-target="#indirect-utility-function-properties"><span class="header-section-number">3.11</span> Indirect Utility Function: Properties</a></li>
+  <li><a href="#indirect-utility-function-derivatives" id="toc-indirect-utility-function-derivatives" class="nav-link" data-scroll-target="#indirect-utility-function-derivatives"><span class="header-section-number">3.12</span> Indirect Utility Function: Derivatives</a></li>
+  <li><a href="#indirect-utility-function-derivatives-1" id="toc-indirect-utility-function-derivatives-1" class="nav-link" data-scroll-target="#indirect-utility-function-derivatives-1"><span class="header-section-number">3.13</span> Indirect Utility Function: Derivatives</a></li>
+  <li><a href="#kuhn-tucker-theorem" id="toc-kuhn-tucker-theorem" class="nav-link" data-scroll-target="#kuhn-tucker-theorem"><span class="header-section-number">3.14</span> Kuhn-Tucker Theorem</a></li>
+  <li><a href="#kuhn-tucker-theorem-comments" id="toc-kuhn-tucker-theorem-comments" class="nav-link" data-scroll-target="#kuhn-tucker-theorem-comments"><span class="header-section-number">3.15</span> Kuhn-Tucker Theorem: Comments</a></li>
+  <li><a href="#lagrangian-for-cp" id="toc-lagrangian-for-cp" class="nav-link" data-scroll-target="#lagrangian-for-cp"><span class="header-section-number">3.16</span> Lagrangian for (CP)</a></li>
+  <li><a href="#back-to-derivatives-of-v" id="toc-back-to-derivatives-of-v" class="nav-link" data-scroll-target="#back-to-derivatives-of-v"><span class="header-section-number">3.17</span> Back to Derivatives of &nbsp;<span class="math inline">v</span></a></li>
+  <li><a href="#envelope-theorem" id="toc-envelope-theorem" class="nav-link" data-scroll-target="#envelope-theorem"><span class="header-section-number">3.18</span> Envelope Theorem</a></li>
+  <li><a href="#back-again-to-derivatives-of-v" id="toc-back-again-to-derivatives-of-v" class="nav-link" data-scroll-target="#back-again-to-derivatives-of-v"><span class="header-section-number">3.19</span> Back again to Derivatives of <span class="math inline">v</span></a></li>
+  <li><a href="#roys-identity" id="toc-roys-identity" class="nav-link" data-scroll-target="#roys-identity"><span class="header-section-number">3.20</span> Roy’s Identity</a></li>
+  <li><a href="#key-facts-about-cp-assuming-differentiability" id="toc-key-facts-about-cp-assuming-differentiability" class="nav-link" data-scroll-target="#key-facts-about-cp-assuming-differentiability"><span class="header-section-number">3.21</span> Key Facts about (CP), Assuming Differentiability</a></li>
+  <li><a href="#the-expenditure-minimization-problem" id="toc-the-expenditure-minimization-problem" class="nav-link" data-scroll-target="#the-expenditure-minimization-problem"><span class="header-section-number">3.22</span> The Expenditure Minimization Problem</a></li>
+  <li><a href="#hicksian-demand" id="toc-hicksian-demand" class="nav-link" data-scroll-target="#hicksian-demand"><span class="header-section-number">3.23</span> Hicksian Demand</a></li>
+  <li><a href="#why-should-we-care-about-the-emp" id="toc-why-should-we-care-about-the-emp" class="nav-link" data-scroll-target="#why-should-we-care-about-the-emp"><span class="header-section-number">3.24</span> Why Should we Care about the EMP?</a></li>
+  <li><a href="#hicksian-demand-properties" id="toc-hicksian-demand-properties" class="nav-link" data-scroll-target="#hicksian-demand-properties"><span class="header-section-number">3.25</span> Hicksian Demand: Properties</a></li>
+  <li><a href="#expenditure-function-properties" id="toc-expenditure-function-properties" class="nav-link" data-scroll-target="#expenditure-function-properties"><span class="header-section-number">3.26</span> Expenditure Function: Properties</a></li>
+  <li><a href="#intuition-for-concavity" id="toc-intuition-for-concavity" class="nav-link" data-scroll-target="#intuition-for-concavity"><span class="header-section-number">3.27</span> Intuition for concavity</a></li>
+  <li><a href="#expenditure-function-derivatives" id="toc-expenditure-function-derivatives" class="nav-link" data-scroll-target="#expenditure-function-derivatives"><span class="header-section-number">3.28</span> Expenditure Function: Derivatives</a></li>
+  <li><a href="#comparative-statics" id="toc-comparative-statics" class="nav-link" data-scroll-target="#comparative-statics"><span class="header-section-number">3.29</span> Comparative Statics</a></li>
+  <li><a href="#the-law-of-demand" id="toc-the-law-of-demand" class="nav-link" data-scroll-target="#the-law-of-demand"><span class="header-section-number">3.30</span> The Law of Demand</a></li>
+  <li><a href="#the-slutsky-matrix" id="toc-the-slutsky-matrix" class="nav-link" data-scroll-target="#the-slutsky-matrix"><span class="header-section-number">3.31</span> The Slutsky Matrix</a></li>
+  <li><a href="#the-slutsky-matrix-1" id="toc-the-slutsky-matrix-1" class="nav-link" data-scroll-target="#the-slutsky-matrix-1"><span class="header-section-number">3.32</span> The Slutsky Matrix</a></li>
+  <li><a href="#relation-between-hicksian-and-marshallian-demand" id="toc-relation-between-hicksian-and-marshallian-demand" class="nav-link" data-scroll-target="#relation-between-hicksian-and-marshallian-demand"><span class="header-section-number">3.33</span> Relation between Hicksian and Marshallian Demand</a></li>
+  <li><a href="#the-slutsky-equation" id="toc-the-slutsky-equation" class="nav-link" data-scroll-target="#the-slutsky-equation"><span class="header-section-number">3.34</span> The Slutsky Equation</a></li>
+  <li><a href="#terminology-for-consumer-theory-comparative-statics" id="toc-terminology-for-consumer-theory-comparative-statics" class="nav-link" data-scroll-target="#terminology-for-consumer-theory-comparative-statics"><span class="header-section-number">3.35</span> Terminology for Consumer Theory Comparative Statics</a></li>
+  <li><a href="#comparative-statics-remarks" id="toc-comparative-statics-remarks" class="nav-link" data-scroll-target="#comparative-statics-remarks"><span class="header-section-number">3.36</span> Comparative Statics: Remarks</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec3and4.html">Lectures 3 – 4</a></li><li class="breadcrumb-item"><a href="./consumer-theory.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Consumer theory studies how rational consumer chooses what bundle of goods to consume.</p>
+<p><strong>Rational</strong> has a new meaning now: unbounded rationality!</p>
+<p>Special case of general theory of choice.</p>
+<p>Key new assumption: choice sets defined <strong>ONLY</strong> by prices of each of <span class="math inline">n</span> goods, and income (or wealth).</p>
+<section id="consumer-problem-cp" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="consumer-problem-cp"><span class="header-section-number">3.1</span> Consumer Problem (CP)</h2>
+<p><span class="math display">
+\max_{x \in \mathbb{R}_+^n} \ \ \ u\left(x\right)\ \\
+s.t.\ \ \ p \cdot x \le w
+</span></p>
+<p>Restrictions that don’t show up are the most important ones!</p>
+<p>Notation: <span class="math inline">p\in\mathbb{R}^n</span>, <span class="math inline">x\in\mathbb{R}^n</span>, <span class="math inline">p \cdot x=p_1x_1+\ldots+p_nx_n</span> (inner product)</p>
+<ul>
+<li>Consumer chooses consumption vector <span class="math inline">x=\left(x_1,\ldots,x_n\right)</span></li>
+<li><span class="math inline">x_k</span> is consumption of good <span class="math inline">k</span></li>
+<li>Each unit of good k costs <span class="math inline">p_k</span></li>
+<li><span class="math inline">p \cdot x</span> is total expenditure</li>
+<li>Total available income is w</li>
+</ul>
+<p>Now discuss some implicit assumptions underlying (CP).</p>
+<section id="first-prices-are-linear" class="level3">
+<h3 class="anchored" data-anchor-id="first-prices-are-linear">First: prices are Linear</h3>
+<p>Each unit of good <span class="math inline">k</span> costs the same.</p>
+<p>No quantity discounts or supply constraints.</p>
+<p>Consumer’s choice set (or budget set) is:</p>
+<p><img src="images/clipboard-3781971011.png" class="img-fluid"></p>
+<p><span class="math display">
+B(p,w)=\left\{x\in\mathbb{R}_+^n:p\cdot x\le w\right\}
+</span></p>
+<p>Set is defined by single line (or hyperplane): the budget line <span class="math display">
+p\cdot x=w
+</span> Assume <span class="math inline">p\geq0</span>.</p>
+<p>(If we’re talking about bad things, so that price cannot be positive, think of garbage collection with positive price)</p>
+</section>
+<section id="second-goods-are-divisible" class="level3">
+<h3 class="anchored" data-anchor-id="second-goods-are-divisible">Second: Goods are Divisible</h3>
+<p><span class="math inline">x\in\mathbb{R}_+^n</span> and consumer can consume any bundle in budget set</p>
+<p>Can model indivisibilities by assuming utility only depends on integer part of <span class="math inline">x</span>.</p>
+</section>
+<section id="third-set-of-goods-is-finite-ninfty" class="level3">
+<h3 class="anchored" data-anchor-id="third-set-of-goods-is-finite-ninfty">Third: Set of Goods is Finite (<span class="math inline">{n}&lt;\infty</span>)</h3>
+<p>This is not obvious: think of a dynamic economy with no known final date.</p>
+<p>Debreu (1959): <em>A commodity is characterized by its physical properties, the date at which it will be available, and the location at which it will be available.</em></p>
+<p>In practice, set of goods suggests itself naturally based on context.</p>
+</section>
+</section>
+<section id="marshallian-demand" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="marshallian-demand"><span class="header-section-number">3.2</span> Marshallian Demand</h2>
+<p>The solution to the (CP) is called the Marshallian demand (or Walrasian demand).</p>
+<p>May be multiple solutions, so formal definition is:</p>
+<div id="def-MDC" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.1</strong></span> The Marshallian demand correspondence <span class="math inline">x: \mathbb{R}_+^n\times\mathbb{R}\rightrightarrows\mathbb{R}_+^n</span> is defined by</p>
+<p><span class="math display">
+\begin{aligned}
+x(p,w) &amp;= argmax_{x \in B(p,w)} \ u(x) \\ &amp;= \left\{z\in B(p,w):u(z)=\max_{x\in B(p,w)} \ u(x)\right\}  
+\end{aligned}
+</span></p>
+<p>Heavy notation for simple idea!</p>
+<p>Domain is <span class="math inline">\mathbb{R}_+^n\times\mathbb{R}</span>: <span class="math inline">n</span> prices, one level of income.</p>
+<p>Start by deriving basic properties of budget sets and Marshallian demand.</p>
+<p>Example: Cobb-Douglas Marshallian demand: <span class="math inline">u\left(x_1,x_2\right)=x_1^\alpha x_2^{1-\alpha}</span></p>
+<p><span class="math display">
+x_1\left(p_1,p_2,w\right)=\alpha\frac{w}{p_1} \\
+x_2\left(p_1,p_2,w\right)=\left(1-\alpha\right)\frac{w}{p_2}
+</span></p>
+</div>
+</section>
+<section id="budget-sets" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="budget-sets"><span class="header-section-number">3.3</span> Budget Sets</h2>
+<div id="thm-BS" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.1</strong></span> Budget sets are homogeneous of degree 0 : that is, for all <span class="math inline">\lambda&gt;0</span>, <span class="math inline">B(\lambda\ p,\lambda\ w)=B(p,w)</span>.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">
+\begin{matrix}B(\lambda p,\lambda w)&amp;\ =\left\{x\in\mathbb{R}_+^n\mid\lambda p\cdot x\le\lambda w\right\}\\&amp;\ =\left\{x\in\mathbb{R}_+^n\mid p\cdot x\le w\right\}=B(p,w).\\\end{matrix}
+</span> Nothing changes if scale prices and income by same factor.</p>
+<p>QED.</p>
+</div>
+</div>
+<div id="thm-1" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.2</strong></span> If <span class="math inline">p\gg0</span>, then <span class="math inline">B(p,w)</span> is compact.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+“Proof” (Write it formally as an exercise)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A subset of <span class="math inline">\mathbb{R}^n</span> is compact if and only if it is closed and limited.</p>
+<p>For any <span class="math inline">p,B(p,w)</span> is closed. (Notice the weak inequality in the definition of <span class="math inline">B</span>.)</p>
+<p>If <span class="math inline">p\gg0</span>, then <span class="math inline">B(p,w)</span> is also bounded.</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="marshallian-demand-existence" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="marshallian-demand-existence"><span class="header-section-number">3.4</span> Marshallian Demand: Existence</h2>
+<div id="thm-2" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.3</strong></span> If u is continuous and <span class="math inline">p\gg0</span>, then (CP) has a solution.</p>
+</div>
+<p>(That is, <span class="math inline">x(p,w)</span> is non-empty.)</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A continuous function on a compact set attains its maximum (Weirstrass theorem).</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="marshallian-demand-uniqueness" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="marshallian-demand-uniqueness"><span class="header-section-number">3.5</span> Marshallian Demand: Uniqueness?</h2>
+<p>The Marshallian Demand needs not be unique</p>
+<p>Example: perfect substitutes – write it out as an exercise.</p>
+<p>Generally, the Marshallian demand is a correspondence, or a set-valued function: for each <span class="math inline">\left(p,w\right)</span>, it associates a set of optimal choices <span class="math inline">x\left(p,w\right)</span>.</p>
+<p>We’ve seen before the following results (we’ll just rewrite them in our context):</p>
+<p>Since the budget set is convex, the Marshallian demand is a convex correspondence if preferences are convex.</p>
+<p>The Marshallian demand is unique (that is, a function) if preferences are strictly convex.</p>
+</section>
+<section id="marshallian-demand-homogeneity-of-degree-0" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="marshallian-demand-homogeneity-of-degree-0"><span class="header-section-number">3.6</span> Marshallian Demand: Homogeneity of Degree 0</h2>
+<div id="thm-MDHD0" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.4</strong></span> For all <span class="math inline">\lambda&gt;0</span> , <span class="math inline">x(\lambda\ p,\lambda\ w) = x(p,w)</span>.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">B(\lambda\ p,\lambda\ w)=B(p,w)</span>, so (CP) with prices <span class="math inline">\lambda\ p</span> and income <span class="math inline">\lambda\ w</span> is same problem as (CP) with prices <span class="math inline">p</span> and income <span class="math inline">w</span>, since utility function is not affected by <span class="math inline">\lambda</span>.</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="marshallian-demand-continuity" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="marshallian-demand-continuity"><span class="header-section-number">3.7</span> Marshallian Demand: “Continuity”</h2>
+<div id="thm-MDC" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.5</strong></span> Assume u is continuous and strictly quasi-concave (that is, preferences are strictly convex). Then the Marshallian demand <span class="math inline">x(p,w)</span> is a continuous function.</p>
+</div>
+<p>More generally: if <span class="math inline">u</span> is continuous (but not necessarily quasi-concave), then the Marshallian demand is upper hemicontinuous.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Follows directly from the theorem of the maximum.</p>
+</div>
+</div>
+</section>
+<section id="marshallian-demand-walras-law" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="marshallian-demand-walras-law"><span class="header-section-number">3.8</span> Marshallian Demand: Walras’ Law</h2>
+<p><strong>Reminder</strong>: Preferences are locally non-satiated if for all <span class="math inline">x\in X</span> and all <span class="math inline">\varepsilon &gt; 0</span>, there exists <span class="math inline">y \succ x</span> such that <span class="math inline">y\in B_\varepsilon\left(x\right)=\left\{y\in X:d\left(x,y\right)&lt;\varepsilon\right\}</span>.</p>
+<div id="thm-MDWL" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.6</strong></span> If preferences are locally non-satiated, then for every (p,w) and every <span class="math inline">x \in x(p,w)</span>, we have <span class="math inline">p \cdot x = w</span>.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If <span class="math inline">p \cdot x &lt; w</span>, then there exists <span class="math inline">\varepsilon &gt; 0</span> such that <span class="math inline">B_\varepsilon(x)\subseteq B(p,w)</span>. By local non-satiation, for every <span class="math inline">\varepsilon&gt;0</span> there exists <span class="math inline">y\in B_\varepsilon(x)</span> such that <span class="math inline">y \succ x</span>.</p>
+<p>Hence, there exists <span class="math inline">y \in B(p,w)</span> such that <span class="math inline">y \succ x</span>.</p>
+<p>But then <span class="math inline">x \notin x(p,w)</span>, that is, <span class="math inline">x</span> is not an optimal choice: contradiction.</p>
+<p>QED.</p>
+</div>
+</div>
+<p>Walras’ Law lets us rewrite (CP) as</p>
+<p><span class="math display">
+\max_{x \in \mathbb{R}_+^n} \ \ u(x) \\ \mathrm{\ s.t.\ }p\cdot x=w\\
+</span></p>
+</section>
+<section id="marshallian-demand-differentiable-demand" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="marshallian-demand-differentiable-demand"><span class="header-section-number">3.9</span> Marshallian Demand: Differentiable Demand</h2>
+<p>Implications if demand is single-valued and differentiable:</p>
+<ul>
+<li><p>A proportional change in all prices and income does not affect demand: <span class="math display">
+\sum_{j=1}^{n}p_j\frac{\partial}{\partial p_j}x_i(p,w)+w\frac{\partial}{\partial w}x_i(p,w)=0
+</span></p></li>
+<li><p>A change in the price of one good does not affect total expenditure: <span class="math display">
+\sum_{j=1}^{n} p_j\frac{\partial}{\partial p_i}x_j(p,w)+x_i(p,w)=0.
+</span></p></li>
+<li><p>A change in income leads to an identical change in total expenditure: <span class="math display">
+\sum_{i=1}^{n} p_i\frac{\partial}{\partial w}x_i(p,w)=1
+</span></p></li>
+</ul>
+</section>
+<section id="the-indirect-utility-function" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="the-indirect-utility-function"><span class="header-section-number">3.10</span> The Indirect Utility Function</h2>
+<p>Can learn more about set of solutions to (CP) (Marshallian demand) by relating to the <strong>value</strong> of (CP).</p>
+<p>Value of (CP) = welfare of consumer facing prices <span class="math inline">p</span> with income <span class="math inline">w</span>.</p>
+<p>The value function of (CP) is called the indirect utility function.</p>
+<div id="def-IUF" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.2 (The Indirect Utility Function)</strong></span> <span class="math inline">v:\mathbb{R}_+^n\times\mathbb{R}\rightarrow\mathbb{R}</span> is defined by <span class="math inline">v(p,w) = \max_{x \in B(p,w)} u(x)</span>.</p>
+<p>So we have <span class="math inline">\left(p,w\right)\longrightarrow\ x\left(p,w\right)\longrightarrow\ u\left(x\left(p,w\right)\right)=\ v(p,w)</span>.</p>
+</div>
+<p>Notice that demand <span class="math inline">x</span> is the image of <span class="math inline">\left(p,w\right)</span> and also the argument of <span class="math inline">u</span>.</p>
+<p>Example: Cobb-Douglas indirect utility function:</p>
+<p><span class="math display">
+u\left(x_1,x_2\right)=x_1^\alpha x_2^{1-\alpha}
+</span></p>
+<p><span class="math display">
+x_1\left(p_1,p_2,w\right)=\alpha\frac{w}{p_1} \\
+</span></p>
+<p><span class="math display">
+x_2\left(p_1,p_2,w\right)=\left(1-\alpha\right)\frac{w}{p_2} \\
+</span></p>
+<p><span class="math display">
+v\left(p_1,p_2,w\right)=\left(\alpha\frac{w}{p_1}\right)^\alpha\cdot\left(\left(1-\alpha\right)\frac{w}{p_2}\right)^{1-\alpha}=w\left(\frac{\alpha}{p_1}\right)^\alpha\cdot\left(\frac{\left(1-\alpha\right)}{p_2}\right)^{1-\alpha}
+</span></p>
+<p>In our context, the Theorem of the Maximum implies:</p>
+<p>Marshallian demand is upper hemicontinuous (if it’s a function, it’s continuous)</p>
+<p>Indirect utility is continuous</p>
+</section>
+<section id="indirect-utility-function-properties" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="indirect-utility-function-properties"><span class="header-section-number">3.11</span> Indirect Utility Function: Properties</h2>
+<div id="thm-IUFP" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.7</strong></span> The indirect utility function has the following properties:</p>
+<ol type="1">
+<li><p>Homogeneity of degree 0: for all <span class="math inline">\lambda&gt;0</span>, <span class="math inline">v(\lambda\ p,\lambda\ w)=v(p,w)</span>.</p></li>
+<li><p>Continuity: if <span class="math inline">u</span> is continuous, then <span class="math inline">v</span> is continuous on <span class="math inline">\{(p,w):p\gg0,w\geq0\}</span>.</p></li>
+<li><p>Monotonicty: <span class="math inline">v(p,w)</span> is non-increasing in <span class="math inline">p</span> and non-decreasing in <span class="math inline">w</span>. If <span class="math inline">p\gg0</span> and preferences are locally non-satiated, then <span class="math inline">v(p,w)</span> is strictly increasing in <span class="math inline">w</span>.</p></li>
+<li><p>Quasi-convexity: for all <span class="math inline">\bar{v} \in R</span>, the set <span class="math inline">\{(p,w):v(p,w)\} \leq \bar{v} \}</span> is convex. (Consumer is worse off at average prices/income.)</p></li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Follows from homogeneity of degree zero of Marshallian demand.</p></li>
+<li><p>Follows directly from the Theorem of the Maximum.</p></li>
+<li><p>Left as an exercise.</p></li>
+<li><p>Pick two elements in the domain of <span class="math inline">v</span>: <span class="math inline">\left(p,w\right) and \left(p^\prime,w^\prime\right)</span></p>
+<p>Assume:</p>
+<p><span class="math inline">v\left(p,w\right)\le\bar{v}</span></p>
+<p><span class="math inline">v\left(p^\prime,w^\prime\right)\le\bar{v}</span></p>
+<p>Define <span class="math inline">\left(p^{\prime\prime},w^{\prime\prime}\right)=\alpha\cdot\left(p,w\right)+\left(1-\alpha\right)\cdot\left(p^\prime,w^\prime\right)</span></p>
+<p>We need to show that <span class="math inline">v\left(p^{\prime\prime},w^{\prime\prime}\right)\le\bar{v}</span></p>
+<p>We will show something stronger: for all <span class="math inline">x</span> such that <span class="math inline">p^{\prime\prime}\cdot\ x^{\prime\prime}\le\ w^{\prime\prime}</span>, one has <span class="math inline">u\left(x\right)\le\bar{v}</span>.</p>
+<p>Use the definition of <span class="math inline">\left(p^{\prime\prime},w^{\prime\prime}\right)</span>:</p>
+<p><span class="math display">
+p^{\prime\prime}\cdot\ x^{\prime\prime}\le\ w^{\prime\prime}\Leftrightarrow\left(\alpha p+\left(1-\alpha\right)p^\prime\right)\cdot\ x\le\alpha\ w+\left(1-\alpha\right)w^\prime
+</span>This holds if and only either <span class="math inline">p\cdot\ x\le\ w</span> of <span class="math inline">p^\prime\cdot\ x\le\ w^\prime</span>.</p>
+<p>Then we have: <span class="math display">
+p\cdot\ x\le\ w\Rightarrow\ u\left(x\right)\le\ v\left(p,w\right)\le\bar{v}
+p^\prime\cdot\ x\le\ w^\prime\Rightarrow\ u\left(x\right)\le\ v\left(p^\prime,w^\prime\right)\le\bar{v}
+</span></p>
+<p>In any case, <span class="math inline">u\left(x\right)\le\bar{v}</span>, as we wanted to show.</p></li>
+</ol>
+<p>QED.</p>
+</div>
+</div>
+<p>Interpretation of quasi-convexity: consumer prefers extreme prices/income than average ones.</p>
+<p>Extreme prices allow consumers to explore substitution: something desirable must be cheap enough.</p>
+<p>(Income is one dimensional and hence it follows immediately that the average of two income levels is lower than the highest of them.)</p>
+<p>GRAPHIC</p>
+</section>
+<section id="indirect-utility-function-derivatives" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="indirect-utility-function-derivatives"><span class="header-section-number">3.12</span> Indirect Utility Function: Derivatives</h2>
+<p>When indirect utility function is differentiable, its derivatives are very interesting.</p>
+<p>Q: When is indirect utility function differentiable? A: When <span class="math inline">u</span> is (continuously) differentiable and Marshallian demand is unique.</p>
+<div id="thm-IUFD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.8</strong></span> Suppose (1) u is locally non-satiated and continuously differentiable, and (2) Marshallian demand is unique in an open neighborhood of <span class="math inline">(p,w)</span> with <span class="math inline">p\gg0</span> and <span class="math inline">w\&gt;0</span>. Then <span class="math inline">v</span> is differentiable at <span class="math inline">(p,w)</span>.</p>
+</div>
+<p>We’ll skip the proof. For details if curious, see Milgrom and Segal (2002), “Envelope Theorems for Arbitrary Choice Sets.”</p>
+<p>Or check chapters 3 and 4 in Stokey and Lucas (1989).</p>
+<p>Furthermore, letting <span class="math inline">x=x(p,w)</span>, the derivatives of <span class="math inline">v</span> are given by:</p>
+<p><span class="math display">
+\frac{\partial}{\partial w} v(p,w) = \frac{1}{p_j}\frac{\partial}{\partial x_j}u(x)
+</span></p>
+<p>and</p>
+<p><span class="math display">
+\frac{\partial}{\partial p_i}v(p,w)=-\frac{x_i}{p_j}\frac{\partial}{\partial x_j}u(x),
+</span></p>
+<p>where <span class="math inline">j</span> is any index such that <span class="math inline">x_j&gt;0</span>.</p>
+<ul>
+<li>Suppose consumer’s income increases by $1.</li>
+<li>Should spend this dollar on any good that gives biggest “bang for the buck.”</li>
+<li>Bang for spending on good <span class="math inline">j</span> equals <span class="math inline">\frac{1}{p_j}\frac{\partial u}{\partial x_j}</span>: can buy <span class="math inline">\frac{1}{p_j}</span> units, each gives utility <span class="math inline">\frac{\partial u}{\partial x_j}</span>.</li>
+<li>Finally, <span class="math inline">x_j&gt;0</span> for precisely those goods that maximize bang for buck. <span class="math inline">\Longrightarrow</span> marginal utility of income equals <span class="math inline">\frac{1}{p_j}\frac{\partial u}{\partial x_j}</span>, for any <span class="math inline">j</span> with <span class="math inline">x_j&gt;0</span>.</li>
+</ul>
+</section>
+<section id="indirect-utility-function-derivatives-1" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="indirect-utility-function-derivatives-1"><span class="header-section-number">3.13</span> Indirect Utility Function: Derivatives</h2>
+<p><span class="math display">
+\frac{\partial}{\partial w}v(p,w) =\frac{1}{p_j}\frac{\partial}{\partial x_j}u(x) \\
+\frac{\partial}{\partial p_i}v(p,w) =-\frac{x_i}{p_j}\frac{\partial}{\partial x_j}u(x)
+</span></p>
+<p>Suppose price of good i increases by $1.</p>
+<p>This effectively makes consumer <span class="math inline">x_i</span> poorer.</p>
+<p>Just saw that marginal effect of making <span class="math inline">\$1</span> poorer is <span class="math inline">-\frac{1}{p_j}\frac{\partial u}{\partial x_j}</span>, for any j with <span class="math inline">x_j&gt;0</span>.</p>
+<p><span class="math inline">\Longrightarrow</span> marginal disutility of increase in p_i equals <span class="math inline">-\frac{x_i}{p_j}\frac{\partial u}{\partial x_j}</span>, for any <span class="math inline">j</span> with <span class="math inline">x_j&gt;0</span>.</p>
+</section>
+<section id="kuhn-tucker-theorem" class="level2" data-number="3.14">
+<h2 data-number="3.14" class="anchored" data-anchor-id="kuhn-tucker-theorem"><span class="header-section-number">3.14</span> Kuhn-Tucker Theorem</h2>
+<div id="thm-KT" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.9 (Kuhn-Tucker)</strong></span> Let <span class="math inline">f: \mathbb{R}^n \rightarrow \mathbb{R}</span> and <span class="math inline">g_i : \mathbb{R}^n \rightarrow \mathbb{R}</span> be continuously differentiable functions (for some <span class="math inline">i \in {1, \ldots, I}</span>), and consider the constrained optimization problem</p>
+<p><span class="math display">
+\max_{x\in\mathbb{R}^n} \ \ \ f(x) \\
+s.t.\ \ \ g_i(x)\geq0 \mathrm{\ for\ all\ } i
+</span></p>
+<p>If <span class="math inline">x ^ \ast</span> is a solution to this problem (even a local solution) and a condition called constraint qualification is satisfied at <span class="math inline">x ^ \ast</span>, then there exists a vector of Lagrange multipliers <span class="math inline">\lambda= \left(\lambda_1,\ldots,\lambda_l\right)</span> such that</p>
+<p><span class="math display">
+\nabla f(x^\ast) + \sum_{i=1}^{l} \lambda_i \nabla g_i (x^\ast) = 0
+</span> and</p>
+<p><span class="math display">
+\lambda_i\geq0 \ \ \mathrm{and} \ \ \lambda_i g_i(x^\ast)=0\mathrm{\ for\ all\ }i
+</span></p>
+</div>
+</section>
+<section id="kuhn-tucker-theorem-comments" class="level2" data-number="3.15">
+<h2 data-number="3.15" class="anchored" data-anchor-id="kuhn-tucker-theorem-comments"><span class="header-section-number">3.15</span> Kuhn-Tucker Theorem: Comments</h2>
+<ol type="1">
+<li>Any local solution to constrained optimization problem must satisfy first-order conditions of the Lagrangian</li>
+</ol>
+<p><span class="math display">
+\mathcal{L}(x)=f(x)+\sum_{i=1}^{l}\lambda_i g_i(x)
+</span></p>
+<ol start="2" type="1">
+<li>Condition that <span class="math inline">\lambda_i g_i(x^\ast) = 0</span> for all <span class="math inline">i</span> is called complementary slackness.</li>
+</ol>
+<ul>
+<li>Says that multipliers on slack constraints must equal <span class="math inline">0</span>.</li>
+<li>Consistent with interpreting <span class="math inline">\lambda_i</span> as marginal value of relaxing constraint <span class="math inline">i</span>.</li>
+</ul>
+<ol start="3" type="1">
+<li>There are different versions of constraint qualification. Simplest version: vectors <span class="math inline">\nabla g_i\left(x^\ast\right)</span> are linearly independent for binding constraints.</li>
+</ol>
+<p>Exercise: check that constraint qualification is always satisfied in the (CP) when <span class="math inline">p \gg 0, w &gt; 0</span>, and preferences are locally non-satiated.</p>
+</section>
+<section id="lagrangian-for-cp" class="level2" data-number="3.16">
+<h2 data-number="3.16" class="anchored" data-anchor-id="lagrangian-for-cp"><span class="header-section-number">3.16</span> Lagrangian for (CP)</h2>
+<p>For two goods:</p>
+<p><span class="math display">
+\mathcal{L}\left(x_1,x_2\right)=u\left(x_1,x_2\right)+\lambda\left[w-p_1\cdot x_1-p_2\cdot x_2\right]+\mu_1x_1++\mu_2x_2
+</span></p>
+<p>Generally:</p>
+<p><span class="math display">
+\mathcal{L}(x)=u(x)+\lambda[w-p\cdot x]+\sum_{k=1}^{n}\mu_k x_k
+</span></p>
+<p><span class="math inline">\lambda \geq 0</span> is multiplier on budget constraint. <span class="math inline">\mu_k \geq 0</span> is multiplier on the constraint <span class="math inline">x_k \geq 0</span>.</p>
+<p>FOC with respect to <span class="math inline">x_i</span>:</p>
+<p><span class="math display">
+\frac{\partial u}{\partial x_i}+\mu_i=\lambda p_i
+</span></p>
+<p>Complementary slackness: <span class="math inline">\mu_i=0 if x_i\&gt;0</span>. So:</p>
+<p><span class="math display">
+\frac{\partial u}{\partial x_i} = \lambda p_i \mathrm{\ if\ } x_i&gt;0 \\ \frac{\partial u}{\partial x_i} \le \lambda p_i \mathrm{\ if\ }\ x_i=0
+</span></p>
+<p>What’s the intuition of <span class="math inline">\frac{\partial u}{\partial x_i}&lt;\lambda p_i?</span></p>
+<p>Implication: marginal rate of substitution <span class="math inline">\frac{\partial u}{\partial x_i}/ \frac{\partial u}{\partial x_j}</span> between any two goods consumed in positive quantity must equal the ratio of their prices <span class="math inline">p_i/p_j</span>.</p>
+<p>In other words: slope of indifference curve between goods <span class="math inline">i</span> and <span class="math inline">j</span> must equal slope of budget line.</p>
+<p>Intuition: equal “bang for the buck” <span class="math inline">\frac{1}{p_i}\frac{\partial u}{\partial x_i}</span> among goods consumed in positive quantity.</p>
+</section>
+<section id="back-to-derivatives-of-v" class="level2" data-number="3.17">
+<h2 data-number="3.17" class="anchored" data-anchor-id="back-to-derivatives-of-v"><span class="header-section-number">3.17</span> Back to Derivatives of &nbsp;<span class="math inline">v</span></h2>
+<p>When <span class="math inline">v</span> is differentiable, we have the following result:</p>
+<div id="thm-" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.10</strong></span> <span class="math display">
+\frac{\partial v}{\partial w}=\lambda \ \ \ (\mathrm{marginal\ utility\ of\ income})
+</span></p>
+<p><span class="math display">
+\frac{\partial v}{\partial p_i}=-\lambda x_i \ \ \ (\mathrm{marginal\ disutility\ of\ price})
+</span></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>For the first part:</li>
+</ul>
+<p>Without loss of generality, take only two goods: <span class="math inline">x=\left(x_1,x_2\right)</span>, <span class="math inline">p=\left(p_1,p_2\right)</span>.</p>
+<p>Then: <span class="math display">
+v\left(p_1,p_2,w\right)=u\left(x_1\left(p_1,p_2,w\right),x_2\left(p_1,p_2,w\right)\right)
+</span></p>
+<p>Take the derivative with respect to income w:</p>
+<p><span class="math display">
+\frac{\partial v}{\partial w}=\frac{\partial u}{\partial x_1}\cdot\frac{\partial x_1}{\partial w}+\frac{\partial u}{\partial x_2}\cdot\frac{\partial x_2}{\partial w}
+</span></p>
+<p>But <span class="math inline">\frac{\partial u}{\partial x_i}=\lambda p_i</span>.</p>
+<p>Rewrite the previous equation:</p>
+<p><span class="math display">
+\frac{\partial v}{\partial w}=\lambda p_1\cdot\frac{\partial x_1}{\partial w}+\lambda p_2\cdot\frac{\partial x_2}{\partial w}=\lambda\cdot\left[p_1\cdot\frac{\partial x_1}{\partial w}+p_1\cdot\frac{\partial x_1}{\partial w}\right]
+</span></p>
+<p>We also know that <span class="math inline">p_1x_1+p_2x_2=w</span> for all <span class="math inline">w</span>.</p>
+<p>This allows us to differentiate both sides with respect to <span class="math inline">w</span>, and get:</p>
+<p><span class="math display">
+p_1\cdot\frac{\partial x_1}{\partial w}+p_2\cdot\frac{\partial x_2}{\partial w}=1
+</span></p>
+<p>This is exactly the term in square brackets in the previous equation, which becomes:</p>
+<p><span class="math display">
+\frac{\partial v}{\partial w}=\lambda p_1\cdot\frac{\partial x_1}{\partial w}+\lambda p_1\cdot\frac{\partial x_1}{\partial w}=\lambda\cdot{\underbrace{\left[p_1\cdot\frac{\partial x_1}{\partial w}+p_1\cdot\frac{\partial x_1}{\partial w}\right]}}_1=\lambda
+</span></p>
+<p>In short: <span class="math inline">\frac{\partial v}{\partial w}=\lambda</span></p>
+<ul>
+<li>For the second part:</li>
+</ul>
+<p><span class="math display">
+v\left(p_1,p_2,w\right)=u\left(x_1\left(p_1,p_2,w\right),x_2\left(p_1,p_2,w\right)\right)+\lambda^\ast\cdot\left[w-p_1x_1-p_2x_2\right]
+</span> This holds because we always have <span class="math inline">\lambda^\ast\cdot\left[w-p_1x_1-p_2x_2\right]=0</span> (Kuhn-Tucker).</p>
+<p>Differentiate with respect to p_1:</p>
+<p><span class="math display">
+\frac{\partial v}{\partial p_1}=\frac{\partial u}{\partial x_1}\cdot\frac{\partial x_1}{\partial p_1}+\frac{\partial u}{\partial x_2}\cdot\frac{\partial x_2}{\partial p_1}+\frac{\partial\lambda}{\partial p_1}\cdot \underbrace{\left[w-p_1x_1-p_2x_2\right]}_{0}-\lambda\cdot\left[x_1+p_1\cdot\frac{\partial x_1}{\partial p_1}+p_2\cdot\frac{\partial x_2}{\partial p_1}\right]
+</span></p>
+<p>Collect terms to get:</p>
+<p><span class="math display">
+\frac{\partial v}{\partial p_1}=\frac{\partial x_1}{\partial p_1}\cdot \underbrace{\left[\frac{\partial u}{\partial x_1}-\lambda p_1\right]}_{0}+\frac{\partial x_1}{\partial p_1}\cdot \underbrace{\left[\frac{\partial u}{\partial x_1}-\lambda p_1\right]}_{0}-\lambda x_1=-\lambda x_1
+</span> QED.</p>
+</div>
+</div>
+<p>These are applications of the envelope theorem: ignore indirect effect of changes in parameters (that is, impact through changes in optimal decisions).</p>
+</section>
+<section id="envelope-theorem" class="level2" data-number="3.18">
+<h2 data-number="3.18" class="anchored" data-anchor-id="envelope-theorem"><span class="header-section-number">3.18</span> Envelope Theorem</h2>
+<div id="thm-ET" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.11 (Envelope Theorem)</strong></span> For <span class="math inline">\Theta\subseteq\mathbb{R}</span>, let <span class="math inline">f:X\times\Theta\rightarrow\mathbb{R}</span> be a differentiable function, let <span class="math inline">V(\theta)=\max\_{x\in X} f(x,\theta)</span>, and let <span class="math inline">X^\ast(\theta)={x\in X:f(x,\theta)=V(\theta)}</span>. If <span class="math inline">V</span> is differentiable at <span class="math inline">\theta</span> then, for any <span class="math inline">x^\ast\in X^\ast(\theta), V\prime(\theta)=\frac{\partial}{\partial\theta}f\left(x^\ast,\theta\right)</span>.</p>
+</div>
+</section>
+<section id="back-again-to-derivatives-of-v" class="level2" data-number="3.19">
+<h2 data-number="3.19" class="anchored" data-anchor-id="back-again-to-derivatives-of-v"><span class="header-section-number">3.19</span> Back again to Derivatives of <span class="math inline">v</span></h2>
+<p><span class="math display">
+\begin{matrix}&amp;\frac{\partial v}{\partial w}=\lambda\\&amp;\frac{\partial v}{\partial p_i}=-\lambda x_i\\\end{matrix}
+</span></p>
+<p>Combining with <span class="math inline">\frac{\partial u}{\partial x_j} = \lambda p_j</span> if <span class="math inline">x_j &gt; 0</span>, obtain</p>
+<p><span class="math display">
+\begin{matrix}\frac{\partial v}{\partial w}&amp;\ =\frac{1}{p_j}\frac{\partial u}{\partial x_j}\\\frac{\partial v}{\partial p_i}&amp;\ =-\frac{x_i}{p_j}\frac{\partial u}{\partial x_j}\\\end{matrix}
+</span></p>
+<p>for any <span class="math inline">j</span> with <span class="math inline">x_j &gt; 0</span>.</p>
+<p>This proves above theorem on derivatives of <span class="math inline">v</span>.</p>
+<p>We’ve already seen the intuition.</p>
+</section>
+<section id="roys-identity" class="level2" data-number="3.20">
+<h2 data-number="3.20" class="anchored" data-anchor-id="roys-identity"><span class="header-section-number">3.20</span> Roy’s Identity</h2>
+<p>Under conditions of last theorem, if <span class="math inline">x_i(p,w) &gt; 0</span> then</p>
+<p><span class="math display">
+x_i(p,w)=-\frac{\frac{\partial}{\partial p_i}v(p,w)}{\frac{\partial}{\partial w}v(p,w)}
+</span></p>
+</section>
+<section id="key-facts-about-cp-assuming-differentiability" class="level2" data-number="3.21">
+<h2 data-number="3.21" class="anchored" data-anchor-id="key-facts-about-cp-assuming-differentiability"><span class="header-section-number">3.21</span> Key Facts about (CP), Assuming Differentiability</h2>
+<ul>
+<li>Consumer’s marginal utility of income equals multiplier on budget constraint: <span class="math inline">\frac{\partial v}{\partial w}=\lambda</span>.</li>
+<li>Marginal disutility of increase in price of good i equals <span class="math inline">-\lambda x_i</span>.</li>
+<li>Marginal utility of consumption of any good consumed in positive quantity equals <span class="math inline">\lambda p_i</span>.</li>
+</ul>
+</section>
+<section id="the-expenditure-minimization-problem" class="level2" data-number="3.22">
+<h2 data-number="3.22" class="anchored" data-anchor-id="the-expenditure-minimization-problem"><span class="header-section-number">3.22</span> The Expenditure Minimization Problem</h2>
+<p>In (CP), consumer chooses consumption vector to maximize utility subject to maximum budget constraint.</p>
+<p>Also useful to study “dual” problem of choosing consumption vector to minimize expenditure subject to minimum utility constraint.</p>
+<p>This expenditure minimization problem (EMP) is formally defined as:</p>
+<p><span class="math display">
+\min_{x \in \mathbb{R}_+^n} \ \ \ p \cdot x \\
+\mathrm{\ s.t.\ } \ \ \ u(x)\geq u\\
+</span></p>
+</section>
+<section id="hicksian-demand" class="level2" data-number="3.23">
+<h2 data-number="3.23" class="anchored" data-anchor-id="hicksian-demand"><span class="header-section-number">3.23</span> Hicksian Demand</h2>
+<p>Hicksian demand is the set of solutions <span class="math inline">x = h(p,u)</span> to the EMP.</p>
+<p>The expenditure function is the value function for the EMP:</p>
+<p><span class="math display">
+e(p,u)=\min_{x\in\mathbb{R}+^n
+(x)\geq u} p\cdot x
+</span></p>
+<p><span class="math inline">e(p,u)</span> is income required to attain utility <span class="math inline">u</span> when facing prices <span class="math inline">p</span>. Each element of <span class="math inline">h(p,u)</span> is a consumption vector that attains utility <span class="math inline">u</span> while minimizing expenditure given prices <span class="math inline">p</span>.</p>
+<p>Hicksian demand and expenditure function relate to EMP just as Marshallian demand and indirect utility function relate to CP.</p>
+<p>Exercise: find the Hicksian demand and the expenditure function for the Cobb-Douglas utility function.</p>
+</section>
+<section id="why-should-we-care-about-the-emp" class="level2" data-number="3.24">
+<h2 data-number="3.24" class="anchored" data-anchor-id="why-should-we-care-about-the-emp"><span class="header-section-number">3.24</span> Why Should we Care about the EMP?</h2>
+<p>For this course, 2 reasons:</p>
+<ol type="1">
+<li>Hicksian demand useful for studying effects of price changes on “real” (Marshallian) demand.</li>
+</ol>
+<p>In particular, Hicksian demand is key concept needed to decompose effect of a price change into income and substitution effects.</p>
+<ol start="2" type="1">
+<li>Expenditure function important for welfare economics.</li>
+</ol>
+<p>In particular, use expenditure function to analyze effects of price changes on consumer welfare.</p>
+</section>
+<section id="hicksian-demand-properties" class="level2" data-number="3.25">
+<h2 data-number="3.25" class="anchored" data-anchor-id="hicksian-demand-properties"><span class="header-section-number">3.25</span> Hicksian Demand: Properties</h2>
+<div id="thm-MWG3E3" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.12 (MWG 3E3)</strong></span> Assume <span class="math inline">X=\mathbb{R}+^n</span>, preferences are locally non-satiated, and <span class="math inline">p\gg0</span>. Then the Hicksian demand satisfies:</p>
+<ol type="1">
+<li><p>Homogeneity of degree 0 in <span class="math inline">\mathbf{p}</span>: for all <span class="math inline">\lambda&gt;0</span>, <span class="math inline">h(\lambda p,u)=h(p,u)</span>.</p></li>
+<li><p>No excess utility: if <span class="math inline">u(\cdot)</span> is continuous and <span class="math inline">p\gg0</span>, then <span class="math inline">u(x)=u</span> for all <span class="math inline">x\in h(p,u)</span>.</p></li>
+<li><p>Convexity/uniqueness: if preferences are convex, then <span class="math inline">h(p,u)</span> is a convex set. If preferences are strictly convex and “no excess utility” holds, then <span class="math inline">h(p,u)</span> contains at most one element.</p></li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Minimizing <span class="math inline">p\cdot x</span> or <span class="math inline">\alpha p\cdot x</span> yields the same result for any <span class="math inline">\alpha&gt;0</span>. QED.</p></li>
+<li><p>The proof is by contradiction.</p></li>
+</ol>
+<p>Assume by contradiction that at the solution, <span class="math inline">u(x) &gt; u</span>. Take <span class="math inline">x^\prime = \alpha x</span>, for <span class="math inline">\alpha \in (0,1)</span>. The continuity of u implies that for <span class="math inline">\alpha</span> close enough to one, <span class="math inline">u(x^\prime) &gt; u</span>, and <span class="math inline">px^\prime &lt; px = w</span>. That is, it is possible to find some x that respects the constraint and decreases expenditure. Contradiction. Hence one cannot have <span class="math inline">u(x) &gt; u</span> at the solution. QED.</p>
+<ol start="3" type="1">
+<li>Left as an exercise.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="expenditure-function-properties" class="level2" data-number="3.26">
+<h2 data-number="3.26" class="anchored" data-anchor-id="expenditure-function-properties"><span class="header-section-number">3.26</span> Expenditure Function: Properties</h2>
+<div id="thm-MWG3E2" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.13 (MWG 3E2)</strong></span> The expenditure function satisfies:</p>
+<ol type="1">
+<li><p>Homogeneity of degree 1 in <span class="math inline">\mathbf{p}</span>: for all <span class="math inline">\lambda&gt;0</span>, <span class="math inline">e(\lambda p,u)=\lambda e(p,u)</span>.</p></li>
+<li><p>Continuity: if <span class="math inline">u(\cdot)</span> is continuous, then <span class="math inline">e</span> is continuous in <span class="math inline">p</span> and <span class="math inline">u</span>.</p></li>
+<li><p>Monotonicity: <span class="math inline">e(p,u)</span> is non-decreasing in <span class="math inline">p</span> and non-decreasing in <span class="math inline">u</span>. If “no excess utility” holds, then <span class="math inline">e(p,u)</span> is strictly increasing in <span class="math inline">u</span>.</p></li>
+<li><p>Concavity in <span class="math inline">p</span>: <span class="math inline">e</span> is concave in <span class="math inline">p</span>.</p></li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>For all <span class="math inline">\alpha&gt;0</span>, we know from the previous proposition that <span class="math inline">h(\lambda p,u)=h(p,u)</span>.</li>
+</ol>
+<p>Then one may write:</p>
+<p><span class="math display">
+e\left(\alpha p,u\right)=\left(\alpha p\right)h=\alpha \underbrace{\left(p\cdot h\right)}_{e\left(p,u\right)}=\alpha\cdot e\left(p,u\right)
+</span></p>
+<ol start="2" type="1">
+<li><p>Follows from the Maximum Theorem.</p></li>
+<li><p>Show first that <span class="math inline">e\left(p,u\right)</span> is strictly increasing in <span class="math inline">u</span></p></li>
+</ol>
+<p>The proof is by contradiction. Assume by contradiction that <span class="math inline">e\left(p,u\right)</span> is not strictly increasing in <span class="math inline">u</span>. That is:</p>
+<p>Let <span class="math inline">x^\prime</span> and <span class="math inline">x^{\prime\prime}</span> be optimal to achieve utility levels <span class="math inline">u^\prime</span> and <span class="math inline">u^{\prime\prime}</span>, respectively.</p>
+<p>Assume <span class="math inline">u^{\prime\prime}&gt;u^\prime</span> and <span class="math inline">px^\prime\geq px^{\prime\prime}&gt;0</span>. This is the contradiction.</p>
+<p>Build a new bundle: <span class="math inline">\widetilde{x}=\alpha x^{\prime\prime}</span> for <span class="math inline">\alpha\in\left(0,1\right)</span>.</p>
+<p><span class="math inline">u\left(\right)</span> is continuous implies that there is some <span class="math inline">\alpha</span> close enough to one such that:</p>
+<p><span class="math inline">u\left(\widetilde{x}\right)&gt;u^\prime</span> <span class="math inline">px^\prime&gt;p\widetilde{x}</span></p>
+<p>Then <span class="math inline">x^\prime</span> is not optimal to achieve <span class="math inline">u^\prime</span>.</p>
+<p>Let’s show now that <span class="math inline">e\left(p,u\right)</span> is non-decreasing in <span class="math inline">p_l</span>.</p>
+<p>Take two price vectors <span class="math inline">p^{\prime\prime}, p^\prime</span> such that <span class="math inline">p_l^{\prime\prime}\geq p_l^\prime</span>, and, for all <span class="math inline">k\neq l</span>, <span class="math inline">p_k^{\prime\prime}\geq p_k^\prime</span>.</p>
+<p>Let <span class="math inline">x^{\prime\prime}</span> be optimal for prices <span class="math inline">p^{\prime\prime}</span>. Then:</p>
+<p><span class="math inline">e\left(p^{\prime\prime},u\right)=p^{\prime\prime}x^{\prime\prime}\geq p^\prime x^{\prime\prime}\geq e\left(p^\prime,u\right)</span></p>
+<p>The first inequality follows from the previous line: <span class="math inline">p_l^{\prime\prime}\geq p_l^\prime</span>.</p>
+<p>The second inequality follows from the definition of <span class="math inline">e\left(p,u\right)</span>.</p>
+<p>It follows that <span class="math inline">e\left(.,.\right)</span> is non-decreasing in <span class="math inline">p_l</span>. QED.</p>
+<ol start="4" type="1">
+<li>To show concavity, fix some level <span class="math inline">\bar{u}</span>.</li>
+</ol>
+<p>Define <span class="math inline">p^{\prime\prime}=\alpha p+\left(1-\alpha\right)p^\prime</span> for some <span class="math inline">\alpha\in\left[0,1\right)</span>.</p>
+<p>Let <span class="math inline">x^{\prime\prime}</span> be optimal for <span class="math inline">p^{\prime\prime}</span>. Then:</p>
+<p><span class="math inline">e\left(p^{\prime\prime},\bar{u}\right)=p^{\prime\prime}x^{\prime\prime}=\alpha px^{\prime\prime}+\left(1-\alpha\right)p^\prime x^{\prime\prime}\geq\alpha e\left(p,\bar{u}\right)+\left(1-\alpha\right)e\left(p^\prime,\bar{u}\right)</span></p>
+<p>The inequality comes from the definition of <span class="math inline">e\left(p,u\right)</span> and from the fact that <span class="math inline">u\left(x^{\prime\prime}\right)\geq\bar{u}</span>.</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="intuition-for-concavity" class="level2" data-number="3.27">
+<h2 data-number="3.27" class="anchored" data-anchor-id="intuition-for-concavity"><span class="header-section-number">3.27</span> Intuition for concavity</h2>
+<p>Start with <span class="math inline">\bar{p}</span> and an optimal bundle <span class="math inline">\bar{x}</span>.</p>
+<p>If prices change to <span class="math inline">p</span> but <span class="math inline">\bar{x}</span> is fixed, new expenditure is <span class="math inline">p\bar{x}</span>: linear in <span class="math inline">\bar{x}</span>.</p>
+<p>If consumer may adjust <span class="math inline">\bar{x}</span> to minimize <span class="math inline">px</span>, new expenditure cannot be larger.</p>
+<p><img src="images/clipboard-3338227263.png" class="img-fluid"></p>
+</section>
+<section id="expenditure-function-derivatives" class="level2" data-number="3.28">
+<h2 data-number="3.28" class="anchored" data-anchor-id="expenditure-function-derivatives"><span class="header-section-number">3.28</span> Expenditure Function: Derivatives</h2>
+<p>Shephard’s Lemma: if Hicksian demand is single-valued, it coincides with the derivative of the expenditure function.</p>
+<div id="thm-EFD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.14</strong></span> If <span class="math inline">u(\cdot)</span> is continuous and <span class="math inline">h(p,u)</span> is single-valued, then the expenditure function is differentiable in <span class="math inline">p</span> at <span class="math inline">(p,u)</span>, with derivatives given by</p>
+<p><span class="math display">
+\frac{\partial}{\partial p_i}e(p,u)=h_i(p,u).
+</span></p>
+</div>
+<p>Intuition: If price of good <span class="math inline">i</span> increases by $1, unique optimal consumption bundle now costs <span class="math inline">h_i(p,u)</span> more.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Recall that</p>
+<p><span class="math display">
+e(p,u)=\min\limits_{x(x)\geq u}; p \cdot x
+</span></p>
+<p>Given that <span class="math inline">e</span> is differentiable in <span class="math inline">p</span>, envelope theorem implies that</p>
+<p><span class="math display">
+\frac{\partial}{\partial p_i}e(p,u)=\frac{\partial}{\partial p_i}p \cdot h_i(p,u)=h_i(p,u) \text{ for any } x^\ast \in h(p,u).
+</span></p>
+</div>
+</div>
+</section>
+<section id="comparative-statics" class="level2" data-number="3.29">
+<h2 data-number="3.29" class="anchored" data-anchor-id="comparative-statics"><span class="header-section-number">3.29</span> Comparative Statics</h2>
+<p>Comparative statics are statements about how the solution to a problem change with the parameters.</p>
+<p><span class="math inline">(CP)</span>: parameters are <span class="math inline">(p,w)</span>, want to know how <span class="math inline">x(p,w)</span> and <span class="math inline">v(p,w)</span> vary with <span class="math inline">p</span> and <span class="math inline">w</span>.</p>
+<p><span class="math inline">(EMP)</span>: parameters are <span class="math inline">(p,u)</span>, want to know how <span class="math inline">h(p,u)</span> and <span class="math inline">e(p,u)</span> vary with <span class="math inline">p</span> and <span class="math inline">u</span>.</p>
+<p>Turns out that comparative statics of <span class="math inline">(EMP)</span> are very simple, and help us understand comparative statics of <span class="math inline">(CP).</span></p>
+</section>
+<section id="the-law-of-demand" class="level2" data-number="3.30">
+<h2 data-number="3.30" class="anchored" data-anchor-id="the-law-of-demand"><span class="header-section-number">3.30</span> The Law of Demand</h2>
+<p>“Hicksian demand is always decreasing in prices.”</p>
+<div id="thm-LD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.15 (Law of Demand)</strong></span> For every <span class="math inline">p,p^\prime \geq 0,x \in h(p,u)</span>, and <span class="math inline">x^\prime \in h(p^\prime,u)</span>, we have</p>
+<p><span class="math inline">(p^\prime - p)(x^\prime - x) \le 0</span></p>
+</div>
+<p>Example: if <span class="math inline">p^\prime</span> and <span class="math inline">p</span> only differ in price of good <span class="math inline">i</span>, then</p>
+<p><span class="math display">
+(p_i^\prime - p_i)(h_i(p^\prime,u) - h_i(p,u)) \le 0
+</span></p>
+<p>Hicksian demand for a good is always decreasing in its own price.</p>
+<p>Graphically, budget line gets steeper <span class="math inline">\Longrightarrow</span> shift along indifference curve to consume less of good <span class="math inline">1.</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>By definition:</p>
+<p><span class="math display">
+p^{\prime\prime}h(p^{\prime\prime},u) \le p^{\prime\prime}h(p^\prime,u) \\
+p^\prime h(p^\prime,u) \le p^\prime h(p^{\prime\prime},u)
+</span></p>
+<p>Add these inequations:</p>
+<p><span class="math display">
+p^{\prime\prime}h(p^{\prime\prime},u) + p^\prime h(p^\prime,u) \le p^{\prime\prime}h(p^\prime,u) + p^\prime h(p^{\prime\prime},u)
+</span></p>
+<p>Factor out <span class="math inline">h(p^{\prime\prime},u) + p^\prime</span> and <span class="math inline">h(p^\prime,u) \le p^{\prime\prime}</span>:</p>
+<p><span class="math display">
+(p^{\prime\prime} - p^\prime) \cdot h(p^{\prime\prime},u) + (p^\prime - p^{\prime\prime}) \cdot h(p^\prime,u) \le 0
+</span></p>
+<p>Change <span class="math inline">(p^\prime - p^{\prime\prime})</span> for <span class="math inline">-(p^{\prime\prime} - p^\prime)</span>:</p>
+<p><span class="math display">
+(p^{\prime\prime} - p^\prime) \cdot h(p^{\prime\prime},u) - (p^{\prime\prime} - p^\prime) \cdot h(p^\prime,u) \le 0
+</span></p>
+<p>Now factor out <span class="math inline">(p^{\prime\prime} - p^\prime):</span></p>
+<p><span class="math display">
+(p^{\prime\prime} - p^\prime) \cdot (h(p^{\prime\prime},u) - h(p^\prime,u)) \le 0
+</span></p>
+<p>This is the law of demand.</p>
+<p>QED</p>
+</div>
+</div>
+</section>
+<section id="the-slutsky-matrix" class="level2" data-number="3.31">
+<h2 data-number="3.31" class="anchored" data-anchor-id="the-slutsky-matrix"><span class="header-section-number">3.31</span> The Slutsky Matrix</h2>
+<p>If Hicksian demand is differentiable, can derive an interesting result about the matrix of price-derivatives</p>
+<p><span class="math display">
+D_p h(p,u)=\begin{pmatrix} \frac{\partial h_1(p,u)}{\partial p_1}&amp;\cdots&amp;\frac{\partial h_n(p,u)}{\partial p_1}\ \\ \vdots&amp;&amp;\vdots\ \\ \frac{\partial h_1(p,u)}{\partial p_n}&amp;\cdots&amp;\frac{\partial h_n(p,u)}{\partial p_n}\ \end{pmatrix}
+</span></p>
+<p>This is the Slutsky matrix.</p>
+<p>A <span class="math inline">n \times n</span> symmetric matrix <span class="math inline">M</span> is negative semi-definite if, for all <span class="math inline">z \in \mathbb{R}^n, z \cdot M z \le 0</span>.</p>
+<div id="thm-SM" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.16</strong></span> If <span class="math inline">h(p,u)</span> is single-valued and continuously differentiable in <span class="math inline">p</span> at <span class="math inline">(p,u)</span>, with <span class="math inline">p \gg 0</span>, then the matrix <span class="math inline">D_p h(p,u)</span> is symmetric and negative semi-definite.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Follows from Shephard’s Lemma <span class="math inline">\left(\frac{\partial}{\partial p_i}e(p,u)=h_i(p,u)\right)</span> and Young’s Theorem.</p>
+</div>
+</div>
+</section>
+<section id="the-slutsky-matrix-1" class="level2" data-number="3.32">
+<h2 data-number="3.32" class="anchored" data-anchor-id="the-slutsky-matrix-1"><span class="header-section-number">3.32</span> The Slutsky Matrix</h2>
+<p>What’s economic content of symmetry and negative semi-definiteness of Slutsky matrix?</p>
+<p>Negative semi-definiteness: differential version of law of demand.</p>
+<p>Ex. if <span class="math inline">z=(0,\ldots,0,1,0,\ldots,0)</span> with <span class="math inline">1</span> in the <span class="math inline">j^{\text{th}}</span> component, then <span class="math inline">z \cdot D_p h(p,u) z = \frac{\partial h_i(p,u)}{\partial p_i}</span>, so negative semi-definiteness implies that <span class="math inline">\frac{\partial h_i(p,u)}{\partial p_i} \le 0</span>.</p>
+<p>Symmetry: derivative of Hicksian demand for good <span class="math inline">i</span> with respect to price of good <span class="math inline">j</span> equals derivative of Hicksian demand for good <span class="math inline">j</span> with respect to price of good <span class="math inline">i.</span></p>
+<p>Not true for Marshallian demand, due to income effects.</p>
+</section>
+<section id="relation-between-hicksian-and-marshallian-demand" class="level2" data-number="3.33">
+<h2 data-number="3.33" class="anchored" data-anchor-id="relation-between-hicksian-and-marshallian-demand"><span class="header-section-number">3.33</span> Relation between Hicksian and Marshallian Demand</h2>
+<p>Approach to comparative statics of Marshallian demand is to relate to Hicksian demand, decompose into income and substitution effects via Slutsky equation.</p>
+<p>First, relate Hicksian and Marshallian demand.</p>
+<p>Let’s ask a simple question: what’s the Marshallian demand <span class="math inline">x(p,w)</span> evaluated at some exogenous utility level <span class="math inline">u</span>?</p>
+<p>At first, this seems nonsense: Marshallian demand is a function of prices <span class="math inline">p</span> and income <span class="math inline">w</span>, not of utility <span class="math inline">u</span>.</p>
+<p>In fact, utility is not even exogenous: it is endogenous when one solves for the Marshallian demand, which is computed exactly maximizing utility.</p>
+<p>Yet, we can evaluate <span class="math inline">x(p,w)</span> at any level of income <span class="math inline">w</span>… that is, at any monetary value <span class="math inline">w.</span></p>
+<p>So we can choose in particular <span class="math inline">w=e(p,u)</span>, since <span class="math inline">e(p,u)</span> is a monetary value: it is the minimum expenditure to reach the exogenous utility level <span class="math inline">u.</span></p>
+<p>Hence <span class="math inline">x(p,w)</span> and <span class="math inline">w=e(p,u)</span>, so we can write <span class="math inline">x(p,e(p,u))</span>: Marshallian demand as a function of some exogenous utility level <span class="math inline">u.</span></p>
+<p>Next question: what’s the Marshallian demand evaluated at <span class="math inline">u</span>?</p>
+<p>Intuition is simple: it is simply the Hicksian demand: <span class="math inline">x(p,e(p,u))=h(p,u).</span></p>
+<p>Analogously, we may write <span class="math inline">h(p,u)=h(p,v(p,w))</span>: Hicksian demand as a function of income.</p>
+<p>Then <span class="math inline">h(p,v(p,w))=x(p,w)</span>.</p>
+<p>So these equalities hold for the solutions to UMP e EMP.</p>
+<p>A similar reasoning applies to the value functions of these problems:</p>
+<p><span class="math display">
+e(p,v(p,w)) = w \\
+v(p,e(p,u)) = u
+</span> If <span class="math inline">v(p,w)</span> is the most utility consumer can attain with income <span class="math inline">w</span>, then consumer needs income <span class="math inline">w</span> to attain utility <span class="math inline">v(p,w)</span>.</p>
+<p>If need income <span class="math inline">e(p,u)</span> to attain utility <span class="math inline">u</span>, then <span class="math inline">u</span> is most utility consumer can attain with income <span class="math inline">e(p,u)</span>.</p>
+<p>The next result formalizes these relationships.</p>
+<div id="thm-HDMD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.17</strong></span> Suppose <span class="math inline">u(\cdot)</span> is continuous and locally non-satiated. Then:</p>
+<p>For all <span class="math inline">p \gg 0</span> and <span class="math inline">w \geq 0, x(p,w)=h(p,v(p,w))</span> and <span class="math inline">e(p,v(p,w))=w</span>.</p>
+<p>For all <span class="math inline">p \gg 0</span> and <span class="math inline">u \geq u(0), h(p,u)=x(p,e(p,u))</span> and <span class="math inline">v(p,e(p,u))=u</span>.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Left as an exercise.</p>
+</div>
+</div>
+</section>
+<section id="the-slutsky-equation" class="level2" data-number="3.34">
+<h2 data-number="3.34" class="anchored" data-anchor-id="the-slutsky-equation"><span class="header-section-number">3.34</span> The Slutsky Equation</h2>
+<div id="thm-SE" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 3.18</strong></span> Suppose <span class="math inline">u(\cdot)</span> is continuous and locally non-satiated. Let <span class="math inline">p \gg 0</span> and <span class="math inline">w = e(p,u).</span> If <span class="math inline">x(p,w)</span> and <span class="math inline">h(p,u)</span> are single-valued and differentiable, then, for all <span class="math inline">i,j,</span></p>
+<p><span class="math display">
+\underbrace{\frac{\partial x_i(p,w)}{\partial p_j}}_{\text{total effect}} = \underbrace{\frac{\partial h_i(p,u)}{\partial p_j}}_{\text{substitution effect}} - \underbrace{\frac{\partial x_i(p,w)}{\partial w} x_j(p,w)}_{\text{income effect}}
+</span></p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For all <span class="math inline">i,</span> <span class="math inline">h_i(p,u) = x_i(p, \underbrace{e(p,u)}_{w})</span></p>
+<p>Since this holds for all goods <span class="math inline">i</span> and for all prices, one may differentiate both sides with respect to some price <span class="math inline">p_j</span>:</p>
+<p><span class="math display">
+\frac{\partial h_i}{\partial p_j} = \frac{\partial x_i}{\partial p_j} + \frac{\partial x_i}{\partial w} \frac{\partial e}{\partial p_j}
+</span></p>
+<p>But we know that <span class="math inline">\frac{\partial e}{\partial p_j} = h_j(p, v(p,w)) = x_j(p,w)</span>. Substitute into the previous equation to get:</p>
+<p><span class="math display">
+\frac{\partial h_i}{\partial p_j} = \frac{\partial x_i}{\partial p_j} + \frac{\partial x_i}{\partial w} x_j(p,w)
+</span></p>
+<p>QED</p>
+</div>
+</div>
+<p>Intuition: If <span class="math inline">p_j</span> increases, two effects on demand for good <span class="math inline">i</span>:</p>
+<ul>
+<li>Substitution effect: <span class="math inline">\frac{\partial h_i(p,u)}{\partial p_j}</span></li>
+<li>Movement along original indifference curve.</li>
+<li>Response to change in prices, holding utility fixed.</li>
+<li>Income effect: <span class="math inline">- \frac{\partial x_i(p,w)}{\partial w} x_j(p,w)</span></li>
+<li>Movement from one indifference curve to another.</li>
+<li>Response to change in income, holding prices fixed.</li>
+</ul>
+</section>
+<section id="terminology-for-consumer-theory-comparative-statics" class="level2" data-number="3.35">
+<h2 data-number="3.35" class="anchored" data-anchor-id="terminology-for-consumer-theory-comparative-statics"><span class="header-section-number">3.35</span> Terminology for Consumer Theory Comparative Statics</h2>
+<div id="def-TCTCS" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.3</strong></span> Good <span class="math inline">i</span> is a normal good if <span class="math inline">x_i(p,w)</span> is increasing in <span class="math inline">w.</span> It is an inferior good if <span class="math inline">x_i(p,w)</span> is decreasing in <span class="math inline">w.</span></p>
+</div>
+<div id="def-TCTCS2" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.4</strong></span> Good <span class="math inline">i</span> is a regular good if <span class="math inline">x_i(p,w)</span> is decreasing in <span class="math inline">p_i.</span> It is a Giffen good if <span class="math inline">x_i(p,w)</span> is increasing in <span class="math inline">p_i.</span></p>
+</div>
+<div id="def-TCTCS3" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.5</strong></span> Good <span class="math inline">i</span> is a substitute for good <span class="math inline">j</span> if <span class="math inline">h_i(p,u)</span> is increasing in <span class="math inline">p_j.</span> It is a complement if <span class="math inline">h_i(p,u)</span> is decreasing in <span class="math inline">p_j.</span></p>
+</div>
+<div id="def-TCTCS4" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3.6</strong></span> Good <span class="math inline">i</span> is a gross substitute for good <span class="math inline">j</span> if <span class="math inline">x_i(p,u)</span> is increasing in <span class="math inline">p_j</span>.</p>
+<p>It is a gross complement if <span class="math inline">x_i(p,u)</span> is decreasing in <span class="math inline">p_j.</span></p>
+</div>
+</section>
+<section id="comparative-statics-remarks" class="level2" data-number="3.36">
+<h2 data-number="3.36" class="anchored" data-anchor-id="comparative-statics-remarks"><span class="header-section-number">3.36</span> Comparative Statics: Remarks</h2>
+<ul>
+<li>Both the substitution effect and the income effect can have either sign.</li>
+<li>Substitution effect is positive for substitutes and negative for complements.</li>
+<li>Income effect is negative for normal goods and positive for inferior goods.</li>
+<li>By symmetry of Slutsky matrix, <span class="math inline">i</span> is a substitute for <span class="math inline">j \Leftrightarrow j</span> is a substitute for <span class="math inline">i.</span></li>
+<li>Not true that <span class="math inline">i</span> is a gross substitute for <span class="math inline">j \Leftrightarrow j</span> is a gross substitute for <span class="math inline">i.</span></li>
+<li>Income effects are not symmetric.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./lec3and4.html" class="pagination-link" aria-label="Lectures 3 – 4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lectures 3 – 4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./lec5and6.html" class="pagination-link" aria-label="Lectures 5 – 6">
+        <span class="nav-page-text">Lectures 5 – 6</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

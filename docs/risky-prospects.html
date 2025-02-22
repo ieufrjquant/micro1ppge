@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Comparing Risky Prospects – Microeconomics 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./uncertainty.html" rel="prev">
+<link href="./logo_gpeq_html.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec5and6.html">Lectures 5 – 6</a></li><li class="breadcrumb-item"><a href="./risky-prospects.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_gpeq_html.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Microeconomics 1</a> 
+        <div class="sidebar-tools-main">
+    <a href="./Microeconomics-1.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus 2024.1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec1and2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 1 – 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./choice-pref-utility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Choice, Preference and Utility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prop-pref-utilityfun.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Properties of Preferences and Utility Functions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec3and4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 3 – 4</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./consumer-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Consumer Theory</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./lec5and6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lectures 5 – 6</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./risky-prospects.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#risky-prospects" id="toc-risky-prospects" class="nav-link active" data-scroll-target="#risky-prospects"><span class="header-section-number">5.1</span> Risky Prospects</a></li>
+  <li><a href="#first-order-stochastic-dominance" id="toc-first-order-stochastic-dominance" class="nav-link" data-scroll-target="#first-order-stochastic-dominance"><span class="header-section-number">5.2</span> First-Order Stochastic Dominance</a></li>
+  <li><a href="#fosd-and-choice" id="toc-fosd-and-choice" class="nav-link" data-scroll-target="#fosd-and-choice"><span class="header-section-number">5.3</span> FOSD and Choice</a></li>
+  <li><a href="#sosd-for-distributions-with-same-mean" id="toc-sosd-for-distributions-with-same-mean" class="nav-link" data-scroll-target="#sosd-for-distributions-with-same-mean"><span class="header-section-number">5.4</span> SOSD for Distributions with Same Mean</a></li>
+  <li><a href="#mean-preserving-spreads" id="toc-mean-preserving-spreads" class="nav-link" data-scroll-target="#mean-preserving-spreads"><span class="header-section-number">5.5</span> Mean-Preserving Spreads</a></li>
+  <li><a href="#characterization-of-sosd-for-cdfs-with-same-mean" id="toc-characterization-of-sosd-for-cdfs-with-same-mean" class="nav-link" data-scroll-target="#characterization-of-sosd-for-cdfs-with-same-mean"><span class="header-section-number">5.6</span> Characterization of SOSD for CDFs with Same Mean</a></li>
+  <li><a href="#general-characterization-of-sosd" id="toc-general-characterization-of-sosd" class="nav-link" data-scroll-target="#general-characterization-of-sosd"><span class="header-section-number">5.7</span> General Characterization of SOSD</a></li>
+  <li><a href="#acceptance-dominance-and-fosdsosd" id="toc-acceptance-dominance-and-fosdsosd" class="nav-link" data-scroll-target="#acceptance-dominance-and-fosdsosd"><span class="header-section-number">5.9</span> Acceptance Dominance and FOSD/SOSD</a></li>
+  <li><a href="#wealth-uniform-dominance" id="toc-wealth-uniform-dominance" class="nav-link" data-scroll-target="#wealth-uniform-dominance"><span class="header-section-number">5.10</span> Wealth Uniform Dominance</a></li>
+  <li><a href="#utility-uniform-dominance" id="toc-utility-uniform-dominance" class="nav-link" data-scroll-target="#utility-uniform-dominance"><span class="header-section-number">5.11</span> Utility Uniform Dominance</a></li>
+  <li><a href="#uniform-dominance-results" id="toc-uniform-dominance-results" class="nav-link" data-scroll-target="#uniform-dominance-results"><span class="header-section-number">5.12</span> Uniform Dominance: Results</a></li>
+  <li><a href="#appendix-some-proofs" id="toc-appendix-some-proofs" class="nav-link" data-scroll-target="#appendix-some-proofs"><span class="header-section-number">5.13</span> Appendix: some proofs</a>
+  <ul class="collapse">
+  <li><a href="#u-has-expected-utility-form-leftrightarrow-u-linear-in-probabilities" id="toc-u-has-expected-utility-form-leftrightarrow-u-linear-in-probabilities" class="nav-link" data-scroll-target="#u-has-expected-utility-form-leftrightarrow-u-linear-in-probabilities">&nbsp;<span class="math inline">U</span> &nbsp;has expected utility form <span class="math inline">\Leftrightarrow U</span> linear in probabilities</a></li>
+  <li><a href="#expected-utility-form-is-preserved-under-positive-affine-transformations" id="toc-expected-utility-form-is-preserved-under-positive-affine-transformations" class="nav-link" data-scroll-target="#expected-utility-form-is-preserved-under-positive-affine-transformations">Expected utility form is preserved under positive affine transformations</a></li>
+  <li><a href="#expected-utility-theorem" id="toc-expected-utility-theorem" class="nav-link" data-scroll-target="#expected-utility-theorem">Expected utility theorem</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./lec5and6.html">Lectures 5 – 6</a></li><li class="breadcrumb-item"><a href="./risky-prospects.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Comparing Risky Prospects</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="risky-prospects" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="risky-prospects"><span class="header-section-number">5.1</span> Risky Prospects</h2>
+<p>We’ve studied decision-maker’s subjective attitude toward risk.</p>
+<p>Now: study objective properties of risky prospects (lotteries, gambles) themselves, relate to individual decision-making.</p>
+<p>Topics:</p>
+<ul>
+<li>First-Order Stochastic Dominance</li>
+<li>Second-Order Stochastic Dominance</li>
+<li>(Optional) Some recent research extending these concepts</li>
+</ul>
+</section>
+<section id="first-order-stochastic-dominance" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="first-order-stochastic-dominance"><span class="header-section-number">5.2</span> First-Order Stochastic Dominance</h2>
+<p>When is one lottery unambiguously better than another?</p>
+<p>Natural definition: <span class="math inline">F</span> dominates <span class="math inline">G</span> if, for every amount of money <span class="math inline">x, F</span> is more likely to yield at least <span class="math inline">x</span> dollars than <span class="math inline">G</span> is.</p>
+<div id="def">
+<p>For any lotteries <span class="math inline">F</span> and <span class="math inline">G</span> over <span class="math inline">\mathbb{R}, F</span> first-order stochastically dominates (FOSD) <span class="math inline">G</span> if</p>
+<p><span class="math display">
+F(x) \leq G(x) \text { for all } x
+</span></p>
+</div>
+</section>
+<section id="fosd-and-choice" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="fosd-and-choice"><span class="header-section-number">5.3</span> FOSD and Choice</h2>
+<p>Main theorem relating FOSD to decision-making:</p>
+<div id="thm-FOSDC" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.1</strong></span> <span class="math inline">F</span> FOSD <span class="math inline">G</span> <span class="math inline">\iff</span> every decision-maker with a non-decreasing utility function prefers <span class="math inline">F</span> to <span class="math inline">G</span>.</p>
+</div>
+<p>That is, the following are equivalent:</p>
+<ul>
+<li><span class="math inline">F(x) \leq G(x)</span> for all <span class="math inline">x</span>.</li>
+<li><span class="math inline">\int u(x) d F \geq \int u(x) d G</span> for every non-decreasing function <span class="math inline">u: \mathbb{R} \rightarrow \mathbb{R}</span>.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Preferred by Everyone <span class="math inline">\Longrightarrow</span> FOSD</p>
+<p>If <span class="math inline">F</span> does not FOSD <span class="math inline">G</span>, then there’s some amount of money <span class="math inline">x^{*}</span> such that <span class="math inline">G</span> is more likely to give at least <span class="math inline">x^{*}</span> than <span class="math inline">F</span> is.</p>
+<p>Consider a DM who only cares about getting at least <span class="math inline">x^{*}</span> dollars.</p>
+<p>She will prefer <span class="math inline">G</span>.</p>
+<p><span class="math display">
+\text{FOSD} \Rightarrow \text {Preferred by Everyone}
+</span></p>
+<p>Main idea: <span class="math inline">F</span> FOSD <span class="math inline">G \Rightarrow F</span> gives more money “realization-by-realization.”</p>
+<p>Suppose draw <span class="math inline">x</span> according to <span class="math inline">G</span>, but then instead give decision-maker</p>
+<p><span class="math display">
+y(x)=F^{-1}(G(x))
+</span></p>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">y(x) \geq x</span> for all <span class="math inline">x</span>, and</li>
+<li><span class="math inline">y</span> is distributed according to <span class="math inline">F</span>.</li>
+</ul>
+<p><span class="math inline">\Rightarrow</span> paying decision-maker according to <span class="math inline">F</span> just like first paying according to <span class="math inline">G</span>, then sometimes giving more money.</p>
+<p>Any decision-maker who likes money likes this.</p>
+<p>QED.</p>
+</div>
+</div>
+<p>Second-Order Stochastic Dominance</p>
+<p>Q: When is one lottery better than another for any decision-maker?<br>
+A: First-Order Stochastic Dominance.</p>
+<p>Q: When is one lottery better than another for any risk-averse decision-maker?<br>
+A: Second-Order Stochastic Dominance.</p>
+<div id="thm-SOSD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.2</strong></span> <span class="math inline">F</span> second-order stochastically dominates (SOSD) <span class="math inline">G</span> iff every decision-maker with a non-decreasing and concave utility function prefers <span class="math inline">F</span> to <span class="math inline">G</span>: that is,</p>
+<p><span class="math display">
+\int u(x) d F \geq \int u(x) d G
+</span></p>
+<p>for every non-decreasing and concave function <span class="math inline">u: \mathbb{R} \rightarrow \mathbb{R}</span>.</p>
+</div>
+<p>SOSD is a weaker property than FOSD.</p>
+</section>
+<section id="sosd-for-distributions-with-same-mean" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sosd-for-distributions-with-same-mean"><span class="header-section-number">5.4</span> SOSD for Distributions with Same Mean</h2>
+<p>If <span class="math inline">F</span> and <span class="math inline">G</span> have same mean, when will any risk-averse decision-maker prefer <span class="math inline">F</span> ?</p>
+<p>When is <span class="math inline">F</span> “unambiguously less risky” than <span class="math inline">G</span> ?</p>
+</section>
+<section id="mean-preserving-spreads" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="mean-preserving-spreads"><span class="header-section-number">5.5</span> Mean-Preserving Spreads</h2>
+<div id="def-MPS" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 5.1</strong></span> <span class="math inline">G</span> is a mean-preserving spread of <span class="math inline">F</span> if <span class="math inline">G</span> can be obtained by first drawing a realization from <span class="math inline">F</span> and then adding noise.</p>
+</div>
+<p><span class="math inline">G</span> is a mean-preserving spread of <span class="math inline">F</span> iff there exist random variables <span class="math inline">x, y</span>, and <span class="math inline">\varepsilon</span> such that</p>
+<p><span class="math display">
+y=x+\varepsilon
+</span></p>
+<p><span class="math inline">x</span> is distributed according to <span class="math inline">F, y</span> is distributed according to <span class="math inline">G</span>, and <span class="math inline">E[\varepsilon \mid x]=0</span> for all <span class="math inline">x</span>.</p>
+<p>Formulation in terms of cdfs:</p>
+<p><span class="math display">
+\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y \text { for all } x
+</span></p>
+</section>
+<section id="characterization-of-sosd-for-cdfs-with-same-mean" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="characterization-of-sosd-for-cdfs-with-same-mean"><span class="header-section-number">5.6</span> Characterization of SOSD for CDFs with Same Mean</h2>
+<div id="thm">
+<p>Assume that <span class="math inline">\int x d F=\int x d G</span>. Then the following are equivalent:</p>
+<ul>
+<li>F SOSD <span class="math inline">G</span>.</li>
+<li><span class="math inline">G</span> is a mean-preserving spread of <span class="math inline">F</span>.</li>
+<li><span class="math inline">\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y</span> for all <span class="math inline">x</span>.</li>
+</ul>
+</div>
+</section>
+<section id="general-characterization-of-sosd" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="general-characterization-of-sosd"><span class="header-section-number">5.7</span> General Characterization of SOSD</h2>
+<div id="thm-GCSOSD" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.3</strong></span> The following are equivalent:</p>
+<ul>
+<li>F SOSD G.</li>
+<li><span class="math inline">\int_{-\infty}^{x} G(y) d y \geq \int_{-\infty}^{x} F(y) d y</span> for all <span class="math inline">x</span>.</li>
+<li>There exist random variables <span class="math inline">x, y, z</span>, and <span class="math inline">\varepsilon</span> such that</li>
+</ul>
+<p><span class="math display">
+y=x+z+\varepsilon
+</span></p>
+</div>
+<p><span class="math inline">x</span> is distributed according to <span class="math inline">F, y</span> is distributed according to <span class="math inline">G, z</span> is always nonpositive, and <span class="math inline">E[\varepsilon \mid x]=0</span> for all <span class="math inline">x</span>.</p>
+<ul>
+<li>There exists a cdf <span class="math inline">H</span> such that <span class="math inline">F</span> FOSD <span class="math inline">H</span> and <span class="math inline">G</span> is a mean-preserving spread of <span class="math inline">H</span>.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Complete Dominance Orderings [Optional]
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>FOSD and SOSD are partial orders on lotteries:</p>
+<p>“most distributions” are not ranked by FOSD or SOSD.</p>
+<p>To some extent, nothing to be done:</p>
+<p>If <span class="math inline">F</span> doesn’t FOSD <span class="math inline">G</span>, some decision-maker prefers <span class="math inline">G</span>.</p>
+<p>If <span class="math inline">F</span> doesn’t SOSD <span class="math inline">G</span>, some risk-averse decision-maker prefers <span class="math inline">G</span>.</p>
+<p>However, recent series of papers points out that if view <span class="math inline">F</span> and <span class="math inline">G</span> as lotteries over monetary gains and losses rather than final wealth levels, and only require that no decision-maker prefers <span class="math inline">G</span> to <span class="math inline">F</span> for all wealth levels, do get a complete order on lotteries (and index of lottery’s “riskiness”).</p>
+<section id="acceptance-dominance" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="acceptance-dominance"><span class="header-section-number">5.8</span> Acceptance Dominance</h2>
+<p>Consider decision-maker with wealth <span class="math inline">w</span>, has to accept or reject a gamble <span class="math inline">F</span> over gains <span class="math inline">/ \operatorname{losses} x</span>.</p>
+<p>Accept iff</p>
+<p><span class="math display">
+E_{F}[u(w+x)] \geq u(w)
+</span></p>
+<div>
+<p><span class="math inline">F</span> acceptance dominates <span class="math inline">G</span> if, whenever <span class="math inline">F</span> is rejected by decision-maker with concave utility function <span class="math inline">u</span> and wealth <span class="math inline">w</span>, so is G.</p>
+</div>
+<p>That is, for all <span class="math inline">u</span> concave and <span class="math inline">w&gt;0</span>,</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; E_{F}[u(w+x)] \leq u(w) \\
+&amp; E_{G}[u(w+x)] \leq u(w)
+\end{aligned}
+</span></p>
+</section>
+</div>
+</div>
+</section>
+<section id="acceptance-dominance-and-fosdsosd" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="acceptance-dominance-and-fosdsosd"><span class="header-section-number">5.9</span> Acceptance Dominance and FOSD/SOSD</h2>
+<p><span class="math inline">F \operatorname{SOSD} G</span></p>
+<p><span class="math inline">\Rightarrow E_{F}[u(w+x)] \geq E_{G}[u(w+x)]</span> for all concave <span class="math inline">u</span> and wealth <span class="math inline">w</span></p>
+<p><span class="math inline">\Rightarrow F</span> acceptance dominates <span class="math inline">G</span>.</p>
+<p>If <span class="math inline">E_{F}[x]&gt;0</span> but <span class="math inline">x</span> can take on both positive and negative values, can show that <span class="math inline">F</span> acceptance dominates lottery that doubles all gains and losses.</p>
+<p>Acceptance dominance refines SOSD.</p>
+<p>But still very incomplete.</p>
+<p>Turns out can get complete order from something like: acceptance dominance at all wealth levels, or for all concave utility functions.</p>
+</section>
+<section id="wealth-uniform-dominance" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="wealth-uniform-dominance"><span class="header-section-number">5.10</span> Wealth Uniform Dominance</h2>
+<div>
+<p><span class="math inline">F</span> wealth-uniformly dominates <span class="math inline">G</span> if, whenever <span class="math inline">F</span> is rejected by decision-maker with concave utility function <span class="math inline">u</span> at every wealth level <span class="math inline">w</span>, so is <span class="math inline">G</span>.</p>
+</div>
+<p>That is, for all <span class="math inline">u \in U^{*}</span>,</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; E_{F}[u(w+x)] \leq u(w) \text { for all } w&gt;0 \\
+&amp; E_{G}[u(w+x)] \leq u(w) \text { for all } w&gt;0
+\end{aligned}
+</span></p>
+</section>
+<section id="utility-uniform-dominance" class="level2" data-number="5.11">
+<h2 data-number="5.11" class="anchored" data-anchor-id="utility-uniform-dominance"><span class="header-section-number">5.11</span> Utility Uniform Dominance</h2>
+<div>
+<p><span class="math inline">F</span> utility-uniformly dominates <span class="math inline">G</span> if, whenever <span class="math inline">F</span> is rejected at wealth level <span class="math inline">w</span> by a decision-maker with any utility function <span class="math inline">u \in U^{*}</span>, so is <span class="math inline">G</span>.</p>
+</div>
+<p>That is, for all <span class="math inline">w&gt;0</span>,</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; E_{F}[u(w+x)] \leq u(w) \text { for all } u \in U^{*} \\
+&amp; E_{G}[u(w+x)] \leq u(w) \text { for all } u \in U^{*}
+\end{aligned}
+</span></p>
+</section>
+<section id="uniform-dominance-results" class="level2" data-number="5.12">
+<h2 data-number="5.12" class="anchored" data-anchor-id="uniform-dominance-results"><span class="header-section-number">5.12</span> Uniform Dominance: Results</h2>
+<p>Hart (2011):</p>
+<ul>
+<li>Wealth-uniform dominance and utility-uniform dominance are complete orders.</li>
+<li>Comparison of two lotteries in these orders boils down to comparison of simple measures of the “riskiness” of the lotteries.</li>
+<li>Measure for wealth-uniform dominance: critical level of risk-aversion above which decision maker with constant absolute risk-aversion rejects the lottery.</li>
+<li>Measure for utility-uniform dominance: critical level of wealth below which decision-maker with log utility rejects the lottery.</li>
+</ul>
+</section>
+<section id="appendix-some-proofs" class="level2" data-number="5.13">
+<h2 data-number="5.13" class="anchored" data-anchor-id="appendix-some-proofs"><span class="header-section-number">5.13</span> Appendix: some proofs</h2>
+<section id="u-has-expected-utility-form-leftrightarrow-u-linear-in-probabilities" class="level3">
+<h3 class="anchored" data-anchor-id="u-has-expected-utility-form-leftrightarrow-u-linear-in-probabilities">&nbsp;<span class="math inline">U</span> &nbsp;has expected utility form <span class="math inline">\Leftrightarrow U</span> linear in probabilities</h3>
+<div id="thm-EULP" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.4</strong></span> <span class="math inline">U: P \rightarrow \mathbb{R}</span> has an expected utility form if and only if</p>
+<p><span class="math display">
+U\left(\alpha p+(1-\alpha) p^{\prime}\right)=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+</span></p>
+<p>holds for all <span class="math inline">p, p^{\prime}</span>, and <span class="math inline">\alpha \in[0,1]</span>.</p>
+</div>
+<p>Notice: this is MWG proposition 6B1. It uses the following notation: <span class="math inline">U\left(\sum \alpha_{k} p_{k}\right)=</span> <span class="math inline">\sum \alpha_{k} U\left(p_{k}\right)</span>, just substituting <span class="math inline">p</span> for <span class="math inline">L</span> (which stands for ‘lottery’).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Without loss of generality, we will assume only two consequences, <span class="math inline">c^{1}</span> and <span class="math inline">c^{2}</span>.</p>
+<p>Hence any lottery <span class="math inline">p</span> may be written as <span class="math inline">p=\left(p^{1}, p^{2}\right)</span>, in which <span class="math inline">p^{1}=\operatorname{Prob}\left(c^{1}\right)</span> and <span class="math inline">p^{2}=\operatorname{Prob}\left(c^{2}\right)</span>.</p>
+<p>All arguments below hold unchanged for <span class="math inline">p=\left(p^{1}, \ldots, p^{n}\right)</span>, that is, for <span class="math inline">n</span> consequences <span class="math inline">c^{1}, \ldots, c^{n}</span>. This extension is shown in red below; you may simply ignore it in your first reading.</p>
+<p>The arguments below also hold for <span class="math inline">c \in\left[c^{1}, c^{n}\right] \in \mathbb{R}</span>, but the math is not exactly the same.</p>
+<ul>
+<li>Necessity: <span class="math inline">U</span> linear in probabilities <span class="math inline">\Rightarrow U</span> has expected utility form</li>
+</ul>
+<p>Write lottery <span class="math inline">p=\left(p^{1}, p^{2}\right)</span> as a convex combination of degenerate lotteries <span class="math inline">\left(C^{1}, C^{2}\right)</span> :</p>
+<p><span class="math display">
+p=p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}
+</span></p>
+<p>That is, <span class="math inline">C^{1}=(1,0)</span>, meaning that consequence <span class="math inline">1\left(c^{1}\right)</span> happens with probability 1 , and <span class="math inline">C^{2}=(0,1)</span>, meaning that consequence <span class="math inline">2\left(c^{2}\right)</span> happens with probability 1 . The\ equation above is simply <span class="math inline">p=\left(p^{1}, p^{2}\right)=\left(p^{1}, 0\right)+\left(0, p^{2}\right)=p^{1} \cdot(1,0)+p^{2} \cdot(0,1)=</span> <span class="math inline">p^{1} C^{1}+p^{2} C^{2}</span>.</p>
+<p>Then:</p>
+<p><span class="math display">
+U(p)=U\left(p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}\right)=p^{1} U\left(C^{1}\right)+p^{2} U\left(C^{2}\right)+\cdots+p^{n} U\left(C^{n}\right)
+</span></p>
+<p>The second equality follows from our assumption: <span class="math inline">U</span> is linear in probabilities.</p>
+<p>But <span class="math inline">U\left(C^{1}\right)</span> is the utility from a degenerate lottery, that is, it’s simply the vNM utility of consequence <span class="math inline">c_{1}: U\left(C^{1}\right)=u\left(c^{1}\right)</span>.</p>
+<p>Remember our notation: big U is for DM’s actual utility; small u is form DM’s vNM utility. Big C denotes a lottery; small c denotes a consequence.</p>
+<p>The last equation may be rewritten as:</p>
+<p><span class="math display">
+\begin{gathered}
+U(p)=U\left(p^{1} C^{1}+p^{2} C^{2}+\cdots+p^{n} C^{n}\right)=p^{1} U\left(C^{1}\right)+p^{2} U\left(C^{2}\right)+\cdots+p^{n} U\left(C^{n}\right) \\
+=p^{1} u\left(c^{1}\right)+p^{2} u\left(c^{2}\right)+\cdots+p^{n} u\left(c^{n}\right)
+\end{gathered}
+</span></p>
+<p>In short:</p>
+<p><span class="math display">
+U(p)=p^{1} u\left(c^{1}\right)+p^{2} u\left(c^{2}\right)+\cdots+p^{n} u\left(c^{n}\right)
+</span></p>
+<p>This is exactly the expected utility property, concluding the proof.</p>
+<ul>
+<li>Sufficiency: <span class="math inline">U</span> has expected utility form <span class="math inline">\Rightarrow U</span> linear in probabilities</li>
+</ul>
+<p>Consider a compound lottery:</p>
+<p><span class="math display">
+\left(p_{1}, p_{2}, \ldots, p_{k} ; \alpha_{1}, \alpha_{2}, \ldots, \alpha_{k}\right)
+</span></p>
+<p>Notice that now we have <span class="math inline">p_{1}</span> instead of <span class="math inline">p^{1}</span>; and <span class="math inline">p_{2}</span> instead of <span class="math inline">p^{2}</span>. Superscripts refer to consequences; subscripts refer to specific lotteries.</p>
+<p>That is, <span class="math inline">p_{1}</span> and <span class="math inline">p_{2}</span> are different lotteries, and each one is a vector assigning probabilities for each of the two possible consequences <span class="math inline">c^{1}</span> and <span class="math inline">c^{2}</span> :</p>
+<p><span class="math display">
+p_{i}=\left(p_{i}^{1}, p_{i}^{2}, \ldots, p_{i}^{n}\right)
+</span></p>
+<p>For <span class="math inline">i=1, \ldots, k</span>. That is, we have <span class="math inline">k</span> lotteries, and each one is chosen with probability <span class="math inline">\alpha_{i}</span> in our compound lottery.</p>
+<p>We will allow <span class="math inline">k</span> to be generic. If you want, just take <span class="math inline">k=2</span> in the following computations - again, it’s without loss of generality, but be careful not to confuse the number of consequences with the number of lotteries.</p>
+<p>Consider now the following (reduced) lottery:</p>
+<p><span class="math display">
+\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}
+</span></p>
+<p>Consider the utility of this lottery:</p>
+<p><span class="math display">
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)
+</span></p>
+<p>We may now use our assumption: <span class="math inline">U</span> has the expected utility form. That is, one may rewrite this utility as:</p>
+<p><span class="math display">
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)=u^{1} \cdot \operatorname{Prob}\left(u^{1}\right)+u^{2} \cdot \operatorname{Prob}\left(u^{2}\right)+\cdots+u^{n} \cdot \operatorname{Prob}\left(u^{n}\right)
+</span></p>
+<p>What are these <span class="math inline">u^{i}</span> s? We just need to know that there are some <span class="math inline">u^{i}</span> s that make this equation hold - our assumption guarantees this is the case. But we do have an interpretation for them: <span class="math inline">u^{i}</span> is just the vNM utility of consequence <span class="math inline">c^{i}</span>. Analogously, <span class="math inline">\operatorname{Prob}\left(u^{i}\right)</span> is simply the probability of this consequence, computed from the compound lottery <span class="math inline">\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}</span>.</p>
+<p>This explains why we have subscripts on the LHS, but superscripts on the RHS. In the LHS, we have lotteries (that generate a compound lottery). On the RHS, we have consequences with vNM utilities <span class="math inline">u^{1}, u^{2}, \ldots, u^{n}</span>. If you want, you may think of the lottery on the LHS as any given lottery <span class="math inline">p</span>.</p>
+<p>Let’s develop this equation:</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)= \\
+&amp; u^{1} \cdot \operatorname{Prob}\left(u^{1}\right)+u^{2} \cdot \operatorname{Prob}\left(u^{2}\right)= \\
+&amp; u^{1} \cdot \underbrace{\left(\alpha_{1} p_{1}^{1}+\alpha_{2} p_{2}^{1}+\cdots+\alpha_{k} p_{k}^{1}\right)}_{\operatorname{Prob}\left(u^{1}\right)}+u^{2} \cdot \underbrace{\left(\alpha_{1} p_{1}^{2}+\alpha_{2} p_{2}^{2}+\cdots+\alpha_{k} p_{k}^{2}\right)}_{\operatorname{Prob}\left(u^{2}\right)}+\cdots+u^{n} \\
+&amp; \underbrace{\left(\alpha_{1} p_{1}^{n}+\alpha_{2} p_{2}^{n}+\cdots+\alpha_{k} p_{k}^{n}\right)}_{\operatorname{Prob}\left(u^{2}\right)}= \\
+&amp; \alpha_{1} \cdot \underbrace{\left(u^{1} \cdot p_{1}^{1}+u^{2} \cdot p_{1}^{2}+\cdots+u^{n} \cdot p_{1}^{n}\right)}_{U\left(p_{1}\right)}+\alpha_{2} \cdot \underbrace{\left(u^{1} \cdot p_{2}^{1}+u^{2} \cdot p_{2}^{2}+\cdots+u^{n} \cdot p_{2}^{n}\right)}_{U\left(p_{2}\right)}+\cdots \\
+&amp; +\alpha_{k} \cdot \underbrace{\left(u^{1} \cdot p_{k}^{1}+u^{2} \cdot p_{k}^{2}+\cdots+u^{n} \cdot p_{k}^{n}\right)}_{U\left(p_{k}\right)}= \\
+&amp; \alpha_{1} \cdot U\left(p_{1}\right)+\alpha_{2} \cdot U\left(p_{2}\right)+\cdots+\alpha_{k} \cdot U\left(p_{k}\right)
+\end{aligned}
+</span></p>
+<p>From the second to the third line, we use the definition of <span class="math inline">\operatorname{Prob}\left(u^{1}\right)</span> : it is simply the first coordinate of the vector <span class="math inline">\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}</span>, ie, the compound lottery. It is analogous for <span class="math inline">\operatorname{Prob}\left(u^{2}\right)</span> to <span class="math inline">\operatorname{Prob}\left(u^{n}\right)</span>.</p>
+<p>From the third to the fourth line: we use again our assumption: <span class="math inline">U</span> has the expected utility form. Hence we may write <span class="math inline">U\left(p_{1}\right)=u^{1} \cdot p_{1}^{1}+u^{2} \cdot p_{1}^{2}+\cdots+u^{n} \cdot p_{1}^{n}</span>. It is analogous for <span class="math inline">U\left(p_{2}\right)</span> to <span class="math inline">U\left(p_{k}\right)</span>.</p>
+<p>In short:</p>
+<p><span class="math display">
+U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}+\cdots+\alpha_{k} p_{k}\right)=\alpha_{1} \cdot U\left(p_{1}\right)+\alpha_{2} \cdot U\left(p_{2}\right)+\cdots+\alpha_{k} \cdot U\left(p_{k}\right)
+</span></p>
+<p>That is, <span class="math inline">U</span> is linear in probabilities, concluding the proof.</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="expected-utility-form-is-preserved-under-positive-affine-transformations" class="level3">
+<h3 class="anchored" data-anchor-id="expected-utility-form-is-preserved-under-positive-affine-transformations">Expected utility form is preserved under positive affine transformations</h3>
+<div id="thm-EUPAT" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.5</strong></span> <span class="math inline">U, \widetilde{U}</span> have expected utility form (and represent the same preferences) <span class="math inline">\Leftrightarrow</span> there are <span class="math inline">\beta&gt;0, \gamma</span> such that for all <span class="math inline">p, \widetilde{U}(p)=\beta U(p)+\gamma</span>.</p>
+</div>
+<p>This is MWG proposition 6B2.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Choose <span class="math inline">\bar{p}, \underline{p}</span> such that for all lottery <span class="math inline">p, \bar{p} \succcurlyeq p \succcurlyeq \underline{p}</span>.</p>
+<p>If <span class="math inline">\bar{p} \sim \underline{p}</span>, then all utility functions are constant, and the result follows immediately. Assume now <span class="math inline">\bar{p}&gt;\underline{p}</span>.</p>
+<ul>
+<li>Sufficiency: If <span class="math inline">U</span> has expected utility form, then <span class="math inline">\widetilde{U}(p)=\beta U(p)+\gamma</span> also has expected utility form.</li>
+</ul>
+<p>Consider a compound lottery <span class="math inline">\alpha_{1} p_{1}+\alpha_{2} p_{2}</span>. That is, we have two lotteries ( <span class="math inline">p_{1}</span> and <span class="math inline">p_{2}</span> ), and each is chosen with probability <span class="math inline">\alpha_{1}</span> and <span class="math inline">\alpha_{2}</span>, respectively.</p>
+<p>Without loss of generality, we consider only two lotteries, but the argument is unchanged for <span class="math inline">k</span> lotteries.</p>
+<p>Compute the utility of this compound lottery under <span class="math inline">\widetilde{U}</span> :</p>
+<p><span class="math display">
+\begin{gathered}
+\widetilde{U}\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)= \\
+\beta \cdot U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)+\gamma= \\
+\beta \cdot\left[\alpha_{1} U\left(p_{1}\right)+\alpha_{2} U\left(p_{2}\right)\right]+\gamma= \\
+\alpha_{1} \beta \cdot U\left(p_{1}\right)+\alpha_{2} \beta \cdot U\left(p_{2}\right)+\underbrace{\left[\alpha_{1} \gamma+\alpha_{2} \gamma\right]}_{=\gamma}= \\
+\alpha_{1} \cdot \underbrace{\left[\beta \cdot U\left(p_{1}\right)+\gamma\right]}_{\widetilde{U}\left(p_{1}\right)}+\alpha_{2} \cdot \underbrace{\left[\beta \cdot U\left(p_{2}\right)+\gamma\right]}_{\widetilde{U}\left(p_{2}\right)}= \\
+\alpha_{1} \cdot \widetilde{U}\left(p_{1}\right)+\alpha_{2} \cdot \widetilde{U}\left(p_{2}\right)
+\end{gathered}
+</span></p>
+<p>From the first to the second line: we use the definition <span class="math inline">\widetilde{U}(p)=\beta U(p)+\gamma</span>.</p>
+<p>From the second to the third line: we use the assumption that <span class="math inline">U</span> has the expected utility form: hence, <span class="math inline">U\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)=\alpha_{1} U\left(p_{1}\right)+\alpha_{2} U\left(p_{2}\right)</span>.</p>
+<p>From the third to the fourth line: we simply write <span class="math inline">\gamma=\alpha_{1} \gamma+\alpha_{2} \gamma</span>, which is true because <span class="math inline">\alpha_{1}+\alpha_{2}=1</span> (it’s a probability distribution, so it must sum up to one).</p>
+<p>From the fourth to the fifth line: we factor out <span class="math inline">\alpha_{1}</span> and <span class="math inline">\alpha_{2}</span>.</p>
+<p>In short:</p>
+<p><span class="math display">
+\widetilde{U}\left(\alpha_{1} p_{1}+\alpha_{2} p_{2}\right)=\alpha_{1} \cdot \widetilde{U}\left(p_{1}\right)+\alpha_{2} \cdot \widetilde{U}\left(p_{2}\right)
+</span></p>
+<p>That is, <span class="math inline">\widetilde{U}</span> has the expected utility form, as we wanted to show.</p>
+<ul>
+<li>Necessity: <span class="math inline">U</span> and <span class="math inline">\widetilde{U}</span> have the expected utility form (and represent the same preferences) implies that for some <span class="math inline">\beta&gt;0, \gamma</span>, one has <span class="math inline">\widetilde{U}(p)=\beta U(p)+\gamma</span></li>
+</ul>
+<p>Fix a lottery <span class="math inline">p</span>.</p>
+<p>Choose <span class="math inline">\lambda_{p} \in[0,1]</span> such that:</p>
+<p><span class="math display">
+U(p)=\lambda_{p} \cdot U(\bar{p})+\left(1-\lambda_{p}\right) \cdot U(\underline{p})
+</span></p>
+<p>This equation has two implications.</p>
+<p>First implication: <span class="math inline">p \sim \lambda_{p} \bar{p}+\left(1-\lambda_{p}\right) \underline{p}</span></p>
+<p>This holds because we’re assuming <span class="math inline">U</span> has the expected utility form. The previous theorem states that if this is the case, then <span class="math inline">U</span> is linear in probabilities. Hence the RHS of this last equation may be rewritten as:</p>
+<p><span class="math display">
+\lambda_{p} \cdot U(\bar{p})+\left(1-\lambda_{p}\right) \cdot U(\underline{p})=U\left(\lambda_{p} \cdot \bar{p}+\left(1-\lambda_{p}\right) \cdot \underline{p}\right)
+</span></p>
+<p>Hence <span class="math inline">U(p)=U\left(\lambda_{p} \cdot \bar{p}+\left(1-\lambda_{p}\right) \cdot \underline{p}\right)</span>. By definition of a utility function, the arguments on each side must be indifferent for the DM.</p>
+<p>Second implication:</p>
+<p><span class="math display">
+\lambda_{p}=\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}
+</span></p>
+<p>This is just a rearrangement of the equation above.</p>
+<p>We know that <span class="math inline">\widetilde{U}</span> is linear in probabilities (previous theorems) and represents the same preferences. Hence:</p>
+<p><span class="math display">
+\begin{gathered}
+\widetilde{U}(p)=\lambda_{p} \cdot \widetilde{U}(\bar{p})+\left(1-\lambda_{p}\right) \cdot \widetilde{U}(\underline{p})= \\
+\lambda_{p} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})= \\
+\underbrace{\left.\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}\right)}_{\lambda_{p}} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})
+\end{gathered}
+</span></p>
+<p>In short:</p>
+<p><span class="math display">
+\widetilde{U}(p)=\underbrace{\left(\frac{U(p)-U(\underline{p})}{U(\bar{p})-U(\underline{p})}\right)}_{\lambda_{p}} \cdot[\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})]+\widetilde{U}(\underline{p})
+</span></p>
+<p>In this last expression, only <span class="math inline">U(p)</span> depends on <span class="math inline">p</span>. All other terms are parameters. Rearrange this expression to get the following:</p>
+<p><span class="math display">
+\widetilde{U}(p)=\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right] \cdot U(p)+\widetilde{U}(\underline{p})-U(\underline{p}) \cdot\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right]
+</span></p>
+<p>Again: except <span class="math inline">U(p)</span>, everything in this expression is a parameter, built from functions ( <span class="math inline">U</span> or <span class="math inline">\widetilde{U}</span> ) evaluated at specific arguments ( <span class="math inline">\bar{p}</span> or <span class="math inline">\underline{p}</span> ). We can label them as we want. Let’s choose:</p>
+<p><span class="math display">
+\begin{array}{r}
+\beta=\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right] \\
+\gamma=\widetilde{U}(\underline{p})-U(\underline{p}) \cdot \underbrace{\left[\frac{\widetilde{U}(\bar{p})-\widetilde{U}(\underline{p})}{U(\bar{p})-U(\underline{p})}\right]}_{\beta}
+\end{array}
+</span></p>
+<p>Then one has:</p>
+<p><span class="math display">
+\widetilde{U}(p)=\beta U(p)+\gamma
+</span></p>
+<p>This is what we wanted to show, concluding the proof.</p>
+<p>QED.</p>
+</div>
+</div>
+</section>
+<section id="expected-utility-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="expected-utility-theorem">Expected utility theorem</h3>
+<div id="thm-EUT" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 5.6</strong></span> (Rational and continuous) Preferences may be represented by an utility function with the expected utility form if and only if it respects the axiom of independence.</p>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Proof of Necessity: if <span class="math inline">\succcurlyeq</span> respect the axiom of independence, then it may be represented by a utility function with the expected utility form.</li>
+</ul>
+<p>Assume there are lotteries <span class="math inline">\bar{p}</span> and <span class="math inline">\underline{p}</span> such that for all <span class="math inline">p</span>, one has <span class="math inline">\bar{p} \succcurlyeq p \succcurlyeq \underline{p}</span>.</p>
+<p>If <span class="math inline">\bar{p} \sim \underline{p}</span>, the result follows immediately: use a constant utility function.</p>
+<p>Assume from now on <span class="math inline">\bar{p}&gt;\underline{p}</span>.</p>
+<p>Step 1</p>
+<p>Take <span class="math inline">\alpha</span> and <span class="math inline">\beta</span> such that <span class="math inline">1&gt;\beta&gt;\alpha&gt;0</span>.</p>
+<p>Write:</p>
+<p><span class="math display">
+\begin{gathered}
+\bar{p}= \\
+\beta \bar{p}+(1-\beta) \bar{p}&gt; \\
+\beta \bar{p}+(1-\beta) \underline{p}= \\
+(\beta-\alpha) \bar{p}+\alpha \bar{p}+(1-\beta) \underline{p}&gt; \\
+(\beta-\alpha) \underline{p}+\alpha \bar{p}+(1-\beta) \underline{p}= \\
+\alpha \bar{p}+(1-\alpha) \underline{p}&gt; \\
+\alpha \underline{p}+(1-\alpha) \underline{p}= \\
+\underline{p}
+\end{gathered}
+</span></p>
+<p>From the first to the second line: <span class="math inline">\bar{p}</span> is the average of <span class="math inline">\bar{p}</span> and <span class="math inline">\bar{p}</span> !</p>
+<p>From the second to the third line: we apply the axiom of independence. Observe that we keep <span class="math inline">\bar{p}</span> in the first term of the sum, but substitute <span class="math inline">\bar{p}</span> for <span class="math inline">\underline{p}</span> in the second term. Since <span class="math inline">\bar{p}&gt;\underline{p}</span>, the axiom of independence implies the strict preference.</p>
+<p>From the third to the fourth line: add and subtract <span class="math inline">\alpha \bar{p}</span>.</p>
+<p>From the fourth to the fifth line: again, we just substitute <span class="math inline">\bar{p}</span> for <span class="math inline">\underline{p}</span> in one term of the sum, and leave the rest unchanged. The axiom of independence applies again.</p>
+<p>From the fifth to the sixth line: we cancel out <span class="math inline">\beta \underline{p}</span>.</p>
+<p>From the sixth to the seventh line: we repeat the argument of the <span class="math inline">2^{\text {nd }}</span> to <span class="math inline">3^{\text {rd }}</span> line, in reverse order.</p>
+<p>From the seventh to the eighth line: we repeat the argument of the <span class="math inline">1^{\text {st }}</span> to <span class="math inline">2^{\text {nd }}</span> line, in reverse order.</p>
+<p>Step 2: for all <span class="math inline">p</span>, there is only one <span class="math inline">\lambda_{p}</span> such that <span class="math inline">\lambda_{p} \bar{p}+\left(1-\lambda_{p}\right) \underline{p} \sim p</span></p>
+<p>Existence follows from continuity. For any lottery <span class="math inline">p</span>, define the sets:</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; \{\lambda \in[0,1]: \lambda \bar{p}+(1-\lambda) \underline{p} \succcurlyeq p\} \\
+&amp; \{\lambda \in[0,1]: \lambda \bar{p}+(1-\lambda) \underline{p} \preccurlyeq p\}
+\end{aligned}
+</span></p>
+<p>Continuity and completeness of <span class="math inline">\succcurlyeq</span> imply that both sets are closed (why?). Moreover, any <span class="math inline">\lambda</span> belongs to at least one of these sets. Since both sets are non-empty and <span class="math inline">[0,1]</span> is connected, there must by some <span class="math inline">\lambda</span> belonging to both (again: why?). Define it as <span class="math inline">\lambda_{p}</span>.</p>
+<p>Uniqueness follows from the previous step. If we were to slightly increase the value of <span class="math inline">\lambda_{p}</span> (from <span class="math inline">\alpha</span> to <span class="math inline">\beta</span> in the notation of the previous step), we would get a new lottery strictly preferred to the DM, breaking indifference.</p>
+<p>Step 3: <span class="math inline">U(p)=\lambda_{p}</span> is a utility function that represents <span class="math inline">\succcurlyeq</span></p>
+<p>Consider two lotteries <span class="math inline">p</span> and <span class="math inline">q</span>.</p>
+<p>From steps 1 and 2, we may write:</p>
+<p><span class="math display">
+p \succcurlyeq q \Leftrightarrow \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p} \succcurlyeq \lambda_{\mathrm{q}} \bar{p}+\left(1-\lambda_{\mathrm{q}}\right) \underline{p} \Leftrightarrow \lambda_{\mathrm{p}} \succcurlyeq \lambda_{\mathrm{q}}
+</span></p>
+<p>The first <span class="math inline">\Leftrightarrow</span> comes from step 2: use <span class="math inline">p \sim \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p}</span>, and analogously <span class="math inline">q \sim \lambda_{\mathrm{q}} \bar{p}+</span> <span class="math inline">\left(1-\lambda_{\mathrm{q}}\right) \underline{p}</span>.</p>
+<p>The second <span class="math inline">\Leftrightarrow</span> comes from step 1 , taking <span class="math inline">\lambda_{\mathrm{p}}=\beta</span> and <span class="math inline">\lambda_{\mathrm{q}}=\alpha</span>.</p>
+<p>In short, <span class="math inline">p \succcurlyeq q \Leftrightarrow \lambda_{\mathrm{p}} \succcurlyeq \lambda_{\mathrm{q}}</span>. This is the definition of an utility function representing <span class="math inline">\succcurlyeq</span>.</p>
+<p>Step 4: <span class="math inline">U(p)=\lambda_{p}</span> has the expected utility form.</p>
+<p>We have to show that for all <span class="math inline">\alpha \in[0,1]</span>, and for any lotteries <span class="math inline">p, p^{\prime}</span>, one has:</p>
+<p><span class="math display">
+U\left[\alpha p+(1-\alpha) p^{\prime}\right]=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+</span></p>
+<p>From step 2, we have:</p>
+<p><span class="math display">
+\begin{gathered}
+p \sim \lambda_{\mathrm{p}} \bar{p}+\left(1-\lambda_{\mathrm{p}}\right) \underline{p} \\
+p^{\prime} \sim \lambda_{\mathrm{p}^{\prime}} \bar{p}+\left(1-\lambda_{\mathrm{p}^{\prime}}\right) \underline{p}
+\end{gathered}
+</span></p>
+<p>From step 3, we have : <span class="math inline">U(p)=\lambda_{p}</span>. These two relations become:</p>
+<p><span class="math display">
+\begin{gathered}
+p \sim U(p) \bar{p}+(1-U(p)) \underline{p} \\
+p^{\prime} \sim U\left(p^{\prime}\right) \bar{p}+\left(1-U\left(p^{\prime}\right)\right) \underline{p}
+\end{gathered}
+</span></p>
+<p>Take a convex combination <span class="math inline">\alpha p+(1-\alpha) p^{\prime}</span>. Given the two relations above, we have:</p>
+<p><span class="math display">
+\begin{aligned}
+&amp; \left.\alpha p+(1-\alpha) p^{\prime} \sim \alpha[U(p) \bar{p}+(1-U(p)) \underline{p}]+(1-\alpha)\left[U\left(p^{\prime}\right) \bar{p}+\left(1-U\left(p^{\prime}\right)\right) \underline{p}\right]\right] \text { Factor out } \bar{p} \text { and } \underline{p} \\
+&amp; \sim\left[\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right] \cdot \bar{p}+\left[\alpha(1-U(p))+(1-\alpha)\left(1-U\left(p^{\prime}\right)\right)\right] \cdot \underline{p} \\
+&amp; \quad \sim\left[\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right] \cdot \bar{p}+\left[1-\left(\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)\right)\right] \cdot \underline{p}
+\end{aligned}
+</span></p>
+<p>Notice now that the terms in red are the same. We may denote it by any letter - for example, <span class="math inline">\lambda</span> (without the subscript to distinguish it from both <span class="math inline">\lambda_{p}</span> and <span class="math inline">\lambda_{p^{\prime}}</span> ): <span class="math inline">\lambda=</span> <span class="math inline">\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)</span>.</p>
+<p>The last line becomes:</p>
+<p><span class="math display">
+\lambda \cdot \bar{p}+[1-\lambda] \cdot \underline{p}
+</span></p>
+<p>In short, and without all the colors:</p>
+<p><span class="math display">
+\alpha p+(1-\alpha) p^{\prime} \sim \lambda \cdot \bar{p}+[1-\lambda] \cdot \underline{p}
+</span></p>
+<p>But this is the very definition of <span class="math inline">\lambda_{p}</span> as defined in step 2 , only applied to <span class="math inline">\alpha p+</span> <span class="math inline">(1-\alpha) p^{\prime}</span>. (If you want, you may write <span class="math inline">\lambda_{\alpha p+(1-\alpha) p^{\prime}}</span> instead of <span class="math inline">\lambda</span>.)</p>
+<p>Or, using step 4, we have the more intuitive notation <span class="math inline">\lambda=U\left[\alpha p+(1-\alpha) p^{\prime}\right]</span>.</p>
+<p>But we just defined <span class="math inline">\lambda=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)</span>.</p>
+<p>Since these are the same <span class="math inline">\lambda</span>, one has:</p>
+<p><span class="math display">
+U\left[\alpha p+(1-\alpha) p^{\prime}\right]=\alpha U(p)+(1-\alpha) U\left(p^{\prime}\right)
+</span></p>
+<p>That is, <span class="math inline">U</span> has the expected utility property, concluding the proof.</p>
+<p>QED.</p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./uncertainty.html" class="pagination-link" aria-label="Expected Utility Theory">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Expected Utility Theory</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
